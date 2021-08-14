@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> How to Coding | creative-community.pe.hu </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('#left').css({'background':getRumRgba()});
+});
+$(function(){
+	jQuery('#right').css({'background':getRumRgba()});
+});
+
+$(function(){
+    $("#hello").load("/coding/hello.html");
+    $("#update").load("/coding/update/about.html");
+		$("#html").load("/coding/html/link.html");
+		$("#css").load("/coding/css/library.html");
+		$("#order").load("/coding/submit/order/form.html");
+    $("#mobile").load("/coding/mobile.html");
+})
+</script>
+<link rel="stylesheet" href="/coding/cover/style.css"/>
+<link rel="stylesheet" href="/coding/css/popup.css"/>
+<style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#title {font-family:"NewYork";}
+#left {overflow-x: hidden;}
+#update {height:20vw;}
+#hello, #order {padding-bottom: 2vw;}
+
+.support {
+  font-size:1.25vw;
+  padding:0.5% 2.5%;
+  margin:5% 0 10%;
+}
+.support a {
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+  padding:0.5vw 1.5vw;
+  margin:0.5vw;
+  line-height:4vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+
+#mobile {display:none;}
+
+@media screen and (max-width: 500px){
+#left #hello,
+#left #update,
+#right #hello,
+#right #css,
+#right #order {display:none;}
+#mobile {
+  display:block;
+  position:fixed;
+  padding:0; margin:0;
+  width:100%; height:100vh;
+  top:0; left:0;
+}
+.support {zoom:0.75;}
+}
+
+</style>
+</head>
+<body>
+<h1 id="title">How to Coding | creative-community.pe.hu</h1>
+<div id="cover">
+<div id="left">
+<div id="hello"></div>
+<div id="mobile"></div>
+<div id="update"></div>
+</div>
+<div id="right">
+<div id="contents">
+<div id="hello">
+<div id="html"></div>
+<div id="css"></div>
+</div>
+</div>
+<div id="order"></div>
+</div>
+</div>
+
+<div class="popup" id="contactform" style="display:none;">
+<p><iframe src="/coding/submit/order/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+</body>
+</html>

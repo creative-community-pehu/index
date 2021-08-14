@@ -1,0 +1,53 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/cover/style.css"/>
+<link rel="stylesheet" href="/coding/fontbook/css/stylesheet.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<title> Index | creative-community.pe.hu </title>
+<script type="text/javascript">
+$(function(){
+	jQuery('#left').css({'background':getRumRgba()});
+	jQuery('#right').css({'background':getRumRgba()});
+});
+
+$(function(){
+    $("#hello").load("top.html");
+    $("#right").load("/menu/");
+    $("#visitors").load("visitors.php");
+})
+</script>
+<style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#title {font-family:"NewYork";}
+#left {font-family:"AUTHENTICSans";}
+#visitors {
+  position:fixed;
+  z-index:100;
+  bottom:0; right:0;
+  pointer-events:none;
+  font-family:"NewYork";
+}
+</style>
+</head>
+<body>
+<h1 id="title">Index | creative-community.pe.hu</h1>
+<div id="cover">
+<div id="left">
+<div id="hello"></div>
+</div>
+<div id="right"></div>
+</div>
+
+<div id="visitors"></div>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+</body>
+</html>
