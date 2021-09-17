@@ -14,9 +14,8 @@ $(function(){
 });
 
 $(function(){
-    $("#hello").load("top.html");
-    $("#right").load("/menu/");
-    $("#visitors").load("visitors.php");
+    $("#hello").load("hello.html");
+    $("#right").load("menu.html");
 })
 </script>
 <style type="text/css">
@@ -26,13 +25,6 @@ $(function(){
 }
 #title {font-family:"NewYork";}
 #left {font-family:"AUTHENTICSans";}
-#visitors {
-  position:fixed;
-  z-index:100;
-  bottom:0; right:0;
-  pointer-events:none;
-  font-family:"NewYork";
-}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
 </style>
 </head>
@@ -45,7 +37,6 @@ $(function(){
 <div id="right"></div>
 </div>
 
-<div id="visitors"></div>
 <div class="popup" id="support" style="display:none;">
 <p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
