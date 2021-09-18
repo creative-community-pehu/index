@@ -8,7 +8,6 @@
 <script type="text/javascript">
 $(function(){
     $("#hello").load("hello.html");
-    $("#right").load("menu.html");
 })
 </script>
 <style type="text/css">
@@ -17,6 +16,7 @@ $(function(){
   src: url("/coding/fontbook/NewYork.otf");
 }
 #title, .NewYork {font-family:"NewYork";}
+#rignt iframe {position:fixed; top:0; right:0; width: 100%; height: 100%;}
 </style>
 </head>
 <body>
@@ -25,7 +25,9 @@ $(function(){
 <div id="left">
 <div id="hello"></div>
 </div>
-<div id="right"></div>
+<div id="right">
+  <iframe src="/sign/color.php"></iframe>
+</div>
 </div>
 </body>
 </html>
