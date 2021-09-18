@@ -40,11 +40,19 @@ Creating Together
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/coding/hello/open_close.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
     $("#news").load("news.html");
     $("#how").load("members.html");
 })
+$(function() {
+  $('a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
 </script>
 </body>
 </html>
