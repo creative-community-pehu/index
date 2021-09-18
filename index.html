@@ -8,7 +8,6 @@
 <script type="text/javascript">
 $(function(){
     $("#hello").load("hello.html");
-    $("#menu").load("menu/");
 })
 </script>
 <style type="text/css">
@@ -17,65 +16,6 @@ $(function(){
   src: url("/coding/fontbook/NewYork.otf");
 }
 #title, .NewYork {font-family:"NewYork";}
-#right a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-#right iframe {
-  position:fixed;
-  top:0;
-  right:0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  z-index: 0;
-  pointer-events: none;
-  user-select: none;
-  }
-.popup {
-  position:fixed;
-  z-index:100;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-}
-.popup div {
-  position:fixed;
-  background-color:#fff;
-  z-index:100;
-  margin:0;
-  padding:1rem;
-  font-size:2rem;
-  -webkit-transform:translate(-50%,-50%);
-  transform:translate(-50%,-50%);
-  top:50%;
-  left:50%;
-}
-.popup iframe {
-  width:100%;
-  height:100%;
-  border-radius:1rem;
-  border:none;
-}
-.close {
-  position:absolute;
-  font-size:5vw;
-  padding:1% 2.5%;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:rgba(0,0,0,.5);
-}
-.close:hover {
-  cursor:pointer;
-}
-@media screen and (max-width:500px){
-  .popup p{width:90%;height:95%;}
-  .close{font-size:10vw;}
-}
 </style>
 </head>
 <body>
@@ -85,7 +25,6 @@ $(function(){
 <div id="hello"></div>
 </div>
 <div id="right">
-<div id="menu"></div>
 </div>
 </div>
 </body>
