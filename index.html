@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title> Index | creative-community.space </title>
 <script type="text/javascript">
@@ -33,6 +32,51 @@ $(function(){
   pointer-events: none;
   user-select: none;
   }
+.popup {
+  position:fixed;
+  z-index:100;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.popup div {
+  position:fixed;
+  background-color:#fff;
+  z-index:100;
+  margin:0;
+  padding:0;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  width:75%;
+  top:50%;
+  left:50%;
+  border-radius:1rem;
+}
+.popup iframe {
+  width:100%;
+  height:100%;
+  border-radius:1rem;
+  border:none;
+}
+.close {
+  position:absolute;
+  font-size:5vw;
+  padding:1% 2.5%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.5);
+}
+.close:hover {
+  cursor:pointer;
+  background-color:rgba(255,255,255,.5);
+}
+@media screen and (max-width:500px){
+  .popup p{width:90%;height:95%;}
+  .close{font-size:10vw;}
+}
 </style>
 </head>
 <body>
@@ -47,7 +91,7 @@ $(function(){
 </div>
 </div>
 <div class="popup" id="menu" style="display:none;">
-<p>Menu</p>
+<div>Menu</div>
 <span class="close" onclick="obj=document.getElementById('menu').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>
