@@ -37,14 +37,18 @@ body {margin:0; padding:0;}
 .close {
     z-index: 50;
     width: 100%;
-    overflow-y: auto;
     opacity: 0;
     max-height: 0;
+    overflow-y: auto;
     transition: all 1500ms ease;
+    position: fixed;
 }
 .menu {
+    z-index: 50;
+    width: 100%;
     opacity: 1;
     max-height: 100vh;
+    overflow-y: auto;
     transition: all 5555ms ease;
     position: fixed;
 }
