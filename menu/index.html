@@ -9,13 +9,6 @@
 <title>Index | creative-community.space</title>
 <style type="text/css">
 body {margin:0; padding:0;}
-#menu {
-    position: fixed;
-    z-index: 50;
-    width: 100%;
-    max-height: 100vh;
-    overflow-y: auto;
-}
 #btn {
     position: fixed;
     z-index: 100;
@@ -42,20 +35,26 @@ body {margin:0; padding:0;}
     transition: all 1000ms ease;
 }
 .close {
+    z-index: 50;
+    width: 100%;
+    overflow-y: auto;
     opacity: 0;
+    max-height: 0;
     transition: all 1500ms ease;
 }
 .menu {
     opacity: 1;
+    max-height: 100vh;
     transition: all 5555ms ease;
+    position: fixed;
 }
 </style>
 </head>
 <body>
 <p id="btn"><a>?</a></p>
-<div id="menu">
+<div id="menu" class="close">
 <br/>
-<div id="inside" class="close">
+<div id="inside">
 <br/>
 <div id="value"><a href="/value/" class="tab">大切にすることを大切にする</a><span class="check"><b>✔</b></span></div>
 <div id="members"><a href="/members/" class="tab">新しい生活を集める</a><span class="check"><b>✔</b></span></div>
@@ -71,7 +70,7 @@ body {margin:0; padding:0;}
 </div>
 <script>
     let btn = document.querySelector('#btn');
-    let menu = document.querySelector('#inside');
+    let menu = document.querySelector('#menu');
      
     let btnToggleclass = function(el) {
       el.classList.toggle('menu');
