@@ -67,6 +67,12 @@ body {margin:0; padding:0;}
     height: 100vh;
     position: fixed;
 }
+#p5 {
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
 </style>
 </head>
 <body>
@@ -81,7 +87,7 @@ body {margin:0; padding:0;}
 </div>
 </div>
 <div id="greeting"></div>
-<div id="sketch"></div>
+<div id="p5"></div>
 <div id="hsl"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
@@ -89,6 +95,7 @@ body {margin:0; padding:0;}
     $("#pehu").load("/pehu/menu/");
     $("#greeting").load("hello.html");
     $("#hsl").load("/coding/js/hsl/");
+    $("#p5").load("/coding/js/p5/sketch.html");
     })
 
     let btn = document.querySelector('#btn');
