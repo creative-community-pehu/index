@@ -54,7 +54,7 @@ body {margin:0; padding:0;}
     position: fixed;
     background-color: #fff;
 }
-#greeting {
+#index {
     position: relative;
     width:90%;
     top:0;
@@ -75,11 +75,12 @@ body {margin:0; padding:0;}
 </div>
 </div>
 
-<div id="greeting"></div>
+<div id="index"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
     $("#pehu").load("/pehu/menu/");
+    $("#index").load("hello.html");
     })
 
     let btn = document.querySelector('#btn');
