@@ -68,10 +68,12 @@ body {margin:0; padding:0;}
     ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
 </div>
 </div>
+<div id="greeting"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
     $("#pehu").load("/pehu/menu/");
+    $("#greeting").load("hello.html");
     })
 
     let btn = document.querySelector('#btn');
