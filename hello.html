@@ -32,8 +32,6 @@ Creating Together
 みんなでやりたいことを実現するクリエイティブ・コミュニティを作りましょう。
 </b>
 </p>
-<div id="news"></div>
-<br/>
 <div id="how" class="open">
 </div>
 </div>
@@ -41,16 +39,8 @@ Creating Together
 <script src="/coding/hello/open_close.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#news").load("news.html");
     $("#how").load("members.html");
 })
-$(function() {
-  $('a').hover(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
 </script>
 </body>
 </html>
