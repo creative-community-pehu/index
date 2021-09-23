@@ -10,6 +10,10 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
+#greeting {
+    width:90%;
+    margin: 5vw auto;
+}
 #btn {
     position: fixed;
     z-index: 100;
@@ -59,6 +63,9 @@ body {margin:0; padding:0;}
 </head>
 <body>
 <p id="btn"><a>i</a></p>
+
+<div id="greeting"></div>
+
 <div id="menu" class="none">
 <div id="pehu"></div>
 <div id="inside">
@@ -72,6 +79,7 @@ body {margin:0; padding:0;}
 <script>
     $(function(){
     $("#pehu").load("/pehu/menu/");
+    $("#greeting").load("hello.html");
     })
 
     let btn = document.querySelector('#btn');
