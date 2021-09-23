@@ -60,6 +60,12 @@ body {margin:0; padding:0;}
     width:90%;
     margin: 10vw 5% 5vw;
 }
+#hsl {
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
 </style>
 </head>
 <body>
@@ -74,11 +80,13 @@ body {margin:0; padding:0;}
 </div>
 </div>
 <div id="greeting"></div>
+<div id="hsl"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
     $("#pehu").load("/pehu/menu/");
     $("#greeting").load("hello.html");
+    $("#hsl").load("/coding/js/hsl/");
     })
 
     let btn = document.querySelector('#btn');
