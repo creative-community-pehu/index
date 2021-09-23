@@ -59,14 +59,9 @@ body {margin:0; padding:0;}
     position: absolute;
     width:80%;
     margin: 12.5vw 10% 5vw;
+    filter: invert();
 }
 #hsl {
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-}
-#sketch {
     z-index: -1;
     width: 100%;
     height: 100vh;
@@ -93,7 +88,6 @@ body {margin:0; padding:0;}
     $(function(){
     $("#pehu").load("/pehu/menu/");
     $("#greeting").load("hello.html");
-    $("#sketch").load("/coding/js/p5/sketch.html");
     $("#hsl").load("/coding/js/hsl/");
     })
 
