@@ -112,13 +112,14 @@ body {margin:0; padding:0;}
 }
 #submit h1 {
     top:0; left:0;
-    width:95%;
-    padding:2.5%;
+    width:90%;
+    padding:5%;
+    line-height:10vw;
     font-size:4.5vw;
     font-family: "ipag", monospace;
 }
 #you h1 span,
-#submit h1 span {
+#submit h1 {
     display: inline-block;
     transform:scale(1, 2);
 }
@@ -149,12 +150,12 @@ body {margin:0; padding:0;}
 <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
 <div id="submit">
-<h1><span>OMG!</span><br/>
+<h1>OMG!<br/>
 Your Drawing is So Beautiful<3<br/>
 Please send to us
-Your Drawing <span>Printed to PDF</span><br/>
+Your Drawing Printed to PDF<br/>
 <br/>
-<span>we.are.pe.hu@gmail.com</span>
+we.are.pe.hu@gmail.com
 </h1>
 </div>
 
