@@ -115,7 +115,6 @@ body {margin:0; padding:0;}
     width:95%;
     padding:2.5%;
     font-size:4.5vw;
-    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
