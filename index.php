@@ -110,16 +110,20 @@ body {margin:0; padding:0;}
     flex-wrap:wrap;
     font-family: "ipag", monospace;
 }
-#you h1 span,
-#submit h1 span {
-    transform:scale(1, 2);
-}
 #submit h1 {
     top:0; left:0;
     width:95%;
     padding:2.5%;
     font-size:4.5vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
     font-family: "ipag", monospace;
+}
+#you h1 span,
+#submit h1 span {
+    transform:scale(1, 2);
 }
 }
 </style>
