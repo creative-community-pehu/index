@@ -146,9 +146,11 @@ body {margin:0; padding:0;}
 <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
 <div id="submit">
-<h1>OMG! Your Drawing is So Beautiful!!<br/>
-<span>Please send to us</span>
-<span>Your Drawing Printed to PDF <3</span><br/>
+<h1><span>OMG!</span><br/>
+Your Drawing is So Beautiful<3<br/>
+Please send to us
+Your Drawing <span>Printed to PDF</span><br/>
+<br/>
 <span>we.are.pe.hu@gmail.com</span>
 </h1>
 </div>
