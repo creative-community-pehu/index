@@ -153,8 +153,8 @@ body {margin:0; padding:0;}
 Your Drawing is Seems So Beautiful<3<br/>
 Print it to PDF
 and Send it to us !!<br/>
-<a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a><br/>
-*<br/>
+<a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *<br/>
+<br/>
 This Email address is for receive-only.<br/>
 We will reply from other Email addresses. Thank You,
 </h1>
