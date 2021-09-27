@@ -94,7 +94,7 @@ body {margin:0; padding:0;}
 #greeting, #btn {display:none;}
 #you {display:block;}
 #you h1 {
-    top:0; left:0;
+    bottom:0; left:0;
     width:95%;
     padding:0.25rem 2.5%;
     font-size:2.5vw;
@@ -105,18 +105,12 @@ body {margin:0; padding:0;}
     flex-wrap:wrap;
     font-family: "ipag", monospace;
 }
-#you p {
-  position: absolute;
-  text-align: center;
-  font-family:"Times New Roman", serif;
-  bottom:0; left:0;
-  font-size:1.5vw;
-  padding:0.25rem 2.5%;
-}
 #you .qr {
   position: absolute;
   text-align: center;
   margin:0; padding:0;
+  text-align: center;
+  font-family:"Times New Roman", serif;
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
   top: 50%; left: 50%;
@@ -139,12 +133,12 @@ body {margin:0; padding:0;}
 </div>
 
 <div id="you">
-<h1><span>Drawing</span> <span>by</span>
-<span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 <div class="qr">
 <img src="qr.png">
-</div>
 <p><i>creative-community.space</i></p>
+</div>
+<h1><span>Drawing</span> <span>by</span>
+<span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
 
 <div id="greeting"></div>
