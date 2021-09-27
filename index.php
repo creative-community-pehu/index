@@ -82,7 +82,7 @@ body {margin:0; padding:0;}
 }
 
 #you {
-    position: relative;
+    position: fixed;
     min-height: 100vh;
     display:none;
     z-index: 100;
@@ -92,10 +92,29 @@ body {margin:0; padding:0;}
 @media print{
 #greeting, #btn {display:none;}
 #you {display:block;}
-.qr {
+#you h1 {
+    top:0; left:0;
+    width:95%;
+    padding:0.25rem 2.5%;
+    font-size:2.5vw;
+    line-height: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    font-family: "ipag", monospace;
+}
+#you p {
   position: absolute;
   text-align: center;
   font-family:"Times New Roman", serif;
+  bottom:0; left:0;
+  font-size:1.5vw;
+  padding:0.25rem 2.5%;
+}
+#you .qr {
+  position: absolute;
+  text-align: center;
   margin:0; padding:0;
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
