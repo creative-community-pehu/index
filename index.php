@@ -114,7 +114,7 @@ body {margin:0; padding:0;}
     top:0; left:0;
     width:90%;
     padding:5%;
-    line-height:10vw;
+    line-height:200%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
 }
