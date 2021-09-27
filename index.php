@@ -10,16 +10,11 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
-.none {
-    z-index: 99;
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    overflow-y: auto;
-    transition: all 1500ms ease;
+#index {
     position: fixed;
+    z-index: 100;
+    top:0;
 }
-#pehu {margin-top: 10vw;}
 #greeting {
     position: absolute;
     width:80%;
@@ -60,11 +55,6 @@ body {margin:0; padding:0;}
 #greeting, #btn, #menu {display:none;}
 #you,
 #submit {display:block;}
-#index {
-    position:fixed;
-    top:0;
-    width:100%;
-}
 #submit {
     top:100vh;
     background:#fff;

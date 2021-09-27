@@ -8,9 +8,9 @@
 <title>Index | creative-community.space</title>
 <style type="text/css">
 body {margin:0; padding:0;}
-.pehu {font-family: "SimSong", "MS Mincho", serif;}
 #top_btn {
     position: fixed;
+    top:0;
     z-index: 100;
     margin:2.5vw;
     font-size:4.5vw;
@@ -35,23 +35,24 @@ body {margin:0; padding:0;}
     transition: all 1000ms ease;
 }
 .none {
-    z-index: 99;
     width: 100%;
     height: 0;
     opacity: 0;
-    overflow-y: auto;
     transition: all 1500ms ease;
     position: fixed;
-}
-
-.index {
+    top:0;
     z-index: 99;
+    overflow-y: hidden;
+}
+.index {
     width: 100%;
     height: 100vh;
     opacity: 1;
-    overflow-y: auto;
     transition: all 2500ms ease;
     position: fixed;
+    top:0;
+    z-index: 99;
+    overflow-y: auto;
     background-color: #fff;
 }
 #pehu_menu {margin-top: 10vw;}
