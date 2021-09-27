@@ -33,8 +33,8 @@ fclose($fp);
 <meta name="description" content="FREE TIME | 何かする時間">
 
 <script src="../js/ityped.js"></script>
-<link rel="stylesheet" href="../css/ityped.css"/>
-<link rel="stylesheet" href="../css/org.css"/>
+<link rel="stylesheet" href="css/ityped.css"/>
+<link rel="stylesheet" href="css/org.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 
 <style>
@@ -148,6 +148,6 @@ fclose($fp);
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../js/searchBox.js"></script>
+<script src="js/searchBox.js"></script>
 </body>
 </html>
