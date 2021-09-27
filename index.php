@@ -133,6 +133,12 @@ body {margin:0; padding:0;}
 <img src="qr.png">
 <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
+<div id="submit">
+<h1><span>Please send to us</span>
+<span>Your Drawing</span>
+<span>we.are.pe.hu@gmail.com</span>
+</h1>
+</div>
 
 <div id="greeting"></div>
 <div id="p5"></div>
