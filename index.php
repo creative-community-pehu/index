@@ -155,7 +155,7 @@ Print it to PDF
 and Send it to us !!<br/>
 <br/>
 <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a><br/>
-This Email address is a receive-only.
+This Email address is a receive-only. We will repray from other Email address.
 </h1>
 </div>
 
