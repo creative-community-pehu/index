@@ -88,7 +88,7 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-#you img {width: 10vw;}
+#you img {width: 10vw; margin-bottom: ;}
 
 @media print{
 #greeting, #btn {display:none;}
@@ -96,7 +96,7 @@ body {margin:0; padding:0;}
 #you h1 {
     bottom:0; left:0;
     width:95%;
-    padding:0.25rem 2.5%;
+    padding:0 2.5%;
     font-size:4.5vw;
     position: fixed;
     display: flex;
