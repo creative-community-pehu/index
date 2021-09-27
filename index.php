@@ -142,6 +142,11 @@ body {margin:0; padding:0;}
     onmouseover="this.innerText='WWW to Print'"
 	onmouseout="this.innerText='出力する'">
     出力する</a><span class="check"><b>✔</b></span></div>
+    <br/>
+<div><a href="/members/" class="tab"
+    onmouseover="this.innerText='Members Only'"
+	onmouseout="this.innerText='会員限定'">
+    会員限定</a><span class="check"><b>✔</b></span></div>
 </div>
 <!--
 <div><a href="/coding/" class="tab"
