@@ -91,7 +91,7 @@ body {margin:0; padding:0;}
 #you img {width: 7.5vw;}
 
 @media print{
-#greeting, #btn {display:none;}
+#greeting, #btn, #menu {display:none;}
 #you {display:block;}
 #you h1 {
     bottom:0; left:0;
@@ -114,13 +114,17 @@ body {margin:0; padding:0;}
 <p id="btn"><a>?</a></p>
 <div id="menu" class="none">
 <div id="pehu"></div>
-<!--
 <div id="inside">
+<div><a onclick="window.print();" class="tab"
+    onmouseover="this.innerText='Print Your Drawing'"
+	onmouseout="this.innerText='あなたの絵を出力する'">
+    あなたの絵を出力する</a><span class="check"><b>✔</b></span></div>
+</div>
+<!--
 <div><a href="/coding/" class="tab"
     onmouseover="this.innerText='How to Coding'"
 	onmouseout="this.innerText='ウェブサイトを作る'">
     ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
-</div>
 -->
 </div>
 
