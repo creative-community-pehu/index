@@ -70,7 +70,7 @@ body {margin:0; padding:0;}
 #hsl,
 #p5 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: fixed;
 }
 #hsl {
