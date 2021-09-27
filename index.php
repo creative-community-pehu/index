@@ -154,8 +154,6 @@ Your Drawing is Seems So Beautiful<3<br/>
 Print it to PDF
 and Send it to us !!<br/>
 <br/>
-あなたの絵をPDFに出力して、私たちまでお送りください<br/>
-<br/>
 we.are.pe.hu@gmail.com
 </h1>
 </div>
