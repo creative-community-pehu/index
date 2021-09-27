@@ -97,7 +97,7 @@ body {margin:0; padding:0;}
     bottom:0; left:0;
     width:95%;
     padding:0 2.5%;
-    font-size:4.5vw;
+    font-size:2.5vw;
     position: fixed;
     display: flex;
     justify-content: space-between;
