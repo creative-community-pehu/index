@@ -156,7 +156,8 @@ and Send it to us !!<br/>
 <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *<br/>
 <br/>
 This Email address is for receive-only.<br/>
-We will reply from other Email addresses. Thank You,
+We will reply from other addresses.<br/>
+Thank You,
 </h1>
 </div>
 
