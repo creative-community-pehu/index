@@ -83,6 +83,7 @@ body {margin:0; padding:0;}
 
 #you {
     position: fixed;
+    width:100%;
     min-height: 100vh;
     display:none;
     z-index: 100;
