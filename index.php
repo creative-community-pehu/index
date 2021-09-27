@@ -87,7 +87,7 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-.qr img {width: 10vw;}
+.qr img {margin: 25vh 0; width: 10vw;}
 
 @media print{
 #greeting, #btn {display:none;}
@@ -120,10 +120,10 @@ body {margin:0; padding:0;}
 
 <div id="you">
 <div class="qr">
-<h1>Drawing by<br/>
-<?php echo $_SERVER['REMOTE_ADDR']; ?></h1>
+<h1><span>Drawing</span> <span>by</span>
+<span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 <img src="qr.png">
-<br/><i>creative-community.space</i>
+<p><i>creative-community.space</i></p>
 </div>
 </div>
 
