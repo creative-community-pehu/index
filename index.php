@@ -88,7 +88,7 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-.qr img {width: 10vw;}
+#you img {width: 10vw;}
 
 @media print{
 #greeting, #btn {display:none;}
