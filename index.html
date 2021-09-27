@@ -55,10 +55,6 @@ body {margin:0; padding:0;}
     background-color: #fff;
 }
 #pehu {margin-top: 10vw;}
-#you {
-    position: relative;
-    min-height: 100vh;
-}
 #greeting {
     position: absolute;
     width:80%;
@@ -85,13 +81,17 @@ body {margin:0; padding:0;}
     z-index: -1;
 }
 
-.qr {display:none; z-index: 0;}
+#you {
+    position: relative;
+    min-height: 100vh;
+    display:none;
+}
 .qr img {width: 10vw;}
 
 @media print{
 #greeting, #btn {display:none;}
-.qr {
-  display:block;
+.qr {display:block;}
+.you {
   position: absolute;
   text-align: center;
   font-family:"Times New Roman", serif;
