@@ -131,9 +131,9 @@ body {margin:0; padding:0;}
 <div id="pehu"></div>
 <div id="inside">
 <div><a onclick="window.print();" class="tab"
-    onmouseover="this.innerText='Print Your Drawing'"
-	onmouseout="this.innerText='あなたの絵を出力する'">
-    あなたの絵を出力する</a><span class="check"><b>✔</b></span></div>
+    onmouseover="this.innerText='WWW to Print'"
+	onmouseout="this.innerText='出力する'">
+    出力する</a><span class="check"><b>✔</b></span></div>
 </div>
 <!--
 <div><a href="/coding/" class="tab"
