@@ -115,13 +115,11 @@ body {margin:0; padding:0;}
     width:95%;
     padding:2.5%;
     font-size:4.5vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
     font-family: "ipag", monospace;
 }
 #you h1 span,
 #submit h1 span {
+    display: inline-block;
     transform:scale(1, 2);
 }
 }
