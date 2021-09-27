@@ -67,20 +67,11 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#drawing {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-}
 #hsl,
 #p5 {
     width: 100%;
     height: 100vh;
-    position: absolute;
-  margin:0; padding:0;
-  -webkit-transform:translate(-50%,-50%);
-  transform:translate(-50%,-50%);
-  top: 50%; left: 50%;
+    position: fixed;
 }
 #hsl {
     z-index: -2;
@@ -144,10 +135,8 @@ body {margin:0; padding:0;}
 </div>
 
 <div id="greeting"></div>
-<div id="drawing">
 <div id="p5"></div>
 <div id="hsl"></div>
-</div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
