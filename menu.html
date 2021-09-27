@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Index | creative-community.space</title>
+<style type="text/css">
+body {margin:0; padding:0;}
+.pehu {font-family: "SimSong", "MS Mincho", serif;}
+#top_btn {
+    position: fixed;
+    z-index: 100;
+    margin:2.5vw;
+    font-size:4.5vw;
+}
+#top_btn a {
+    display: block;
+    text-align: center;
+    width: 5vw;
+    height: 5vw;
+    line-height: 5.5vw;
+    border: solid 0.25vw #000;
+    border-radius: 50%;
+    font-family:Arial, sans-serif;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:#fff;
+    background-color:blue;
+    border: solid 0.25vw blue;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+.none {
+    z-index: 99;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow-y: auto;
+    transition: all 1500ms ease;
+    position: fixed;
+}
+
+.index {
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    overflow-y: auto;
+    transition: all 2500ms ease;
+    position: fixed;
+    background-color: #fff;
+}
+#pehu_menu {margin-top: 10vw;}
+
+#contents {
+    font-size:2.5vw;
+    width:90%;
+    margin:2.5vw auto;
+    line-height: 5vw;
+    font-family:Arial, sans-serif;
+}
+#contents i {
+    float: right;
+    font-size: 90%;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tab {
+    color:#000;
+    text-decoration:none;
+    transition: all 500ms ease;
+}
+.tab:hover,
+.check b {
+    color:blue;
+    transition: all 500ms ease;
+}
+  
+.check {
+    float:left;
+    display:inline-block;
+    width:2.5vw;
+    margin-right:2.5vw;
+    text-align:center;
+    margin-right:2.5vw;
+}
+.check:before {
+    content:'[';
+    opacity:1;
+}
+.check:after {
+    content:']';
+    opacity:1;
+}
+.check b {
+    opacity: 0;
+    transition: all 1000ms ease;
+}
+a:hover + .check b {
+    opacity: 1;
+    transition: all 1000ms ease;
+}
+</style>
+</head>
+<body>
+<p id="top_btn"><a>?</a></p>
+<div id="top_menu" class="none">
+<div id="pehu_menu"></div>
+<div id="contents">
+<div><a onclick="window.print();" class="tab"
+    onmouseover="this.innerText='WWW to Print'"
+	onmouseout="this.innerText='出力する'">
+    出力する</a><span class="check"><b>✔</b></span></div>
+    <br/>
+<div><a href="/members/" class="tab"
+    onmouseover="this.innerText='Members Only'"
+	onmouseout="this.innerText='会員限定'">
+    会員限定</a><span class="check"><b>✔</b></span></div>
+</div>
+<!--
+<div><a href="/coding/" class="tab"
+    onmouseover="this.innerText='How to Coding'"
+	onmouseout="this.innerText='ウェブサイトを作る'">
+    ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
+-->
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+    $("#pehu_menu").load("/pehu/menu.html");
+    })
+
+    let btn = document.querySelector('#top_btn');
+    let index = document.querySelector('#top_menu');
+     
+    let btnToggleclass = function(el) {
+      el.classList.toggle('index');
+    }
+     
+    btn.addEventListener('click', function() {
+      btnToggleclass(index);
+    }, false);
+</script>
+</body>
+</html>

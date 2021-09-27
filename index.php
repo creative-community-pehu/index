@@ -10,31 +10,6 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
-#btn {
-    position: fixed;
-    z-index: 100;
-    margin:2.5vw;
-    font-size:4.5vw;
-}
-#btn a {
-    display: block;
-    text-align: center;
-    width: 5vw;
-    height: 5vw;
-    line-height: 5.5vw;
-    border: solid 0.25vw #000;
-    border-radius: 50%;
-    font-family:Arial, sans-serif;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
-#btn a:hover {
-    color:#fff;
-    background-color:blue;
-    border: solid 0.25vw blue;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
 .none {
     z-index: 99;
     width: 100%;
@@ -43,16 +18,6 @@ body {margin:0; padding:0;}
     overflow-y: auto;
     transition: all 1500ms ease;
     position: fixed;
-}
-.index {
-    z-index: 99;
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-    overflow-y: auto;
-    transition: all 2500ms ease;
-    position: fixed;
-    background-color: #fff;
 }
 #pehu {margin-top: 10vw;}
 #greeting {
@@ -95,6 +60,11 @@ body {margin:0; padding:0;}
 #greeting, #btn, #menu {display:none;}
 #you,
 #submit {display:block;}
+#index {
+    position:fixed;
+    top:0;
+    width:100%;
+}
 #submit {
     top:100vh;
     background:#fff;
@@ -134,27 +104,7 @@ body {margin:0; padding:0;}
 </style>
 </head>
 <body>
-<p id="btn"><a>?</a></p>
-<div id="menu" class="none">
-<div id="pehu"></div>
-<div id="inside">
-<div><a onclick="window.print();" class="tab"
-    onmouseover="this.innerText='WWW to Print'"
-	onmouseout="this.innerText='出力する'">
-    出力する</a><span class="check"><b>✔</b></span></div>
-    <br/>
-<div><a href="/members/" class="tab"
-    onmouseover="this.innerText='Members Only'"
-	onmouseout="this.innerText='会員限定'">
-    会員限定</a><span class="check"><b>✔</b></span></div>
-</div>
-<!--
-<div><a href="/coding/" class="tab"
-    onmouseover="this.innerText='How to Coding'"
-	onmouseout="this.innerText='ウェブサイトを作る'">
-    ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
--->
-</div>
+<p id="index"></div>
 
 <div id="you">
 <h1><span>Drawing by</span>
@@ -183,7 +133,7 @@ creative-community.space
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
-    $("#pehu").load("/pehu/menu.html");
+    $("#index").load("menu.html");
     $("#greeting").load("hello.html");
     $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
