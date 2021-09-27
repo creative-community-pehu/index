@@ -151,7 +151,7 @@ body {margin:0; padding:0;}
 <div id="submit">
 <h1>OMG!<br/>
 Your Drawing is Seems So Beautiful<3<br/>
-Print it in PDF
+Print it to PDF
 and Send it to us !!<br/>
 <br/>
 we.are.pe.hu@gmail.com
