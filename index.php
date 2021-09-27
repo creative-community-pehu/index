@@ -81,7 +81,8 @@ body {margin:0; padding:0;}
     z-index: -1;
 }
 
-#you {
+#you,
+#submit {
     position: fixed;
     width:100%;
     min-height: 100vh;
@@ -92,7 +93,11 @@ body {margin:0; padding:0;}
 
 @media print{
 #greeting, #btn, #menu {display:none;}
-#you {display:block;}
+#you,
+#submit {display:block;}
+#submit {
+    top:100vh;
+}
 #you h1 {
     bottom:0; left:0;
     width:95%;
