@@ -113,7 +113,7 @@ body {margin:0; padding:0;}
 #submit h1 {
     top:0; left:0;
     width:90%;
-    padding:10% 5%;
+    padding:25% 5%;
     line-height:150%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
@@ -152,8 +152,8 @@ body {margin:0; padding:0;}
 <div id="submit">
 <h1>OMG!<br/>
 Your Drawing is Seems So Beautiful<3<br/>
-Please send to us
-Your Drawing Printed to PDF<br/>
+Please send it to us
+Printed to PDF<br/>
 <br/>
 we.are.pe.hu@gmail.com
 </h1>
