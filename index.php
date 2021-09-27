@@ -112,6 +112,12 @@ body {margin:0; padding:0;}
 #you h1 span {
     transform:scale(1, 2);
 }
+#submit h1 {
+    top:0; left:0;
+    width:95%;
+    padding:2.5%;
+    font-size:2.5vw;
+}
 }
 </style>
 </head>
