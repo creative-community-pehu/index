@@ -1,0 +1,70 @@
+#programs {
+  top:0; left:0;
+  padding:2.5rem 0;
+  margin:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#programs ul,
+#information ul {
+  padding:0;
+  margin:0;
+}
+#programs li,
+#information li {list-style: none;}
+
+#information p {
+  font-size:0.95rem;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  border: 1px solid #000;
+}
+input[type="radio"]:checked + label {
+  background:red;
+  color: #fff;
+  text-shadow:0.1rem 0.1rem #000;
+}
+
+
+form ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.label {
+  display: inline-block;
+  font-size:1.25rem;
+  margin: 0.25rem;
+  padding:0.5rem 0.75rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  text-shadow:0.1rem 0.1rem #fff;
+}
+.how .label {
+  border: 1px solid #000;
+}
+button {
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  margin: 1rem 0;
+  padding:0.25rem 0;
+  font-size:1.25rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  color:#fff;
+  background:red;
+  border: 1px solid #000;
+  text-shadow:0.1rem 0.1rem #000;
+}
+.label:hover,
+.list .link a:hover,
+button:hover {
+  color:#fff;
+  cursor:pointer;
+  background: red;
+  text-shadow:0.1rem 0.1rem #000;
+}
