@@ -6,22 +6,29 @@
 <link rel="stylesheet" href="/coding/hello/close_open.css"/>
 <title> Index | creative-community.space </title>
 <style type="text/css">
-
 #hello u, #hello i {font-family:"Times New Roman", serif; font-size: 110%;}
-.qr {display:none;}
-.qr img {width: 10vw;}
+.you {display:none;}
+.you img {width: 10vw;}
 
 @media print{
 #hello {display:none;}
-.qr {display:block;}
+.you {
+  display:block;
+  margin:0; padding:0;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  top: 50%; left: 50%;
+}
 }
 </style>
 </head>
 <body>
 <div id="contents">
 
-<p class="qr"><img src="qr.png">
-<br/><i>creative-community.space</i></p>
+<p class="you">
+<img src="qr.png">
+<br/><i>creative-community.space</i>
+</p>
 
 <div id="hello">
 <b>Hello こんにちは</b>
