@@ -83,7 +83,7 @@ body {margin:0; padding:0;}
 
 #you,
 #submit {
-    position: fixed;
+    position: absolute;
     width:100%;
     min-height: 100vh;
     display:none;
