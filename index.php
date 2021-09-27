@@ -117,6 +117,13 @@ body {margin:0; padding:0;}
     font-size:4.5vw;
     font-family: "ipag", monospace;
 }
+#submit p {
+    top:0; left:0;
+    padding:2.5% 5%;
+    line-height:150%;
+    font-size:2.5vw;
+    font-family: "ipag", monospace;
+}
 #you h1 span,
 #submit h1 {
     display: inline-block;
@@ -153,12 +160,13 @@ body {margin:0; padding:0;}
 Your Drawing is Seems So Beautiful<3<br/>
 Print it to PDF
 and Send it to us !!<br/>
-<a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *<br/>
-<br/>
+<a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
+</h1>
+<p>
 This Email address is for receive-only.<br/>
 We will reply from other addresses.<br/>
 Thank You,
-</h1>
+</p>
 </div>
 
 <div id="greeting"></div>
