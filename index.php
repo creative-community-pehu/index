@@ -119,12 +119,12 @@ body {margin:0; padding:0;}
 </div>
 
 <div id="you">
-<div class="qr">
 <h1><span>Drawing</span> <span>by</span>
 <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
+<div class="qr">
 <img src="qr.png">
-<p><i>creative-community.space</i></p>
 </div>
+<p><i>creative-community.space</i></p>
 </div>
 
 <div id="greeting"></div>
