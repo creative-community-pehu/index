@@ -154,7 +154,7 @@ Your Drawing is Seems So Beautiful<3<br/>
 Print it to PDF
 and Send it to us !!<br/>
 <br/>
-we.are.pe.hu@gmail.com
+<a href="mailto:we.are.pe.hu@gmail.com">we.are.pe.hu@gmail.com</a>
 </h1>
 </div>
 
