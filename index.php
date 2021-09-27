@@ -88,7 +88,7 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-#you img {width: 10vw; margin-bottom: ;}
+#you img {width: 7.5vw;}
 
 @media print{
 #greeting, #btn {display:none;}
@@ -97,7 +97,7 @@ body {margin:0; padding:0;}
     bottom:0; left:0;
     width:95%;
     padding:0 2.5%;
-    font-size:2.5vw;
+    font-size:4.5vw;
     position: fixed;
     display: flex;
     justify-content: space-between;
