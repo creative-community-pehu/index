@@ -112,7 +112,7 @@ body {margin:0; padding:0;}
 }
 #submit h1 {
     top:0; left:0;
-    padding:25% 7.5%;
+    padding:25% 7.5% 5%;
     line-height:150%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
@@ -155,7 +155,8 @@ Print it to PDF
 and Send it to us !!<br/>
 <br/>
 <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a><br/>
-This Email address is a receive-only. We will repray from other Email address.
+This Email address is a receive-only.<br/>
+We will repray from other Email address.
 </h1>
 </div>
 
