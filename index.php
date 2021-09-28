@@ -130,16 +130,14 @@ creative-community.space
     $("#p5").load("/coding/js/p5/sketch.html");
     })
 
-    let btn = document.querySelector('#btn');
-    let index = document.querySelector('#menu');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
+$('a[href^="#"]').click(function(){
+   var speed = 500;　//スクロールスピード
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   var position = target.offset().top;
+   $("html, body").animate({scrollTop:position}, speed, "swing");
+   return false;
+ });
 </script>
 </body>
 </html>
