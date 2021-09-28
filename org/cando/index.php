@@ -174,35 +174,35 @@ fclose($fp);
   <input type="radio" name="cando" value="create" id="create">
   <label for="create" class="label">作ったり 壊したり</label></li>
   <li>
-  <input type="radio" name="cando" value="print" id="print">
-  <label for="print" class="label">印刷したり 出版したり</label></li>
-  <li>
-  <input type="radio" name="cando" value="image" id="image">
-  <label for="image" class="label">見たり 撮影したり</label></li>
-  <li>
   <input type="radio" name="cando" value="music" id="music">
   <label for="music" class="label">音を出したり 聞いたり</label></li>
   <li>
-  <input type="radio" name="cando" value="communication" id="communication">
-  <label for="communication" class="label">書いたり 話したり</label></li>
+  <input type="radio" name="cando" value="publication" id="publication">
+  <label for="publication" class="label">印刷したり 出版したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="broadcast" id="broadcast">
+  <label for="broadcast" class="label">見たり 撮影したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="food" id="food">
+  <label for="food" class="label">料理したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="sports" id="sports">
+  <label for="sports" class="label">運動したり 休憩したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="relax" id="relax">
+  <label for="relax" class="label">休憩したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="fantasy" id="fantasy">
+  <label for="fantasy" class="label">空想したり</label></li>
   <li>
   <input type="radio" name="cando" value="research" id="research">
   <label for="research" class="label">調べたり</label></li>
   <li>
-  <input type="radio" name="cando" value="food" id="food">
-  <label for="food" class="label">料理したり</label></li>
-<li>
-<input type="radio" name="cando" value="sports" id="sports">
-<label for="sports" class="label">運動したり</label></li>
-<li>
-<input type="radio" name="cando" value="relax" id="relax">
-<label for="relax" class="label">休憩したり</label></li>
-<li>
-<input type="radio" name="cando" value="fantasy" id="fantasy">
-<label for="fantasy" class="label">空想したり</label></li>
-<li>
-<input type="radio" name="cando" value="challenge" id="challenge">
-<label for="challenge" class="label">挑戦 実験したり</label></li>
+  <input type="radio" name="cando" value="communication" id="communication">
+  <label for="communication" class="label">書いたり 話したり</label></li>
+  <li>
+  <input type="radio" name="cando" value="challenge" id="challenge">
+  <label for="challenge" class="label">挑戦 実験したり</label></li>
   </ul>
   </div>
   <span>したい</span>
