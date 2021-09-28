@@ -99,6 +99,9 @@ fclose($fp);
   <input type="radio" name="cando" value="broadcast" id="broadcast">
   <label for="broadcast" class="label">動画配信 撮影する</label></li>
   <li>
+  <input type="radio" name="cando" value="viewing" id="viewing">
+  <label for="viewing" class="label">映像上映 見る</label></li>
+  <li>
   <input type="radio" name="cando" value="communication" id="communication">
   <label for="communication" class="label">話す 書く 交流する</label></li>
   </ul>
