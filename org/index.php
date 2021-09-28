@@ -91,7 +91,10 @@ fclose($fp);
   <label for="music" class="label">音を出す 聞く</label></li>
   <li>
   <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">出版 販売 流通</label></li>
+  <label for="publication" class="label">出版する</label></li>
+  <li>
+  <input type="radio" name="cando" value="shopping" id="shopping">
+  <label for="shopping" class="label">販売 流通する</label></li>
   <li>
   <input type="radio" name="cando" value="broadcast" id="broadcast">
   <label for="broadcast" class="label">動画配信 上映会</label></li>
