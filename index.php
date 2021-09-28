@@ -15,7 +15,8 @@ body {margin:0; padding:0;}
     top:0;
 }
 #greeting {
-    position: absolute;
+    position: relative;
+    top:0;
     width:80%;
     margin: 12.5vw 10% 5vw;
 }
@@ -31,6 +32,7 @@ body {margin:0; padding:0;}
     width: 100%;
     min-height: 100vh;
     position: fixed;
+    top:0;
 }
 #hsl {
     z-index: -2;
@@ -95,6 +97,10 @@ body {margin:0; padding:0;}
 <body>
 <p id="index"></div>
 
+<div id="greeting"></div>
+<div id="p5"></div>
+<div id="hsl"></div>
+
 <div id="you">
 <h1><span>Drawing by</span>
 <img src="qr.png">
@@ -116,9 +122,6 @@ creative-community.space
 </p>
 </div>
 
-<div id="greeting"></div>
-<div id="p5"></div>
-<div id="hsl"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
