@@ -32,8 +32,9 @@ fclose($fp);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="FREE TIME | 何かする時間">
 
-<link rel="stylesheet" href="css/ityped.css"/>
-<link rel="stylesheet" href="css/org.css"/>
+<script src="../js/ityped.js"></script>
+<link rel="stylesheet" href="../css/ityped.css"/>
+<link rel="stylesheet" href="../css/org.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <style>
 
@@ -120,17 +121,23 @@ fclose($fp);
 <input type="radio" name="past" value="create" id="create">
 <label for="create" class="label">作った 壊した</label></li>
 <li>
-<input type="radio" name="past" value="image" id="image">
-<label for="image" class="label">撮影した 見た</label></li>
-<li>
 <input type="radio" name="past" value="music" id="music">
 <label for="music" class="label">音を出した 聞いた</label></li>
+<li>
+<input type="radio" name="cando" value="print" id="print">
+<label for="print" class="label">印刷した 出版した</label></li>
+<li>
+<input type="radio" name="past" value="image" id="image">
+<label for="image" class="label">見た 撮影した</label></li>
+<li>
+<input type="radio" name="cando" value="sports" id="sports">
+<label for="sports" class="label">運動した</label></li>
 <li>
 <input type="radio" name="past" value="communication" id="communication">
 <label for="communication" class="label">書いた 読んだ 話した</label></li>
 <li>
-<input type="radio" name="past" value="try" id="try">
-<label for="try" class="label">練習した 挑戦した</label></li>
+<input type="radio" name="past" value="challenge" id="challenge">
+<label for="challenge" class="label">練習した 挑戦した</label></li>
   </ul>
   </div>
   <div class="reset">
@@ -171,9 +178,9 @@ fclose($fp);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#freetime_menu").load("menu.html");
+$("#freetime_menu").load("../menu.html");
 });
 </script>
-<script src="js/searchBox.js"></script>
+<script src="../js/searchBox.js"></script>
 </body>
 </html>

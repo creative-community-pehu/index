@@ -177,17 +177,17 @@ fclose($fp);
   <input type="radio" name="cando" value="music" id="music">
   <label for="music" class="label">音を出したり 聞いたり</label></li>
   <li>
-  <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">印刷したり 出版したり</label></li>
+  <input type="radio" name="cando" value="print" id="print">
+  <label for="print" class="label">印刷したり 出版したり</label></li>
   <li>
-  <input type="radio" name="cando" value="broadcast" id="broadcast">
-  <label for="broadcast" class="label">見たり 撮影したり</label></li>
+  <input type="radio" name="cando" value="image" id="image">
+  <label for="image" class="label">見たり 撮影したり</label></li>
   <li>
   <input type="radio" name="cando" value="food" id="food">
   <label for="food" class="label">料理したり</label></li>
   <li>
   <input type="radio" name="cando" value="sports" id="sports">
-  <label for="sports" class="label">運動したり 休憩したり</label></li>
+  <label for="sports" class="label">運動したり</label></li>
   <li>
   <input type="radio" name="cando" value="relax" id="relax">
   <label for="relax" class="label">休憩したり</label></li>
