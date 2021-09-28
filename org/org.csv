@@ -1,11 +1,11 @@
-print,"OKI C824dn","印刷する","A3カラーLEDプリンター",none
-print,"Selpic S1","印刷する","ハンディプリンター",none
-print,"brother QL-800","印刷する","感熱ラベルプリンター",none
-print,"裁断機・製本機","製本する","対応サイズはA5タテ〜A3ヨコサイズ／300枚相当まで断裁・製本可能",none
-image,"GoPro HERO7 Black","撮影する","アクティブカメラ",none
-image,"LG 360 CAM","撮影する","360度全天球カメラ",none
-image,"WiMiUS S4","見る","1080P Video Projectorから映像を6×3mスクリーンに投影",none
-image,"Sony BDP-6700","見る","Blu-ray/DVDディスクの再生のほか、YouTubeなどの動画再生・スマホ／タブレットのミラーリングも可能",none
+publication,"OKI C824dn","印刷する","A3カラーLEDプリンター",none
+publication,"Selpic S1","印刷する","ハンディプリンター",none
+publication,"brother QL-800","印刷する","感熱ラベルプリンター",none
+publication,"裁断機・製本機","製本する","対応サイズはA5タテ〜A3ヨコサイズ／300枚相当まで断裁・製本可能",none
+broadcast,"GoPro HERO7 Black","撮影する","アクティブカメラ",none
+broadcast,"LG 360 CAM","撮影する","360度全天球カメラ",none
+broadcast,"WiMiUS S4","見る","1080P Video Projectorから映像を6×3mスクリーンに投影",none
+broadcast,"Sony BDP-6700","見る","Blu-ray/DVDディスクの再生のほか、YouTubeなどの動画再生・スマホ／タブレットのミラーリングも可能",none
 music,"YAMAHA MSP5 STUDIO","聞く・音を出す","パワードモニタースピーカー",none
 music,"MACKIE MIX 8","音を出す","アナログミキサー",none
 music,"FiiO BTA30","聞く","Bluetoothレシーバー＆トランスミッター",none

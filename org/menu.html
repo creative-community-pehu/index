@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Index | creative-community.space</title>
+<title>Can ☆ Do | creative-community.space</title>
 <style type="text/css">
 body {margin:0; padding:0;}
 #top_btn {
     position: fixed;
-    top:0;
+    bottom:0;
     z-index: 1000;
     margin:2.5vw;
     font-size:4.5vw;
@@ -34,13 +34,13 @@ body {margin:0; padding:0;}
     cursor: pointer;
     transition: all 1000ms ease;
 }
-.none {
+.hidden {
     width: 100%;
     height: 0;
     opacity: 0;
     transition: all 1500ms ease;
     position: fixed;
-    top:0;
+    bottom:0;
     z-index: 999;
     overflow-y: hidden;
 }
@@ -50,12 +50,11 @@ body {margin:0; padding:0;}
     opacity: 1;
     transition: all 2500ms ease;
     position: fixed;
-    top:0;
+    bottom:0;
     z-index: 999;
     overflow-y: auto;
     background-color: #fff;
 }
-#pehu_menu {margin-top: 10vw;}
 
 #contents {
     font-size:2.5vw;
@@ -109,25 +108,37 @@ a:hover + .check b {
 </head>
 <body>
 <p id="top_btn"><a>?</a></p>
-<div id="top_menu" class="none">
-<div id="pehu_menu"></div>
+<div id="top_menu" class="hidden">
 <div id="contents">
-<div><a onclick="window.print();" class="tab"
-    onmouseover="this.innerText='WWW to Print'"
-	onmouseout="this.innerText='出力する'">
-    出力する</a><span class="check"><b>✔</b></span></div>
+    <div>
+    <a href="https://creative-community.space/" target="_parent" class="tab">
+        <span>creative-community.space</span>
+    </a>
+    </div>
+    <div><a href="/org/" class="tab"
+        onmouseover="this.innerText='機材・ツール一覧'"
+        onmouseout="this.innerText='できること'">
+        できること</a><span class="check"><b>✔</b></span></div>
+    <div><a href="/org/past.php" class="tab"
+        onmouseover="this.innerText='したこと'"
+        onmouseout="this.innerText='これまで'">
+        これまで</a><span class="check"><b>✔</b></span></div>
+    <div><a href="/org/cando/" class="tab"
+        onmouseover="this.innerText='みんなの投稿'"
+        onmouseout="this.innerText='したいこと'">
+        したいこと</a><span class="check"><b>✔</b></span></div>
     <br/>
-<div><a href="/members/" class="tab"
-    onmouseover="this.innerText='Members Only'"
-	onmouseout="this.innerText='会員限定'">
-    会員限定</a><span class="check"><b>✔</b></span></div>
+<div>
+<a href="https://creative-community.space/" target="_parent" class="tab">
+    <span>会員限定</span>
+    <i>Members Only</i>
+</a>
 </div>
-<!--
-<div><a href="/coding/" class="tab"
-    onmouseover="this.innerText='How to Coding'"
-	onmouseout="this.innerText='ウェブサイトを作る'">
-    ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
--->
+<div><a href="/members/freetime/" class="tab"
+    onmouseover="this.innerText='FREE TIME'"
+	onmouseout="this.innerText='何かする時間'">
+    何かする時間</a><span class="check"><b>✔</b></span></div>
+</div>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>

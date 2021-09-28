@@ -8,7 +8,7 @@ $date = (string)filter_input(INPUT_POST, 'date');
 $info = (string)filter_input(INPUT_POST, 'info');
 $more = (string)filter_input(INPUT_POST, 'more');
 
-$fp = fopen('org.csv', 'a+b');
+$fp = fopen('past.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$how, $what, $date, $info, $more]);
@@ -26,27 +26,26 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>できること | creative-community.space</title>
+<title>FREE TIME | したこと</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="FREE TIME | 何かする時間">
 
-<script src="../js/ityped.js"></script>
 <link rel="stylesheet" href="css/ityped.css"/>
 <link rel="stylesheet" href="css/org.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
-
 <style>
-#cover_freetime {max-height:100vw;}
 
 #org ul {
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
 }
-
+#cover_freetime {
+  max-height: 100vw;
+}
 .freetime:after {
-  content:"We Can Do";
+  content:"FREE TIME";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
@@ -59,6 +58,40 @@ fclose($fp);
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
   width:125%;
+  animation:2.5s linear infinite cc;
+}
+@-webkit-keyframes cc {
+  0% {
+    font-family: "Quarantype";
+    top: 50%; left: 50%;
+  }
+  25% {
+    font-family: "MESS";
+    top: 25%; left: 50%;
+  }
+  50% {
+    font-family: "inscrutable";
+    top: 50%; left: 50%;
+  }
+  75% {
+    font-family: "Orchard";
+    top: 75%; left: 50%;
+  }
+  100% {
+    font-family: "Quarantype";
+    top: 50%; left: 50%;
+  }
+}
+#back {
+  position:fixed;
+  margin: 2.5%;
+  left:0; bottom:0;
+  z-index: 100;
+}
+#back a {
+  color:red;
+  font-size:2rem;
+  text-decoration:none;
   animation:2.5s linear infinite fontmotion;
 }
 
@@ -67,10 +100,10 @@ fclose($fp);
 </head>
 <body>
 <div id="freetime_menu"></div>
-  
+
 <div id="header">
-<u>できること</u>
-<u>機材・ツール一覧</u>
+<u>これまで</u>
+<u>したこと</u>
 </div>
 
 <div id="list">
@@ -80,27 +113,24 @@ fclose($fp);
 <div id="index">
   <form id="information">
   <div class="menu">
-  <label class="freetime" for="cando"></label>
-  <input type="checkbox" id="cando" />
-  <ul class="search-box cando" id="click">
-  <li>
-  <input type="radio" name="cando" value="create" id="create">
-  <label for="create" class="label">作る 壊す 遊ぶ</label></li>
-  <li>
-  <input type="radio" name="cando" value="music" id="music">
-  <label for="music" class="label">音を出す 聞く</label></li>
-  <li>
-  <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">出版 販売 流通</label></li>
-  <li>
-  <input type="radio" name="cando" value="broadcast" id="broadcast">
-  <label for="broadcast" class="label">動画配信 上映会</label></li>
-  <li>
-  <input type="radio" name="cando" value="coding" id="coding">
-  <label for="coding" class="label">ウェブサイトを作る</label></li>
-  <li>
-  <input type="radio" name="cando" value="communication" id="communication">
-  <label for="communication" class="label">伝える 考える 交流する</label></li>
+  <label class="freetime" for="past"></label>
+  <input type="checkbox" id="past" />
+  <ul class="search-box past" id="click">
+<li>
+<input type="radio" name="past" value="create" id="create">
+<label for="create" class="label">作った 壊した</label></li>
+<li>
+<input type="radio" name="past" value="image" id="image">
+<label for="image" class="label">撮影した 見た</label></li>
+<li>
+<input type="radio" name="past" value="music" id="music">
+<label for="music" class="label">音を出した 聞いた</label></li>
+<li>
+<input type="radio" name="past" value="communication" id="communication">
+<label for="communication" class="label">書いた 読んだ 話した</label></li>
+<li>
+<input type="radio" name="past" value="try" id="try">
+<label for="try" class="label">練習した 挑戦した</label></li>
   </ul>
   </div>
   <div class="reset">
@@ -115,18 +145,18 @@ fclose($fp);
 <ul>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<li class="list_item list_toggle" data-cando="<?=h($row[0])?>">
+<li class="list_item list_toggle" data-past="<?=h($row[0])?>">
 <p class="what"><?=h($row[1])?></p>
 <span class="date"><?=h($row[2])?></span>
 <div class="info">
 <span><?=h($row[3])?></span>
-<a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
+<a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_blank"></a>
 </div>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
-<li class="list_item list_toggle" data-cando="<?=h($row[0])?>">
-<p class="what">機材名</p>
+<li class="list_item list_toggle" data-past="<?=h($row[0])?>">
+<p class="what">できること</p>
 <span class="date">カテゴリー</span>
 <div class="info">
 <span>説明</span>
@@ -136,7 +166,6 @@ fclose($fp);
 </ul>
 </div>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
