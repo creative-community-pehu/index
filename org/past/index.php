@@ -59,40 +59,6 @@ fclose($fp);
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
   width:125%;
-  animation:2.5s linear infinite cc;
-}
-@-webkit-keyframes cc {
-  0% {
-    font-family: "Quarantype";
-    top: 50%; left: 50%;
-  }
-  25% {
-    font-family: "MESS";
-    top: 25%; left: 50%;
-  }
-  50% {
-    font-family: "inscrutable";
-    top: 50%; left: 50%;
-  }
-  75% {
-    font-family: "Orchard";
-    top: 75%; left: 50%;
-  }
-  100% {
-    font-family: "Quarantype";
-    top: 50%; left: 50%;
-  }
-}
-#back {
-  position:fixed;
-  margin: 2.5%;
-  left:0; bottom:0;
-  z-index: 100;
-}
-#back a {
-  color:red;
-  font-size:2rem;
-  text-decoration:none;
   animation:2.5s linear infinite fontmotion;
 }
 

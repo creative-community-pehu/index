@@ -136,18 +136,6 @@ fclose($fp);
   height:100%;
   width: 100%;
 }
-#back {
-  position:fixed;
-  margin: 2.5%;
-  left:0; bottom:0;
-  z-index: 100;
-}
-#back a {
-  color:red;
-  font-size:1.5rem;
-  text-decoration:none;
-  animation:2.5s linear infinite fontmotion;
-}
 
 </style>
   
