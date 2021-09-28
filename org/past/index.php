@@ -124,20 +124,17 @@ fclose($fp);
 <input type="radio" name="past" value="music" id="music">
 <label for="music" class="label">音を出した 聞いた</label></li>
 <li>
-<input type="radio" name="past" value="print" id="print">
-<label for="print" class="label">印刷した 出版した</label></li>
-<li>
 <input type="radio" name="past" value="image" id="image">
 <label for="image" class="label">見た 撮影した</label></li>
 <li>
 <input type="radio" name="past" value="sports" id="sports">
 <label for="sports" class="label">運動した</label></li>
 <li>
-<input type="radio" name="past" value="communication" id="communication">
-<label for="communication" class="label">書いた 読んだ 話した</label></li>
-<li>
 <input type="radio" name="past" value="challenge" id="challenge">
 <label for="challenge" class="label">練習した 挑戦した</label></li>
+<li>
+<input type="radio" name="past" value="communication" id="communication">
+<label for="communication" class="label">書いた 読んだ 話した</label></li>
   </ul>
   </div>
   <div class="reset">
