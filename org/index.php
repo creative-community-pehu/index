@@ -103,7 +103,7 @@ fclose($fp);
   <label for="coding" class="label">コードを書く</label></li>
   <li>
   <input type="radio" name="cando" value="communication" id="communication">
-  <label for="communication" class="label">共有 交流する</label></li>
+  <label for="communication" class="label">話す 伝える 交流する</label></li>
   </ul>
   </div>
   <div class="reset">
