@@ -46,7 +46,7 @@ fclose($fp);
   max-height: 100vw;
 }
 .freetime:after {
-  content:"chotto crazy";
+  content:"creative-community.space";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
