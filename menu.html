@@ -18,8 +18,6 @@ body {margin:0; padding:0;}
 #top_btn a {
     display: block;
     text-align: center;
-    color: #000;
-    text-decoration: none;
     width: 5vw;
     height: 5vw;
     line-height: 5.5vw;
@@ -41,7 +39,7 @@ body {margin:0; padding:0;}
     height: 0;
     opacity: 0;
     transition: all 1500ms ease;
-    position: relative;
+    position: fixed;
     top:0;
     z-index: 999;
     overflow-y: hidden;
@@ -51,12 +49,13 @@ body {margin:0; padding:0;}
     height: 100vh;
     opacity: 1;
     transition: all 2500ms ease;
-    position: relative;
+    position: fixed;
     top:0;
     z-index: 999;
     overflow-y: auto;
+    background-color: #fff;
 }
-#pehu_menu {margin-top: 5vw;}
+#pehu_menu {margin-top: 10vw;}
 
 .contents {
     font-size:2.5vw;
@@ -109,7 +108,7 @@ a:hover + .check b {
 </style>
 </head>
 <body>
-<p id="top_btn"><a href="#top_menu">?</a></p>
+<p id="top_btn"><a>?</a></p>
 <div id="top_menu" class="none">
 <div id="pehu_menu"></div>
 <div class="contents">
@@ -119,9 +118,7 @@ a:hover + .check b {
     出力する</a><span class="check"><b>✔</b></span></div>
     <br/>
 </div>
-
 <div id="members_menu"></div>
-
 <div class="contents">
 <div><a href="https://pehu.cart.fc2.com/signup" class="tab"
     onmouseover="this.innerText='Become a Free Member'"
@@ -135,11 +132,11 @@ a:hover + .check b {
     ウェブサイトを作る</a><span class="check"><b>✔</b></span></div>
 -->
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
     $("#pehu_menu").load("/pehu/menu.html");
-    $("#members_menu").load("members_menu.html");
+    $("#members_menu").load("/pehu/menu.html");
     })
 
     let btn = document.querySelector('#top_btn');
