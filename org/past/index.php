@@ -46,7 +46,7 @@ fclose($fp);
   max-height: 100vw;
 }
 .freetime:after {
-  content:"creative community space";
+  content:"creative community";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
