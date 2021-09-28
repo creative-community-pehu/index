@@ -46,7 +46,7 @@ fclose($fp);
 }
 
 .freetime:after {
-  content:"We Can Do";
+  content:"Members Only";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
