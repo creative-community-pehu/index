@@ -1,7 +1,7 @@
 create,"ウェブサイト","ホスティングサービス","ウェブサイト制作／運営のサポートを受ける(詳しい詳細は準備出来次第お知らせします)",none
 create,"creative-community.space/〇〇/","ホスティングサービス","「creative-community.space」内にコミュニティサイトを作成する(詳しい詳細は準備出来次第お知らせします)",none
 create,"Adobe Creative Cloud","クリエイティブツール","Illustrator、Photoshop、Premiere Proをはじめとするクリエイティブツールを全て利用できる（使用料：1時間100円）",none
-create,"作業台","机","天板サイズ 184×92cm・高さ70cm",none
+create,"作業台","机・椅子","天板サイズ 184×92cm・高さ70cm",none
 create,"工具類","消耗品","電動ドライバー・ノコギリ・トンカチ・単管カッター／ビス・クギなど（使用料：自由料金制）",none
 create,"ABOX OL341","パウチラミネーター","A3/A4対応(使用料：1枚50円〜)",none
 create,"真空パック機","バキュームシーラー","使用料：専用袋1枚200円〜",none
@@ -30,7 +30,7 @@ music,"ZOOM H3-VR","VRオーディオマイク","さぁ、音のＶＲをはじ�
 communication,"New Life Collection","エッセイ","ウェブショップ兼ニュースメディア「newlifecollection.com」にエッセイを投稿する(詳しい詳細は準備出来次第お知らせします)",none
 communication,"色と記号","ウェブアプリ","自分の気持ちを知る・表すデジタル作品を共同制作",https://creative-community.space/sign/
 communication,"文字と絵文字","掲示板","言葉を強さ・方向・感情で整理し蓄積する匿名掲示板",https://creative-community.space/members/org/
-communication,"円卓","机","直径180cmの作業・会議テーブル兼卓球台",none
+communication,"円卓","机・椅子","直径180cmの作業・会議テーブル兼卓球台",none
 communication,"GitHub","ソフトウェア開発プラットフォーム","GitHub上にソースコードをホスティングすることで数百万人もの他の開発者と一緒にコードのレビューを行ったり、プロジェクトの管理をしながら、ソフトウェアの開発を行うことができます。",https://github.co.jp/
 communication,"asana","ワークマネジメントツール","プロジェクトとタスクを一元管理できる、究極のワークマネジメントツール",https://asana.com/ja?noredirect=
 communication,"Trello","タスク管理ツール","タスクのあらゆる作業を管理、追跡してチームメイトと共有できる、業務管理ポータル",https://trello.com/ja
