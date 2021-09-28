@@ -69,7 +69,7 @@ fclose($fp);
 <div id="freetime_menu"></div>
   
 <div id="header">
-<u>会員にできること</u>
+<u>会員になればできること</u>
 <u>使える機材・ツール一覧</u>
 </div>
 
