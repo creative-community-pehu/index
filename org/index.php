@@ -70,6 +70,7 @@ fclose($fp);
   
 <div id="header">
 <u>会員ができること</u>
+<u>準備中</u>
 <u>機材・ツール一覧</u>
 </div>
 
