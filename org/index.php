@@ -100,10 +100,10 @@ fclose($fp);
   <label for="music" class="label">音楽会 聞く</label></li>
   <li>
   <input type="radio" name="cando" value="coding" id="coding">
-  <label for="coding" class="label">ウェブサイトを作る</label></li>
+  <label for="coding" class="label">コードを書く</label></li>
   <li>
   <input type="radio" name="cando" value="communication" id="communication">
-  <label for="communication" class="label">書く 話す 交流する</label></li>
+  <label for="communication" class="label">伝える 交流する</label></li>
   </ul>
   </div>
   <div class="reset">
