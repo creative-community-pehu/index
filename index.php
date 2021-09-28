@@ -9,13 +9,8 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
-#index {
-    position: fixed;
-    z-index: 100;
-    top:0;
-}
 #greeting {
-    position: absolute;
+    position: relative;
     width:80%;
     margin: 12.5vw 10% 5vw;
 }
@@ -43,6 +38,7 @@ body {margin:0; padding:0;}
 #you,
 #submit {
     position: absolute;
+    top:0;
     width:100%;
     min-height: 100vh;
     display:none;
@@ -93,7 +89,14 @@ body {margin:0; padding:0;}
 </style>
 </head>
 <body>
+
+<div id="greeting"></div>
+
 <p id="index"></div>
+
+<div id="p5"></div>
+<div id="hsl"></div>
+
 
 <div id="you">
 <h1><span>Drawing by</span>
@@ -115,10 +118,6 @@ Thank You,<br/>
 creative-community.space
 </p>
 </div>
-
-<div id="greeting"></div>
-<div id="p5"></div>
-<div id="hsl"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
@@ -138,6 +137,15 @@ creative-community.space
     btn.addEventListener('click', function() {
       btnToggleclass(index);
     }, false);
+
+$('a[href^="#"]').click(function(){
+   var speed = 500;　//スクロールスピード
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   var position = target.offset().top;
+   $("html, body").animate({scrollTop:position}, speed, "swing");
+   return false;
+ });
 </script>
 </body>
 </html>
