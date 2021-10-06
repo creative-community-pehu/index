@@ -72,7 +72,7 @@ body {margin:0; padding:0;}
     font-family: "ipag", monospace;
 }
 #you h1 b {
-    width:40%;
+    width:35%;
     text-align:right;
     word-break: break-word;
     
