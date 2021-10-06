@@ -73,6 +73,7 @@ body {margin:0; padding:0;}
 }
 #you h1 span {
     width:40%;
+    text-align:right;
     word-break: break-word;
     
 }
