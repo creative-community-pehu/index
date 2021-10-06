@@ -71,6 +71,11 @@ body {margin:0; padding:0;}
     flex-wrap:wrap;
     font-family: "ipag", monospace;
 }
+#you h1 span {
+    width:40%;
+    word-break: break-word;
+    
+}
 #submit h1 {
     top:0; left:0;
     padding:25% 7.5% 12.5%;
