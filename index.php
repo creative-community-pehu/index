@@ -71,7 +71,7 @@ body {margin:0; padding:0;}
     flex-wrap:wrap;
     font-family: "ipag", monospace;
 }
-#you h1 span {
+#you h1 b {
     width:40%;
     text-align:right;
     word-break: break-word;
@@ -91,6 +91,7 @@ body {margin:0; padding:0;}
     font-size:2.5vw;
     font-family: "ipag", monospace;
 }
+#you h1 b,
 #you h1 span,
 #submit h1,
 #submit p {
