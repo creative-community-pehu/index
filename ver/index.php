@@ -218,6 +218,8 @@ input[type="reset"] {
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
   <li>
+  <b class="label">|</b></li>
+  <li>
   <a href="#tobe" class="label">Under Construction</a></li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
