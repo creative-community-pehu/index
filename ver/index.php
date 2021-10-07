@@ -32,7 +32,7 @@ fclose($fp);
 <title>Update | creative-community.space</title>
 <style>
 #ver {
-    padding-top: 2.5vw;
+    padding-top: 5vw;
 }
 #ver #searchBox {
     display: none;
@@ -45,10 +45,11 @@ fclose($fp);
     z-index: -2;
     background-color: rgb(0, 0, 0);
 }
+
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 10% 5% 5%;
+  margin: 5% 5% 10%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
@@ -149,7 +150,7 @@ li {list-style: none;}
 
 #searchBox ul {
   position:fixed; z-index:100;
-  top:0; left:0;
+  bottom:0; left:0;
   width:95%;
   margin: 1.25% 2.5%;
   display: flex;
