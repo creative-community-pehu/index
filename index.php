@@ -31,7 +31,6 @@ body {margin:0; padding:0;}
 #update {
     padding-top: 4.5vw;
 }
-#update #searchBox,
 #update #grid div:nth-child(n + 17) {
   display: none;
 }
@@ -144,6 +143,7 @@ creative-community.space
     $(function(){
     $("#index").load("menu.html");
     $("#greeting").load("hello.html");
+    $("#update").load("/update/");
     $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
     })
