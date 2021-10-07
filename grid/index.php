@@ -86,7 +86,6 @@ $(function(){
   border: 1px solid;
   border-radius: 2vw;
   font-size: 75%;
-  font-family: "ipag", monospace;
   position: relative; z-index:2;
   pointer-events:none;
   user-select:none;
