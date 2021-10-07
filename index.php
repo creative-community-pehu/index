@@ -15,7 +15,6 @@ body {margin:0; padding:0;}
     top:0;
 }
 #greeting {
-    top:0;
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
