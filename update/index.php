@@ -141,7 +141,7 @@ li {list-style: none;}
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #searchBox .label,
-.reset-button {
+input[type="reset"] {
   display: inline-block;
   background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
@@ -184,7 +184,7 @@ li {list-style: none;}
   </form>
 
 <div id="grid">
-<div class="list_item list_toggle" data-type="new upgrade tba">
+<div class="list_item list_toggle" data-type="">
 <p><i>Update | 更新情報一覧</i></p>
 <span>
 <u style="display:inline;">View All | 全部見る</u>
