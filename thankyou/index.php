@@ -24,7 +24,7 @@ fclose($fp);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Everyones Drawings are Seems So Beautiful</title>
+    <title>Everyones Drawings are So Beautiful</title>
     <style type="text/css">
 .library li:first-child {
   width:75vw;
@@ -71,7 +71,7 @@ fclose($fp);
 
 <div id="submit">
 <h1>OMG!<br />
-Everyones Drawings are Seems So Beautiful<3<br />
+Everyones Drawings are So Beautiful<3<br />
 Thank You for Send it to us !!<br />
 </h1>
 <p>
