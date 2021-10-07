@@ -86,12 +86,11 @@ $(function(){
   font-family:"Times New Roman", serif;
   font-style:italic;
   display: block;
-  border-bottom: 1px solid;
 
 }
 #grid span {
   display: inline-block;
-  padding:0.5vw 1vw;
+  padding: 1vw;
   font-size: 55%;
   position: absolute; z-index:2;
   bottom:0; right:0;
@@ -102,23 +101,10 @@ $(function(){
 #grid u {
   display: inline-block;
   padding:0.5vw 1vw;
-  margin:2.5vw 0.5vw 0 0;
+  margin:0 0.25vw;
   border: 1px solid;
   border-radius: 2vw;
   text-decoration:none;
-}
-
-#grid .new::after {
-  content: "New";
-}
-#grid .update::after {
-  content: "Update";
-}
-#grid .upgrade::after {
-  content: "Version Up";
-}
-#grid .tba::after {
-  content: "Under Construction";
 }
 
 #grid a {
@@ -210,7 +196,6 @@ li {list-style: none;}
 <?=h($row[1])?>
 </p>
 <span>
-<u class="<?=h($row[3])?>"></u>
 <u style="display:<?=h($row[4])?>;">Members Only</u>
 </span>
 <a href="<?=h($row[2])?>"></a>
