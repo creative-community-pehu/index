@@ -161,5 +161,24 @@ creative-community.space
       btnToggleclass(index);
     }, false);
 </script>
+
+<script src="/coding/js/randomcolor.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('#grid a').css({'background':getRumRgba()});
+});
+
+$(function() {
+  $('#grid a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+
+$(function(){
+	$("#").load("");
+})
+</script>
 </body>
 </html>
