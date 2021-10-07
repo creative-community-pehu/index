@@ -118,7 +118,7 @@ $(function(){
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
-	jQuery('#grid').css({'background':getRumRgba()});
+	jQuery('##grid a').css({'background':getRumRgba()});
 });
 
 $(function() {
