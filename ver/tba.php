@@ -43,15 +43,15 @@ fclose($fp);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 5% 5% 10%;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
   pointer-events:none;
   user-select:none;
 }
 #tba div {
   position: relative;
-  padding:5%;
-  margin:0 0 -1px -1px;
+  padding:2.5%;
+  margin-bottom:-1px;
   border:solid #000 1px;
   border-collapse: collapse;
   transition:1.5s all;
@@ -59,7 +59,7 @@ fclose($fp);
 }
 #tba p {
   margin: 0;
-  padding: 0 0 5vw;
+  padding: 0;
   font-family: ;
   position: relative; z-index:2;
   pointer-events:none;
@@ -73,15 +73,13 @@ fclose($fp);
 }
 #tba span {
   display: inline-block;
-  padding: 2vw 0.5vw;
+  padding: 0;
   font-size: 55%;
-  position: absolute; z-index:2;
-  bottom:0; right:0;
   pointer-events:none;
   user-select:none;
 }
 #tba u {
-  display: inline-block;
+  display: block;
   padding:0.5vw 1vw;
   margin: 0.25vw;
   border: 1px solid;
