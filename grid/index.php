@@ -104,7 +104,7 @@ $(function(){
 <div>
 <p><?=h($row[1])?></p>
 <span><?=h($row[0])?></span>
-<a href="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer"></a>
+<a href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
