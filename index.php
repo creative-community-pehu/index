@@ -27,6 +27,12 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
+#update div:nth-of-type(16) {
+  grid-column-start: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
 #hsl,
 #p5 {
     width: 100%;
@@ -105,6 +111,7 @@ body {margin:0; padding:0;}
 <p id="index"></div>
 
 <div id="greeting"></div>
+<div id="update"></div>
 <div id="p5"></div>
 <div id="hsl"></div>
 
