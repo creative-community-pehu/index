@@ -149,14 +149,16 @@ input[type="reset"] {
   padding:0.25vw 0.5vw;
   font-size: 2.5vw;
   color: #000;
+  border-bottom:1px solid transparent;
   transition:1.5s all;
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
 #searchBox .label:hover,
 .reset-button:hover {
-  background-color:rgba(255,255,255,1);
   cursor:pointer;
+  background-color:rgba(255,255,255,1);
+  border-bottom:1px solid #000;
   transition:.5s all;
 }
 
