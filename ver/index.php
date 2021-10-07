@@ -155,7 +155,7 @@ li {list-style: none;}
   transform:scale(1, 1.5);
   filter: invert();
 }
-#searchBox a,
+#searchBox .label,
 input[type="reset"] {
   display: inline-block;
   margin:0.25vw 1vw;
@@ -168,7 +168,7 @@ input[type="reset"] {
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
-#searchBox a:hover,
+#searchBox .label:hover,
 .reset-button:hover {
   cursor:pointer;
   text-shadow: 0px 0px 0.1vw #fff, 0.1vw 0.25vw 0 #fff;
@@ -216,7 +216,7 @@ input[type="reset"] {
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label"><a href="#grid">Version Up</a></label></li>
   <li>
-  <a href="#tobe">Under Construction</li>
+  <a href="#tobe" class="label">Under Construction</li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
