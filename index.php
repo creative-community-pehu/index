@@ -18,20 +18,20 @@ body {margin:0; padding:0;}
     position: relative;
     top:0;
     width:80%;
-    margin: 12.5vw 10% 10vw;
+    margin: 12.5vw 10% 5vw;
 }
 #greeting #hello,
-#update {
+#ver {
     filter: invert();
 }
 #greeting #hello #mc_embed_signup,
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#update {
-    padding-top: 5vw;
+#ver {
+    padding-top: 10vw;
 }
-#update #grid div:nth-child(n + 17) {
+#ver #grid div:nth-child(n + 17) {
   display: none;
 }
 
@@ -61,7 +61,7 @@ body {margin:0; padding:0;}
 #you img {width: 7.5vw;}
 
 @media print{
-#index, #greeting, #update {display:none;}
+#index, #greeting, #ver {display:none;}
 #you,
 #submit {display:block;}
 #submit {
@@ -113,7 +113,7 @@ body {margin:0; padding:0;}
 <div id="index"></div>
 
 <div id="greeting"></div>
-<div id="update"></div>
+<div id="ver"></div>
 <div id="p5"></div>
 <div id="hsl"></div>
 
