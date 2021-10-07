@@ -133,7 +133,7 @@ li {list-style: none;}
 
 #searchBox ul {
   position:fixed; z-index:100;
-  bottom:0; left:0;
+  top:0; left:0;
   width:95%;
   margin:1.25% 2.5%;
   display: flex;
