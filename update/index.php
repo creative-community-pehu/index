@@ -192,30 +192,6 @@ $(function() {
 	  $(this).css({'background':''});
   });
 });
-  $('.reset-button').hover(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
-  $('#searchBox .label').hover(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
-  $('#searchBox input[type="checkbox"]').checked + label(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
-  $('#searchBox input[type="radio"]').checked + label(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
 
 $(function(){
 	$("#").load("");
