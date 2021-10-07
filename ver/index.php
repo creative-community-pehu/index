@@ -155,9 +155,6 @@ li {list-style: none;}
   transform:scale(1, 1.5);
   filter: invert();
 }
-#searchBox .right {
-  float:right;
-}
 #searchBox .label,
 input[type="reset"] {
   display: inline-block;
@@ -217,7 +214,7 @@ input[type="reset"] {
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
-  <li class="right">
+  <li>
   <a href="#tobe" class="label">Under Construction</a></li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
