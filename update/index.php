@@ -88,14 +88,25 @@ $(function(){
   font-size: 75%;
   display: inline-block;
   padding:0.5vw 1vw;
-  margin-top:2vw;
+  margin:1vw 1vw 0 0;
   border: 1px solid;
   border-radius: 2vw;
-  font-size: 75%;
+  font-size: 55%;
   position: relative; z-index:2;
   pointer-events:none;
   user-select:none;
 }
+
+#grid .new::after {
+  content: "New";
+}
+#grid .update::after {
+  content: "Version Up";
+}
+#grid .tba::after {
+  content: "Under Construction";
+}
+
 #grid a {
   display: block;
   position: absolute; z-index:1;
