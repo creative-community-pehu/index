@@ -168,7 +168,7 @@ input[type="reset"] {
   transition:1.5s all;
 }
 #searchBox .tobe {
-  margin-left: 2vw;
+  margin-left: 12.5vw;
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
