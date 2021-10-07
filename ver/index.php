@@ -167,6 +167,9 @@ input[type="reset"] {
   border-bottom:1px solid transparent;
   transition:1.5s all;
 }
+#searchBox .tobe {
+  margin-left: 2vw;
+}
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
 #searchBox .label:hover,
@@ -218,9 +221,7 @@ input[type="reset"] {
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
   <li>
-  <b class="label">|</b></li>
-  <li>
-  <a href="#tobe" class="label">Under Construction</a></li>
+  <a href="#tobe" class="label tobe">Under Construction</a></li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
