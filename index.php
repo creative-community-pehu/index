@@ -30,7 +30,7 @@ body {margin:0; padding:0;}
 #update {
     filter: invert();
 }
-#update .reset,
+#update #searchBox,
 #update #grid div:nth-child(n + 17) {
   display: none;
 }
@@ -110,7 +110,7 @@ body {margin:0; padding:0;}
 </style>
 </head>
 <body>
-<p id="index"></div>
+<div id="index"></div>
 
 <div id="greeting"></div>
 <div id="update"></div>
