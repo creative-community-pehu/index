@@ -96,14 +96,14 @@ fclose($fp);
 }
 #submit h1 {
     top:0; left:0;
-    padding:12.5% 7.5%;
+    padding:5rem 7.5%;
     line-height:150%;
     font-size:1.5rem;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
-    padding:7.5% 7.5% 0;
+    padding:2.5rem 7.5% 0;
     line-height:150%;
     font-size:1.25rem;
     font-family: "ipag", monospace;
