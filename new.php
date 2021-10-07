@@ -135,17 +135,5 @@ $(function(){
     $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
-<script>
-    let btn = document.querySelector('#top_btn');
-    let index = document.querySelector('#top_menu');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
-</script>
 </body>
 </html>
