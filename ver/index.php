@@ -37,6 +37,7 @@ fclose($fp);
 #hsl {
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     position: fixed;
     top:0;
     z-index: -2;
