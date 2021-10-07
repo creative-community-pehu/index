@@ -8,7 +8,7 @@ $type = (string)filter_input(INPUT_POST, 'type'); // $_POST['type']
 $info = (string)filter_input(INPUT_POST, 'info'); // $_POST['info']
 $url = (string)filter_input(INPUT_POST, 'url'); // $_POST['url']
 
-$fp = fopen('todo.csv', 'a+b');
+$fp = fopen('topics.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$type, $info, $url]);
