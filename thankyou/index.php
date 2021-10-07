@@ -27,8 +27,8 @@ fclose($fp);
     <title>Everyones Drawings are Seems So Beautiful</title>
     <style type="text/css">
 .library li{
-  width:90vw;
-  max-width:67vh;
+  width:67vh;
+  max-width:90vw;
   height: 94vh;
   overflow:hidden;
 }
