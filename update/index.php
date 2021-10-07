@@ -172,10 +172,7 @@ li {list-style: none;}
   <ul class="search-box type">
   <li>
   <input type="radio" name="type" value="new" id="new">
-  <label for="new" class="label">New</label></li>
-  <li>
-  <input type="radio" name="type" value="update" id="update">
-  <label for="update" class="label">Update</label></li>
+  <label for="new" class="label">New Contents</label></li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
