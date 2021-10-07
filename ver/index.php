@@ -183,7 +183,7 @@ input[type="reset"] {
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
   <li class="reset">
-  <input type="reset" name="reset" value="🈁" class="reset-button"></li>
+  <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
   </form>
 
@@ -193,7 +193,7 @@ input[type="reset"] {
 <span>
 <u style="display:inline;">View All | 全部見る</u>
 </span>
-<a href="/update/"></a>
+<a href="/ver/"></a>
 </div>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
