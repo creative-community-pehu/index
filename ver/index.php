@@ -34,6 +34,10 @@ fclose($fp);
 #ver {
     padding-top: 2.5vw;
 }
+#tba {
+  filter: invert();
+}
+
 #hsl {
     width: 100%;
     height: 100vh;
