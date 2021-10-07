@@ -173,7 +173,7 @@ input[type="reset"] {
 #searchBox .label:hover,
 .reset-button:hover {
   cursor:pointer;
-  text-shadow: 0px 0px 2px #fff, 2px 2px 3px #fff;
+  text-shadow: 0px 0px 0.25vw #fff, 0.25vw 0.5vw 0 #fff;
   border-bottom:1px solid #000;
   transition:.5s all;
 }
