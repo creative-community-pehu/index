@@ -203,7 +203,7 @@ li {list-style: none;}
 <?php else: ?>
 <?php endif; ?>
 </div>
-<script src="searchBox.js"></script>
+<script src="/update/searchBox.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
 
