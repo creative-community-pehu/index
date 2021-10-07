@@ -63,7 +63,7 @@ fclose($fp);
     display:none;
     z-index: 100;
 }
-#you img {width: 5rem;}
+#you img {width: 2.5rem;}
 
 @media print{
 .mousedragscrollable
@@ -96,14 +96,14 @@ fclose($fp);
 }
 #submit h1 {
     top:0; left:0;
-    padding:25% 5.5rem 12.5%;
+    padding:5rem 7.5% 10rem;
     line-height:150%;
     font-size:2rem;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
-    padding:12.5% 7.5%;
+    padding:2rem 7.5%;
     line-height:150%;
     font-size:1.25rem;
     font-family: "ipag", monospace;
