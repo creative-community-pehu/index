@@ -69,7 +69,7 @@ fclose($fp);
 #tba span {
   display: inline-block;
   padding: 0;
-  font-size: 55%;
+  font-size: 75%;
   pointer-events:none;
   user-select:none;
 }
