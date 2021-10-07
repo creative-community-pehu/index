@@ -89,7 +89,7 @@ $(function(){
 	width: 100%;
 	height: 100%;
     border:solid #000 1px;
-    transition: all 500ms ease;
+    transition: all 1250ms ease;
 }
 #grid a:hover {
     border:solid #fff 1px;
