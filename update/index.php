@@ -169,8 +169,6 @@ input[type="reset"] {
   <label class="update" for="type"></label>
   <input type="checkbox" id="type" />
   <ul class="search-box type">
-  <li class="reset">
-  <input type="reset" name="reset" value="🈁" class="reset-button"></li>
   <li>
   <input type="radio" name="type" value="new" id="new">
   <label for="new" class="label">New Contents</label></li>
@@ -180,6 +178,8 @@ input[type="reset"] {
   <li>
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
+  <li class="reset">
+  <input type="reset" name="reset" value="🈁" class="reset-button"></li>
   </ul>
   </form>
 
