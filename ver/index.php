@@ -118,8 +118,7 @@ fclose($fp);
   text-decoration:none;
 }
 
-#grid a
-#searchBox a {
+#grid a {
   display: block;
   position: absolute; z-index:1;
   top: 0;
@@ -155,9 +154,6 @@ li {list-style: none;}
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
   filter: invert();
-}
-#searchBox li {
-  position:rerative; z-index:100;
 }
 #searchBox .label,
 input[type="reset"] {
@@ -214,9 +210,7 @@ input[type="reset"] {
   <ul class="search-box type">
   <li>
   <input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label">New Contents</label>
-  <a href="#grid" class=""></a>
-  </li>
+  <label for="news" class="label">New Contents</label></li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
