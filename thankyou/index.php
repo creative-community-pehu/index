@@ -40,6 +40,10 @@ fclose($fp);
     z-index: -2;
 }
 
+.library {
+  position:relative;
+    z-index:1;
+}
 .library li:first-child {
   width:75vw;
   max-width:75vw;
