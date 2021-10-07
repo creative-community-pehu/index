@@ -197,8 +197,7 @@ li {list-style: none;}
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
-<p><u><?=h($row[0])?></u>
-<?=h($row[1])?></p>
+<p><u><?=h($row[0])?></u><?=h($row[1])?></p>
 <span class="<?=h($row[3])?>"></span>
 <span style="display:<?=h($row[4])?>;">Members Only</span>
 <a href="<?=h($row[2])?>"></a>
