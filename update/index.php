@@ -39,6 +39,53 @@ $(function(){
 input,
 input[type="radio"]
 {display:none;}
+#searchBox ul {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#searchBox .label {
+  display: inline-block;
+  background-color:#fff;
+  margin:0.25rem 0.5rem;
+  padding:0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  border:1px solid #000;
+  border-radius:0.5rem;
+  transition:1.5s all;
+}
+#searchBox .label:hover {
+  cursor:pointer;
+  color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
+#searchBox input[type="checkbox"]:checked + label,
+#searchBox input[type="radio"]:checked + label {
+  color: #fff;
+  background-color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
+.reset-button {
+  display: inline-block;
+  background-color:#fff;
+  margin:0.25rem 0.5rem;
+  padding:0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  border:1px solid #000;
+  border-radius:0.5rem;
+  transition:1.5s all;
+	font-family: 'Source Serif Pro', serif;
+}
+.reset-button:hover {
+  color: #fff;
+  background-color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
 
 #grid {
   display: grid;
