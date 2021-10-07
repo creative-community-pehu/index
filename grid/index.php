@@ -72,6 +72,7 @@ $(function(){
 }
 #grid u {
   font-family:"Times New Roman", serif;
+  font-style:italic;
   display: block;
 }
 #grid span {
@@ -85,14 +86,14 @@ $(function(){
   font-family: ;
 }
 #grid a {
-    display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    border:solid #000 1px;
-    transition: all 1250ms ease;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border:solid #000 1px;
+  transition: all 1250ms ease;
 }
 #grid a:hover {
     transition: all 1000ms ease;
@@ -114,5 +115,23 @@ $(function(){
 <?php else: ?>
 <?php endif; ?>
 </div>
+<script src="/coding/js/randomcolor.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('#grid').css({'background':getRumRgba()});
+});
+
+$(function() {
+  $('#grid a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+
+$(function(){
+	$("#").load("");
+})
+</script>
 </body>
 </html>
