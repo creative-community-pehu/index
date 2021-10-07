@@ -49,17 +49,17 @@ $(function(){
   grid-row-end: 3;
 }
 
-#grid div:first-child:nth-of-type(2) {
+#grid div:nth-of-type(2) {
   grid-column-start: 1;
   grid-row-start: 3;
   grid-row-end: 5;
 }
-#grid div:first-child:nth-of-type(9) {
+#grid div:nth-of-type(9) {
   grid-column-start: 2;
   grid-row-start: 5;
   grid-row-end: 7;
 }
-#grid div:first-child:nth-of-type(16) {
+#grid div:nth-of-type(16) {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
@@ -68,6 +68,7 @@ $(function(){
   font-size: 75%;
   font-family: ;
 }
+#grid div {position: relative;}
 #grid a {
     display: block;
 	position: absolute;
