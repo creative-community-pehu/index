@@ -38,8 +38,10 @@ fclose($fp);
   overflow:hidden;
 }
 
+#submit {
+  white-space: normal;
+}
 #submit h1 {
-    top:0; left:0;
     padding:25% 7.5% 12.5%;
     line-height:150%;
     font-size:4.5vw;
