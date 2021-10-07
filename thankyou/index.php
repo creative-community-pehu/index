@@ -29,7 +29,7 @@ fclose($fp);
     </style>
     
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/members/sign/all/index.css" />
+    <link rel="stylesheet" href="index.css" />
   
   </head>
   <body>
