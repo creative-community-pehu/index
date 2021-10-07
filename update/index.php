@@ -162,8 +162,6 @@ li {list-style: none;}
 </head>
 <body>
 
-
-<div id="grid">
   <form id="searchBox">
   <label class="freetime" for="type"></label>
   <input type="checkbox" id="type" />
@@ -177,6 +175,7 @@ li {list-style: none;}
   </div>
   </form>
 
+<div id="grid">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
