@@ -113,7 +113,7 @@ fclose($fp);
   margin: 0.25vw;
   border: 1px solid;
   border-radius: 2vw;
-  box-shadow:1vw 1vw 1vw #fff;
+  box-shadow:1vw 0.5vw 0 #000;
   text-decoration:none;
 }
 
