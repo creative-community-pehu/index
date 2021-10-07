@@ -101,6 +101,9 @@ $(function(){
   content: "New";
 }
 #grid .update::after {
+  content: "Update";
+}
+#grid .upgrade::after {
   content: "Version Up";
 }
 #grid .tba::after {
@@ -170,7 +173,10 @@ li {list-style: none;}
   <label for="new" class="label">New</label></li>
   <li>
   <input type="radio" name="type" value="update" id="update">
-  <label for="update" class="label">Version Up</label></li>
+  <label for="update" class="label">Update</label></li>
+  <li>
+  <input type="radio" name="type" value="upgrade" id="upgrade">
+  <label for="upgrade" class="label">Version Up</label></li>
   <li>
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
