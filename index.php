@@ -141,17 +141,6 @@ creative-community.space
     $("#p5").load("/coding/js/p5/sketch.html");
     $("#hsl").load("coding/js/hsl/");
     })
-
-    let btn = document.querySelector('#btn');
-    let index = document.querySelector('#menu');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
 </script>
 
 <script src="/coding/js/randomcolor.js"></script>
