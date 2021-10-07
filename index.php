@@ -83,14 +83,14 @@ body {margin:0; padding:0;}
 }
 #submit h1 {
     top:0; left:0;
-    padding:25% 7.5% 12.5%;
+    padding:12.5% 7.5%;
     line-height:150%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
-    padding:12.5% 7.5%;
+    padding:10% 7.5% 5%;
     line-height:150%;
     font-size:2.5vw;
     font-family: "ipag", monospace;
