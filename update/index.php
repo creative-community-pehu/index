@@ -123,42 +123,39 @@ li {list-style: none;}
 #searchBox .label {
   display: inline-block;
   background-color:#fff;
-  margin:0.2vw 0.5vw;
+  margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
   font-size: 1.5vw;
   color: #000;
   border:1px solid #000;
-  border-radius:2vw;
+  border-radius:0.25vw;
   transition:1.5s all;
 }
 #searchBox .label:hover {
   cursor:pointer;
-  color:red;
-  border:1px solid red;
+  filter: invert();
   transition:.5s all;
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label {
   color: #fff;
-  background-color:red;
-  border:1px solid red;
+  filter: invert();
   transition:.5s all;
 }
 .reset-button {
   display: inline-block;
   background-color:#fff;
-  margin:0.2vw 0.5vw;
+  margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
   font-size: 1.5vw;
   color: #000;
   border:1px solid #000;
-  border-radius:2vw;
+  border-radius:0.25vw;
   transition:1.5s all;
 }
 .reset-button:hover {
   color: #fff;
-  background-color:red;
-  border:1px solid red;
+  filter: invert();
   transition:.5s all;
 }
 
