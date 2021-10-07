@@ -30,14 +30,6 @@ body {margin:0; padding:0;}
   display: none;
 }
 
-#p5 {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0;
-    z-index: -1;
-}
-
 #you,
 #submit {
     position: absolute;
@@ -108,7 +100,6 @@ body {margin:0; padding:0;}
 <div id="index"></div>
 <div id="greeting"></div>
 <div id="ver"></div>
-<div id="p5"></div>
 
 <div id="you">
 <h1><span>Drawing by</span>
@@ -138,7 +129,6 @@ $(function(){
     $("#index").load("/menu.html");
     $("#greeting").load("/hello.html");
     $("#ver").load("/ver/");
-    $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
 </body>
