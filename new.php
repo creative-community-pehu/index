@@ -9,11 +9,6 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
-#index {
-    position: fixed;
-    z-index: 100;
-    top:0;
-}
 #greeting {
     width:80%;
     margin: 12.5vw 10% 10vw;
@@ -105,7 +100,6 @@ body {margin:0; padding:0;}
 </head>
 <body>
 <div id="index"></div>
-
 <div id="greeting"></div>
 <div id="ver"></div>
 <div id="p5"></div>
@@ -136,8 +130,8 @@ creative-community.space
 <script type="text/javascript">
 
 $(function(){
-    $("#index").load("menu.html");
-    $("#greeting").load("hello.html");
+    $("#index").load("/menu.html");
+    $("#greeting").load("/hello.html");
     $("#ver").load("/ver/");
     $("#p5").load("/coding/js/p5/sketch.html");
 })
