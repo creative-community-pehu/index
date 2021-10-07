@@ -37,6 +37,14 @@ fclose($fp);
 #ver #searchBox {
     display: none;
 }
+#hsl {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -2;
+    background-color: rgb(0, 0, 0);
+}
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -51,6 +59,7 @@ fclose($fp);
   border:solid #000 1px;
   border-collapse: collapse;
   transition:1.5s all;
+  filter: invert();
 }
 #grid div:first-child {
   grid-column-start: 1;
@@ -147,6 +156,7 @@ li {list-style: none;}
   flex-wrap: wrap;
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
+  filter: invert();
 }
 #searchBox .label,
 input[type="reset"] {
@@ -214,6 +224,9 @@ input[type="reset"] {
 <?php else: ?>
 <?php endif; ?>
 </div>
+
+<div id="hsl"></div>
+
 <script src="/update/searchBox.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
@@ -227,7 +240,7 @@ $(function() {
 });
 
 $(function(){
-	$("#").load("");
+    $("#hsl").load("/coding/js/hsl/");
 })
 </script>
 </body>
