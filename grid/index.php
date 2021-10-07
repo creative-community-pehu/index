@@ -42,10 +42,11 @@ $(function(){
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #grid div {position: relative; padding:5%;}
-#grid div:first-child,
-#grid div:last-child {
+#grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
   padding:2.5%;
 }
 
@@ -59,7 +60,7 @@ $(function(){
   grid-row-start: 5;
   grid-row-end: 7;
 }
-#grid div:nth-of-type(16) {
+#grid div:last-child {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
@@ -85,6 +86,7 @@ $(function(){
   border: 1px solid;
   border-radius: 2vw;
   font-size: 75%;
+  font-family: "ipag", monospace;
   position: relative; z-index:2;
   pointer-events:none;
   user-select:none;
@@ -97,6 +99,8 @@ $(function(){
   width: 100%;
   height: 100%;
   border:solid #000 1px;
+}
+#grid a:hover {
 }
 
 </style>
@@ -114,12 +118,6 @@ $(function(){
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
-<div>
-<p><u>9.27.2021</u>
-We are Open creative-community.space</p>
-<span>topics</span>
-<a href="https://creative-community.space/"</a>
-</div>
 </div>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
