@@ -47,16 +47,17 @@ li {list-style: none;}
   position:relative;
   display: flex;
   flex-wrap: wrap;
+  font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #searchBox .label {
   display: inline-block;
   background-color:#fff;
-  margin:0.25rem 0.5rem;
-  padding:0.25rem 0.5rem;
-  font-size: 1rem;
+  margin:0.2vw 0.5vw;
+  padding:0.25vw 0.5vw;
+  font-size: 1.5vw;
   color: #000;
   border:1px solid #000;
-  border-radius:0.5rem;
+  border-radius:2vw;
   transition:1.5s all;
 }
 #searchBox .label:hover {
@@ -75,14 +76,13 @@ li {list-style: none;}
 .reset-button {
   display: inline-block;
   background-color:#fff;
-  margin:0.25rem 0.5rem;
-  padding:0.25rem 0.5rem;
-  font-size: 1rem;
+  margin:0.2vw 0.5vw;
+  padding:0.25vw 0.5vw;
+  font-size: 1.5vw;
   color: #000;
   border:1px solid #000;
-  border-radius:0.5rem;
+  border-radius:2vw;
   transition:1.5s all;
-	font-family: 'Source Serif Pro', serif;
 }
 .reset-button:hover {
   color: #fff;
