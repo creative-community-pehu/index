@@ -134,8 +134,8 @@ creative-community.space
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    let btn = document.querySelector('#btn');
-    let index = document.querySelector('#menu');
+    let btn = document.querySelector('#top_btn');
+    let index = document.querySelector('#top_menu');
      
     let btnToggleclass = function(el) {
       el.classList.toggle('index');
