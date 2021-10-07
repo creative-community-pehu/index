@@ -40,6 +40,7 @@ $(function(){
   column-gap: 2.5%;
   row-gap: 2.5%;
   font-size: 2vw;
+  padding: 2.5%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #grid div {position: relative; padding:2.5%;}
@@ -73,9 +74,10 @@ $(function(){
 #grid span {
   font-size: 75%;
   display: inline-block;
-  padding: 1rem;
+  padding:0.5vw 1vw;
+  margin-top:2vw;
   border: 1px solid;
-  border-radius: 1rem;
+  border-radius: 2vw;
   font-size: 75%;
   font-family: ;
 }
