@@ -184,7 +184,7 @@ li {list-style: none;}
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
   <li class="reset">
-  <input type="reset" name="reset" value="全部見る" class="reset-button"></li>
+  <input type="reset" name="reset" value="View All" class="reset-button"></li>
   </ul>
   </form>
 
