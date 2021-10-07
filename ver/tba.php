@@ -25,19 +25,11 @@ fclose($fp);
 ?>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
-#p5 {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0;
-    z-index: -1;
-}
 
 #tba {
   display: grid;
@@ -47,7 +39,6 @@ fclose($fp);
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
   pointer-events:none;
   user-select:none;
-  filter: invert();
 }
 #tba div {
   position: relative;
@@ -96,13 +87,5 @@ fclose($fp);
 <?php else: ?>
 <?php endif; ?>
 </div>
-
-<div id="p5"></div>
-
-<script type="text/javascript">
-$(function(){
-    $("#p5").load("/coding/js/p5/sketch.html");
-})
-</script>
 </body>
 </html>
