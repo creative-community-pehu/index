@@ -39,7 +39,7 @@ $(function(){
   column-gap: 2.5%;
   row-gap: 2.5%;
   font-size: 2vw;
-  padding: 2.5%;
+  margin: 2.5%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #grid div {position: relative; padding:2.5%;}
