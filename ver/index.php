@@ -34,9 +34,6 @@ fclose($fp);
 #ver {
     padding-top: 2.5vw;
 }
-#ver #searchBox {
-    display: none;
-}
 #hsl {
     width: 100%;
     height: 100vh;
@@ -183,25 +180,6 @@ input[type="reset"] {
 </style>
 </head>
 <body>
-
-  <form id="searchBox">
-  <label class="update" for="type"></label>
-  <input type="checkbox" id="type" />
-  <ul class="search-box type">
-  <li>
-  <input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label">New Contents</label></li>
-  <li>
-  <input type="radio" name="type" value="upgrade" id="upgrade">
-  <label for="upgrade" class="label">Version Up</label></li>
-  <li>
-  <input type="radio" name="type" value="tba" id="tba">
-  <label for="tba" class="label">Under Construction</label></li>
-  <li class="reset">
-  <input type="reset" name="reset" value="" class="reset-button"></li>
-  </ul>
-  </form>
-
 <div id="grid">
 <div>
 <p><i>Update | 更新情報</i></p>
@@ -225,6 +203,24 @@ input[type="reset"] {
 <?php else: ?>
 <?php endif; ?>
 </div>
+
+  <form id="searchBox">
+  <label class="update" for="type"></label>
+  <input type="checkbox" id="type" />
+  <ul class="search-box type">
+  <li>
+  <input type="radio" name="type" value="news" id="news">
+  <label for="news" class="label">New Contents</label></li>
+  <li>
+  <input type="radio" name="type" value="upgrade" id="upgrade">
+  <label for="upgrade" class="label">Version Up</label></li>
+  <li>
+  <input type="radio" name="type" value="tba" id="tba">
+  <label for="tba" class="label">Under Construction</label></li>
+  <li class="reset">
+  <input type="reset" name="reset" value="" class="reset-button"></li>
+  </ul>
+  </form>
 
 <div id="hsl"></div>
 
