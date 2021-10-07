@@ -140,8 +140,7 @@ li {list-style: none;}
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#searchBox .label,
-input[type="reset"] {
+#searchBox .label　{
   display: inline-block;
   background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
@@ -154,8 +153,7 @@ input[type="reset"] {
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
-#searchBox .label:hover,
-.reset-button:hover {
+#searchBox .label:hover {
   background-color:rgba(255,255,255,1);
   cursor:pointer;
   transition:.5s all;
@@ -178,8 +176,6 @@ input[type="reset"] {
   <li>
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
-  <li class="reset">
-  <input type="reset" name="reset" value="🈁" class="reset-button"></li>
   </ul>
   </form>
 
