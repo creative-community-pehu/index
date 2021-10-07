@@ -26,7 +26,6 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#ver #tobe,
 #ver #grid div:nth-child(n + 7) {
   display: none;
 }
@@ -48,7 +47,12 @@ body {margin:0; padding:0;}
 #you img {width: 3.5rem;}
 
 @media print{
-.mousedragscrollable
+#index,
+#greeting,
+#ver #grid,
+#ver #tobe,
+#ver #searchBox,
+#ver #searchBox
 {display:none;}
 
 #you,
