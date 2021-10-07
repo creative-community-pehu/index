@@ -42,7 +42,7 @@ fclose($fp);
   white-space: normal;
 }
 #submit h1 {
-    padding:25% 7.5% 12.5%;
+    padding:12.5% 7.5% 25%;
     line-height:150%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
@@ -71,13 +71,11 @@ fclose($fp);
 
 <div id="submit">
 <h1>OMG!<br />
-Your Drawing is Seems So Beautiful<3<br />
-Print it to PDF
-and Send it to us !!<br />
+Everyones Drawings are Seems So Beautiful<3<br />
+Thank You for Send it to us !!<br />
 </h1>
 <p>
-This Email address is for receive-only.<br />
-We will reply from other addresses.<br />
+This is the Collection of drawings by Visiters of this website.<br />
 Thank You,<br />
 <br />
 creative-community.space
