@@ -57,7 +57,7 @@ fclose($fp);
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
 #grid div {
-  position: relative; z-index:0;
+  position: relative; z-index:-1;
   padding:5%;
   margin:0 0 -1px -1px;
   border:solid #000 1px;
