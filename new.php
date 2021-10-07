@@ -4,7 +4,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Index | creative-community.space</title>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
@@ -132,29 +131,9 @@ creative-community.space
 </p>
 </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-    let btn = document.querySelector('#top_btn');
-    let index = document.querySelector('#top_menu');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
-</script>
-
-<script src="/coding/js/randomcolor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(function() {
-  $('#grid a').hover(function() {
-	  $(this).css({'background':getRumRgba()});
-  }, function() {
-	  $(this).css({'background':''});
-  });
-});
 
 $(function(){
     $("#index").load("menu.html");
