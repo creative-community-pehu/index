@@ -62,7 +62,7 @@ body {margin:0; padding:0;}
 #you img {width: 7.5vw;}
 
 @media print{
-#greeting, #index {display:none;}
+#index, #greeting, #update {display:none;}
 #you,
 #submit {display:block;}
 #submit {
