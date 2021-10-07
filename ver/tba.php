@@ -31,6 +31,14 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
+#p5 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
+
 #tba {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -100,9 +108,11 @@ fclose($fp);
 <?php endif; ?>
 </div>
 
+<div id="p5"></div>
+
 <script type="text/javascript">
 $(function(){
-    $("#").load("");
+    $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
 </body>
