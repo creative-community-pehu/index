@@ -42,14 +42,14 @@ fclose($fp);
   white-space: normal;
 }
 #submit h1 {
-    padding:12.5% 7.5% 25%;
+    padding:25% 5%;
     line-height:150%;
     font-size:4.5vw;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
-    padding:12.5% 7.5%;
+    padding:12.5% 5%;
     line-height:150%;
     font-size:2.5vw;
     font-family: "ipag", monospace;
