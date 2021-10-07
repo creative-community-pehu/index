@@ -69,6 +69,9 @@ $(function(){
 #grid p {
   margin: 0;
   font-family: ;
+  position: relative; z-index:2;
+  pointer-events:none;
+  user-select:none;
 }
 #grid u {
   font-family:"Times New Roman", serif;
@@ -84,10 +87,13 @@ $(function(){
   border-radius: 2vw;
   font-size: 75%;
   font-family: ;
+  position: relative; z-index:2;
+  pointer-events:none;
+  user-select:none;
 }
 #grid a {
   display: block;
-  position: absolute;
+  position: absolute; z-index:1;
   top: 0;
   left: 0;
   width: 100%;
