@@ -147,10 +147,8 @@ input[type="reset"] {
   background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
-  font-size: 1.75vw;
+  font-size: 2.5vw;
   color: #000;
-  border:1px solid #000;
-  border-radius:0.25vw;
   transition:1.5s all;
 }
 #searchBox input[type="checkbox"]:checked + label,
