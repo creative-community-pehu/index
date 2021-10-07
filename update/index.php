@@ -135,7 +135,7 @@ li {list-style: none;}
   position:fixed; z-index:100;
   top:0; left:0;
   width:95%;
-  margin:1.25% 2.5%;
+  margin: 2.5%;
   display: flex;
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
