@@ -60,7 +60,7 @@ $(function(){
   grid-row-start: 5;
   grid-row-end: 7;
 }
-#grid div:last-child {
+#grid div:nth-of-type(16) {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
