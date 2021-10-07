@@ -11,7 +11,7 @@ body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
 #index {
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     top:0;
 }
 #greeting {
