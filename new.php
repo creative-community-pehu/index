@@ -134,12 +134,6 @@ creative-community.space
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    $(function(){
-    $("#index").load("menu.html");
-    $("#greeting").load("hello.html");
-    $("#p5").load("/coding/js/p5/sketch.html");
-    })
-
     let btn = document.querySelector('#btn');
     let index = document.querySelector('#menu');
      
@@ -163,7 +157,10 @@ $(function() {
 });
 
 $(function(){
-	$("#").load("");
+    $("#index").load("menu.html");
+    $("#greeting").load("hello.html");
+    $("#ver").load("/ver/");
+    $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
 </body>
