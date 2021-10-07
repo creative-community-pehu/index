@@ -106,7 +106,7 @@ $(function(){
 <div id="grid">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div>
+<div class="list_item list_toggle" data-type="<?=h($row[3])?>">
 <p><u><?=h($row[0])?></u>
 <?=h($row[1])?></p>
 <span><?=h($row[3])?></span>
@@ -116,6 +116,7 @@ $(function(){
 <?php else: ?>
 <?php endif; ?>
 </div>
+<script src="searchBox.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function() {
