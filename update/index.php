@@ -39,6 +39,10 @@ $(function(){
 input,
 input[type="radio"]
 {display:none;}
+
+ul {padding:0; margin:0;}
+li {list-style: none;}
+
 #searchBox ul {
   position:relative;
   display: flex;
