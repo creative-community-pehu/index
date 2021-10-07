@@ -127,12 +127,15 @@ creative-community.space
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#index").load("/menu.html");
+    $("#greeting").load("/hello.html");
+    $("#ver").load("/ver/");
+    $("#p5").load("/coding/js/p5/sketch.html");
+})
+</script>
 <script>
-    $(function(){
-    $("#pehu_menu").load("/pehu/menu.html");
-    $("#members_menu").load("/members_menu.html");
-    })
-
     let btn = document.querySelector('#top_btn');
     let index = document.querySelector('#top_menu');
      
@@ -143,14 +146,6 @@ creative-community.space
     btn.addEventListener('click', function() {
       btnToggleclass(index);
     }, false);
-</script>
-<script type="text/javascript">
-$(function(){
-    $("#index").load("/menu.html");
-    $("#greeting").load("/hello.html");
-    $("#ver").load("/ver/");
-    $("#p5").load("/coding/js/p5/sketch.html");
-})
 </script>
 </body>
 </html>
