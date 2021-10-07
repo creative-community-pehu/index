@@ -63,7 +63,7 @@ fclose($fp);
     display:none;
     z-index: 100;
 }
-#you img {width: 7.5vw;}
+#you img {width: 5rem;}
 
 @media print{
 .mousedragscrollable
@@ -81,7 +81,7 @@ fclose($fp);
     bottom:0; left:0;
     width:95%;
     padding:0 2.5%;
-    font-size:4.5vw;
+    font-size:2.5rem;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -96,16 +96,16 @@ fclose($fp);
 }
 #submit h1 {
     top:0; left:0;
-    padding:25% 7.5% 12.5%;
+    padding:25% 5.5rem 12.5%;
     line-height:150%;
-    font-size:4.5vw;
+    font-size:2.5rem;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
     padding:12.5% 7.5%;
     line-height:150%;
-    font-size:2.5vw;
+    font-size:1.25rem;
     font-family: "ipag", monospace;
 }
 #you h1 b,
