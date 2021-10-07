@@ -18,7 +18,7 @@ body {margin:0; padding:0;}
     position: relative;
     top:0;
     width:80%;
-    margin: 12.5vw 10% 5vw;
+    margin: 12.5vw 10% 10vw;
 }
 #greeting #hello {
     filter: invert();
@@ -31,11 +31,10 @@ body {margin:0; padding:0;}
     position: relative;
     top:0;
     z-index:10;
+    filter: invert();
 }
-#update #grid div:nth-of-type(16) {
-  grid-column-start: 3;
-  grid-row-start: 7;
-  grid-row-end: 9;
+#update #grid div:nth-child(-n + 17) {
+  display: none;
 }
 
 #hsl,
