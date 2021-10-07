@@ -15,10 +15,9 @@ body {margin:0; padding:0;}
     top:0;
 }
 #greeting {
-    position: relative;
     top:0;
     width:80%;
-    margin: 12.5vw 10% 0;
+    margin: 12.5vw 10% 10vw;
 }
 #greeting #hello,
 #ver {
