@@ -26,6 +26,14 @@ fclose($fp);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Everyones Drawings are So Beautiful</title>
     <style type="text/css">
+
+#p5 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
 .library li:first-child {
   width:75vw;
   max-width:75vw;
@@ -66,6 +74,7 @@ fclose($fp);
   
   </head>
   <body>
+    <div id="p5"></div>
     <ul class="mousedragscrollable library">
     <li>
 
@@ -91,5 +100,10 @@ creative-community.space
     </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/coding/js/mousedragscrollable/scrollable.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#p5").load("/coding/js/p5/sketch.html");
+})
+</script>
   </body>
 </html>
