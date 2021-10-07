@@ -43,7 +43,7 @@ $(function(){
 #grid div {
   position: relative;
   padding:5%;
-  margin:-1px;
+  margin:0 0 -1px -1px;
   border:solid #000 1px;
   border-collapse: collapse;
 }
