@@ -27,7 +27,12 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#update div:nth-of-type(16) {
+#update {
+    position: relative;
+    top:0;
+    z-index:10;
+}
+#update #grid div:nth-of-type(16) {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
