@@ -37,7 +37,7 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 5% 10%;
+  margin: 10% 5% 5%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
@@ -133,7 +133,7 @@ li {list-style: none;}
 
 #searchBox ul {
   position:fixed; z-index:100;
-  bottom:0; left:0;
+  top:0; left:0;
   width:95%;
   padding:1.25% 2.5%;
   margin:0;
