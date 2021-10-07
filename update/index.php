@@ -32,7 +32,7 @@ fclose($fp);
 $(function(){
 })
 </script>
-<title>Under Construction | creative-community.space</title>
+<title>Update Log | creative-community.space</title>
 <style>
 #grid {
   display: grid;
