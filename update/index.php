@@ -120,7 +120,9 @@ $(function(){
 }
 
 .is-hide,
-.nothing,
+.nothing
+{opacity:0;}
+
 .none,
 input,
 input[type="radio"]
