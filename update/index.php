@@ -96,7 +96,6 @@ $(function(){
   bottom:0; right:0;
   pointer-events:none;
   user-select:none;
-  line-height:150%;
 }
 #grid u {
   display: inline-block;
