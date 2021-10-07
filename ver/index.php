@@ -26,12 +26,9 @@ fclose($fp);
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width">
-<script type="text/javascript">
-$(function(){
-})
-</script>
 <title>Update | creative-community.space</title>
 <style>
 #ver {
@@ -148,7 +145,7 @@ li {list-style: none;}
   margin: 2.5%;
   display: flex;
   flex-wrap: wrap;
-  font-family:"Times New Roman", serif;
+  font-family: "ipag", monospace;
   transform:scale(1, 1.25);
 }
 #searchBox .label,
