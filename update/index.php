@@ -106,6 +106,9 @@ $(function(){
   text-decoration:none;
 }
 
+#grid .tba a {
+  display: none;
+}
 #grid a {
   display: block;
   position: absolute; z-index:1;
@@ -194,7 +197,7 @@ input[type="reset"] {
 </div>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div class="list_item list_toggle" data-type="<?=h($row[3])?>">
+<div class="list_item list_toggle <?=h($row[3])?>" data-type="<?=h($row[3])?>">
 <p><i><?=h($row[0])?></i>
 <?=h($row[1])?>
 </p>
