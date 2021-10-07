@@ -32,6 +32,7 @@ body {margin:0; padding:0;}
     top:0;
     filter: invert();
 }
+#update .reset,
 #update #grid div:nth-child(n + 17) {
   display: none;
 }
