@@ -37,7 +37,7 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 5% 10%;
+  margin: 5% 5% 7.5%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
@@ -139,7 +139,7 @@ li {list-style: none;}
   position:fixed; z-index:100;
   bottom:0; left:0;
   width:95%;
-  margin: 2.5%;
+  margin: 1.25% 2.5%;
   display: flex;
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
@@ -150,7 +150,7 @@ input[type="reset"] {
   background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: #000;
   border-bottom:1px solid transparent;
   transition:1.5s all;
