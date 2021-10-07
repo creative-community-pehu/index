@@ -31,6 +31,7 @@ body {margin:0; padding:0;}
 #update {
     padding-top: 5vw;
 }
+#update .reset,
 #update #grid div:nth-child(n + 17) {
   display: none;
 }
