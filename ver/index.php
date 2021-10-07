@@ -209,8 +209,8 @@ input[type="reset"] {
   <input type="checkbox" id="type" />
   <ul class="search-box type">
   <li>
-  <input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label"><a href="#grid" class="">Under Construction</a></label></li>
+  <a href="#grid" class=""><input type="radio" name="type" value="news" id="news">
+  <label for="news" class="label">Under Construction</label></a></li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
