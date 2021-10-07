@@ -59,17 +59,12 @@ fclose($fp);
 }
 #tba p {
   margin: 0;
-  padding: 0;
+  padding: 0 0 2vw;
   font-family: ;
   position: relative; z-index:2;
   pointer-events:none;
   user-select:none;
   white-space: pre-line;
-}
-#grid i {
-  font-family:"Times New Roman", serif;
-  font-style:italic;
-  display: block;
 }
 #tba span {
   display: inline-block;
@@ -80,11 +75,8 @@ fclose($fp);
 }
 #tba u {
   display: block;
-  padding:0.5vw 1vw;
-  margin: 0.25vw;
-  border: 1px solid;
-  border-radius: 2vw;
-  box-shadow:0.25vw 0.5vw 0 #000;
+  font-family:"Times New Roman", serif;
+  font-style:italic;
   text-decoration:none;
 }
 </style>
@@ -94,9 +86,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div <?=h($row[3])?>">
-<p><i><?=h($row[0])?></i>
-<?=h($row[1])?>
-</p>
+<p><?=h($row[1])?></p>
 <span>
 <u>Members Only</u>
 </span>
