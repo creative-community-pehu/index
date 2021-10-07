@@ -133,13 +133,9 @@ li {list-style: none;}
 }
 #searchBox .label:hover {
   cursor:pointer;
-  filter: invert();
-  transition:.5s all;
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label {
-  color: #fff;
-  filter: invert();
   transition:.5s all;
 }
 .reset-button {
@@ -151,12 +147,6 @@ li {list-style: none;}
   color: #000;
   border:1px solid #000;
   border-radius:0.25vw;
-  transition:1.5s all;
-}
-.reset-button:hover {
-  color: #fff;
-  filter: invert();
-  transition:.5s all;
 }
 
 </style>
@@ -194,8 +184,33 @@ li {list-style: none;}
 <script src="searchBox.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
+
 $(function() {
   $('#grid a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+  $('.reset-button').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+  $('#searchBox .label').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+  $('#searchBox input[type="checkbox"]').checked + label(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+  $('#searchBox input[type="radio"]').checked + label(function() {
 	  $(this).css({'background':getRumRgba()});
   }, function() {
 	  $(this).css({'background':''});
