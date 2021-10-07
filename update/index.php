@@ -179,13 +179,13 @@ input[type="reset"] {
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
   <li class="reset">
-  <input type="reset" name="reset" value="View All" class="reset-button"></li>
+  <input type="reset" name="reset" value="　" class="reset-button"></li>
   </ul>
   </form>
 
 <div id="grid">
 <div>
-<p><i>Update | 更新情報一覧</i></p>
+<p><i>Update | 更新情報</i></p>
 <span>
 <u style="display:inline;">View All | 全部見る</u>
 </span>
