@@ -224,7 +224,7 @@ input[type="reset"] {
 
 <div id="hsl"></div>
 
-<script src="/update/searchBox.js"></script>
+<script src="/ver/searchBox.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
 
