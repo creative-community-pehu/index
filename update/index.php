@@ -97,7 +97,7 @@ $(function(){
   width: 100%;
   height: 100%;
   border:solid #000 1px;
-  margin: 0 -2px -2px 0;    
+  margin: -1px -2px;    
 }
 
 .is-hide,
