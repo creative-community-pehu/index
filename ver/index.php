@@ -34,6 +34,12 @@ $(function(){
 </script>
 <title>Update | creative-community.space</title>
 <style>
+#ver {
+    padding-top: 5vw;
+}
+#ver #searchBox {
+    display: none;
+}
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
