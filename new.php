@@ -34,7 +34,7 @@ body {margin:0; padding:0;}
     height: 100vh;
     position: fixed;
     top:0; left:0;
-    z-index: 0;
+    z-index: -1;
 }
 #you,
 #submit {
