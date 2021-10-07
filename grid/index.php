@@ -70,6 +70,10 @@ $(function(){
   margin: 0;
   font-family: ;
 }
+#grid u {
+  font-family:"Times New Roman", serif;
+  display: block;
+}
 #grid span {
   font-size: 75%;
   display: inline-block;
@@ -101,8 +105,9 @@ $(function(){
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
-<p><?=h($row[1])?></p>
-<span><?=h($row[0])?></span>
+<p><u><?=h($row[0])?></u>
+<?=h($row[1])?></p>
+<span><?=h($row[3])?></span>
 <a href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
