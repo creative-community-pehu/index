@@ -32,7 +32,7 @@ fclose($fp);
 <title>Update | creative-community.space</title>
 <style>
 #ver {
-    margin: 2.5vw 0 5vw;
+    margin: 5vw 0;
 }
 #tba {
   filter: invert();
