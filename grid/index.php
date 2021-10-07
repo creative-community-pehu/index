@@ -42,8 +42,7 @@ $(function(){
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #grid div {position: relative; padding:5%;}
-#grid div:first-child,
-#grid div:last-child {
+#grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
   padding:2.5%;
@@ -117,14 +116,6 @@ $(function(){
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
-
-<div>
-<p><u>9.27.2021</u>
-We are Open creative-community.space</p>
-<span>topics</span>
-<a href="https://creative-community.space/"</a>
-</div>
-
 </div>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
