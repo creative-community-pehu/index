@@ -202,6 +202,7 @@ input[type="reset"] {
 <?php else: ?>
 <?php endif; ?>
 </div>
+
 <div id="tobe"></div>
 
   <form id="searchBox">
@@ -210,12 +211,12 @@ input[type="reset"] {
   <ul class="search-box type">
   <li>
   <input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label">New Contents</label></li>
+  <label for="news"><a href="#grid" class="label">New Contents</a></label></li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
-  <label for="upgrade" class="label">Version Up</label></li>
+  <label for="upgrade"><a href="#grid" class="label">Version Up</a></label></li>
   <li>
-  <a href="#tobe" class="label">Under Construction</a></li>
+  <a href="#tobe" class="label">Under Construction</li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
