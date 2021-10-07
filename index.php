@@ -29,7 +29,7 @@ body {margin:0; padding:0;}
     filter: invert(1);
 }
 #update {
-    padding-top: 5vw;
+    padding-top: 2.5vw;
 }
 #update #searchBox,
 #update #grid div:nth-child(n + 17) {
@@ -144,7 +144,6 @@ creative-community.space
     $(function(){
     $("#index").load("menu.html");
     $("#greeting").load("hello.html");
-    $("#update").load("/update/");
     $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
     })
