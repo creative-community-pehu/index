@@ -123,6 +123,7 @@ fclose($fp);
   
   </head>
   <body>
+    <div id="p5"></div>
     <div id="hsl"></div>
 
 <div id="you">
@@ -160,7 +161,7 @@ creative-community.space
 <script type="text/javascript">
 $(function(){
     $("#p5").load("/coding/js/p5/sketch.html");
-    $("#hsl").load("coding/js/hsl/");
+    $("#hsl").load("/coding/js/hsl/");
 })
 </script>
   </body>
