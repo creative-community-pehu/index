@@ -42,6 +42,7 @@ $(function(){
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
+#grid div {position: relative; padding:2.5%;}
 #grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -64,11 +65,20 @@ $(function(){
   grid-row-start: 7;
   grid-row-end: 9;
 }
+
+#grid p {
+  margin: 0;
+  font-family: ;
+}
 #grid span {
+  font-size: 75%;
+  display: inline-block;
+  padding: 1.25%;
+  border: 1px solid;
+  border-radius: 2.5px;
   font-size: 75%;
   font-family: ;
 }
-#grid div {position: relative; padding:2.5%;}
 #grid a {
     display: block;
 	position: absolute;
