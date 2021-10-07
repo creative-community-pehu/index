@@ -101,7 +101,7 @@ $(function(){
 #grid u {
   display: inline-block;
   padding:0.5vw 1vw;
-  margin:0 0.25vw;
+  margin: 0.25vw;
   border: 1px solid;
   border-radius: 2vw;
   text-decoration:none;
