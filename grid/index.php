@@ -36,7 +36,6 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(10vh, auto);
   column-gap: 2.5%;
   row-gap: 2.5%;
   font-size: 2vw;
@@ -61,7 +60,7 @@ $(function(){
   grid-row-start: 5;
   grid-row-end: 7;
 }
-#grid div:nth-of-type(16) {
+#grid div:last-child {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
