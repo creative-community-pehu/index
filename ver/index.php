@@ -47,7 +47,8 @@ fclose($fp);
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 5% 10%;
+  padding: 2.5%;
+  margin: 2.5%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
