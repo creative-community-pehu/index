@@ -118,9 +118,6 @@ fclose($fp);
   text-decoration:none;
 }
 
-#grid .tba a {
-  display: none;
-}
 #grid a {
   display: block;
   position: absolute; z-index:1;
@@ -204,6 +201,7 @@ input[type="reset"] {
 <?php else: ?>
 <?php endif; ?>
 </div>
+<div id="tobe"></div>
 
   <form id="searchBox">
   <label class="update" for="type"></label>
@@ -216,8 +214,7 @@ input[type="reset"] {
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
   <li>
-  <input type="radio" name="type" value="tba" id="tba">
-  <label for="tba" class="label">Under Construction</label></li>
+  <a href="#tobe">Under Construction</a></li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
@@ -237,7 +234,17 @@ $(function() {
   });
 });
 
+$('a[href^="#"]').click(function(){
+   var speed = 500;　//スクロールスピード
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   var position = target.offset().top;
+   $("html, body").animate({scrollTop:position}, speed, "swing");
+   return false;
+ });
+
 $(function(){
+    $("#tobe").load("/ver/tba.php");
     $("#hsl").load("/coding/js/hsl/");
 })
 </script>
