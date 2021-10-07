@@ -37,6 +37,8 @@ fclose($fp);
   margin: 5% 5% 10%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+  user-select:none;
+  white-space: pre-line;
 }
 #tba div {
   position: relative;
