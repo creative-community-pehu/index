@@ -28,8 +28,6 @@ body {margin:0; padding:0;}
     filter: invert(1);
 }
 #update {
-    position: relative;
-    top:0;
     filter: invert();
 }
 #update .reset,
