@@ -6,12 +6,12 @@
 9.27.2021,"検索機能付き匿名掲示板",/members/org/,upgrade,inline
 ??.??.????,"Essay | Download | InspiredBy",#,tba,none
 ??.??.????,"大切にすることを大切にする場所",#,tba,none
-??.??.????,"What do you value?",#,tba,none
-??.??.????,"Essay | Download | InspiredBy",#,tba,none
 ??.??.????,"出版物 | Publications",#,tba,inline
-??.??.????,"できること｜機材・ツール一覧",/org/,tba,none
 ??.??.????,"FREE TIME",#,tba,inline
 ??.??.????,"Indipendent Space Map",#,tba,inline
 ??.??.????,"Fancy and Relaxin'",#,tba,inline
 ??.??.????,"Go Out",#,tba,none
 9.27.2021,"We are Open creative-community.space",/,new,none
+9.27.2021,"newlifecollection.pe.hu/members/ → creative-community.space/members/",/members/,upgrade,inline
+9.27.2021,"newlifecollection.pe.hu → creative-community.space",/,upgrade,none
+9.27.2021,"vg.pe.hu/jp/ → creative-community.space/pehu/",/pehu/,upgrade,none
