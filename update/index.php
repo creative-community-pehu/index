@@ -90,7 +90,7 @@ $(function(){
 }
 #grid span {
   display: inline-block;
-  padding: 0;
+  padding: 1vw 0.25vw;
   font-size: 55%;
   position: absolute; z-index:2;
   bottom:0; right:0;
