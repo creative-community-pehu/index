@@ -124,8 +124,6 @@ fclose($fp);
   </head>
   <body>
     <div id="hsl"></div>
-    <div id="p5"></div>
-
 
 <div id="you">
 <h1><span>Drawing by</span>
