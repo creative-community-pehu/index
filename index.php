@@ -33,7 +33,7 @@ body {margin:0; padding:0;}
     z-index:10;
     filter: invert();
 }
-#update #grid div:nth-child(n + 16) {
+#update #grid div:nth-child(n + 17) {
   display: none;
 }
 
