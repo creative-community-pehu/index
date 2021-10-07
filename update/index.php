@@ -186,9 +186,7 @@ li {list-style: none;}
 
 <div id="grid">
 <div class="list_item list_toggle" data-type="">
-<p><i>Update</i>
-更新情報一覧
-</p>
+<p><i>Update | 更新情報一覧</i></p>
 <a href="/update/"></a>
 </div>
 <?php if (!empty($rows)): ?>
