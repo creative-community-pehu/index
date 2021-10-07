@@ -36,7 +36,7 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2.5%;
+  margin: 5%;
   border:solid #000 1px;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
