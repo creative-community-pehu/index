@@ -9,6 +9,11 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
+#index {
+    position: fixed;
+    z-index: 100;
+    top:0;
+}
 #greeting {
     width:80%;
     margin: 12.5vw 10% 10vw;
