@@ -215,7 +215,7 @@ input[type="reset"] {
   <li>
   <input type="radio" name="type" value="news" id="news">
   <label for="news" class="label">New Contents</label>
-  <a href="#tobe" class="label">Under Construction</a>
+  <a href="#grid" class=""></a>
   </li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
