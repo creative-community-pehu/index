@@ -32,7 +32,7 @@ fclose($fp);
 <title>Update | creative-community.space</title>
 <style>
 #ver {
-    padding-top: 5vw;
+    padding-top: 2.5vw;
 }
 #ver #searchBox {
     display: none;
