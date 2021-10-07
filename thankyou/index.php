@@ -34,16 +34,16 @@ fclose($fp);
     top:0; left:0;
 }
 #p5
-    z-index: -1;
+    z-index: 0;
 }
 #hsl {
-    z-index: -2;
+    z-index: -1;
 }
 
 .library {
     position:relative;
     top:0; left:0;
-    z-index:1;
+    z-index:0;
 }
 .library li:first-child {
     width:100vw;
@@ -56,6 +56,8 @@ fclose($fp);
     max-width:90vw;
     height: 94vh;
     overflow:hidden;
+    position:relative;
+    z-index:1;
 }
 #you,
 #submit {
