@@ -121,8 +121,12 @@ $(function(){
 }
 
 .is-hide,
-.nothing
-{opacity:0; transition:1.5s all;}
+.nothing{
+  opacity:0;
+  transition:1.5s all;
+  pointer-events:none;
+  user-select:none;
+}
 
 .none,
 input,
