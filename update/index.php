@@ -111,11 +111,11 @@ ul {padding:0; margin:0;}
 li {list-style: none;}
 
 #searchBox ul {
-  position:fixed;
+  position:fixed; z-index:100;
   bottom:0; left:0;
-  width:90%;
-  padding:2.5%;
-  margin:0 2.5%;
+  width:95%;
+  padding:1.25% 2.5%;
+  margin:0;
   display: flex;
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
