@@ -20,7 +20,8 @@ body {margin:0; padding:0;}
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
-#greeting #hello {
+#greeting #hello,
+#update {
     filter: invert();
 }
 #greeting #hello #mc_embed_signup,
@@ -28,7 +29,7 @@ body {margin:0; padding:0;}
     filter: invert(1);
 }
 #update {
-    filter: invert();
+    padding-top: 5vw;
 }
 #update #searchBox,
 #update #grid div:nth-child(n + 17) {
@@ -143,6 +144,7 @@ creative-community.space
     $(function(){
     $("#index").load("menu.html");
     $("#greeting").load("hello.html");
+    $("#update").load("/update/");
     $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
     })
