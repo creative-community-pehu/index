@@ -90,7 +90,7 @@ $(function(){
   font-size: 75%;
   display: inline-block;
   padding:0.5vw 1vw;
-  margin:2vw 1vw 0 0;
+  margin:2.5vw 1vw 0 0;
   border: 1px solid;
   border-radius: 2vw;
   font-size: 55%;
