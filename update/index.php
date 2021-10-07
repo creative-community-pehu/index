@@ -79,6 +79,7 @@ $(function(){
   position: relative; z-index:2;
   pointer-events:none;
   user-select:none;
+  white-space: pre-line;
 }
 #grid u {
   font-family:"Times New Roman", serif;
