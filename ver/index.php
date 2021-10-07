@@ -162,7 +162,7 @@ input[type="reset"] {
   padding:0.25vw 0.5vw;
   font-size: 2vw;
   color: #000;
-  text-decoration:none:
+  text-decoration:none;
   border-bottom:1px solid transparent;
   transition:1.5s all;
 }
