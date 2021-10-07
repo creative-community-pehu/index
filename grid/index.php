@@ -47,7 +47,6 @@ $(function(){
   grid-column-start: 1;
   grid-column-end: 4;
   padding:2.5%;
-  display: block;
 }
 
 #grid div:nth-of-type(2) {
