@@ -167,7 +167,7 @@ li {list-style: none;}
 <body>
 
   <form id="searchBox">
-  <label class="freetime" for="type"></label>
+  <label class="update" for="type"></label>
   <input type="checkbox" id="type" />
   <ul class="search-box type">
   <li>
