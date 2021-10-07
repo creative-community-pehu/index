@@ -18,7 +18,7 @@ body {margin:0; padding:0;}
     position: relative;
     top:0;
     width:80%;
-    margin: 12.5vw 10% 5vw;
+    margin: 12.5vw 10% 0;
 }
 #greeting #hello,
 #ver {
@@ -29,7 +29,7 @@ body {margin:0; padding:0;}
     filter: invert(1);
 }
 #ver {
-    padding-top: 10vw;
+    padding-top: 12.5vw;
 }
 #ver #grid div:nth-child(n + 17) {
   display: none;
