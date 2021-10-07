@@ -91,7 +91,6 @@ $(function(){
     transition: all 1250ms ease;
 }
 #grid a:hover {
-    border:solid #fff 1px;
     transition: all 1000ms ease;
 }
 
