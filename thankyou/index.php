@@ -26,6 +26,11 @@ fclose($fp);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Everyones Drawings are Seems So Beautiful</title>
     <style type="text/css">
+.library li:first-child {
+  width:75vw;
+  max-width:75vw;
+  overflow:auto;
+}
 .library li{
   width:67vh;
   max-width:90vw;
