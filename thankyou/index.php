@@ -124,8 +124,17 @@ fclose($fp);
   
   </head>
   <body>
+    <ul class="mousedragscrollable library">
+    <li></li>
+      <?php if (!empty($rows)): ?>
+        <?php foreach ($rows as $row): ?>
+          <li><iframe src="<?=h($row[0])?>"></iframe></li>
+          <?php endforeach; ?>
+        <?php else: ?>
+      <?php endif; ?>
+    </ul>
+
     <div id="p5"></div>
-    <div id="hsl"></div>
 
 <div id="you">
 <h1><span>Drawing by</span>
