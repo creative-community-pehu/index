@@ -36,18 +36,17 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.5%;
-  row-gap: 2.5%;
   font-size: 2vw;
   margin: 2.5%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#grid div {position: relative; padding:2.5%;}
+#grid div {position: relative; padding:5%;}
 #grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
+  padding:2.5%;
 }
 
 #grid div:nth-of-type(2) {
