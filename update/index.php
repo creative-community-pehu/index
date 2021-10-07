@@ -4,14 +4,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$type = (string)filter_input(INPUT_POST, 'type'); // $_POST['type']
-$info = (string)filter_input(INPUT_POST, 'info'); // $_POST['info']
-$url = (string)filter_input(INPUT_POST, 'url'); // $_POST['url']
+$type = (string)filter_input(INPUT_POST, 'type');
+$info = (string)filter_input(INPUT_POST, 'info');
+$url = (string)filter_input(INPUT_POST, 'url');
+$members = (string)filter_input(INPUT_POST, 'members');
 
 $fp = fopen('topics.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$type, $info, $url]);
+    fputcsv($fp, [$type, $info, $url, $members]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -154,11 +155,14 @@ li {list-style: none;}
   <input type="checkbox" id="type" />
   <ul class="search-box type">
   <li>
-  <input type="radio" name="type" value="topics" id="topics">
-  <label for="topics" class="label">New</label></li>
+  <input type="radio" name="type" value="new" id="new">
+  <label for="new" class="label">New</label></li>
   <li>
   <input type="radio" name="type" value="update" id="update">
   <label for="update" class="label">Version Up</label></li>
+  <li>
+  <input type="radio" name="type" value="tba" id="tba">
+  <label for="tba" class="label">Under Construction</label></li>
   <li class="reset">
   <input type="reset" name="reset" value="全部見る" class="reset-button"></li>
   </ul>
@@ -170,7 +174,8 @@ li {list-style: none;}
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
 <p><u><?=h($row[0])?></u>
 <?=h($row[1])?></p>
-<span><?=h($row[3])?></span>
+<span class="<?=h($row[3])?>"></span>
+<span style="display:<?=h($row[4])?>;">Members Only</span>
 <a href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
