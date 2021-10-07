@@ -26,6 +26,12 @@ fclose($fp);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Everyones Drawings are Seems So Beautiful</title>
     <style type="text/css">
+.library li{
+  width:90vw;
+  max-width:67vh;
+  height: 94vh;
+  overflow:hidden;
+}
     </style>
     
     <!-- Import the webpage's stylesheet -->
