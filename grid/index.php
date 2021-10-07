@@ -98,8 +98,6 @@ $(function(){
   height: 100%;
   border:solid #000 1px;
 }
-#grid a:hover {
-}
 
 </style>
 </head>
