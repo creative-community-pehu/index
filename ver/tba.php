@@ -72,12 +72,9 @@ fclose($fp);
   font-size: 75%;
   pointer-events:none;
   user-select:none;
-}
-#tba u {
   display: block;
   font-family:"Times New Roman", serif;
   font-style:italic;
-  text-decoration:none;
 }
 </style>
 </head>
@@ -85,11 +82,9 @@ fclose($fp);
 <div id="tba">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div <?=h($row[3])?>">
+<div>
 <p><?=h($row[1])?></p>
-<span>
-<u>Members Only</u>
-</span>
+<span><?=h($row[3])?></span>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
