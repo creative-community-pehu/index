@@ -44,14 +44,14 @@ fclose($fp);
 #submit h1 {
     padding:25% 5%;
     line-height:150%;
-    font-size:4.5vw;
+    font-size:2.5vw;
     font-family: "ipag", monospace;
 }
 #submit p {
     top:0; left:0;
     padding:12.5% 5%;
     line-height:150%;
-    font-size:2.5vw;
+    font-size:1.25vw;
     font-family: "ipag", monospace;
 }
 #submit h1,
@@ -76,7 +76,6 @@ Thank You for Send it to us !!<br />
 </h1>
 <p>
 This is the Collection of drawings by Visiters of this website.<br />
-Thank You,<br />
 <br />
 creative-community.space
 </p>
