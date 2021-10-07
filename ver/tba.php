@@ -47,6 +47,7 @@ fclose($fp);
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
   pointer-events:none;
   user-select:none;
+  filter: invert();
 }
 #tba div {
   position: relative;
@@ -55,7 +56,10 @@ fclose($fp);
   border:solid #000 1px;
   border-collapse: collapse;
   transition:1.5s all;
-  filter: invert();
+}
+#tba b {
+  font-family: "ipag", monospace;
+  transform:scale(1, 1.5);
 }
 #tba p {
   margin: 0;
@@ -80,7 +84,7 @@ fclose($fp);
 </head>
 <body>
 <div id="tba">
-<p>Under Construction | 準備中</p>
+<p><b>Under Construction | 準備中</b></p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
