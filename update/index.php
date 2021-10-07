@@ -184,7 +184,7 @@ input[type="reset"] {
   </form>
 
 <div id="grid">
-<div class="list_item list_toggle" data-type="">
+<div>
 <p><i>Update | 更新情報一覧</i></p>
 <span>
 <u style="display:inline;">View All | 全部見る</u>
