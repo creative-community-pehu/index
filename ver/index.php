@@ -43,7 +43,7 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 5% 7.5%;
+  margin: 10% 5% 5%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
@@ -143,12 +143,13 @@ li {list-style: none;}
 
 #searchBox ul {
   position:fixed; z-index:100;
-  bottom:0; left:0;
+  top:0; left:0;
   width:95%;
-  margin: 1.25% 2.5%;
+  margin: 2.5%;
   display: flex;
   flex-wrap: wrap;
   font-family:"Times New Roman", serif;
+  transform:scale(1, 1.25);
 }
 #searchBox .label,
 input[type="reset"] {
