@@ -36,7 +36,7 @@ $(function(){
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5%;
+  margin: 5% 5% 10%;
   border:solid #000 1px;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
@@ -111,7 +111,11 @@ ul {padding:0; margin:0;}
 li {list-style: none;}
 
 #searchBox ul {
-  position:relative;
+  position:fixed;
+  bottom:0; left:0;
+  width:90%;
+  padding:2.5%;
+  margin:0 2.5%;
   display: flex;
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
