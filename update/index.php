@@ -125,7 +125,8 @@ $(function(){
 
 .none,
 input,
-input[type="radio"]
+input[type="radio"],
+.reset
 {display:none;}
 
 ul {padding:0; margin:0;}
@@ -140,7 +141,8 @@ li {list-style: none;}
   flex-wrap: wrap;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#searchBox .label　{
+#searchBox .label,
+input[type="reset"] {
   display: inline-block;
   background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
@@ -153,7 +155,8 @@ li {list-style: none;}
 }
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
-#searchBox .label:hover {
+#searchBox .label:hover,
+.reset-button:hover {
   background-color:rgba(255,255,255,1);
   cursor:pointer;
   transition:.5s all;
@@ -176,6 +179,8 @@ li {list-style: none;}
   <li>
   <input type="radio" name="type" value="tba" id="tba">
   <label for="tba" class="label">Under Construction</label></li>
+  <li class="reset">
+  <input type="reset" name="reset" value="🈁" class="reset-button"></li>
   </ul>
   </form>
 
