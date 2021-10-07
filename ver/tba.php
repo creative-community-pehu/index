@@ -58,6 +58,7 @@ fclose($fp);
   transition:1.5s all;
 }
 #tba b {
+  display: inline-block;
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
 }
