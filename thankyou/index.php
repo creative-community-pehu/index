@@ -42,7 +42,7 @@ fclose($fp);
 
 .library {
   position:relative;
-    z-index:1;
+    z-index:0;
 }
 .library li:first-child {
   width:75vw;
