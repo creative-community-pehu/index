@@ -47,6 +47,7 @@ $(function(){
   margin:0 0 -1px -1px;
   border:solid #000 1px;
   border-collapse: collapse;
+  transition:1.5s all;
 }
 #grid div:first-child {
   grid-column-start: 1;
@@ -121,7 +122,7 @@ $(function(){
 
 .is-hide,
 .nothing
-{opacity:0;}
+{opacity:0; transition:1.5s all;}
 
 .none,
 input,
