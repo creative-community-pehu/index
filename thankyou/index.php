@@ -81,7 +81,7 @@ fclose($fp);
     bottom:0; left:0;
     width:95%;
     padding:0 2.5%;
-    font-size:2.5rem;
+    font-size:2rem;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@ fclose($fp);
     top:0; left:0;
     padding:25% 5.5rem 12.5%;
     line-height:150%;
-    font-size:2.5rem;
+    font-size:2rem;
     font-family: "ipag", monospace;
 }
 #submit p {
