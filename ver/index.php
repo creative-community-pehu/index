@@ -45,7 +45,7 @@ $(function(){
   grid-template-columns: repeat(3, 1fr);
   margin: 5% 5% 7.5%;
   font-size: 2vw;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体";
+  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
 #grid div {
   position: relative;
@@ -148,7 +148,7 @@ li {list-style: none;}
   margin: 1.25% 2.5%;
   display: flex;
   flex-wrap: wrap;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体";
+  font-family:"Times New Roman", serif;
 }
 #searchBox .label,
 input[type="reset"] {
