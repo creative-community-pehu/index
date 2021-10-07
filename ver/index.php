@@ -155,6 +155,9 @@ li {list-style: none;}
   transform:scale(1, 1.5);
   filter: invert();
 }
+#searchBox a {
+  float:right;
+}
 #searchBox .label,
 input[type="reset"] {
   display: inline-block;
