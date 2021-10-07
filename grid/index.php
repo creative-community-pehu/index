@@ -42,11 +42,10 @@ $(function(){
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #grid div {position: relative; padding:5%;}
-#grid div:first-child {
+#grid div:first-child,
+#grid div:last-child {
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
   padding:2.5%;
 }
 
