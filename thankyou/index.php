@@ -45,15 +45,16 @@ fclose($fp);
     z-index:0;
 }
 .library li:first-child {
-  width:75vw;
-  max-width:75vw;
-  overflow:auto;
+    width:100vw;
+    overflow:auto;
+    pointer-evente:none;
+    user-select:none;
 }
 .library li{
-  width:67vh;
-  max-width:90vw;
-  height: 94vh;
-  overflow:hidden;
+    width:67vh;
+    max-width:90vw;
+    height: 94vh;
+    overflow:hidden;
 }
 #you,
 #submit {
