@@ -73,9 +73,9 @@ $(function(){
 #grid span {
   font-size: 75%;
   display: inline-block;
-  padding: 1.25%;
+  padding: 1rem;
   border: 1px solid;
-  border-radius: 2.5px;
+  border-radius: 1rem;
   font-size: 75%;
   font-family: ;
 }
