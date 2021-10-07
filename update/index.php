@@ -96,8 +96,8 @@ $(function(){
   left: 0;
   width: 100%;
   height: 100%;
-  border:solid #000 1px;
-  margin: -1px -2px;    
+  border:solid #000 2px;
+  margin: -2px;    
 }
 
 .is-hide,
