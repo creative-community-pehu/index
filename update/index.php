@@ -61,7 +61,7 @@ $(function(){
   grid-row-start: 3;
   grid-row-end: 5;
 }
-#grid div:nth-of-type(9) {
+#grid div:nth-of-type() {
   grid-column-start: 2;
   grid-row-start: 5;
   grid-row-end: 7;
