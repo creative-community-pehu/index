@@ -211,7 +211,7 @@ input[type="reset"] {
   <ul class="search-box type">
   <li>
   <input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label"><a href="#grid">New Contents</a></label></li>
+  <a href="#grid"><label for="news" class="label">New Contents</label></a></li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label"><a href="#grid">Version Up</a></label></li>
