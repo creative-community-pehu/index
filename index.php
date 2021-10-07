@@ -139,7 +139,6 @@ creative-community.space
     $(function(){
     $("#index").load("menu.html");
     $("#greeting").load("hello.html");
-    $("#ver").load("/ver/");
     $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
     })
