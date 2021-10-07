@@ -45,6 +45,8 @@ $(function(){
 #grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
   padding:2.5%;
 }
 
