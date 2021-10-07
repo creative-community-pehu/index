@@ -29,7 +29,7 @@ body {margin:0; padding:0;}
     filter: invert(1);
 }
 #update {
-    margin-top: 10vw;
+    padding-top: 2.5vw;
 }
 #update #searchBox,
 #update #grid div:nth-child(n + 17) {
