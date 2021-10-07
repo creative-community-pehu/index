@@ -118,7 +118,8 @@ fclose($fp);
   text-decoration:none;
 }
 
-#grid a {
+#grid a
+#searchBox a {
   display: block;
   position: absolute; z-index:1;
   top: 0;
@@ -154,6 +155,9 @@ li {list-style: none;}
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
   filter: invert();
+}
+#searchBox li {
+  position:rerative; z-index:100;
 }
 #searchBox .label,
 input[type="reset"] {
@@ -209,8 +213,10 @@ input[type="reset"] {
   <input type="checkbox" id="type" />
   <ul class="search-box type">
   <li>
-  <a href="#grid" class=""><input type="radio" name="type" value="news" id="news">
-  <label for="news" class="label">Under Construction</label></a></li>
+  <input type="radio" name="type" value="news" id="news">
+  <label for="news" class="label">New Contents</label>
+  <a href="#tobe" class="label">Under Construction</a>
+  </li>
   <li>
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
