@@ -19,8 +19,7 @@ body {margin:0; padding:0;}
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
-#greeting #hello,
-#ver {
+#greeting #hello {
     filter: invert();
 }
 #greeting #hello #mc_embed_signup,
@@ -31,18 +30,11 @@ body {margin:0; padding:0;}
   display: none;
 }
 
-#hsl,
 #p5 {
     width: 100%;
     height: 100vh;
     position: fixed;
     top:0;
-}
-#hsl {
-    z-index: -2;
-    background-color: rgb(0, 0, 0);
-}
-#p5 {
     z-index: -1;
 }
 
@@ -57,9 +49,16 @@ body {margin:0; padding:0;}
 #you img {width: 7.5vw;}
 
 @media print{
-#index, #greeting, #ver {display:none;}
+#index,
+#greeting,
+#ver #grid,
+#ver #searchBox
+{display:none;}
+
 #you,
-#submit {display:block;}
+#submit
+{display:block;}
+
 #submit {
     top:100vh;
     background:#fff;
@@ -111,7 +110,6 @@ body {margin:0; padding:0;}
 <div id="greeting"></div>
 <div id="ver"></div>
 <div id="p5"></div>
-<div id="hsl"></div>
 
 <div id="you">
 <h1><span>Drawing by</span>
@@ -139,7 +137,6 @@ creative-community.space
     $(function(){
     $("#index").load("menu.html");
     $("#greeting").load("hello.html");
-    $("#hsl").load("/coding/js/hsl/");
     $("#p5").load("/coding/js/p5/sketch.html");
     })
 
