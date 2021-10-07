@@ -80,6 +80,7 @@ fclose($fp);
 </head>
 <body>
 <div id="tba">
+<p>Under Construction | 準備中</p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
