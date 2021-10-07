@@ -160,7 +160,6 @@ li {list-style: none;}
 #searchBox .label,
 input[type="reset"] {
   display: inline-block;
-  background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
   font-size: 2vw;
@@ -173,8 +172,7 @@ input[type="reset"] {
 #searchBox .label:hover,
 .reset-button:hover {
   cursor:pointer;
-  background-color:rgba(255,255,255,1);
-  text-shadow: 0px 0px 0.1vw #000, 0.1vw 0.25vw 0 #000;
+  text-shadow: 0px 0px 0.1vw #fff, 0.1vw 0.25vw 0 #fff;
   border-bottom:1px solid #000;
   transition:.5s all;
 }
