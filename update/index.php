@@ -33,6 +33,13 @@ $(function(){
 </script>
 <title>Under Construction | creative-community.space</title>
 <style>
+.is-hide,
+.nothing,
+.none,
+input,
+input[type="radio"]
+{display:none;}
+
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -103,6 +110,20 @@ $(function(){
 </style>
 </head>
 <body>
+
+  <form id="searchBox">
+  <label class="freetime" for="type"></label>
+  <input type="checkbox" id="type" />
+  <ul class="search-box type">
+  <li>
+  <input type="radio" name="type" value="topics" id="topics">
+  <label for="topics" class="label">お知らせ</label></li>
+  </ul>
+  <div class="reset">
+  <input type="reset" name="reset" value="全部見る" class="reset-button">
+  </div>
+  </form>
+
 <div id="grid">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
