@@ -82,10 +82,12 @@ $(function(){
   user-select:none;
   white-space: pre-line;
 }
-#grid u {
+#grid i {
   font-family:"Times New Roman", serif;
   font-style:italic;
   display: block;
+  border-bottom: 1px solid;
+
 }
 #grid span {
   display: inline-block;
@@ -95,6 +97,7 @@ $(function(){
   bottom:0; right:0;
   pointer-events:none;
   user-select:none;
+  line-height:150%;
 }
 #grid u {
   display: inline-block;
@@ -102,6 +105,7 @@ $(function(){
   margin:2.5vw 0.5vw 0 0;
   border: 1px solid;
   border-radius: 2vw;
+  text-decoration:none;
 }
 
 #grid .new::after {
@@ -202,7 +206,7 @@ li {list-style: none;}
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
-<p><u><?=h($row[0])?></u>
+<p><i><?=h($row[0])?></i>
 <?=h($row[1])?>
 </p>
 <span>
