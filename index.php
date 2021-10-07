@@ -28,9 +28,6 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#ver {
-    padding-top: 12.5vw;
-}
 #ver #grid div:nth-child(n + 17) {
   display: none;
 }
