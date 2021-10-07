@@ -146,7 +146,7 @@ li {list-style: none;}
   display: flex;
   flex-wrap: wrap;
   font-family: "ipag", monospace;
-  transform:scale(1, 1.25);
+  transform:scale(1, 1.5);
 }
 #searchBox .label,
 input[type="reset"] {
