@@ -41,8 +41,9 @@ fclose($fp);
 }
 
 .library {
-  position:relative;
-    z-index:0;
+    position:relative;
+    top:0; left:0;
+    z-index:1;
 }
 .library li:first-child {
     width:100vw;
