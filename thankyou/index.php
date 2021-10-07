@@ -63,7 +63,7 @@ fclose($fp);
     display:none;
     z-index: 100;
 }
-#you img {width: 3rem;}
+#you img {width: 3.5rem;}
 
 @media print{
 .mousedragscrollable
