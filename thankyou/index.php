@@ -96,7 +96,7 @@ fclose($fp);
 }
 #submit h1 {
     top:0; left:0;
-    padding:5rem 7.5% 10rem;
+    padding:10rem 7.5%;
     line-height:150%;
     font-size:2rem;
     font-family: "ipag", monospace;
