@@ -123,7 +123,7 @@ li {list-style: none;}
 #searchBox .label,
 .reset-button {
   display: inline-block;
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255,255,255,0);
   margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
   font-size: 1.5vw;
@@ -136,7 +136,7 @@ li {list-style: none;}
 #searchBox input[type="radio"]:checked + label,
 #searchBox .label:hover,
 .reset-button:hover {
-  background-color:rgba(255,255,0,1);
+  background-color:rgba(255,255,255,1);
   cursor:pointer;
   transition:.5s all;
 }
