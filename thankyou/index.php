@@ -8,7 +8,7 @@ $link = (string)filter_input(INPUT_POST, 'link'); // $_POST['link']
 $fp = fopen('all.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color]);
+    fputcsv($fp, [$link]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
