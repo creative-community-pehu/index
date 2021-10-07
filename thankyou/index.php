@@ -26,14 +26,15 @@ fclose($fp);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Everyones Drawings are So Beautiful</title>
     <style type="text/css">
-
-#p5 {
+#p5,
+#hsl {
     width: 100%;
     height: 100vh;
     position: fixed;
     top:0;
     z-index: -1;
 }
+
 .library li:first-child {
   width:75vw;
   max-width:75vw;
@@ -74,7 +75,9 @@ fclose($fp);
   
   </head>
   <body>
+    <div id="hsl"></div>
     <div id="p5"></div>
+
     <ul class="mousedragscrollable library">
     <li>
 
@@ -103,6 +106,7 @@ creative-community.space
 <script type="text/javascript">
 $(function(){
     $("#p5").load("/coding/js/p5/sketch.html");
+    $("#hsl").load("coding/js/hsl/");
 })
 </script>
   </body>
