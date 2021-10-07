@@ -37,6 +37,26 @@ fclose($fp);
   height: 94vh;
   overflow:hidden;
 }
+
+#submit h1 {
+    top:0; left:0;
+    padding:25% 7.5% 12.5%;
+    line-height:150%;
+    font-size:4.5vw;
+    font-family: "ipag", monospace;
+}
+#submit p {
+    top:0; left:0;
+    padding:12.5% 7.5%;
+    line-height:150%;
+    font-size:2.5vw;
+    font-family: "ipag", monospace;
+}
+#submit h1,
+#submit p {
+    display: inline-block;
+    transform:scale(1, 2);
+}
     </style>
     
     <!-- Import the webpage's stylesheet -->
@@ -45,7 +65,24 @@ fclose($fp);
   </head>
   <body>
     <ul class="mousedragscrollable library">
-    <li>Greeting</li>
+    <li>
+
+<div id="submit">
+<h1>OMG!<br />
+Your Drawing is Seems So Beautiful<3<br />
+Print it to PDF
+and Send it to us !!<br />
+</h1>
+<p>
+This Email address is for receive-only.<br />
+We will reply from other addresses.<br />
+Thank You,<br />
+<br />
+creative-community.space
+</p>
+</div>
+
+        </li>
       <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
           <li><iframe src="<?=h($row[0])?>"></iframe></li>
