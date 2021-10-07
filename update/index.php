@@ -168,11 +168,13 @@ li {list-style: none;}
   <ul class="search-box type">
   <li>
   <input type="radio" name="type" value="topics" id="topics">
-  <label for="topics" class="label">お知らせ</label></li>
+  <label for="topics" class="label">New</label></li>
+  <li>
+  <input type="radio" name="type" value="update" id="update">
+  <label for="update" class="label">Version Up</label></li>
+  <li class="reset">
+  <input type="reset" name="reset" value="全部見る" class="reset-button"></li>
   </ul>
-  <div class="reset">
-  <input type="reset" name="reset" value="全部見る" class="reset-button">
-  </div>
   </form>
 
 <div id="grid">
