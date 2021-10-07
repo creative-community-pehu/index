@@ -34,10 +34,10 @@ fclose($fp);
     top:0; left:0;
 }
 #p5
-    z-index: -1;
+    z-index: 0;
 }
 #hsl {
-    z-index: -2;
+    z-index: -1;
 }
 
 .library {
