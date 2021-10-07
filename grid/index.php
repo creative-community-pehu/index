@@ -99,11 +99,8 @@ $(function(){
   width: 100%;
   height: 100%;
   border:solid #000 1px;
-  background: linear-gradient(0deg,rgba(rgba(0,0,0,0) 75%);
-  transition: all 1250ms ease;
 }
 #grid a:hover {
-    transition: all 1000ms ease;
 }
 
 </style>
