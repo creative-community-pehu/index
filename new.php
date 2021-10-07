@@ -15,6 +15,7 @@ body {margin:0; padding:0;}
     top:0;
 }
 #greeting {
+    position: relative; z-index:10;
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
@@ -34,7 +35,7 @@ body {margin:0; padding:0;}
     height: 100vh;
     position: fixed;
     top:0; left:0;
-    z-index: -1;
+    z-index: 0;
 }
 #you,
 #submit {
