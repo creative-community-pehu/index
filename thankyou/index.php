@@ -50,14 +50,14 @@ fclose($fp);
     overflow:auto;
     pointer-evente:none;
     user-select:none;
+    position:relative;
+    z-index:1;
 }
 .library li{
     width:67vh;
     max-width:90vw;
     height: 94vh;
     overflow:hidden;
-    position:relative;
-    z-index:1;
 }
 #you,
 #submit {
@@ -128,7 +128,7 @@ fclose($fp);
   </head>
   <body>
     <ul class="mousedragscrollable library">
-    <li></li>
+    <li><div id="p5"></div></li>
       <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
           <li><iframe src="<?=h($row[0])?>"></iframe></li>
@@ -136,8 +136,6 @@ fclose($fp);
         <?php else: ?>
       <?php endif; ?>
     </ul>
-
-    <div id="p5"></div>
 
 <div id="you">
 <h1><span>Drawing by</span>
