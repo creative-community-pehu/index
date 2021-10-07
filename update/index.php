@@ -185,6 +185,12 @@ li {list-style: none;}
   </form>
 
 <div id="grid">
+<div class="list_item list_toggle" data-type="">
+<p><i>Update</i>
+更新情報一覧
+</p>
+<a href="/update/"></a>
+</div>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
