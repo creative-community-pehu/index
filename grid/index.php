@@ -118,6 +118,14 @@ $(function(){
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
+
+<div>
+<p><u>9.27.2021</u>
+We are Open creative-community.space</p>
+<span>topics</span>
+<a href="https://creative-community.space/"</a>
+</div>
+
 </div>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
