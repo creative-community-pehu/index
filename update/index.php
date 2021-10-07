@@ -37,11 +37,10 @@ $(function(){
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 5% 5% 10%;
-  border:solid #000 1px;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#grid div {position: relative; padding:5%;}
+#grid div {position: relative; padding:5%; margin: -1px;}
 #grid div:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -98,7 +97,6 @@ $(function(){
   width: 100%;
   height: 100%;
   border:solid #000 1px;
-  margin: -1px;    
 }
 
 .is-hide,
