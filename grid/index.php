@@ -64,9 +64,6 @@ $(function(){
   grid-row-start: 7;
   grid-row-end: 9;
 }
-#grid div:nth-child(n + 17) {
-  display: none;
-}
 
 #grid p {
   margin: 0;
