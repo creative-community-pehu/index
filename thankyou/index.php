@@ -34,7 +34,7 @@ fclose($fp);
     top:0; left:0;
 }
 #p5
-    z-index: 1;
+    z-index: 0;
 }
 #hsl {
     z-index: -1;
@@ -147,16 +147,6 @@ Thank You,<br/>
 creative-community.space
 </p>
 </div>
-
-    <ul class="mousedragscrollable library">
-    <li></li>
-      <?php if (!empty($rows)): ?>
-        <?php foreach ($rows as $row): ?>
-          <li><iframe src="<?=h($row[0])?>"></iframe></li>
-          <?php endforeach; ?>
-        <?php else: ?>
-      <?php endif; ?>
-    </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/coding/js/mousedragscrollable/scrollable.js"></script>
 <script type="text/javascript">
