@@ -43,8 +43,9 @@ $(function(){
 #grid div {
   position: relative;
   padding:5%;
-  border-collapse: collapse;
+  margin:-1px;
   border:solid #000 1px;
+  border-collapse: collapse;
 }
 #grid div:first-child {
   grid-column-start: 1;
