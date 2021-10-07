@@ -49,7 +49,7 @@ fclose($fp);
 }
 #submit p {
     top:0; left:0;
-    padding:5%;
+    padding:0 5%;
     line-height:150%;
     font-size:1.25vw;
     font-family: "ipag", monospace;
