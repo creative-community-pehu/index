@@ -100,7 +100,7 @@ fclose($fp);
 }
 #grid span {
   display: inline-block;
-  padding: 1.5vw 0.75vw;
+  padding: 2vw 0.5vw;
   font-size: 55%;
   position: absolute; z-index:2;
   bottom:0; right:0;
@@ -113,6 +113,7 @@ fclose($fp);
   margin: 0.25vw;
   border: 1px solid;
   border-radius: 2vw;
+  box-shadow:1vw 1vw 1vw #fff;
   text-decoration:none;
 }
 
