@@ -68,7 +68,7 @@ $(function(){
   font-size: 75%;
   font-family: ;
 }
-#grid div {position: relative;}
+#grid div {position: relative; padding:2.5%;}
 #grid a {
     display: block;
 	position: absolute;
