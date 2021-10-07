@@ -75,6 +75,7 @@ $(function(){
 
 #grid p {
   margin: 0;
+  padding: 0 0 5vw;
   font-family: ;
   position: relative; z-index:2;
   pointer-events:none;
@@ -87,16 +88,20 @@ $(function(){
   display: block;
 }
 #grid span {
-  font-size: 75%;
   display: inline-block;
   padding:0.5vw 1vw;
-  margin:2.5vw 1vw 0 0;
-  border: 1px solid;
-  border-radius: 2vw;
   font-size: 55%;
-  position: relative; z-index:2;
+  position: absolute; z-index:2;
+  bottom:0; right:0;
   pointer-events:none;
   user-select:none;
+}
+#grid u {
+  display: inline-block;
+  padding:0.5vw 1vw;
+  margin:2.5vw 0.5vw 0 0;
+  border: 1px solid;
+  border-radius: 2vw;
 }
 
 #grid .new::after {
@@ -200,8 +205,10 @@ li {list-style: none;}
 <p><u><?=h($row[0])?></u>
 <?=h($row[1])?>
 </p>
-<span class="<?=h($row[3])?>"></span>
-<span style="display:<?=h($row[4])?>;">Members Only</span>
+<span>
+<u class="<?=h($row[3])?>"></u>
+<u style="display:<?=h($row[4])?>;">Members Only</u>
+</span>
 <a href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
