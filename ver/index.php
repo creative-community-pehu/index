@@ -162,6 +162,7 @@ input[type="reset"] {
   padding:0.25vw 0.5vw;
   font-size: 2vw;
   color: #000;
+  text-decoration:none:
   border-bottom:1px solid transparent;
   transition:1.5s all;
 }
@@ -214,7 +215,7 @@ input[type="reset"] {
   <input type="radio" name="type" value="upgrade" id="upgrade">
   <label for="upgrade" class="label">Version Up</label></li>
   <li>
-  <a href="#tobe">Under Construction</a></li>
+  <a href="#tobe" class="label">Under Construction</a></li>
   <li class="reset">
   <input type="reset" name="reset" value="" class="reset-button"></li>
   </ul>
