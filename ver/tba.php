@@ -84,7 +84,7 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <div>
 <p><?=h($row[1])?></p>
-<span><?=h($row[3])?></span>
+<span><?=h($row[2])?></span>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
