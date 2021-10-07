@@ -33,64 +33,6 @@ $(function(){
 </script>
 <title>Under Construction | creative-community.space</title>
 <style>
-.is-hide,
-.nothing,
-.none,
-input,
-input[type="radio"]
-{display:none;}
-
-ul {padding:0; margin:0;}
-li {list-style: none;}
-
-#searchBox ul {
-  position:relative;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体";
-}
-#searchBox .label {
-  display: inline-block;
-  background-color:#fff;
-  margin:0.2vw 0.5vw;
-  padding:0.25vw 0.5vw;
-  font-size: 1.5vw;
-  color: #000;
-  border:1px solid #000;
-  border-radius:2vw;
-  transition:1.5s all;
-}
-#searchBox .label:hover {
-  cursor:pointer;
-  color:red;
-  border:1px solid red;
-  transition:.5s all;
-}
-#searchBox input[type="checkbox"]:checked + label,
-#searchBox input[type="radio"]:checked + label {
-  color: #fff;
-  background-color:red;
-  border:1px solid red;
-  transition:.5s all;
-}
-.reset-button {
-  display: inline-block;
-  background-color:#fff;
-  margin:0.2vw 0.5vw;
-  padding:0.25vw 0.5vw;
-  font-size: 1.5vw;
-  color: #000;
-  border:1px solid #000;
-  border-radius:2vw;
-  transition:1.5s all;
-}
-.reset-button:hover {
-  color: #fff;
-  background-color:red;
-  border:1px solid red;
-  transition:.5s all;
-}
-
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,10 +100,70 @@ li {list-style: none;}
   border:solid #000 1px;
 }
 
+.is-hide,
+.nothing,
+.none,
+input,
+input[type="radio"]
+{display:none;}
+
+ul {padding:0; margin:0;}
+li {list-style: none;}
+
+#searchBox ul {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "YuGothic","Yu Gothic","游ゴシック体";
+}
+#searchBox .label {
+  display: inline-block;
+  background-color:#fff;
+  margin:0.2vw 0.5vw;
+  padding:0.25vw 0.5vw;
+  font-size: 1.5vw;
+  color: #000;
+  border:1px solid #000;
+  border-radius:2vw;
+  transition:1.5s all;
+}
+#searchBox .label:hover {
+  cursor:pointer;
+  color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
+#searchBox input[type="checkbox"]:checked + label,
+#searchBox input[type="radio"]:checked + label {
+  color: #fff;
+  background-color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
+.reset-button {
+  display: inline-block;
+  background-color:#fff;
+  margin:0.2vw 0.5vw;
+  padding:0.25vw 0.5vw;
+  font-size: 1.5vw;
+  color: #000;
+  border:1px solid #000;
+  border-radius:2vw;
+  transition:1.5s all;
+}
+.reset-button:hover {
+  color: #fff;
+  background-color:red;
+  border:1px solid red;
+  transition:.5s all;
+}
+
 </style>
 </head>
 <body>
 
+
+<div id="grid">
   <form id="searchBox">
   <label class="freetime" for="type"></label>
   <input type="checkbox" id="type" />
@@ -175,7 +177,6 @@ li {list-style: none;}
   </div>
   </form>
 
-<div id="grid">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="list_item list_toggle" data-type="<?=h($row[3])?>">
