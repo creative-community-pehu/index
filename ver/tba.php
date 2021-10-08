@@ -76,7 +76,7 @@ fclose($fp);
 </head>
 <body>
 <div id="tba">
-<p><b>Under Construction | 準備中</b></p>
+<p><b>制作中のコンテンツ</b></p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
