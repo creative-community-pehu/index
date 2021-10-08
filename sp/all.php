@@ -89,11 +89,18 @@ fclose($fp);
 <div id="marquee">
 <div class="outside org_list">
 <ul id="s1" class="es">
-<li class="must unknown">クリエイティブ・コミュニティスペース</li>
-<li class="must unknown">ペフ</li>
-<li class="">が</li>
-<li class="unknown can">実現したいこと</li>
-<li class=""></li>
+<li class="">ここに集まった</li>
+<li class="must unknown">色</li>
+<li class="neither">と</li>
+<li class="must unknown">記号</li>
+<li class="">は、</li>
+<li class="unknown can">2021年9月9日から10月9日</li>
+<li class="">の間に、このウェブサイトを訪れた方々が投稿した</li>
+<li class="must positive">自分の気持ちを表す</li>
+<li class="must unknown">色</li>
+<li class="neither">と</li>
+<li class="must unknown">記号</li>
+<li class="">です。</li>
 <li class="unknown">誰にでもできること</li>
 <li class="neither">を</li>
 <li class="unknown">自分らしく行うこと</li>
