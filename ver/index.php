@@ -137,10 +137,10 @@ fclose($fp);
   user-select:none;
 }
 
-.none,
+#searchBox .none,
 #searchBox input,
 #searchBox input[type="radio"],
-.reset
+#searchBox .reset
 {display:none;}
 
 ul {padding:0; margin:0;}
@@ -171,7 +171,7 @@ li {list-style: none;}
 #searchBox input[type="checkbox"]:checked + label,
 #searchBox input[type="radio"]:checked + label,
 #searchBox .label:hover,
-.reset-button:hover {
+#searchBox .reset-button:hover {
   cursor:pointer;
   text-shadow: 0px 0px 0.1vw #fff, 0.1vw 0.25vw 0 #fff;
   border-bottom:1px solid #000;
