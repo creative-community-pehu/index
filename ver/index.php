@@ -138,8 +138,8 @@ fclose($fp);
 }
 
 .none,
-input,
-input[type="radio"],
+#searchBox input,
+#searchBox input[type="radio"],
 .reset
 {display:none;}
 
@@ -158,7 +158,7 @@ li {list-style: none;}
   filter: invert();
 }
 #searchBox .label,
-input[type="reset"] {
+#searchBox input[type="reset"] {
   display: inline-block;
   margin:0.25vw 1vw;
   padding:0.25vw 0.5vw;
