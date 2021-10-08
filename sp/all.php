@@ -113,7 +113,7 @@ fclose($fp);
 <li class="must positive">記号</li>
 <li class="">が、この展覧会の</li>
 <li class="neither">メインビジュアル</li>
-<li class="">になる仕様です。</li>
+<li class="">です。</li>
 </ul>
 </div>
 </div>
