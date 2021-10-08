@@ -46,7 +46,7 @@ fclose($fp);
 }
 
 .freetime:after {
-  content:"Members Only";
+  content:"Can ☆ Do";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
@@ -69,7 +69,7 @@ fclose($fp);
 <div id="freetime_menu"></div>
   
 <div id="header">
-<u>会員ができること</u>
+<u>できること</u>
 <u>準備中</u>
 <u>機材・ツール一覧</u>
 </div>
