@@ -77,6 +77,12 @@ body  {overflow-x:hidden;}
     max-height:75vw;
     position: fixed;
 }
+#open iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 @keyframes gradient {
   0% {
     background-position: 100% 0%;
@@ -105,7 +111,7 @@ body  {overflow-x:hidden;}
 <i>新しい生活を集める</i>
 </span>
 
-<div id="open"></div>
+<div id="open"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(180deg,
@@ -119,11 +125,5 @@ body  {overflow-x:hidden;}
 </li>
 </ul>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-    $(function(){
-    $("#open").load("flash.php");
-    })
-</script>
 </body>
 </html>
