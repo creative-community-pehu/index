@@ -52,8 +52,8 @@ body  {overflow-x:hidden;}
 #bg_link i {
   font-size:1.75rem;
   display:block;
-  padding:0.5rem 1rem;
-  margin-right:0.5rem;
+  padding:0.5rem 1.5rem;
+  margin-right:1rem;
 }
 
 .bg_gradient {
