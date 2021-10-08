@@ -84,7 +84,7 @@ fclose($fp);
 <span class="bg_symbol">✔</span>
 </li>
 <?php endif; ?>
-<li class="">
+<li style="background:#fff;">
 <div id="infomation"></div>
 <div id="marquee">
 <div class="outside org_list">
