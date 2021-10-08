@@ -75,7 +75,7 @@ body  {overflow-x:hidden;}
     max-width:35rem;
     height: 75vw;
     max-height:35rem;
-    position: fixed;
+    position: relative;
     top:4.5vw; left:4.5vw;
 }
 #open iframe {
