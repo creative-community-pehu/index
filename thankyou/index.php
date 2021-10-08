@@ -46,7 +46,7 @@ fclose($fp);
   </head>
   <body>
     <ul class="mousedragscrollable library">
-    <li><div id="p5"></div></li>
+    <li><div id="info"></div></li>
       <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
           <li><iframe src="<?=h($row[0])?>"></iframe></li>
@@ -57,5 +57,10 @@ fclose($fp);
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/coding/js/mousedragscrollable/scrollable.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#info").load("/thankyou/greeting.php");
+})
+</script>
   </body>
 </html>
