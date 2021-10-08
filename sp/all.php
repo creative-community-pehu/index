@@ -36,7 +36,7 @@ fclose($fp);
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
 #marquee {
-	position:fixed;
+	position:relative;
 	z-index:10;
 	width:100%;
 	top:0; left:0;
@@ -72,6 +72,8 @@ fclose($fp);
 </head>
 <body>
 
+<ul id="symbol_color">
+<li class="bg_color">
 <div id="marquee">
 <div class="outside org_list">
 <ul id="s1" class="es">
@@ -103,8 +105,7 @@ fclose($fp);
 </ul>
 </div>
 </div>
-
-<ul id="symbol_color">
+</li>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="bg_color" style="background:#<?=h($row[1])?>;">
