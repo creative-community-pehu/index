@@ -32,14 +32,6 @@ fclose($fp);
     top:0; left:0;
     z-index:0;
 }
-.library li:first-child {
-    width:100vw;
-    overflow:auto;
-    pointer-evente:none;
-    user-select:none;
-    position:relative;
-    z-index:1;
-}
 .library li{
     width:67vh;
     max-width:90vw;
