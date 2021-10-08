@@ -112,7 +112,7 @@ body  {overflow-x:hidden;}
 <i>新しい生活を集める</i>
 </span>
 
-<div id="open" class="open"></div>
+<div id="open" class="none"></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(180deg,
@@ -136,7 +136,7 @@ body  {overflow-x:hidden;}
     let log = document.querySelector('#open');
      
     let btnToggleclass = function(el) {
-      el.classList.toggle('none');
+      el.classList.toggle('open');
     }
      
     btn.addEventListener('click', function() {
