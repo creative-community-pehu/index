@@ -10,6 +10,7 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 #greeting {
+    position: relative; z-index:10;
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
@@ -17,13 +18,20 @@ body {margin:0; padding:0;}
     filter: invert();
 }
 
-#p5,
-#hsl {
+#p5 {
     width: 100%;
     height: 100vh;
     position: fixed;
-    top:0;
-    z-index: -1;
+    top:0; left:0;
+    z-index: 0;
+}
+#hsl {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top:0; z-index: -2;
+    background-color: rgb(0, 0, 0);
 }
 
 #you,
