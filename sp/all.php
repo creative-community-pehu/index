@@ -38,7 +38,6 @@ fclose($fp);
 #marquee {
 	position:fixed;
 	z-index:1;
-	height:3.5rem;
 	width:100%;
 	top:0; left:0;
 	padding:0; margin:0;
@@ -47,8 +46,7 @@ fclose($fp);
 }
 #marquee div {
 	position:absolute;
-	padding:0;
-	margin:0;
+	padding:0; margin:0;
 }
 #marquee ul {
 	width:100%;
@@ -128,13 +126,5 @@ fclose($fp);
 </li>
 <?php endif; ?>
 </ul>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://creative-community.space/coding/js/marquee/endless_scroll_min.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(window).load(function () {
-    $("#s1").endlessScroll({ width: '100vw', height: '4rem', steps: -1, speed:10, mousestop: true });
-});
-</script>
 </body>
 </html>
