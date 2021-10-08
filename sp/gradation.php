@@ -71,10 +71,10 @@ body  {overflow-x:hidden;}
 }
 #open {
     z-index: 10;
-    width: 40rem;
-    max-width:50vw;
-    height: 40rem;
-    max-height:50vw;
+    width: 50vw;
+    max-width:40rem;
+    height: 50vw;
+    max-height:40rem;
     position: fixed;
     top:1rem; left:1rem;
 }
