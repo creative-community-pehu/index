@@ -7,6 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Everyones Drawings are So Beautiful</title>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
+<link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
 body {margin:0; padding:0;}
 #greeting {
@@ -99,6 +100,10 @@ hr {
 </style>
 </head>
 <body>
+
+<div id="menu">
+<div><a class="tab" href="#" style="font-size:200%;" onclick="history.back(-1);return false;">↵</a></div>
+</div>
 
 <div id="greeting"></div>
 <div id="hsl"></div>
