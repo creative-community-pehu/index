@@ -64,10 +64,6 @@ fclose($fp);
 #marquee .both {font-size:100%;}
 #marquee .neither {font-size:150%;}
 #marquee .unknown {font-size:200%;}
-
-@media screen and (max-width: 550px){
-  #marquee {bottom:1.5rem;}
-}
 </style>
 </head>
 <body>
