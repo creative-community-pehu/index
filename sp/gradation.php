@@ -68,7 +68,7 @@ body  {overflow-x:hidden;}
     animation: gradient 50s ease infinite;
 }
 #flash {
-    z-index: 10;
+    z-index: 1;
     width: 75vw;
     max-width:35rem;
     height: 75vw;
@@ -80,6 +80,23 @@ body  {overflow-x:hidden;}
     width: 100%;
     height: 100%;
     border: none;
+}
+.none {
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    overflow-y: auto;
+    transition: all 1500ms ease;
+    position: fixed;
+}
+.open {
+    z-index: 1;
+    width: 100%;
+    opacity: 1;
+    overflow-y: auto;
+    transition: all 2500ms ease;
+    position: fixed;
 }
 
 @keyframes gradient {
@@ -110,6 +127,7 @@ body  {overflow-x:hidden;}
 <i>新しい生活を集める</i>
 </span>
 
+<div id="open" class="none"></div>
 <div id="flash"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
@@ -124,5 +142,22 @@ body  {overflow-x:hidden;}
 </li>
 </ul>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+    $("#open").load("log.php");
+    })
+
+    let btn = document.querySelector('#bg_link');
+    let log = document.querySelector('#open');
+     
+    let btnToggleclass = function(el) {
+      el.classList.toggle('open');
+    }
+     
+    btn.addEventListener('click', function() {
+      btnToggleclass(log);
+    }, false);
+</script>
 </body>
 </html>
