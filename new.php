@@ -26,7 +26,7 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#menu_all {
+#all_menu {
     position: relative; z-index:10;
     margin: 5vw 0 0;
     filter: invert();
