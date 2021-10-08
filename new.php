@@ -134,6 +134,15 @@ creative-community.space
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
+$('a[href^="#"]').click(function(){
+   var speed = 500;　//スクロールスピード
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   var position = target.offset().top;
+   $("html, body").animate({scrollTop:position}, speed, "swing");
+   return false;
+ });
+
 $(function(){
     $("#index").load("/menu.html");
     $("#greeting").load("/hello.html");
@@ -141,5 +150,6 @@ $(function(){
     $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
+
 </body>
 </html>
