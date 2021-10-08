@@ -89,6 +89,7 @@ body  {overflow-x:hidden;}
     overflow-y: auto;
     transition: all 1500ms ease;
     position: fixed;
+    z-index:10;
 }
 .open {
     z-index: 1;
