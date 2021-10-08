@@ -22,7 +22,7 @@ body {margin:0; padding:0;}
 #greeting #hello {
     filter: invert();
 }
-#greeting #hello #mc_embed_signup,
+#greeting #hello #support,
 #greeting #hello .qr img {
     filter: invert(1);
 }
