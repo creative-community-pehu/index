@@ -46,7 +46,7 @@ body  {overflow-x:hidden;}
 }
 #bg_link b {
     font-weight:500;
-    font-size:1.25rem;
+    font-size:1rem;
     background:#fff;
     padding:0.5rem 0.25rem;
 }
