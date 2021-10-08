@@ -33,7 +33,7 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/sign/stylesheet.css" />
-<title>令和三年三月 | 自分の気持ちを知る・表す</title>
+<title>新しい生活を集める</title>
 <style type="text/css">
 body  {overflow-x:hidden;}
 #bg_link {
@@ -103,7 +103,8 @@ body  {overflow-x:hidden;}
 <body>
 
 <span id="bg_link">
-<b>令和三年三月</b>
+<b>令和三年 十月 十日 - 三十日</b><br/>
+新しい生活を集める
 </span>
 
 <div id="open" class="none"></div>
