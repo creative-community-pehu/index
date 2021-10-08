@@ -63,14 +63,14 @@ body  {overflow-x:hidden;}
   padding:0;
   margin:0;
   width:100%;
-  height:50vw;
+  height:100vh;
   background-size: 500% 500%;
   animation: gradient 50s ease infinite;
 }
 .none {
     z-index: 0;
     width: 100%;
-    height: 50vw;
+    height: 100vh;
     opacity: 0;
     overflow-y: auto;
     transition: all 1500ms ease;
