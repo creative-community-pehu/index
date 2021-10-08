@@ -68,7 +68,7 @@ body  {overflow-x:hidden;}
     animation: gradient 50s ease infinite;
 }
 #flash {
-    z-index: 1;
+    z-index: 0;
     width: 75vw;
     max-width:35rem;
     height: 75vw;
