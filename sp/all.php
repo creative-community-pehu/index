@@ -59,8 +59,8 @@ fclose($fp);
 	display:inline-block;
 	margin: 0 0.25rem;
 }
-#marquee #bottom {
-	width:100vw; bottom:0;
+#marquee #top {
+	width:100vw; top:0;
 	text-align:center;
 }
 #marquee .must {font-weight:900;}
@@ -77,14 +77,14 @@ fclose($fp);
 #marquee .unknown {font-size:200%;}
 
 @media screen and (max-width: 550px){
-  #topic {top: 45%;}
+  #marquee {bottom:1.5rem;}
 }
 </style>
 </head>
 <body>
 
 <div id="marquee">
-<div id="bottom" class="outside org_list">
+<div id="top" class="outside org_list">
 <ul id="s1" class="es">
 <li class="must unknown">クリエイティブ・コミュニティスペース</li>
 <li class="must unknown">ペフ</li>
