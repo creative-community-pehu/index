@@ -15,7 +15,8 @@ body {padding:0; margin: 0;}
   height:100vh;
 }
   #all,
-  #infomation {
+  #infomation,
+  #graffiti {
     overflow-y: auto;
   }
 
@@ -25,10 +26,12 @@ body {padding:0; margin: 0;}
 
 <div id="menu">
 <div><a class="tab" href="#all">自分の気持ちを知る・表す</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#graffiti">HTML graffiti</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="gradation"></div>
 <div id="all" class="change"></div>
+<div id="graffiti" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/sign/infomation/menu.js"></script>
@@ -36,6 +39,7 @@ body {padding:0; margin: 0;}
 $(function(){
 $("#gradation").load("gradation.php");
 $("#all").load("all.php");
+$("#graffiti").load("/thankyou/greeting.php");
 })
 
 $('a[href^="#"]').click(function(){
