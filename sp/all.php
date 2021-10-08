@@ -91,7 +91,9 @@ fclose($fp);
 <li class="must positive">記号</li>
 <li class="">は、このウェブサイト内に</li>
 <li class="unknown can">2021年9月9日から10月9日</li>
-<li class="">の期間限定で設置した投稿フォームに気づいてくださった皆様が投稿した</li>
+<li class="">の期間限定で設置した投稿フォームに気づいてくださった</li>
+<li class="neither">皆様が投稿</li>
+<li class="">した</li>
 <li class="must unknown">自分の気持ちを知る・表す</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
