@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
 <style type="text/css">
       #randomImg {
-        position: fixed;
+        position: relative;
         top:0; left:0;
         z-index:-1;
         overflow:hidden;
@@ -20,13 +20,13 @@
       #randomImg img {
         min-width:100%;
         min-height:100%;
-        position: absolute;
+        position: fixed;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
       }
       #randomImg p {
-        position: absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: 10;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
       }
