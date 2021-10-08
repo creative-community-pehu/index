@@ -37,6 +37,7 @@ fclose($fp);
     max-width:90vw;
     height: 94vh;
     overflow:hidden;
+    position:relative;
 }
     </style>
     
