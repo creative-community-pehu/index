@@ -40,7 +40,7 @@ fclose($fp);
 	z-index:1;
 	height:4rem;
 	width:100%;
-	bottom:0; left:0;
+	top:0; left:0;
 	padding:0; margin:0;
 	overflow:hidden;
 	transition:.5s all;
