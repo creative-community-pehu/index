@@ -114,8 +114,8 @@ fclose($fp);
 <li class="">を展示します。</li>
 </ul>
 </div>
-<div id="infomation"></div>
 </div>
+<div id="infomation"></div>
 </li>
 </ul>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
