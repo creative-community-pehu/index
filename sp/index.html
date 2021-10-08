@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="https://creative-community.space/sign/infomation/menu.css" />
+<title>令和三年三月 | 自分の気持ちを知る・表す</title>
+<style type="text/css">
+body {padding:0; margin: 0;}
+
+  #all,
+  #infomation {
+    overflow-y: auto;
+  }
+  #flash iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+</style>
+</head>
+<body>
+
+<div id="menu">
+<div><a class="tab" href="#flash">Flash</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#all">View All</a><span class="check"><b>✔</b></span></div>
+</div>
+
+<div id="gradation"></div>
+<div id="all" class="change"></div>
+<div id="flash" class="change"><iframe src="flash.php"></iframe></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/sign/infomation/menu.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#gradation").load("gradation.php");
+$("#all").load("all.php");
+})
+
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
+</script>
+</body>
+</html>
