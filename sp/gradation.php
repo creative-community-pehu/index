@@ -51,6 +51,7 @@ body  {overflow-x:hidden;}
 }
 #bg_link i {
   font-size:1.75rem;
+  display:inline-block;
   padding:0.5rem 2rem;
 }
 
