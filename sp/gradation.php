@@ -42,14 +42,18 @@ body  {overflow-x:hidden;}
   top:1rem;
   right:1rem;
   font-family: "SimSong", "MS Mincho", serif;
-	transition:.5s all;
+  transition:.5s all;
 }
 #bg_link b {
   font-weight:500;
   background:#fff;
   padding:0.5rem 0.25rem;
 }
-#bg_link i {padding:0.5rem 0.125rem;}
+#bg_link i {
+  font-size:2rem;
+  background:#fff;
+  padding:0.5rem 0.25rem;
+}
 
 .bg_gradient {
   position:relative;
@@ -104,7 +108,7 @@ body  {overflow-x:hidden;}
 
 <span id="bg_link">
 <b>令和三年 十月 十日 - 三十日</b><br/>
-新しい生活を集める
+<i>新しい生活を集める</i>
 </span>
 
 <div id="open" class="none"></div>
