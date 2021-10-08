@@ -102,7 +102,7 @@ fclose($fp);
 <li class="">です。</li>
 </ul>
 <ul>
-<li class="neither">ご投稿ありがとうございました。</li>
+<li class="neither">ご投稿いただいた皆様ありがとうございました。</li>
 </ul>
 </div>
 </div>
