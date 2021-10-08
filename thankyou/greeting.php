@@ -121,7 +121,7 @@ creative-community.space
     $(function(){
     $("#greeting").load("/thankyou/hello.html");
     $("#p5").load("/coding/js/p5/sketch.html");
-    $("#hsl").load("coding/js/hsl/");
+    $("#hsl").load("/coding/js/hsl/");
     })
 </script>
 
