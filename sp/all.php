@@ -105,26 +105,15 @@ fclose($fp);
 <li class="">です。</li>
 </ul>
 <ul>
-<li class="unknown">誰にでもできること</li>
-<li class="neither">を</li>
-<li class="unknown">自分らしく行うこと</li>
-<li class="neither">の</li>
-<li class="unknown">美しさ</li>
-<li class="">を</li>
-<li class="neither">形にする</li>
-<li class="must positive">展覧会</li>
+<li class="neither">展覧会</li>
 <li class="must positive">新しい生活を集める</li>
-<li class="">を開催します。</li>
-<li class=""></li>
-<li class="neither">会員制コミュニティサイト</li>
-<li class="unknown should"><i>creative-community.space</i></li>
-<li class="">の</li>
-<li class="neither may">活動</li>
-<li class="">を</li>
-<li class="unknown must">美術作品</li>
-<li class="">として</li>
-<li class="neither">この展覧会で発表します。</li>
-<li class="must positive">　</li>
+<li class="">に興味をいだき、このウェブサイトを訪れてくださった皆様が投稿した</li>
+<li class="must positive">色</li>
+<li class="neither">と</li>
+<li class="must positive">記号</li>
+<li class="">が、この展覧会のメインビジュアルです。</li>
+<li class="neither">メインビジュアル</li>
+<li class="">です。</li>
 </ul>
 </div>
 </div>
