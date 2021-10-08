@@ -43,8 +43,6 @@ body  {overflow-x:hidden;}
     right:1rem;
     font-family: "SimSong", "MS Mincho", serif;
     transition:.5s all;
-    pointer-events:none;
-    user-select:none;
 }
 #bg_link b {
     font-weight:500;
@@ -69,7 +67,7 @@ body  {overflow-x:hidden;}
     background-size: 500% 500%;
     animation: gradient 50s ease infinite;
 }
-#open {
+#flash {
     z-index: 10;
     width: 75vw;
     max-width:35rem;
@@ -78,7 +76,7 @@ body  {overflow-x:hidden;}
     position: relative;
     top:4.5vw; left:4.5vw;
 }
-#open iframe {
+#flash iframe {
     width: 100%;
     height: 100%;
     border: none;
@@ -112,7 +110,7 @@ body  {overflow-x:hidden;}
 <i>新しい生活を集める</i>
 </span>
 
-<div id="open"><iframe src="flash.php"></iframe></div>
+<div id="flash"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(180deg,
