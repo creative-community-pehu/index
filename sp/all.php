@@ -88,8 +88,8 @@ fclose($fp);
 <li class="">
 <div id="marquee">
 <div class="outside org_list">
-<ul id="s1" class="es">
-<li class="">ここに集まった</li>
+<ul>
+<li class="">ここに表示する</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
@@ -103,6 +103,8 @@ fclose($fp);
 <li class="neither">と</li>
 <li class="must positive">記号</li>
 <li class="">です。</li>
+</ul>
+<ul>
 <li class="unknown">誰にでもできること</li>
 <li class="neither">を</li>
 <li class="unknown">自分らしく行うこと</li>
