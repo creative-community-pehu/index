@@ -47,7 +47,7 @@ fclose($fp);
 #marquee div {padding:2.5%;}
 #marquee ul {
 	display:inline-block;
-	padding:0; margin:0;
+	padding:0 0 2rem; margin:0;
 }
 #marquee li {
 	display:inline-block;
