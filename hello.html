@@ -37,7 +37,127 @@ Create Together
 
 <p class="singup"><a href="https://pehu.cart.fc2.com/signup" target="_blank">Become a Free Member</a></p>
 
-<p id="nyp"></p>
+    <ul id="support">
+    <li>
+    <h1><u>Make a one time donation</u></h1>
+    <p>このウェブサイトの運営・活動への寄付を受け付けています。</p>
+    <p><i>決済フォームにあなたのご住所をご入力ください。<br/>
+    決算時にご入力いただいたご住所に、受領証明書と合わせて、寄附金額に相当する特別な記念品をお送りいたします。</i></p>
+    </li>
+    <li id="join">
+    <h2>Donate</h2>
+    <div id="smart-button-container">
+        <div style="text-align: center"><label for="description"> </label><input type="text" name="descriptionInput" id="description" maxlength="127" value="Donation" style="display:none;"></div>
+          <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Sorry Please try again.</p>
+        <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" id="amount" value="" ><span> JPY</span></div>
+    <p><i>※ 一度に寄附できる金額は、100円 から 9999999円 までです。<br/>The amount that can be donate at one time is 100 - 9999999 JPN</i></p>
+          <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+        <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+          <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+        <div style="text-align: center; margin-top: 0;" id="paypal-button-container"></div>
+      </div>
+      <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=JPY" data-sdk-integration-source="button-factory"></script>
+      <script>
+      function initPayPalButton() {
+        var description = document.querySelector('#smart-button-container #description');
+        var amount = document.querySelector('#smart-button-container #amount');
+        var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+        var priceError = document.querySelector('#smart-button-container #priceLabelError');
+        var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+        var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+        var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+    
+        var elArr = [description, amount];
+    
+        if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+          invoiceidDiv.style.display = "block";
+        }
+    
+        var purchase_units = [];
+        purchase_units[0] = {};
+        purchase_units[0].amount = {};
+    
+        function validate(event) {
+          return event.value.length > 0;
+        }
+    
+        paypal.Buttons({
+          style: {
+            color: 'gold',
+            shape: 'pill',
+            label: 'paypal',
+            layout: 'vertical',
+            
+          },
+    
+          onInit: function (data, actions) {
+            actions.disable();
+    
+            if(invoiceidDiv.style.display === "block") {
+              elArr.push(invoiceid);
+            }
+    
+            elArr.forEach(function (item) {
+              item.addEventListener('keyup', function (event) {
+                var result = elArr.every(validate);
+                if (result) {
+                  actions.enable();
+                } else {
+                  actions.disable();
+                }
+              });
+            });
+          },
+    
+          onClick: function () {
+            if (description.value.length < 1) {
+              descriptionError.style.visibility = "visible";
+            } else {
+              descriptionError.style.visibility = "hidden";
+            }
+    
+            if (amount.value.length < 1) {
+              priceError.style.visibility = "visible";
+            } else {
+              priceError.style.visibility = "hidden";
+            }
+    
+            if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+              invoiceidError.style.visibility = "visible";
+            } else {
+              invoiceidError.style.visibility = "hidden";
+            }
+    
+            purchase_units[0].description = description.value;
+            purchase_units[0].amount.value = amount.value;
+    
+            if(invoiceid.value !== '') {
+              purchase_units[0].invoice_id = invoiceid.value;
+            }
+          },
+    
+          createOrder: function (data, actions) {
+            return actions.order.create({
+              purchase_units: purchase_units,
+            });
+          },
+    
+          onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+          },
+    
+          onError: function (err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+      </script>
+    </li>
+    </ul>
+
 
 <p class="singup">
 <a href="https://github.com/creative-community-pehu" target="_blank">GitHub</a>
@@ -50,7 +170,7 @@ Create Together
 <script src="/coding/hello/open_close.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#nyp").load("/support/");
+    $("#").load("");
 })
 </script>
 </body>
