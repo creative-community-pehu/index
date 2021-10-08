@@ -33,7 +33,7 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="https://creative-community.space/sign/stylesheet.css" />
-<title>令和三年三月 | 自分の気持ちを知る・表す</title>
+<title>新しい生活を集める</title>
 <style type="text/css">
 </style>
 </head>
