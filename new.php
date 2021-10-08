@@ -22,8 +22,7 @@ body {margin:0; padding:0;}
 #greeting #hello {
     filter: invert();
 }
-#greeting #hello #support,
-#greeting #hello .qr img {
+#greeting #hello #support {
     filter: invert(1);
 }
 #ver #grid div:nth-child(n + 7) {
