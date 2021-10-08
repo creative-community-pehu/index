@@ -101,6 +101,9 @@ fclose($fp);
 <li class="must positive">記号</li>
 <li class="">です。</li>
 </ul>
+<ul>
+<li class="neither">ご投稿ありがとうございました。</li>
+</ul>
 </div>
 </div>
 </li>
