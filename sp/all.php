@@ -109,7 +109,7 @@ fclose($fp);
 <ul>
 <li class="neither">展覧会</li>
 <li class="must positive">新しい生活を集める</li>
-<li class="">では、この仕様をアップデートした</li>
+<li class="">では、この仕様をバージョンアップした</li>
 <li class="neither">NFT作品</li>
 <li class="">を展示します。</li>
 </ul>
