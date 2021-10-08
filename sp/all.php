@@ -37,11 +37,10 @@ fclose($fp);
 <style type="text/css">
 #marquee {
 	position:fixed;
-	z-index:1;
+	z-index:10;
 	width:100%;
 	top:0; left:0;
 	padding:0; margin:0;
-	overflow:hidden;
 	transition:.5s all;
 }
 #marquee div {
