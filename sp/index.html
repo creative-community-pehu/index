@@ -9,7 +9,7 @@
 <style type="text/css">
 body {padding:0; margin: 0;}
 #gradation,
-#graffiti {
+#print {
   position:fixed;
   top:0; left:0;
   width:100%;
@@ -17,7 +17,7 @@ body {padding:0; margin: 0;}
 }
   #all,
   #infomation,
-  #graffiti {
+  #print {
     overflow-y: auto;
     background:#fff;
   }
@@ -28,11 +28,13 @@ body {padding:0; margin: 0;}
 
 <div id="menu">
 <div><a class="tab" href="#all">自分の気持ちを知る・表す</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#print">WWW to Print</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="/thankyou/">HTML graffiti</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="gradation"></div>
 <div id="all" class="change"></div>
+<div id="print" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/sign/infomation/menu.js"></script>
@@ -40,6 +42,7 @@ body {padding:0; margin: 0;}
 $(function(){
 $("#gradation").load("gradation.php");
 $("#all").load("all.php");
+$("#print").load("print.html");
 })
 
 $('a[href^="#"]').click(function(){
