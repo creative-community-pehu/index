@@ -183,7 +183,7 @@ input[type="reset"] {
 <body>
 <div id="grid">
 <div>
-<p><i>更新情報 | creative-community.space</i></p>
+<p><i>更新履歴 | creative-community.space</i></p>
 <span>
 <u style="display:inline;">View All | 全部見る</u>
 </span>
