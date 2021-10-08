@@ -43,6 +43,8 @@ body  {overflow-x:hidden;}
   right:1rem;
   font-family: "SimSong", "MS Mincho", serif;
   transition:.5s all;
+    pointer-events:none;
+    user-select:none;
 }
 #bg_link b {
   font-weight:500;
@@ -67,21 +69,12 @@ body  {overflow-x:hidden;}
   background-size: 500% 500%;
   animation: gradient 50s ease infinite;
 }
-.none {
-    z-index: 0;
-    width: 100%;
-    height: 100vh;
-    opacity: 0;
-    overflow-y: auto;
-    transition: all 1500ms ease;
-    position: fixed;
-}
-.open {
+#open {
     z-index: 1;
-    width: 100%;
-    opacity: 1;
-    overflow-y: auto;
-    transition: all 2500ms ease;
+    width: 45rem;
+    max-width:75vw;
+    height: 45rem;
+    max-height:75vw;
     position: fixed;
 }
 @keyframes gradient {
@@ -112,7 +105,7 @@ body  {overflow-x:hidden;}
 <i>新しい生活を集める</i>
 </span>
 
-<div id="open" class="none"></div>
+<div id="open"></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(180deg,
@@ -131,17 +124,6 @@ body  {overflow-x:hidden;}
     $(function(){
     $("#open").load("flash.php");
     })
-
-    let btn = document.querySelector('#bg_link');
-    let log = document.querySelector('#open');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('open');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(log);
-    }, false);
 </script>
 </body>
 </html>
