@@ -72,11 +72,11 @@ body  {overflow-x:hidden;}
 #open {
     z-index: 10;
     width: 75vw;
-    max-width:40rem;
+    max-width:35rem;
     height: 75vw;
-    max-height:40rem;
+    max-height:35rem;
     position: fixed;
-    top:1rem; left:1rem;
+    top:2.5vw; left:2.5vw;
 }
 #open iframe {
     width: 100%;
