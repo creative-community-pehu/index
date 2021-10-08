@@ -129,6 +129,7 @@ fclose($fp);
 <?php endif; ?>
 </ul>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://creative-community.space/coding/js/marquee/endless_scroll_min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(window).load(function () {
