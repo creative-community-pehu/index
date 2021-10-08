@@ -38,7 +38,7 @@ fclose($fp);
 #marquee {
 	position:fixed;
 	z-index:1;
-	height:4rem;
+	height:3.5rem;
 	width:100%;
 	top:0; left:0;
 	padding:0; margin:0;
@@ -47,7 +47,7 @@ fclose($fp);
 }
 #marquee div {
 	position:absolute;
-	padding:0.25rem 0;
+	padding:0;
 	margin:0;
 }
 #marquee ul {
