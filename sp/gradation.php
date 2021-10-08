@@ -68,7 +68,7 @@ body  {overflow-x:hidden;}
     animation: gradient 50s ease infinite;
 }
 #flash {
-    z-index: 0;
+    z-index: 1;
     width: 75vw;
     max-width:35rem;
     height: 75vw;
@@ -89,10 +89,9 @@ body  {overflow-x:hidden;}
     overflow-y: auto;
     transition: all 1500ms ease;
     position: fixed;
-    z-index:2;
+    z-index:5;
 }
 .open {
-    z-index: 2;
     width: 100%;
     opacity: 1;
     overflow-y: auto;
