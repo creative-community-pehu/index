@@ -113,8 +113,8 @@ fclose($fp);
 <li class="neither">NFT作品</li>
 <li class="">を展示します。</li>
 </ul>
-<ul id="infomation"></ul>
 </div>
+<div id="infomation"></div>
 </div>
 </li>
 </ul>
