@@ -113,9 +113,16 @@ fclose($fp);
 <li class="neither">NFT作品</li>
 <li class="">を展示します。</li>
 </ul>
+<ul id="infomation"></ul>
 </div>
 </div>
 </li>
 </ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#infomation").load("https://creative-community.space/sign/infomation/");
+})
+</script>
 </body>
 </html>
