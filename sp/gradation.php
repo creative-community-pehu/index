@@ -53,7 +53,7 @@ body  {overflow-x:hidden;}
   font-size:1.75rem;
   display:block;
   padding:0.5rem 1rem;
-  margin-right:1rem;
+  margin-right:0.5rem;
 }
 
 .bg_gradient {
