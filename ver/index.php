@@ -40,8 +40,7 @@ fclose($fp);
     height: 100vh;
     max-height: 100vh;
     position: fixed;
-    top:0;
-    z-index: -2;
+    top:0; z-index: -2;
     background-color: rgb(0, 0, 0);
 }
 
