@@ -97,7 +97,7 @@ body {margin:0; padding:0;}
 
 <div id="you">
 <h1><span>Drawing by</span>
-<img src="qr.png">
+<img src="/qr.png">
 <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
 <div id="submit">
