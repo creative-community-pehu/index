@@ -53,7 +53,7 @@ body  {overflow-x:hidden;}
 #bg_link i {
     font-size:2rem;
     display:block;
-    padding:0.5rem 1rem;
+    padding:0.5rem 1.5rem;
     margin-right:1rem;
 }
 
