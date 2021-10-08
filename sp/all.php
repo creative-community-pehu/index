@@ -43,22 +43,14 @@ fclose($fp);
 	padding:0; margin:0;
 	transition:.5s all;
 }
-#marquee div {
-	position:absolute;
-	padding:0; margin:0;
-}
+#marquee div {padding:2.5%;}
 #marquee ul {
-	width:100%;
 	display:inline-block;
 	padding:0; margin:0;
 }
 #marquee li {
 	display:inline-block;
 	margin: 0 0.25rem;
-}
-#marquee #top {
-	width:100vw; top:0;
-	text-align:center;
 }
 #marquee .must {font-weight:900;}
 #marquee .should {font-weight:700;}
@@ -81,7 +73,7 @@ fclose($fp);
 <body>
 
 <div id="marquee">
-<div id="top" class="outside org_list">
+<div class="outside org_list">
 <ul id="s1" class="es">
 <li class="must unknown">クリエイティブ・コミュニティスペース</li>
 <li class="must unknown">ペフ</li>
