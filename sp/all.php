@@ -39,6 +39,7 @@ fclose($fp);
 	position:relative;
 	z-index:10;
 	width:100%;
+	min-height:100vh;
 	top:0; left:0;
 	padding:0; margin:0;
 	transition:.5s all;
