@@ -1,81 +1,33 @@
-
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WWW to Print</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
 <style type="text/css">
-body {padding:0; margin: 0;}
-
-#about {
-  position: relative;
-  width:95%;
-  max-width: 55rem;
-  margin:10vh auto;
-}
-.members {
-  width:100%;
-  margin: 5rem 0;
-}
-.members a,
-.members u {
-  color:#000;
-  text-decoration: none;
-  background-color: #fff;
-  border:2px solid;
-  padding:0.5rem 2rem;
-  border-radius: 50%;
-}
-#about h1,
-#about b {
-  font-family: 'Times New Roman', serif;
-  font-weight:500;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  display:inline-block;
-  transform: scale(1,1.1);
-  word-spacing: -.125ch;
-}
-#about h1 {
-  font-size:1.5rem;
-  line-height:200%;
-  text-align: center;
-}
-#about p {
-  font-size:1rem;
-  font-weight:500;
-  padding: 0.5rem;
-  font-family: "SimSong", "MS Mincho", serif;
-}
-#about b {
-  font-size:125%;
-  line-height:150%;
-}
-hr {border:none; margin: 1rem;}
-
-</style>
+      #randomImg {
+        position: fixed;
+        top:0; left:0;
+        z-index:-1;
+        overflow:hidden;
+        width:100%;
+        height:100vh;
+        user-select:none;
+        pointer-events:none;
+      }
+      #randomImg img {
+        min-width:100%;
+        min-height:100%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
 </head>
 <body>
-<div id="about">
-<hr/>
-<h1>This is a Collection of Colors and Symbols That Suits Our Feelings.</h1>
-<p>35 の <b>記号</b> と 18 の <b>色</b> から <b>今の気持ちに合う</b> 記号と色を投稿し、自分たちの気持ちを一つに集めた <b>NFT作品</b> を制作します。</p>
-<hr/>
-<p><u>作品概要</u></p>
-<p>色と記号の投稿を、月毎に区切り、毎月新しい作品を発表します。</p>
-<p>当月の投稿を表示するこのページは、誰もが鑑賞することができ、これまでの作品の閲覧／色と記号の投稿には、コミュニティサイトのメンバーのみが参加できます。</p>
-<p>投稿された色はこの作品の背景色になると同時に、反対色が記号などの文字色となり、自分の気持ちとは反対の色を知る・表すことにも作用します。</p>
-<p>色と記号の投稿時間・IPアドレスを記録し、それぞれの色と記号を唯一無二の情報として扱います。また、その情報の連なりを、代わりが効かない特別なデジタルデータとして作品化します。</p>
-<hr/>
-<p><b>Only Members Can be Posting Color and Symbol Here and Can Browsing All of The Collection.</b></p>
-<hr/>
-<p><b>コミュニティサイト</b>への<b>入会</b>は<b>無料</b>です。<br/>
-<b>みんなで</b>一緒に<b>自分たちの気持ちを一つに集めた作品</b>を<b>作りましょう。</b></p>
-<hr/>
-<h1 class="members"><a href="">Become A Member</a></h1>
-<hr/>
-</div>
+<div id="randomImg" class="random"></div>
+<script src="random.js" defer></script>
 </body>
 </html>
