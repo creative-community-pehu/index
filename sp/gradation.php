@@ -50,9 +50,8 @@ body  {overflow-x:hidden;}
   padding:0.5rem 0.25rem;
 }
 #bg_link i {
-  font-size:2rem;
-  background:#fff;
-  padding:0.5rem 0.25rem;
+  font-size:1.5rem;
+  padding:0.5rem 1rem;
 }
 
 .bg_gradient {
