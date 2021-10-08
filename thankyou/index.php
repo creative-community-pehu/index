@@ -47,7 +47,8 @@ hr {
 #you img {width: 3.5rem;}
 
 @media print{
-#greeting
+#greeting,
+#menu
 {display:none;}
 
 #you,
