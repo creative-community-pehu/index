@@ -37,43 +37,43 @@ fclose($fp);
 <style type="text/css">
 body  {overflow-x:hidden;}
 #bg_link {
-  position:absolute;
-  z-index:100;
-  top:1rem;
-  right:1rem;
-  font-family: "SimSong", "MS Mincho", serif;
-  transition:.5s all;
+    position:absolute;
+    z-index:100;
+    top:1rem;
+    right:1rem;
+    font-family: "SimSong", "MS Mincho", serif;
+    transition:.5s all;
     pointer-events:none;
     user-select:none;
 }
 #bg_link b {
-  font-weight:500;
-  background:#fff;
-  padding:0.5rem 0.25rem;
+    font-weight:500;
+    background:#fff;
+    padding:0.5rem 0.25rem;
 }
 #bg_link i {
-  font-size:1.75rem;
-  display:block;
-  padding:0.5rem 1rem;
-  margin-right:0.5rem;
+    font-size:1.75rem;
+    display:block;
+    padding:0.5rem 1rem;
+    margin-right:0.5rem;
 }
 
 .bg_gradient {
-  position:relative;
-  top:0; left:0;
-  display:block;
-  padding:0;
-  margin:0;
-  width:100%;
-  height:100vh;
-  background-size: 500% 500%;
-  animation: gradient 50s ease infinite;
+    position:relative;
+    top:0; left:0;
+    display:block;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100vh;
+    background-size: 500% 500%;
+    animation: gradient 50s ease infinite;
 }
 #open {
     z-index: 10;
-    width: 50vw;
+    width: 75vw;
     max-width:40rem;
-    height: 50vw;
+    height: 75vw;
     max-height:40rem;
     position: fixed;
     top:1rem; left:1rem;
