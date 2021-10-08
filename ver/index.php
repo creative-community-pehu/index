@@ -31,9 +31,6 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
-#ver {
-    margin: 5vw 0;
-}
 #tba {
   filter: invert();
 }
