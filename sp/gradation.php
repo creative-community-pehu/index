@@ -82,17 +82,16 @@ body  {overflow-x:hidden;}
     border: none;
 }
 .none {
-    z-index: 0;
     width: 100%;
-    height: 100vh;
+    height: 0vh;
     opacity: 0;
     overflow-y: auto;
     transition: all 1500ms ease;
-    position: fixed;
-    z-index:5;
+    position: fixed; z-index:5;
 }
 .open {
     width: 100%;
+    height: 100vh;
     opacity: 1;
     overflow-y: auto;
     transition: all 2500ms ease;
