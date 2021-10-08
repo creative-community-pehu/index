@@ -96,8 +96,9 @@ fclose($fp);
 <li class="">は、</li>
 <li class="unknown can">2021年9月9日から10月9日</li>
 <li class="">の間に</li>
-<li class="neither">このウェブサイトを訪れた方々が投稿した</li>
-<li class="must unknown">自分の気持ちを表す</li>
+<li class="neither">このウェブサイトを訪れた方々</li>
+<li class="">が投稿した</li>
+<li class="must unknown">自分の気持ちを知る・表す</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
