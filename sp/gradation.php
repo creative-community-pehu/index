@@ -39,18 +39,19 @@ body  {overflow-x:hidden;}
 #bg_link {
     position:absolute;
     z-index:100;
-    top:1rem;
-    right:1rem;
+    top:2.5vw;
+    right:2.5vw;
     font-family: "SimSong", "MS Mincho", serif;
     transition:.5s all;
 }
 #bg_link b {
     font-weight:500;
+    font-size:1.25rem;
     background:#fff;
     padding:0.5rem 0.25rem;
 }
 #bg_link i {
-    font-size:1.75rem;
+    font-size:2rem;
     display:block;
     padding:0.5rem 1rem;
     margin-right:1rem;
