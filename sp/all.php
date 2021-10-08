@@ -89,7 +89,7 @@ fclose($fp);
 <div id="marquee">
 <div class="outside org_list">
 <ul>
-<li class="">ここに表示する</li>
+<li class="">このページに表示される</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
@@ -107,7 +107,7 @@ fclose($fp);
 <ul>
 <li class="neither">展覧会</li>
 <li class="must positive">新しい生活を集める</li>
-<li class="">に興味をいだいて、ここを訪れてくださった皆様が投稿した</li>
+<li class="">に興味をいだいて、このウェブサイトを訪れてくださった皆様が投稿した</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
