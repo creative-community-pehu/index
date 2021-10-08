@@ -85,6 +85,7 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li class="">
+<div id="infomation"></div>
 <div id="marquee">
 <div class="outside org_list">
 <ul>
@@ -105,16 +106,8 @@ fclose($fp);
 <li class="must positive">記号</li>
 <li class="">です。</li>
 </ul>
-<ul>
-<li class="neither">展覧会</li>
-<li class="must positive">新しい生活を集める</li>
-<li class="">では、この仕様をバージョンアップした</li>
-<li class="neither">NFT作品</li>
-<li class="">を展示します。</li>
-</ul>
 </div>
 </div>
-<div id="infomation"></div>
 </li>
 </ul>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
