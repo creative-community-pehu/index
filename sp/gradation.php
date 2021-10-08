@@ -70,7 +70,7 @@ body  {overflow-x:hidden;}
   animation: gradient 50s ease infinite;
 }
 #open {
-    z-index: 1;
+    z-index: 10;
     width: 45rem;
     max-width:75vw;
     height: 45rem;
