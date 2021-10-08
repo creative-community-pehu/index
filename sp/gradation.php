@@ -59,7 +59,7 @@ body  {overflow-x:hidden;}
 }
 
 .bg_gradient {
-    position:relative;
+    position:fixed;
     top:0; left:0;
     display:block;
     padding:0;
