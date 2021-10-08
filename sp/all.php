@@ -107,13 +107,13 @@ fclose($fp);
 <ul>
 <li class="neither">展覧会</li>
 <li class="must positive">新しい生活を集める</li>
-<li class="">に興味をいだき、このウェブサイトを訪れてくださった皆様が投稿した</li>
+<li class="">に興味をいだいて、ここを訪れてくださった皆様が投稿した</li>
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
-<li class="">が、この展覧会のメインビジュアルです。</li>
+<li class="">が、この展覧会の</li>
 <li class="neither">メインビジュアル</li>
-<li class="">です。</li>
+<li class="">になる仕様です。</li>
 </ul>
 </div>
 </div>
