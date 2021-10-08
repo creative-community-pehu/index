@@ -73,7 +73,18 @@ fclose($fp);
 <body>
 
 <ul id="symbol_color">
-<li class="bg_color">
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
+<li class="bg_color" style="background:#<?=h($row[1])?>;">
+<span class="bg_symbol" style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[0])?></span>
+</li>
+<?php endforeach; ?>
+<?php else: ?>
+<li class="bg_color" style="background:#fff;">
+<span class="bg_symbol">✔</span>
+</li>
+<?php endif; ?>
+<li class="">
 <div id="marquee">
 <div class="outside org_list">
 <ul id="s1" class="es">
@@ -106,17 +117,6 @@ fclose($fp);
 </div>
 </div>
 </li>
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
-<li class="bg_color" style="background:#<?=h($row[1])?>;">
-<span class="bg_symbol" style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[0])?></span>
-</li>
-<?php endforeach; ?>
-<?php else: ?>
-<li class="bg_color" style="background:#fff;">
-<span class="bg_symbol">✔</span>
-</li>
-<?php endif; ?>
 </ul>
 </body>
 </html>
