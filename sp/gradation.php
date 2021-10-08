@@ -39,7 +39,7 @@ body  {overflow-x:hidden;}
 #bg_link {
     position:absolute;
     z-index:100;
-    top:7.5vw;
+    top:4.5vw;
     right:2.5vw;
     font-family: "SimSong", "MS Mincho", serif;
     transition:.5s all;
