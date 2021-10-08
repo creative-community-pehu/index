@@ -75,12 +75,12 @@ fclose($fp);
   grid-row-start: 3;
   grid-row-end: 5;
 }
-#grid div:nth-of-type(8) {
-  grid-column-start: 2;
+#grid div:nth-of-type(9) {
+  grid-column-start: 3;
   grid-row-start: 5;
   grid-row-end: 7;
 }
-#grid div:nth-of-type(16) {
+#grid div:nth-of-type(13) {
   grid-column-start: 3;
   grid-row-start: 7;
   grid-row-end: 9;
