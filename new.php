@@ -26,11 +26,6 @@ body {margin:0; padding:0;}
 #greeting #hello .qr img {
     filter: invert(1);
 }
-#all_menu {
-    position: relative; z-index:10;
-    margin-top: 5vw;
-    filter: invert();
-}
 #ver #grid div:nth-child(n + 7) {
   display: none;
 }
@@ -54,7 +49,6 @@ body {margin:0; padding:0;}
 @media print{
 #index,
 #greeting,
-#all_menu,
 #ver #grid,
 #ver #tobe,
 #ver #searchBox,
@@ -113,7 +107,6 @@ body {margin:0; padding:0;}
 <body>
 <div id="index"></div>
 <div id="greeting"></div>
-<div id="all_menu"></div>
 <div id="ver"></div>
 <div id="p5"></div>
 
@@ -153,7 +146,6 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#index").load("/menu/");
     $("#greeting").load("/hello.html");
-    $("#all_menu").load("/menu/all.html");
     $("#ver").load("/ver/");
     $("#p5").load("/coding/js/p5/sketch.html");
 })
