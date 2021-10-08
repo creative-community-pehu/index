@@ -28,7 +28,7 @@ body {margin:0; padding:0;}
 }
 #all_menu {
     position: relative; z-index:10;
-    margin: 5vw 0 0;
+    margin: 10vw 0 0;
     filter: invert();
 }
 #ver #grid div:nth-child(n + 7) {
