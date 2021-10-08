@@ -102,7 +102,7 @@ hr {
 <body>
 
 <div id="menu">
-<div><a class="tab" href="#" style="font-size:200%;" onclick="history.back(-1);return false;">↵</a></div>
+<div><a class="tab" href="#" style="font-size:5rem;" onclick="history.back(-1);return false;">↵</a></div>
 </div>
 
 <div id="greeting"></div>
