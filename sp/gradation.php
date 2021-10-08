@@ -63,14 +63,14 @@ body  {overflow-x:hidden;}
   padding:0;
   margin:0;
   width:100%;
-  height:100vh;
+  height:50vw;
   background-size: 500% 500%;
   animation: gradient 50s ease infinite;
 }
 .none {
     z-index: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vw;
     opacity: 0;
     overflow-y: auto;
     transition: all 1500ms ease;
@@ -129,7 +129,7 @@ body  {overflow-x:hidden;}
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
-    $("#open").load("log.php");
+    $("#open").load("flash.php");
     })
 
     let btn = document.querySelector('#bg_link');
