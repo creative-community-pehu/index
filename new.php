@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。
-みんなでやりたいことを実現するクリエイティブ・コミュニティを作りましょう。">
+やりたいことをみんなで実現するクリエイティブ・コミュニティを作りましょう。">
 <title>Index | creative-community.space</title>
 <link rel="icon" href="/logo.png">
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
