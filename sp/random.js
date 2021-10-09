@@ -1,8 +1,10 @@
 const random = [
-  "https://nekogazou.com/wp-content/uploads/2015/03/282e6ed4976b181c78381a609c0f4e32-e1427784795864.jpg",
-  "https://nekogazou.com/wp-content/uploads/2015/03/gazou12-e1426694824704.jpg",
-  "https://nekogazou.com/wp-content/uploads/2015/03/gazou21-e1426694843537.jpg",
-  "https://nekogazou.com/wp-content/uploads/2015/03/gazou31-e1426694857105.jpg"
+  "print/drawing.jpg",
+  "print/org.jpg",
+  "print/orgup.jpg",
+  "print/sign.jpg",
+  "print/weareopen.jpg",
+  "print/weareclose.jpg"
   ];
   
   function randomImg(randomArray) {
