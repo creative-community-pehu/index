@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Index | creative-community.space</title>
+<link rel="icon" href="/logo.png">
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
 body {margin:0; padding:0;}
