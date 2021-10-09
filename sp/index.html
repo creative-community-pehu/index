@@ -27,13 +27,14 @@ body {padding:0; margin: 0;}
 <body>
 
 <div id="menu">
-<div><a class="tab" href="http://chottocrazy.pe.hu/2021/" target="_blank" rel="noopener noreferrer">大 chotto crazy 2021</a></div>
+<div><a class="tab" href="#cc" target="_blank" rel="noopener noreferrer">大 chotto crazy 2021</a></div>
 <div><a class="tab" href="#all">自分の気持ちを知る・表す</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#print">WWW to Print</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="/thankyou/">HTML graffiti (Everyones Drawings are So Beautiful)</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="gradation"></div>
+<div id="cc" class="change"></div>
 <div id="all" class="change"></div>
 <div id="print" class="change"></div>
 
@@ -42,6 +43,7 @@ body {padding:0; margin: 0;}
 <script type="text/javascript">
 $(function(){
 $("#gradation").load("gradation.php");
+$("#cc").load("cc.html");
 $("#all").load("all.php");
 $("#print").load("print.html");
 })
