@@ -29,6 +29,7 @@ fclose($fp);
 <link rel="icon" href="/logo.png">
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="更新情報 | 制作中のコンテンツ">
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
