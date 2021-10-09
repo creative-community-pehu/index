@@ -1,5 +1,5 @@
 const random = [
-  "print/drawing.JPG",
+  "print/drawings.JPG",
   "print/org.jpg",
   "print/orgup.jpg",
   "print/sign.JPG",
