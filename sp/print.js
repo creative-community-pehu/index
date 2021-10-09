@@ -1,10 +1,10 @@
 const random = [
-  "print/drawing.jpg",
+  "print/drawing.JPG",
   "print/org.jpg",
   "print/orgup.jpg",
-  "print/sign.jpg",
-  "print/weareopen.jpg",
-  "print/weareclose.jpg"
+  "print/sign.JPG",
+  "print/weareopen.JPG",
+  "print/weareclose.JPG"
   ];
   
   function randomImg(randomArray) {
