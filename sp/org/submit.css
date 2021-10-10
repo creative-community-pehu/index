@@ -1,0 +1,196 @@
+body {padding:0; margin:0;}
+ul {padding:0; margin:0;}
+li {list-style: none;}
+#submit {
+  top:0; left:0;
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#org_members {
+  font-family: "ipag", monospace;
+  position:relative;
+  margin:5rem auto 0;
+  width:30rem;
+  height: 90%;
+  max-width:90%;
+  z-index: 50;
+  overflow: auto;
+}
+#org_members #words {
+    padding:0 2.5rem 0;
+    font-size: 0.75rem;
+}
+#org_members #words h2 {
+    transform:scale(1, 1.5);
+    font-size:150%;
+    color:#fff;
+    text-shadow:0.1rem 0.1rem #000;
+}
+#org_members #words textarea {
+  font-size:1.25rem;
+  border:0.1rem solid;
+  padding:0.5rem;
+  width:100%; height:2.5rem;
+}
+#org_members ul {
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#org_members .label {
+  display: inline-block;
+  color: #000;
+  border-radius:0.5rem;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label {
+  color:#fff;
+  background-color:#eee;
+	text-shadow:0.1rem 0.1rem #fff;
+}
+#org_members .note {
+  margin:1rem 0 0.5rem;
+  width:100%;
+}
+#org_members .sub {
+  position:absolute;
+  top:0; right:0;
+  margin: 2.5rem;
+  font-family: "MS Serif", "Times New Roman";
+}
+#org_members .note b {
+  width:100%;
+  text-align:center;
+  display:inline-block;
+  margin-bottom:0.5rem;
+  transform:scale(1, 1.5);
+  font-size:250%;
+  color:#fff;
+  text-shadow:0.1rem 0.1rem #000;
+}
+#org_members .weight,
+#org_members .size,
+#org_members .feel,
+#org_members .button {
+    position:relative;
+    margin:0 auto;
+    padding:1rem;
+    width:20rem;
+    max-width:75%;
+    font-size:0.5rem;
+    text-align: center;
+}
+#org_members .weight .label,
+#org_members .size .label {
+  border:0.1rem solid #eee;
+}
+#org_members .weight .label {
+  margin:0.125rem;
+  padding:0.125rem;
+  font-size:0.75rem;
+}
+#org_members .size .label {
+  margin:0.5rem;
+  padding:0 0.5rem;
+  font-size:1rem;
+}
+#org_members .feel .label {
+  margin:0.25rem;
+  padding:0 0.5rem;
+  font-size:2.5rem;
+}
+.button button {
+    width:100%;
+    padding:0.25rem 0;
+    margin: 0.25rem 0;
+}
+
+#org_header {
+  padding:1rem 2.5%;
+  width: 95%;
+  position:fixed;
+  top:0;
+  z-index:100;
+  font-size:1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#org_header a {
+  color:#000;
+  text-decoration:none;
+  border-bottom:2px solid #000;
+}
+#org_header a:hover {
+  cursor:pointer;
+  color:#ccc;
+	text-shadow:0.1rem 0.1rem #000;
+  border-bottom:2px solid #000;
+}
+.reset-button, button {
+  display:inline-block;
+  text-align:center;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius:0.5rem;
+  font-size:1rem;
+  text-shadow:0.1rem 0.1rem #fff;
+}
+.reset-button:hover, button:hover {
+  color:#fff;
+  background: #eee;
+  text-shadow:0.1rem 0.1rem #000;
+}
+
+.list {
+  display:block;
+  position: absolute;
+  z-index: 10;
+  top:0; right:0;
+  width:100%;
+  height: 100vh;
+  overflow: auto;
+}
+.list #inside {
+  position:relative;
+  margin:2.5rem auto;
+  width:95%;
+}
+.list #inside ul {
+  display:flex;
+  align-content:flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  font-family: "ipag", monospace;
+}
+.list #inside li {
+  position:relative;
+  white-space:pre-wrap;
+  padding:1rem;
+}
+.list .must {font-weight:900;}
+.list .should {font-weight:700;}
+.list .can {font-weight:500;}
+.list .may {font-weight:300;}
+.list .could {font-weight:200;}
+.list .cant {font-weight:100;}
+
+.list .positive {font-size:250%;}
+.list .negative {font-size:50%;}
+.list .both {font-size:200%;}
+.list .neither {font-size:100%;}
+.list .unknown {font-size:150%;}
+
+.is-hide,
+.nothing,
+.none
+{display:none;}

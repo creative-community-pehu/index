@@ -1,0 +1,114 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> 投稿する | 言葉の強さと方向と感情 </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://creative-community.space/coding/js/org.js"></script>
+<link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
+<link rel="stylesheet" href="submit.css"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+<section>
+<form action="complete.php" id="org_members" method="post" target="_parent">
+<div id="words">
+<h2>新しい生活を集める</h2>
+<p>展覧会の感想を入力フォームへ自由に入力してください。</p>
+<p>
+<textarea name="word" placeholder="" required></textarea></p>
+</div>
+<div class="search-box weight">
+<ul>
+<li class="note"><b>強さ</b><br/>
+入力した感想の強さを選択しましょう。<br/>
+</li>
+<li>
+<input type="radio" name="weight" value="must" id="must" required>
+<label for="must" class="label">100 ~ 90</label></li>
+<li>
+<input type="radio" name="weight" value="should" id="should" required>
+<label for="should" class="label">90 ~ 70</label></li>
+<li>
+<input type="radio" name="weight" value="can" id="can" required>
+<label for="can" class="label">70 ~ 50</label></li>
+<li>
+<input type="radio" name="weight" value="may" id="may" required>
+<label for="may" class="label">50 ~ 30</label></li>
+<li>
+<input type="radio" name="weight" value="could" id="could" required>
+<label for="could" class="label">30 ~ 10</label></li>
+<li>
+<input type="radio" name="weight" value="cant" id="cant" required>
+<label for="cant" class="label">10 ~ 0</label></li>
+<li class="sub"><i>%</i></li>
+</ul>
+</div>
+<div class="search-box size">
+<ul>
+<li class="note"><b>方向</b><br/>
+強さはどの方向に向かっていますか？<br/>
+</li>
+<li>
+<input type="radio" name="size" value="positive" id="positive" required>
+<label for="positive" class="label"> + </label></li>
+<li>
+<input type="radio" name="size" value="negative" id="negative" required>
+<label for="negative" class="label"> - </label></li>
+<li>
+<input type="radio" name="size" value="both" id="both" required>
+<label for="both" class="label"> ± </label></li>
+<li>
+<input type="radio" name="size" value="neither" id="neither" required>
+<label for="neither" class="label"> = </label></li>
+<li>
+<input type="radio" name="size" value="unknown" id="unknown" required>
+<label for="unknown" class="label"> ? </label></li>
+<li class="sub"><i>to</i></li>
+</ul>
+</div>
+<div class="search-box feel">
+<ul>
+<li class="note"><b>感情</b><br/>
+いまの自分を絵文字で表すなら？</li>
+<li>
+<input type="radio" name="feel" value="happy" id="happy" required>
+<label for="happy" class="label">🙂</label></li>
+<li>
+<input type="radio" name="feel" value="hearts" id="hearts" required>
+<label for="hearts" class="label">🥰</label></li>
+<li>
+<input type="radio" name="feel" value="tongue" id="tongue" required>
+<label for="tongue" class="label">😜</label></li>
+<li>
+<input type="radio" name="feel" value="thinking" id="thinking" required>
+<label for="thinking" class="label">🤔</label></li>
+<li>
+<input type="radio" name="feel" value="neutral" id="neutral" required>
+<label for="neutral" class="label">😐</label></li>
+<li>
+<input type="radio" name="feel" value="relieved" id="relieved" required>
+<label for="relieved" class="label">😌</label></li>
+<li>
+<input type="radio" name="feel" value="dizzy" id="dizzy" required>
+<label for="dizzy" class="label">😵</label></li>
+<li>
+<input type="radio" name="feel" value="frowning" id="frowning" required>
+<label for="frowning" class="label">😮</label></li>
+<li>
+<input type="radio" name="feel" value="crying" id="crying" required>
+<label for="crying" class="label">😢</label></li>
+<li>
+<input type="radio" name="feel" value="steam" id="steam" required>
+<label for="steam" class="label">😤</label></li>
+</ul>
+</div>
+<div class="button">
+<button type="submit">Submit | 投稿する</button>
+</div>
+</form>
+</section>
+</body>
+</html>
