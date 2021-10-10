@@ -70,7 +70,7 @@ $("#org_emoji").load("submit.html");
 </style>
 </head>
 <body>
-<p id="top_btn"><a class="cc" href="/members/">↵</a></p>
+<p id="top_btn"><a class="cc" href="https://pehu.cart.fc2.com/signup">会員になる</a></p>
 <div id="org_header">
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
