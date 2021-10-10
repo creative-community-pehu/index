@@ -15,7 +15,7 @@
 <body>
 <div id="contents">
 <div id="hello">
-<b>Hello こんにちは</b>
+<b>Hello <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></b>
 <p>Thank you for visiting <u data-click="new">The Website</u>
 <b id="new" class="open">
 that <u data-click="create">Creates</u>
