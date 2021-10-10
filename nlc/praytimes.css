@@ -1,0 +1,35 @@
+#piece {border: 0.25vw solid #F3C5C6; padding:2.5vw; border-radius:5vw;}
+#piece a {background-color: #F3C5C6; color:#fff; border-radius:5vw;}
+#piece u {background-color: #F3C5C6; color:#fff; border-radius:5vw; padding:2vw 1vw 1vw; text-decoration:none;}
+#pray {
+	padding:1vw 5vw; margin:2.5vw;
+	background-color: #F3C5C6; color:#fff;
+	border-radius:10vw;
+  -webkit-filter: blur(0.5vw);
+  filter: blur(0.5vw);
+  animation-name: back;
+  animation-duration: 2s;
+}
+#pray:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  animation-name: blur;
+  animation-duration: 2s;
+}
+#pray .by {
+	font-size:125%;
+}
+#pray img {transform: scale(0.75) }
+
+@keyframes back {
+  100% {filter: blur(0.5vw);}
+  0% {filter: blur(0);}
+}
+@keyframes blur {
+  0% {filter: blur(0.5vw);}
+  100% {filter: blur(0);}
+}
+
+
+.plugin_contents .play img {margin: 5vw 5vw 10vw;}
+.plugin_contents .play p {position:absolute; bottom:0; margin:0; background-color: #F3C5C6; padding:1vw; color:#fff; text-align:left; font-size:1.5vw;}

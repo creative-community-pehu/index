@@ -1,0 +1,33 @@
+.abi .title:hover,.abi .date:hover,.abi .open:hover,.abi .venue:hover
+{cursor:pointer; transform: rotate(360deg) scale(1.5);}
+.abi .title:hover + .abi .title,
+.abi .date:hover + .abi .date,
+.abi .open:hover + .abi .open,
+.abi .venue:hover + .abi .venue,
+{color:#00a8a8; transform: scale(1.25);}
+.abi #button {position: absolute; top: 0; right: 5%; width:5vw;}
+.abi #button img {width:100%; display:block; padding:10%; transition: 1s;}
+
+#popup .abi {position: absolute; top:10vh; left:15vw; width:70vw; height: 80vh; z-index:1000;}
+#popup .abi .color {color:#ff8f46;}
+#popup .abi h1 {position: absolute; top: 0; left: 5%; pointer-events:none; font-family:"MS Mincho", serif; font-size:3.5vw; text-align:left; font-weight:400;}
+#popup .abi h1 span {display:block;}
+#popup .abi h1 .title {font-family:"MS Serif", "Times New Roman"; font-weight:600; font-style:italic; line-height:5.5vw;}
+#popup .abi h1 .date, #popup .abi h1 .open, #popup .abi h1 .venue {font-size:3.5vw; color:#000;}
+#popup .abi #featured {position:absolute; bottom:5%; pointer-events:none; font-size:4vw; font-family:"MS Mincho", serif; border:0.3vw solid; border-radius:10vw; padding:2.5%; width:65%; margin:2.5% 15%; text-align:center;}
+#popup .abi a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-indent:-999px; background-color: #fff;}
+#popup .abi a:hover {background-color:#00a8a8;}
+#abi .comment1 {font-size:1.5vw;}
+#abi .abi_logo {position:relative; float:right; top:-11vw; right:0; width:20vw;}
+#abi .comment1 span {display:inline-block; font-size:1.25vw; border: solid 2px #000; padding: 0.75vw 1vw; margin-bottom:5vw;}
+#abi .comment2 span {display:inline-block; font-size:1.25vw; padding: 2.5vw 0; position:relative; bottom:2.5vw;}
+.abi_more {text-align:center; clear:both;}
+.abi_more img {width:50vw;}
+.abi_more img:hover {transform:scale(1.5);}
+
+@media screen and (max-width: 500px){
+#popup #abi h1 span {font-size:200%; line-height:200%;}
+#popup .abi #button {width:10vw;}
+#abi .comment1 p {font-size:3vw; width:auto; padding:0; margin:0;}
+#abi #big {font-size:2.5vw;}
+}
