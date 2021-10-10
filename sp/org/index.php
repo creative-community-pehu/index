@@ -43,14 +43,11 @@ $("#org_emoji").load("submit.html");
     bottom:0;
     z-index: 1000;
     margin:2.5vw;
-    font-size:4.5vw;
+    font-size:2.5vw;
 }
 #top_btn a {
     display: block;
     text-align: center;
-    width: 5vw;
-    height: 5vw;
-    line-height: 5vw;
     color:#000;
     text-decoration:none;
     cursor: pointer;
