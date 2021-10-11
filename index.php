@@ -50,9 +50,11 @@ body {margin:0; padding:0;}
 #you img {width: 3.5rem;}
 
 #now {
-  position: relative;
+  position: fixed;
+  bottom:0;
   line-height: 5vw;
-  font-family:Arial, sans-serif;
+  font-family: "ipag", monospace;
+  transform:scale(1, 1.25);
   font-size:1.5rem;
   padding:0;
   margin:0 2.5%;
@@ -127,14 +129,14 @@ body {margin:0; padding:0;}
 <div id="ver"></div>
 <div id="p5"></div>
 <div id="now">
-<p><?php
+<span><?php
 $date = new DateTime();
 echo $date->format('F d, Y');
-?></p>
-<p><?php
+?></span>
+<span><?php
 $date = new DateTime();
 echo $date->format('g:i A');
-?></p>
+?></span>
 </div>
 
 <div id="you">
