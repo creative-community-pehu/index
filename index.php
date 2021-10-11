@@ -134,11 +134,7 @@ $date = new DateTime();
 date_default_timezone_set('Asia/Tokyo');
 echo $date->format('F d, Y');
 ?></span>
-<span><?php
-$date = new DateTime();
-date_default_timezone_set('Asia/Tokyo');
-echo $date->format('g:i:s A');
-?> Osaka, Japan</span>
+<span id="showTime"></span>
 </div>
 
 <div id="you">
@@ -162,6 +158,7 @@ creative-community.space
 </p>
 </div>
 
+<script src="showTime.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
