@@ -112,6 +112,12 @@ body {margin:0; padding:0;}
 <div id="greeting"></div>
 <div id="ver"></div>
 <div id="p5"></div>
+<div id="now">
+<?php
+$date = date_create('2000-01-01');
+echo date_format($date, 'Y-m-d H:i:s');
+?>
+</div>
 
 <div id="you">
 <h1><span>Drawing by</span>
