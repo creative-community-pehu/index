@@ -131,12 +131,14 @@ body {margin:0; padding:0;}
 <div id="now">
 <span><?php
 $date = new DateTime();
+date_default_timezone_set('Asia/Tokyo');
 echo $date->format('F d, Y');
 ?></span>
 <span><?php
 $date = new DateTime();
-echo $date->format('g:i A');
-?></span>
+date_default_timezone_set('Asia/Tokyo');
+echo $date->format('g:i:s A');
+?> Osaka, Japan</span>
 </div>
 
 <div id="you">
