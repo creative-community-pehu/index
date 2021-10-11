@@ -113,11 +113,14 @@ body {margin:0; padding:0;}
 <div id="ver"></div>
 <div id="p5"></div>
 <div id="now">
-<?php
+<p><?php
 $date = new DateTime();
 echo $date->format('F d, Y');
+?></p>
+<p><?php
+$date = new DateTime();
 echo $date->format('g:i A');
-?>
+?></p>
 </div>
 
 <div id="you">
