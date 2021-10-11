@@ -49,13 +49,27 @@ body {margin:0; padding:0;}
 }
 #you img {width: 3.5rem;}
 
+#now {
+  position: relative;
+  line-height: 5vw;
+  font-family:Arial, sans-serif;
+  font-size:1.5rem;
+  padding:0;
+  margin:0 2.5%;
+  width:95%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
 @media print{
 #index,
 #greeting,
 #ver #grid,
 #ver #tobe,
 #ver #searchBox,
-#ver #searchBox
+#ver #searchBox,
+#now
 {display:none;}
 
 #you,
