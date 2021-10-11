@@ -55,9 +55,11 @@ $("#org_emoji").load("submit.html");
     width: 7.5vw;
     height: 6vw;
     line-height: 6vw;
+    color:#000;
     border: solid 0.25vw #000;
     border-radius: 50%;
     cursor: pointer;
+    text-decoration:none;
     transition: all 1000ms ease;
 }
 #top_btn a:hover {
