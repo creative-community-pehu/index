@@ -25,8 +25,7 @@ body {margin:0; padding:0;}
 #greeting #hello {
     filter: invert();
 }
-#greeting #hello #join,
-#greeting #hello .ip {
+#greeting #hello #join {
     filter: invert(1);
 }
 #ver #grid div:nth-child(n + 7),
