@@ -114,8 +114,9 @@ body {margin:0; padding:0;}
 <div id="p5"></div>
 <div id="now">
 <?php
-$date = date_create('2000-01-01');
-echo date_format($date, 'Y-m-d H:i:s');
+$date = new DateTime();
+echo $date->format('F d, Y');
+echo $date->format('g:i A');
 ?>
 </div>
 
