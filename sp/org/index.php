@@ -38,18 +38,32 @@ $("#org_emoji").load("submit.html");
 <link rel="stylesheet" href="submit.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
+.cc {
+    font-family: "ipag", monospace;
+    transform:scale(1, 1.25);
+}
 #top_btn {
     position: fixed;
     bottom:0;
     z-index: 1000;
     margin:2.5vw;
-    font-size:2.5vw;
+    font-size:4.5vw;
 }
 #top_btn a {
     display: block;
     text-align: center;
-    color:#000;
-    text-decoration:none;
+    width: 7.5vw;
+    height: 6vw;
+    line-height: 6vw;
+    border: solid 0.25vw #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:#fff;
+    background-color:blue;
+    border: solid 0.25vw blue;
     cursor: pointer;
     transition: all 1000ms ease;
 }
@@ -67,7 +81,7 @@ $("#org_emoji").load("submit.html");
 </style>
 </head>
 <body>
-<p id="top_btn"><a class="cc" href="https://pehu.cart.fc2.com/signup">会員になる</a></p>
+<p id="top_btn"><a class="cc" href="/">CC</a></p>
 <div id="org_header">
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
