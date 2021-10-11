@@ -1,5 +1,4 @@
 function set2(num) {
-  // 桁数が1桁だったら先頭に0を加えて2桁に調整する
   let ret;
   if (num < 10) { ret = "0" + num; }
   else { ret = num; }
