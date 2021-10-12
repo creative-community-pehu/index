@@ -188,7 +188,7 @@ li {list-style: none;}
 <span>
 <u style="display:inline;">View All | 全部見る</u>
 </span>
-<a href="/ver/"></a>
+<a href="/ver/" target="_parent"></a>
 </div>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
