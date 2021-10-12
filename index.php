@@ -55,7 +55,7 @@ body {margin:0; padding:0;}
   line-height: 5vw;
   font-family: "ipag", monospace;
   transform:scale(1, 1.25);
-  font-size:1.5rem;
+  font-size:2vw;
   padding:0;
   margin:0 2.5%;
   width:95%;
