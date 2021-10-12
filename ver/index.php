@@ -199,7 +199,7 @@ li {list-style: none;}
 <span>
 <u style="display:<?=h($row[4])?>;">Members Only</u>
 </span>
-<a href="<?=h($row[2])?>"></a>
+<a href="<?=h($row[2])?>" target="_parent"></a>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
