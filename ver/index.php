@@ -82,7 +82,7 @@ fclose($fp);
   grid-row-end: 7;
 }
 #grid div:nth-of-type(13) {
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row-start: 7;
   grid-row-end: 9;
 }
