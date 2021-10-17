@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Everyones Drawings are So Beautiful</title>
+<title>Your Drawing is Seems So Beautiful</title>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
