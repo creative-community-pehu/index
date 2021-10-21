@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Members Only | creative-community.space</title>
+<style type="text/css">
+body {margin:0; padding:0;}
+
+.contents {
+    font-size:2.5vw;
+    width:90%;
+    margin:2.5vw auto;
+    line-height: 5vw;
+    font-family:Arial, sans-serif;
+}
+.contents div {
+    display:block;
+    clear:both;
+}
+.contents i {
+    float: right;
+    font-size: 90%;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tab {
+    color:#000;
+    text-decoration:none;
+    transition: all 500ms ease;
+}
+.tab:hover,
+.check b {
+    color:blue;
+    transition: all 500ms ease;
+}
+  
+.check {
+    float:left;
+    display:inline-block;
+    width:2.5vw;
+    margin-right:2.5vw;
+    text-align:center;
+    margin-right:2.5vw;
+}
+.check:before {
+    content:'[';
+    opacity:1;
+}
+.check:after {
+    content:']';
+    opacity:1;
+}
+.check b {
+    opacity: 0;
+    transition: all 1000ms ease;
+}
+a:hover + .check b {
+    opacity: 1;
+    transition: all 1000ms ease;
+}
+</style>
+</head>
+<body>
+<div id="members_menu">
+<div class="contents">
+    <div>
+    <a href="https://creative-community.space/map/" target="_parent" class="tab">
+        <span>Go Out</span>
+        <i>Members Only</i>
+    </a>
+    </div>
+<div><a href="/map/" class="tab"
+    onmouseover="this.innerText='Osaka Mao'"
+    onmouseout="this.innerText='地図を作ろう'">
+    地図を作ろう</a><span class="check"><b>✔</b></span></div>
+    
+<!--
+    <div><a href="/map/members/" class="tab"
+	onmouseover="this.innerText='only can browsing by members'"
+	onmouseout="this.innerText='みんなで地図を作ろう'">
+	みんなで地図を作ろう</a><span class="check"><b>✔</b></span></div>
+-->
+</div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+</script>
+</body>
+</html>
