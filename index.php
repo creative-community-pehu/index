@@ -131,7 +131,7 @@ echo $date->format('F d, Y');
 <div id="submit">
 <h1>creative-community.space</h1>
 <p>
-Emergency<br/>
+<br/>Emergency<br/>
 we.are.pe.hu@gmail.com
 </p>
 </div>
