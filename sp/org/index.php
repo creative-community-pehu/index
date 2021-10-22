@@ -47,17 +47,12 @@ $("#org_emoji").load("submit.html");
     bottom:0;
     z-index: 1000;
     margin:2.5vw;
-    font-size:4.5vw;
+    font-size:2.5vw;
 }
 #top_btn a {
     display: block;
     text-align: center;
-    width: 7.5vw;
-    height: 6vw;
-    line-height: 6vw;
     color:#000;
-    border: solid 0.25vw #000;
-    border-radius: 50%;
     cursor: pointer;
     text-decoration:none;
     transition: all 1000ms ease;
@@ -83,7 +78,7 @@ $("#org_emoji").load("submit.html");
 </style>
 </head>
 <body>
-<p id="top_btn"><a class="cc" href="/">CC</a></p>
+<p id="top_btn"><a class="cc" href="/sp/">新しい生活を集める</a></p>
 <div id="org_header">
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
