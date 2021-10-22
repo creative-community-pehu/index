@@ -129,9 +129,8 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="submit">
+<h1>creative-community.space</h1>
 <p>
-creative-community.space<br/>
-<br/>
 Emergency<br/>
 we.are.pe.hu@gmail.com
 </p>
