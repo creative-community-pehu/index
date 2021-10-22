@@ -31,7 +31,7 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>したいこと | creative-community.space</title>
+<title>みんなのしたいこと | creative-community.space</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
