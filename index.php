@@ -47,7 +47,14 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-#you img {width: 3.5rem;}
+#you img {
+    width: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
 
 #now {
   position: fixed;
@@ -82,23 +89,6 @@ body {margin:0; padding:0;}
     top:100vh;
     background:#fff;
 }
-#you h1 {
-    bottom:0; left:0;
-    width:95%;
-    padding:0 2.5%;
-    font-size:2rem;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    font-family: "ipag", monospace;
-}
-#you h1 b {
-    max-width:33.5%;
-    text-align:right;
-    word-break: break-word;
-    
-}
 #submit h1 {
     top:0; left:0;
     padding:5.5rem 7.5%;
@@ -113,8 +103,6 @@ body {margin:0; padding:0;}
     font-size:1.25rem;
     font-family: "ipag", monospace;
 }
-#you h1 b,
-#you h1 span,
 #submit h1,
 #submit p {
     display: inline-block;
@@ -138,23 +126,15 @@ echo $date->format('F d, Y');
 </div>
 
 <div id="you">
-<h1><span>Drawing by</span>
 <img src="/qr.png">
-<span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
 </div>
 <div id="submit">
-<h1>OMG!<br/>
-Your Drawing is Seems So Beautiful<3<br/>
-Print it to PDF
-and Send it to us !!<br/>
-<a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
-</h1>
+<h1>Hello こんにちは</h1>
 <p>
-This Email address is for receive-only.<br/>
-We will reply from other addresses.<br/>
-Thank You,<br/>
+creative-community.space<br/>
 <br/>
-creative-community.space
+Emergency<br/>
+we.are.pe.hu@gmail.com
 </p>
 </div>
 
