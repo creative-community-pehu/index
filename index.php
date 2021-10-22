@@ -129,7 +129,6 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="submit">
-<h1>Hello こんにちは</h1>
 <p>
 creative-community.space<br/>
 <br/>
