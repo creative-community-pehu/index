@@ -187,7 +187,7 @@ Posted on <i>00.00.00 00:00</i></p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#day").load("night/sign/");
+$("#day").load("day/sign/");
 $("#night").load("night/sign/");
 })
 </script>
