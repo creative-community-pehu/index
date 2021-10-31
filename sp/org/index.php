@@ -80,7 +80,7 @@ body {background:#fff; padding:0; margin:0;}
 </head>
 <body>
 <div id="org_header">
-<a onclick="obj=document.getElementById('org_members').style; obj.display=(obj.display=='none')?'block':'none';">ORG</a>
+<span>感想一覧</span>
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
 </span>
