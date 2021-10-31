@@ -327,9 +327,7 @@ Posted on <i>00.00.00 00:00</i></p>
 </ul>
 </div>
 </div>
-</li>
 <hr/>
-<li>
 <div id="flash"><iframe src="/sp/flash.php"></iframe></div>
 </li>
 </ul>
