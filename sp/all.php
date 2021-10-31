@@ -119,7 +119,7 @@ fclose($fp);
 <body>
 
 <ul id="symbol_color">
-<li style="background:#fff;">
+<li>
 <script type="text/javascript">
 var day = '<div id="day"></div>';
 var night = '<div id="night"></div>';
@@ -142,7 +142,7 @@ else if(hour >= 21 && hour <= 23){
 }
 </script>
 </li>
-<li style="background:#fff;">
+<li>
 <div id="log">
 <ul id="log_items">
 <?php if (!empty($rows)): ?>
@@ -160,9 +160,6 @@ Posted on <i>00.00.00 00:00</i></p>
 <?php endif; ?>
 </ul>
 </div>
-</li>
-<li class="bg_color">
-<span class="bg_symbol"><blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/NFazh3ELdY">pic.twitter.com/NFazh3ELdY</a></p>&mdash; ∧° ┐ | creative, community space (@pe_hu_) <a href="https://twitter.com/pe_hu_/status/1454636771921125385?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
 </li>
 <li style="background:#fff;">
 <div id="marquee">
