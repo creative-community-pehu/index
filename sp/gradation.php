@@ -90,6 +90,7 @@ body  {overflow-x:hidden;}
 
 <ul id="symbol_color">
 <li class="bg_gradient">
+Under Construction
 </li>
 </ul>
 
