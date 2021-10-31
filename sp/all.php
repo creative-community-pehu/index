@@ -53,8 +53,8 @@ body {margin:0; padding:0;}
 #log {
   font-size:4vw;
   width:45%;
-  height:75vh;
-  margin:12.5vh auto 25vh;
+  height:55vh;
+  margin:25vh auto;
   background:rgba(255,255,255,0.75);
   overflow-y:auto;
 }
