@@ -124,7 +124,7 @@ fclose($fp);
 </head>
 <body>
 
-<div id="gradation">
+<ul id="symbol_color">
 <li>
 <script type="text/javascript">
 var day = '<div id="day"></div>';
