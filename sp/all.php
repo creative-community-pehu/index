@@ -42,6 +42,7 @@ body {margin:0; padding:0;}
     height: 75vw;
     max-height:35rem;
     margin:auto;
+    padding-bottom:25vh;
     text-align:center;
 }
 #flash iframe {
