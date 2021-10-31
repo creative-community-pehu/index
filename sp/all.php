@@ -32,15 +32,20 @@ fclose($fp);
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="https://creative-community.space/sign/stylesheet.css" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
-#gradation {
-  position:fixed;
+#symbol_color {
+  position:relative;
   top:0; left:0;
+  padding:0; margin:0;
   width:100%;
-  height:100vh;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
+#symbol_color li {
+  list-style: none;
+}
+
 #log {
   font-size:4vw;
   width:45%;
