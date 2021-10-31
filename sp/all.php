@@ -43,6 +43,7 @@ fclose($fp);
   overflow-x:hidden;
   display: flex;
   flex-direction:column-reverse;
+  font-family: "SimSong", "MS Mincho", serif;
 }
 #symbol_color li {
   list-style: none;
