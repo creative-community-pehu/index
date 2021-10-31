@@ -78,7 +78,6 @@ $("#org_emoji").load("submit.html");
 </style>
 </head>
 <body>
-<p id="top_btn"><a class="cc" href="/sp/">新しい生活を集める</a></p>
 <div id="org_header">
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
