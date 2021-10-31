@@ -89,8 +89,8 @@ body  {overflow-x:hidden;}
 <div id="open" class="none"></div>
 
 <ul id="symbol_color">
-<li class="bg_gradient">
-Under Construction
+<li class="bg_color" style="background:#fff;">
+<span class="bg_symbol">Under Construction</span>
 </li>
 </ul>
 
