@@ -128,17 +128,14 @@ var close = '<div id="close"></div>';
 var now = new Date();
 var hour = now.getHours();
 
-if(hour >= 0 && hour <= 10){
-	document.write(close);
-}
-else if(hour >= 11 && hour <= 15){
-	document.write(day);
-}
-else if(hour >= 16 && hour <= 20){
+if(hour >= 0 && hour <= 4){
 	document.write(night);
 }
-else if(hour >= 21 && hour <= 23){
-	document.write(close);
+else if(hour >= 5 && hour <= 16){
+	document.write(day);
+}
+else if(hour >= 17 && hour <= 23){
+	document.write(night);
 }
 </script>
 </li>
