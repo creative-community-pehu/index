@@ -123,6 +123,7 @@ fclose($fp);
 <script type="text/javascript">
 var day = '<div id="day"></div>';
 var night = '<div id="night"></div>';
+var close = '<div id="close"></div>';
 
 var now = new Date();
 var hour = now.getHours();

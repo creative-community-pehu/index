@@ -1,72 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://cdn.apple-livephotoskit.com/lpk/1/livephotoskit.js"></script>
 <title>WWW to Print</title>
 <style type="text/css">
-      #randomImg {
-        position: relative;
-        top:0; left:0;
-        z-index:-1;
-        overflow:hidden;
-        width:100%;
-        height:100vh;
-        user-select:none;
-        pointer-events:none;
-      }
-      #randomImg img {
-        min-width:100%;
-        height:100%;
-        position: fixed;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .www {
-        position: fixed;
-        z-index: 10;
-        padding:0.25rem;
-        background-color: #fff;
-        left: 50%; top:2.5%;
-        transform: translate(-50%, 0%);
-      }
-    </style>
+    #photos  {
+      padding:0; margin:0;
+    }
+    #photos li {
+      top:0; left:0;
+      padding:0; margin:0;
+      width:100%;
+      height:100vh;
+      max-height:75vw;
+      position:relative;
+      list-style: none;
+    }
+    #photos img {
+    height:75%;
+    position:absolute;
+    padding:0; margin:0;
+    top:50%; left:50%;
+    z-index:10;
+    display: flex;
+    flex-wrap: wrap;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+</style>
 </head>
 <body>
-<span class="www">これまでに制作したウェブサイトやデジタルコンテンツを出力した色々なものを発表します。</span>
-<div id="randomImg" class="random">
-</div>
 
+    <script type="text/javascript">
+    var day = '<div id="day"></div>';
+    var night = '<div id="night"></div>';
+    var close = '<div id="close"></div>';
+    
+    var now = new Date();
+    var hour = now.getHours();
+    
+    if(hour >= 0 && hour <= 10){
+      document.write(close);
+    }
+    else if(hour >= 10 && hour <= 15){
+      document.write(day);
+    }
+    else if(hour >= 16 && hour <= 20){
+      document.write(night);
+    }
+    else if(hour >= 21 && hour <= 23){
+      document.write(close);
+    }
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-  const random = [
-    "print/001.jpg",
-    "print/002.jpg",
-    "print/003.jpg",
-    "print/004.jpg",
-    "print/005.jpg",
-    "print/006.jpg",
-    "print/007.jpg",
-    "print/008.jpg",
-    "print/009.jpg",
-    "print/010.jpg",
-    "print/000.jpg"
-    ];
-    
-    function randomImg(randomArray) {
-      var random =
-      randomArray[Math.floor(Math.random() * randomArray.length)];
-      console.log(random);
-      return random;
-    }
-    function imgGenerator() {
-      var img = `<img src="${randomImg(random)}">`;
-      document.querySelector(".random").innerHTML = img;
-    }
-    window.setInterval(function() {
-      imgGenerator();
-    }, 2000);
-    
-  
-  </script>
+$(function(){
+$("#day").load("day/www.html");
+$("#night").load("night/www.html");
+$("#close").load("close/www.html");
+})
+</script>
 </body>
 </html>
