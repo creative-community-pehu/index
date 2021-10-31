@@ -6,11 +6,66 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://cdn.apple-livephotoskit.com/lpk/1/livephotoskit.js"></script>
 <title>WWW to Print</title>
+<style type="text/css">
+#marquee {
+	position:relative;
+	z-index:10;
+	width:100%;
+	top:0; left:0;
+	padding:0; margin:0;
+	transition:.5s all;
+}
+#marquee div {padding:2.5% 10%;}
+#marquee ul {
+	display:inline-block;
+	padding:0 0 2rem; margin:0;
+}
+#marquee li {
+	display:inline-block;
+	margin: 0 0.25rem;
+}
+#marquee .must {font-weight:900;}
+#marquee .should {font-weight:700;}
+#marquee .can {font-weight:500;}
+#marquee .may {font-weight:300;}
+#marquee .could {font-weight:200;}
+#marquee .cant {font-weight:100;}
+
+#marquee .positive {font-size:250%;}
+#marquee .negative {font-size:50%;}
+#marquee .both {font-size:100%;}
+#marquee .neither {font-size:150%;}
+#marquee .unknown {font-size:200%;}
+</style>
 </head>
 <body>
+<ul id="symbol_color">
+<li style="background:#fff;">
+<div id="marquee">
+<div class="outside org_list">
+<ul>
+<li class="">このページに表示される</li>
+<li class="must positive">色</li>
+<li class="neither">と</li>
+<li class="must positive">記号</li>
+<li class="">は、</li>
+<li class="unknown can">展覧会「新しい生活を集める」</li>
+<li class="">にご来場くださいました</li>
+<li class="neither">皆様が投稿</li>
+<li class="">した</li>
+<li class="must unknown">自分の気持ちを知る・表す</li>
+<li class="must positive">色</li>
+<li class="neither">と</li>
+<li class="must positive">記号</li>
+<li class="">です。</li>
+</ul>
+</div>
+</div>
+</li>
 <div id="weare"></div>
 <div id="motto"></div>
 <div id="org"></div>
+</ul>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
