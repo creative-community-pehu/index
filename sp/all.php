@@ -122,11 +122,6 @@ fclose($fp);
 <li style="background:#fff;">
 <div id="log">
 <ul id="log_items">
-<li>
-Old
-↓
-New
-</li>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li>
