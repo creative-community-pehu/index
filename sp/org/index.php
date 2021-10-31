@@ -32,6 +32,7 @@ fclose($fp);
 <script src="http://creative-community.space/coding/js/org.js"></script>
 <script type="text/javascript">
 $(function(){
+$("#org_emoji").load("submit.html");
 })
 </script>
 <link rel="stylesheet" href="submit.css"/>
@@ -79,12 +80,13 @@ body {background:#fff; padding:0; margin:0;}
 </head>
 <body>
 <div id="org_header">
-<span>ORG</span>
+<a onclick="obj=document.getElementById('org_members').style; obj.display=(obj.display=='none')?'block':'none';">ORG</a>
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
 </span>
 </div>
 
+<div id="org_emoji"></div>
 
 <div class="list">
 <div id="inside">
