@@ -121,7 +121,6 @@ fclose($fp);
 <ul id="symbol_color">
 <li style="background:#fff;">
 <script type="text/javascript">
-<!--
 var day = '<div id="day"></div>';
 var night = '<div id="night"></div>';
 var close = '<div id="close"></div>';
@@ -141,7 +140,6 @@ else if(hour >= 16 && hour <= 20){
 else if(hour >= 21 && hour <= 23){
 	document.write(close);
 }
-
 </script>
 </li>
 <li style="background:#fff;">
