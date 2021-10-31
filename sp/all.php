@@ -138,7 +138,7 @@ fclose($fp);
 </ul>
 </div>
 
-<ul id="photo">
+<ul id="photos">
 <li>
 <script type="text/javascript">
 var day = '<div id="day"></div>';
