@@ -57,31 +57,6 @@ body  {overflow-x:hidden;}
     margin-right:1rem;
 }
 
-.bg_gradient {
-    position:fixed;
-    top:0; left:0;
-    display:block;
-    padding:0;
-    margin:0;
-    width:100%;
-    height:100vh;
-    background-size: 500% 500%;
-    animation: gradient 50s ease infinite;
-}
-#flash {
-    z-index: 1;
-    width: 75vw;
-    max-width:35rem;
-    height: 75vw;
-    max-height:35rem;
-    position: relative;
-    top:4.5vw; left:4.5vw;
-}
-#flash iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
 .none {
     width: 100%;
     height: 0vh;
@@ -99,24 +74,8 @@ body  {overflow-x:hidden;}
     position: fixed;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 100% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
 @media print {
 #bg_link {display: none;}
-.bg_gradient {
-  background-size: 100% 100%;
-  animation: gradient none;
-}
 }
 </style>
 </head>
@@ -128,7 +87,6 @@ body  {overflow-x:hidden;}
 </span>
 
 <div id="open" class="none"></div>
-<div id="flash"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient">
