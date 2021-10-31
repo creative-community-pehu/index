@@ -119,9 +119,6 @@ fclose($fp);
 <body>
 
 <ul id="symbol_color">
-<li class="bg_color">
-<span class="bg_symbol"><blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/NFazh3ELdY">pic.twitter.com/NFazh3ELdY</a></p>&mdash; ∧° ┐ | creative, community space (@pe_hu_) <a href="https://twitter.com/pe_hu_/status/1454636771921125385?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
-</li>
 <li style="background:#fff;">
 <div id="log">
 <ul id="log_items">
@@ -143,6 +140,9 @@ Log
 </li>
 </ul>
 </div>
+</li>
+<li class="bg_color">
+<span class="bg_symbol"><blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/NFazh3ELdY">pic.twitter.com/NFazh3ELdY</a></p>&mdash; ∧° ┐ | creative, community space (@pe_hu_) <a href="https://twitter.com/pe_hu_/status/1454636771921125385?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
 </li>
 <li style="background:#fff;">
 <div id="marquee">
