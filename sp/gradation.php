@@ -131,14 +131,7 @@ body  {overflow-x:hidden;}
 <div id="flash"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
-<li class="bg_gradient" style="background-image: linear-gradient(180deg,
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
-#<?=h($row[1])?>,
-<?php endforeach; ?>
-<?php else: ?>
-<?php endif; ?>
-#fff);">
+<li class="bg_gradient">
 </li>
 </ul>
 
