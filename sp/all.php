@@ -120,7 +120,7 @@ fclose($fp);
 
 <ul id="symbol_color">
 <li class="bg_color">
-<span class="bg_symbol"></span>
+<span class="bg_symbol"><img src="https://twitter.com/i/status/1454634191006486533"></img></span>
 </li>
 <li style="background:#fff;">
 <div id="log">
