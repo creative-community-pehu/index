@@ -99,6 +99,102 @@ fclose($fp);
 #log_items i {
   font-size:125%;
 }
+#log a {
+  display:inline-block;
+  text-decoration: none;
+  color:#000;
+  padding:0.25rem 0.75rem;
+  border:1px solid;
+  border-radius: 5rem;
+  background-color: #fff;
+}
+#log a:hover {
+  color:#fff;
+  background: linear-gradient(-90deg,
+#b0c4de,
+#ffdab9,
+#fffafa,
+#808080,
+#b8860b,
+#0000cd,
+#483d8b,
+#90ee90,
+#ff0000,
+#ffdab9,
+#d2b48c,
+#ffdab9,
+#ff8c00,
+#fff000,
+#008080,
+#ff0000,
+#ff8c00,
+#ba55d3,
+#800000,
+#483d8b,
+#800000,
+#fff000,
+#800000,
+#ba55d3,
+#ffdab9,
+#fff000,
+#d2b48c,
+#808080,
+#556b2f,
+#ffb6c1,
+#556b2f,
+#483d8b,
+#fff000,
+#ffb6c1,
+#483d8b,
+#b0c4de,
+#800000,
+#008080,
+#fffafa,
+#ba55d3,
+#b0c4de,
+#ba55d3,
+#b0c4de,
+#ff8c00,
+#ffdab9,
+#0000cd,
+#008080,
+#808080,
+#0000cd,
+#90ee90,
+#483d8b,
+#808080,
+#fff000,
+#800000,
+#0000cd,
+#ff0000,
+#fff000,
+#f0ffff,
+#b0c4de,
+#ff8c00,
+#fff000,
+#ff0000,
+#483d8b,
+#ffb6c1,
+#90ee90,
+#ffb6c1,
+#fff000,
+#ff8c00,
+#90ee90,
+#ff0000,
+#90ee90,
+#fff000,
+#90ee90,
+#0000cd,
+#b0c4de,
+#ff8c00,
+#b0c4de,
+#90ee90,
+#90ee90,
+#d2b48c,
+#fff);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+}
 #marquee {
 	position:relative;
 	z-index:10;
