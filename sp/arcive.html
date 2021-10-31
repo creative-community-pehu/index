@@ -7,6 +7,21 @@
     <title>新しい生活を集める</title>
     <style type="text/css">
 
+#symbol_color {
+  position:relative;
+  top:0; left:0;
+  padding:0; margin:0;
+  width:100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+  display: flex;
+  flex-direction:column-reverse;
+  font-family: "SimSong", "MS Mincho", serif;
+}
+#symbol_color li {
+  list-style: none;
+}
+
 .text-content{
     padding:2.5%;
     margin: auto;
@@ -28,9 +43,36 @@
   </head>
 <body>
 
+<ul id="symbol_color">
+<li>
+<script type="text/javascript">
+var day = '<div id="day"></div>';
+var night = '<div id="night"></div>';
+var close = '<div id="close"></div>';
+
+var now = new Date();
+var hour = now.getHours();
+
+if(hour >= 0 && hour <= 10){
+	document.write(close);
+}
+else if(hour >= 11 && hour <= 15){
+	document.write(day);
+}
+else if(hour >= 16 && hour <= 20){
+	document.write(night);
+}
+else if(hour >= 21 && hour <= 23){
+	document.write(close);
+}
+</script>
+</li>
+<li>
     <div class = "text-content">
         <span class = "type-text" id="ityped"></span>
     </div>
+</li>
+
 
 
     <script src="https://unpkg.com/ityped@1.0.3"></script>
