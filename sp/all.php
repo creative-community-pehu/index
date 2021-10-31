@@ -127,14 +127,17 @@ var night = '<div id="night"></div>';
 var now = new Date();
 var hour = now.getHours();
 
-if(hour >= 0 && hour <= 4){
-	document.write(night);
+if(hour >= 0 && hour <= 10){
+	document.write(close);
 }
-else if(hour >= 5 && hour <= 16){
+else if(hour >= 10 && hour <= 15){
 	document.write(day);
 }
-else if(hour >= 17 && hour <= 23){
+else if(hour >= 16 && hour <= 20){
 	document.write(night);
+}
+else if(hour >= 21 && hour <= 23){
+	document.write(close);
 }
 </script>
 </li>
@@ -188,6 +191,7 @@ Posted on <i>00.00.00 00:00</i></p>
 $(function(){
 $("#day").load("day/sign/");
 $("#night").load("night/sign/");
+$("#close").load("close/sign/");
 })
 </script>
 </body>
