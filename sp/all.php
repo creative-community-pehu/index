@@ -197,6 +197,18 @@ hr {padding:0.5rem; border:none;}
   background-size: 400% 400%;
   animation: gradientBG 5s ease infinite;
 }
+@keyframes gradient {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 #marquee {
 	position:relative;
 	z-index:10;
