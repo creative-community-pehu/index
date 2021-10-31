@@ -111,6 +111,8 @@ hr {padding:0.5rem; border:none;}
   background-color: #fff;
 }
 #marquee a:hover {color:#fff;}
+
+#marquee a:hover,
 #symbol_color {
   background: linear-gradient(0deg,
 #b0c4de,
@@ -195,7 +197,7 @@ hr {padding:0.5rem; border:none;}
 #d2b48c,
 #fff);
   background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
+  animation: gradientBG 25s ease infinite;
 }
 @keyframes gradientBG {
   0% {
@@ -306,7 +308,7 @@ Posted on <i>00.00.00 00:00</i></p>
 </ul>
 <hr/>
 <ul>
-<li class="can neither"><a id="symbol_color" href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
+<li class="can neither"><a href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
 </ul>
 </div>
 </div>
