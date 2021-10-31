@@ -41,7 +41,6 @@ body {margin:0; padding:0;}
     max-width:35rem;
     height: 75vw;
     max-height:35rem;
-    position: relative;
     margin:auto;
     text-align:center;
 }
@@ -326,14 +325,12 @@ Posted on <i>00.00.00 00:00</i></p>
 <ul>
 <li class="can neither"><a href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
 </ul>
+</div>
+</div>
+</li>
 <hr/>
-<ul>
 <li>
 <div id="flash"><iframe src="/sp/flash.php"></iframe></div>
-</li>
-</ul>
-</div>
-</div>
 </li>
 </ul>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
