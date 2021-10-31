@@ -258,7 +258,7 @@ var hour = now.getHours();
 if(hour >= 0 && hour <= 10){
 	document.write(close);
 }
-else if(hour >= 10 && hour <= 15){
+else if(hour >= 11 && hour <= 15){
 	document.write(day);
 }
 else if(hour >= 16 && hour <= 20){
