@@ -122,6 +122,11 @@ fclose($fp);
 <li style="background:#fff;">
 <div id="log">
 <ul id="log_items">
+<li>
+Old
+↓
+New
+</li>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li>
@@ -135,9 +140,6 @@ Posted on <i style="color:#<?=h($row[1])?>;"><?=h($row[2])?></i></p>
 Posted on <i>00.00.00 00:00</i></p>
 </li>
 <?php endif; ?>
-<li>
-Log
-</li>
 </ul>
 </div>
 </li>
