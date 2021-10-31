@@ -39,7 +39,7 @@ fclose($fp);
   font-size:4vw;
   width:45%;
   height:75vh;
-  margin:12.5vh auto;
+  margin:12.5vh auto 25vh;
   background:rgba(255,255,255,0.75);
   overflow-y:auto;
 }
@@ -119,17 +119,9 @@ fclose($fp);
 <body>
 
 <ul id="symbol_color">
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
-<li class="bg_color" style="background:#<?=h($row[1])?>;">
-<span class="bg_symbol" style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[0])?></span>
+<li class="bg_color">
+<span class="bg_symbol"></span>
 </li>
-<?php endforeach; ?>
-<?php else: ?>
-<li class="bg_color" style="background:#fff;">
-<span class="bg_symbol">✔</span>
-</li>
-<?php endif; ?>
 <li style="background:#fff;">
 <div id="log">
 <ul id="log_items">
