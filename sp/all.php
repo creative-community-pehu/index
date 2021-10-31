@@ -34,6 +34,7 @@ fclose($fp);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
+hr {padding:0.5rem;}
 #symbol_color {
   position:relative;
   top:0; left:0;
@@ -99,7 +100,7 @@ fclose($fp);
 #log_items i {
   font-size:125%;
 }
-#log a {
+#marquee a {
   display:inline-block;
   text-decoration: none;
   color:#000;
@@ -108,7 +109,7 @@ fclose($fp);
   border-radius: 5rem;
   background-color: #fff;
 }
-#log a:hover {
+#marquee a:hover {
   color:#fff;
   background: linear-gradient(-90deg,
 #b0c4de,
