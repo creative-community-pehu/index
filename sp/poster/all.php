@@ -81,6 +81,7 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li style="background:#fff;">
+<div id="infomation"></div>
 <div id="marquee">
 <div class="outside org_list">
 <ul>
@@ -88,9 +89,9 @@ fclose($fp);
 <li class="must positive">色</li>
 <li class="neither">と</li>
 <li class="must positive">記号</li>
-<li class="">は、</li>
-<li class="unknown can">展覧会「新しい生活を集める」</li>
-<li class="">にご来場くださいました</li>
+<li class="">は、このウェブサイト内に</li>
+<li class="unknown can">2021年9月9日から10月9日</li>
+<li class="">の期間限定で設置した投稿フォームに気づいてくださった</li>
 <li class="neither">皆様が投稿</li>
 <li class="">した</li>
 <li class="must unknown">自分の気持ちを知る・表す</li>
@@ -109,7 +110,7 @@ fclose($fp);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#").load("");
+$("#infomation").load("https://creative-community.space/sign/infomation/");
 })
 </script>
 </body>
