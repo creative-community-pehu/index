@@ -125,20 +125,6 @@ fclose($fp);
 <body>
 
 <div id="gradation">
-<ul id="symbol_color">
-<li class="bg_gradient" style="background-image: linear-gradient(180deg,
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
-#<?=h($row[1])?>,
-<?php endforeach; ?>
-<?php else: ?>
-<?php endif; ?>
-#fff);">
-</li>
-</ul>
-</div>
-
-<ul id="photos">
 <li>
 <script type="text/javascript">
 var day = '<div id="day"></div>';
