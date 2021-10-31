@@ -290,6 +290,10 @@ Posted on <i>00.00.00 00:00</i></p>
 <li class="must positive">記号</li>
 <li class="">です。</li>
 </ul>
+<hr/>
+<ul>
+<li class="can neither"><a href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
+</ul>
 </div>
 </div>
 </li>
