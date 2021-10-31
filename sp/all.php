@@ -35,6 +35,12 @@ fclose($fp);
 <link rel="stylesheet" type="text/css" href="https://creative-community.space/sign/stylesheet.css" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
+#gradation {
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  height:100vh;
+}
 #log {
   font-size:4vw;
   width:45%;
@@ -117,6 +123,7 @@ fclose($fp);
 </style>
 </head>
 <body>
+<div id="gradation"></div>
 
 <ul id="symbol_color">
 <li>
@@ -190,6 +197,7 @@ $(function(){
 $("#day").load("day/sign/");
 $("#night").load("night/sign/");
 $("#close").load("close/sign/");
+$("#gradation").load("/sp/gradation.php");
 })
 </script>
 </body>
