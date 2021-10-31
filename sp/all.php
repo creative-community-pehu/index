@@ -38,6 +38,7 @@ fclose($fp);
 #gradation {
   position:fixed;
   top:0; left:0;
+  z-index:-1;
   width:100%;
   height:100vh;
 }
@@ -123,7 +124,20 @@ fclose($fp);
 </style>
 </head>
 <body>
-<div id="gradation"></div>
+
+<div id="gradation">
+<ul id="symbol_color">
+<li class="bg_gradient" style="background-image: linear-gradient(180deg,
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
+#<?=h($row[1])?>,
+<?php endforeach; ?>
+<?php else: ?>
+<?php endif; ?>
+#fff);">
+</li>
+</ul>
+</div>
 
 <ul id="symbol_color">
 <li>
@@ -197,7 +211,6 @@ $(function(){
 $("#day").load("day/sign/");
 $("#night").load("night/sign/");
 $("#close").load("close/sign/");
-$("#gradation").load("/sp/gradation.php");
 })
 </script>
 </body>
