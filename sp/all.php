@@ -34,6 +34,7 @@ fclose($fp);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
+body {margin:0; padding:0;}
 #symbol_color {
   position:relative;
   top:0; left:0;
@@ -197,7 +198,7 @@ hr {padding:0.5rem; border:none;}
 #d2b48c,
 #fff);
   background-size: 400% 400%;
-  animation: gradientBG 25s ease infinite;
+  animation: gradientBG 100s ease infinite;
 }
 @keyframes gradientBG {
   0% {
