@@ -34,7 +34,6 @@ fclose($fp);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
-hr {padding:0.5rem;}
 #symbol_color {
   position:relative;
   top:0; left:0;
@@ -100,6 +99,8 @@ hr {padding:0.5rem;}
 #log_items i {
   font-size:125%;
 }
+
+hr {padding:0.5rem; border:none;}
 #marquee a {
   display:inline-block;
   text-decoration: none;
