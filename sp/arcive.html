@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>新しい生活を集める</title>
+    <style type="text/css">
+
+.text-content{
+    padding:2.5%;
+    margin: auto;
+    width:  37.5rem;
+    max-width: 95%;
+    min-height: 10rem;
+    line-height: 1.5rem;
+}
+.type-text{
+ color: #000;
+ font-size: 20px;
+}
+
+@media screen and (max-width: 1000px){
+}
+    </style>
+
+  
+  </head>
+<body>
+
+    <div class = "text-content">
+        <span class = "type-text" id="ityped"></span>
+    </div>
+
+
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
+    　　<script>
+        ityped.init(document.querySelector("#ityped"), {
+          strings: [
+              'このウェブサイトに表示される展覧会「新しい生活を集める」の記録は、閲覧時間によって内容が変化します。',
+              '11時から15時までは、日中の展示風景が表示されます。',
+              '16時から21時までは、夜間の展示風景が表示されます。',
+              'その他の時間帯には、それ以外の展示風景が表示されます。'
+            ],
+          startDelay: 100,                                                  //アニメーション開始までの遅延、大きいほど遅れる
+          typeSpeed: 200,                                                   //表示させるスピード、大きいほどゆっくり
+          loop: true,                                                      //ループ
+          showCursor: false,                                                 //カーソル表示
+          cursorChar: "|",                                                  //カーソルとして表示するテキスト
+        })
+      </script>
+</body>
+</html>
