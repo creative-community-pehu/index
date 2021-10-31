@@ -32,7 +32,7 @@ fclose($fp);
 <script src="http://creative-community.space/coding/js/org.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#org_emoji").load("submit.html");
+$("#org_emoji").load("org.html");
 })
 </script>
 <link rel="stylesheet" href="submit.css"/>
