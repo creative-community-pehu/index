@@ -35,6 +35,20 @@ fclose($fp);
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
 body {margin:0; padding:0;}
+#flash {
+    z-index: 1;
+    width: 75vw;
+    max-width:35rem;
+    height: 75vw;
+    max-height:35rem;
+    position: relative;
+    margin:auto;
+}
+#flash iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 #symbol_color {
   position:relative;
   top:0; left:0;
@@ -310,6 +324,12 @@ Posted on <i>00.00.00 00:00</i></p>
 <hr/>
 <ul>
 <li class="can neither"><a href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
+</ul>
+<hr/>
+<ul>
+<li>
+<div id="flash"><iframe src="/sp/flash.php"></iframe></div>
+</li>
 </ul>
 </div>
 </div>
