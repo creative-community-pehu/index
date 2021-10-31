@@ -38,7 +38,7 @@ $("#org_emoji").load("submit.html");
 <link rel="stylesheet" href="submit.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
-body {background:#fff;}
+body {background:#fff; padding:0; margin:0;}
 .cc {
     font-family: "ipag", monospace;
     transform:scale(1, 1.25);
