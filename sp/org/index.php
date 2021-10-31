@@ -80,10 +80,10 @@ body {background:#fff;}
 </head>
 <body>
 <div id="org_header">
+<a onclick="obj=document.getElementById('org_members').style; obj.display=(obj.display=='none')?'block':'none';">ORG</a>
 <span class="reset">
 <input type="reset" name="reset" value="全部見る" class="reset-button">
 </span>
-<a onclick="obj=document.getElementById('org_members').style; obj.display=(obj.display=='none')?'block':'none';">投稿フォーム</a>
 </div>
 
 <div id="org_emoji"></div>
