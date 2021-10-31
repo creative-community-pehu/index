@@ -110,8 +110,8 @@ hr {padding:0.5rem; border:none;}
   border-radius: 5rem;
   background-color: #fff;
 }
-#marquee a:hover {
-  color:#fff;
+#marquee a:hover {color:#fff;}
+#symbol_color {
   background: linear-gradient(0deg,
 #b0c4de,
 #ffdab9,
@@ -306,7 +306,7 @@ Posted on <i>00.00.00 00:00</i></p>
 </ul>
 <hr/>
 <ul>
-<li class="can neither"><a href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
+<li class="can neither"><a id="symbol_color" href="/sign/" target="_blank" rel="noopener noreferrer">もっと詳しく</a></li>
 </ul>
 </div>
 </div>
