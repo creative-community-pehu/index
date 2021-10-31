@@ -112,7 +112,7 @@ hr {padding:0.5rem; border:none;}
 }
 #marquee a:hover {
   color:#fff;
-  background: linear-gradient(-90deg,
+  background: linear-gradient(0deg,
 #b0c4de,
 #ffdab9,
 #fffafa,
@@ -197,7 +197,7 @@ hr {padding:0.5rem; border:none;}
   background-size: 400% 400%;
   animation: gradientBG 5s ease infinite;
 }
-@keyframes gradient {
+@keyframes gradientBG {
   0% {
     background-position: 100% 0%;
   }
