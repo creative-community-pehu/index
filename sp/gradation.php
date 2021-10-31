@@ -90,7 +90,7 @@ body  {overflow-x:hidden;}
 
 <ul id="symbol_color">
 <li class="bg_color" style="background:#fff;">
-<span class="bg_symbol">準備中</span>
+<span class="bg_symbol">記録映像制作中</span>
 </li>
 </ul>
 
