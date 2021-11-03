@@ -34,12 +34,15 @@ body {margin:0; padding:0;}
 	animation: slider 25s infinite ease;
 }
 #screenshots img {
+    position:absolute;
     z-index:-1;
     height: 100%;
 }
+#center {
+    position:fixed;
+}
 #center,
 #screenshots img {
-    position:absolute;
     top: 50%;
     left: 50%;
     width: auto;
