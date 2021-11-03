@@ -1,1 +1,49 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Post | creative-community.space </title>
+<link rel="stylesheet" href="http://creative-community.space/coding/fontbook/css/font-family.css"/>
+<style type="text/css">
 
+#members {
+    width:50%;
+    float:left;
+    overflow:auto;
+}
+#essay {
+    position:relative;
+    float:right;
+    width:50%;
+    height: 100%;
+    overflow:auto;
+}
+
+@media screen and (max-width: 750px){
+#org_emoji, #essay {
+    width:100%;
+    height:50vh;
+    clear:both;
+}
+}
+</style>
+</head>
+<body>
+<div id="org_header">
+<a onclick="obj=document.getElementById('popup').style; obj.display=(obj.display=='none')?'block':'none';">Become a Member</a>
+</div>
+
+<div id="members"></div>
+
+<div id="essay">
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#members").load("members.html");
+$("#essay").load("essay.html");
+})
+</script>
+</body>
+</html>
