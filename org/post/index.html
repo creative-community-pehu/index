@@ -7,42 +7,34 @@
 <link rel="stylesheet" href="http://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
 
-#org_header {
-  padding:1rem 2.5%;
-  width: 95%;
-  position:fixed;
-  top:0;
-  z-index:100;
-  font-size:1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#org_header a {
-  color:#000;
-  text-decoration:none;
-  border-bottom:2px solid #000;
-}
-#org_header a:hover {
-  cursor:pointer;
-  color:#ccc;
-	text-shadow:0.1rem 0.1rem #000;
-  border-bottom:2px solid #000;
-}
-
 #members {
+    position:absolute;
+    top:0;
+    left:0;
     width:50%;
     float:left;
     overflow:auto;
 }
 #screenshots {
     position:relative;
+    top:0;
+    left:0;
     float:right;
-    width:50%;
-    height: 100%;
-    overflow:auto;
+    width:100%;
+    height:100vh;
 }
-#screenshots img {width:100%;}
+#screenshots img {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    overflow:hidden;
+    pointer-events:none;
+    user-select:none;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
 
 @media screen and (max-width: 750px){
 #members, #screenshots {
@@ -58,41 +50,16 @@
 </style>
 </head>
 <body>
-<div id="org_header">
-<a onclick="obj=document.getElementById('popup').style; obj.display=(obj.display=='none')?'block':'none';">Become a Member</a>
-</div>
 
 <div id="members"></div>
 
-<div id="screenshots" class="screenshots"></div>
+<div id="screenshots"><img src=""></div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#members").load("members.html");
 })
 
-const screenshots = [
-  "print/drawings.JPG",
-  "print/org.jpg",
-  "print/orgup.jpg",
-  "print/sign.JPG",
-  "print/weareopen.JPG",
-  "print/weareclose.JPG"
-  ];
-  
-  function randomImg(randomArray) {
-    var screenshots =
-    randomArray[Math.floor(Math.screenshots() * randomArray.length)];
-    console.log(screenshots);
-    return screenshots;
-  }
-  function imgGenerator() {
-    var img = `<img src="${randomImg(screenshots)}">`;
-    document.querySelector(".screenshots").innerHTML = img;
-  }
-  window.setInterval(function() {
-    imgGenerator();
-  }, 2000);
 </script>
 </body>
 </html>
