@@ -37,18 +37,18 @@ body {margin:0; padding:0;}
     position:absolute;
     z-index:-1;
     height: 100%;
+    pointer-events:none;
+    user-select:none;
 }
 #center {
     position:fixed;
-    z-index:10;
+    z-index:100;
 }
 #center,
 #screenshots img {
     top: 50%;
     left: 50%;
     width: auto;
-    pointer-events:none;
-    user-select:none;
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
 }
