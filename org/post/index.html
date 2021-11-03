@@ -42,6 +42,7 @@
     height: 100%;
     overflow:auto;
 }
+.random img {width:100%;}
 
 @media screen and (max-width: 750px){
 #members, #screenshots {
@@ -63,12 +64,35 @@
 
 <div id="members"></div>
 
-<div id="screenshots"></div>
+<div id="screenshots" class="random"></div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#members").load("members.html");
 })
+
+const random = [
+  "print/drawings.JPG",
+  "print/org.jpg",
+  "print/orgup.jpg",
+  "print/sign.JPG",
+  "print/weareopen.JPG",
+  "print/weareclose.JPG"
+  ];
+  
+  function randomImg(randomArray) {
+    var random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
+  function imgGenerator() {
+    var img = `<img src="${randomImg(random)}">`;
+    document.querySelector(".random").innerHTML = img;
+  }
+  window.setInterval(function() {
+    imgGenerator();
+  }, 2000);
 </script>
 </body>
 </html>
