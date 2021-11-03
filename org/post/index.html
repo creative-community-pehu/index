@@ -42,7 +42,7 @@
     height: 100%;
     overflow:auto;
 }
-.random img {width:100%;}
+#screenshots img {width:100%;}
 
 @media screen and (max-width: 750px){
 #members, #screenshots {
@@ -71,7 +71,7 @@ $(function(){
 $("#members").load("members.html");
 })
 
-const random = [
+const screenshots = [
   "print/drawings.JPG",
   "print/org.jpg",
   "print/orgup.jpg",
@@ -81,14 +81,14 @@ const random = [
   ];
   
   function randomImg(randomArray) {
-    var random =
-    randomArray[Math.floor(Math.random() * randomArray.length)];
-    console.log(random);
-    return random;
+    var screenshots =
+    randomArray[Math.floor(Math.screenshots() * randomArray.length)];
+    console.log(screenshots);
+    return screenshots;
   }
   function imgGenerator() {
-    var img = `<img src="${randomImg(random)}">`;
-    document.querySelector(".random").innerHTML = img;
+    var img = `<img src="${randomImg(screenshots)}">`;
+    document.querySelector(".screenshots").innerHTML = img;
   }
   window.setInterval(function() {
     imgGenerator();
