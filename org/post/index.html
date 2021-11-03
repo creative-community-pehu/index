@@ -3,37 +3,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> Post | creative-community.space </title>
+<title> 言葉の強さと方向と感情 | creative-community.space </title>
 <link rel="stylesheet" href="http://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style type="text/css">
-
+body {margin:0; padding:0;}
 #members {
-    position:absolute;
-    top:0;
-    left:0;
+    position:relative;
+    top:0; left:0;
     width:50%;
+    height:100%;
     float:left;
     overflow:auto;
 }
 #screenshots {
     position:relative;
-    top:0;
-    left:0;
+    top:0; right:0;
+    width:50%;
+    height:100%;
     float:right;
-    width:100%;
-    height:100vh;
 }
 #screenshots img {
-    position:fixed;
+    position:absolute;
     top: 50%;
     left: 50%;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height:auto;
     overflow:hidden;
     pointer-events:none;
     user-select:none;
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
+    z-index:-1;
 }
 
 @media screen and (max-width: 750px){
@@ -45,7 +45,6 @@
     height:100vh;
     clear:both;
 }
-#screenshots {z-index:-1;}
 }
 </style>
 </head>
