@@ -14,6 +14,7 @@ body {margin:0; padding:0;}
     height:100%;
     float:left;
     overflow:auto;
+    z-index:1;
 }
 #screenshots {
     position:relative;
@@ -44,8 +45,47 @@ body {margin:0; padding:0;}
     transform : translate(-50%,-50%);
     z-index:-1;
 }
+
+#random a {
+  text-decoration: none;
+  color:#000;
+  border :solid 1px;
+  border-radius:50%;
+  padding:1rem 2rem;
+  display:inline-block;
+  transform:scale(0.75);
+}
+#random a:hover {
+  color:#fff;
+  background:#000;
+}
 @-webkit-keyframes slider {
-	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	}
+	20% {
+	-webkit-transform: translateY(-100vh);
+	transform: translateY(-100vh);
+	}
+	40% {
+	-webkit-transform: translateY(-200vh);
+	transform: translateY(-200vh);
+	}
+	60% {
+	-webkit-transform: translateY(-300vh);
+	transform: translateY(-300vh);
+	}
+	80% {
+	-webkit-transform: translateY(-400vh);
+	transform: translateY(-400vh);
+	}
+	100% {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	}
+}
+@keyframes slider {
 	0% {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -88,9 +128,11 @@ body {margin:0; padding:0;}
 
 <div id="members">
 <div id="bbs"></div>
+<div id="org_members">
 <p id="random" class="random" style="text-align:center;">
 <span class="must positive"><a href="https://pehu.cart.fc2.com/signup" target="_parent">Become a Member</a></span>
 </p>
+</div>
 </div>
 
 <div id="screenshots" class="slider">
