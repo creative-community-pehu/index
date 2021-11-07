@@ -182,6 +182,7 @@ li {list-style: none;}
 </style>
 </head>
 <body>
+<div id="index"></div>
 <div id="grid">
 <div>
 <p><i>更新履歴 | creative-community.space</i></p>
@@ -251,6 +252,7 @@ $('a[href^="#"]').click(function(){
  });
 
 $(function(){
+    $("#index").load("/menu/");
     $("#tobe").load("/ver/tba.php");
     $("#hsl").load("/coding/js/hsl/");
 })
