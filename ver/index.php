@@ -33,6 +33,11 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
+#index {
+    position: fixed;
+    z-index: 1000;
+    top:0;
+}
 #tba {
   filter: invert();
 }
