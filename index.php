@@ -12,11 +12,6 @@
 <style type="text/css">
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
-#index {
-    position: fixed;
-    z-index: 1000;
-    top:0;
-}
 #greeting {
     position: relative; z-index:10;
     width:80%;
@@ -112,7 +107,6 @@ body {margin:0; padding:0;}
 </style>
 </head>
 <body>
-<div id="index"></div>
 <div id="greeting"></div>
 <div id="ver"></div>
 <div id="p5"></div>
@@ -150,7 +144,6 @@ $('a[href^="#"]').click(function(){
  });
 
 $(function(){
-    $("#index").load("/menu/");
     $("#greeting").load("/hello.php");
     $("#ver").load("/ver/");
     $("#p5").load("/coding/js/p5/sketch.html");
