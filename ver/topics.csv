@@ -1,8 +1,8 @@
 11.14 - 12.31.2021 ,"FREE TIME | 何かする時間","/members/studio/",news,inline
-11.14.2021 ,"会員限定レンタサイクル","/map/membersonly.html",news,inline
+11.14.2021 ,"会員限定レンタサイクル","/map/",news,inline
 11.11.2021 ,"Monthly Magazine | 令和三年十一月号","/newsletters/",news,inline
 11.11.2021 ,"Publication | 出版 印刷する","/publication/",news,none
-11.3.2021 ,"言葉の強さと方向と感情","/org/post/",upgrade,none
+11.3.2021 ,"言葉の強さと方向と感情 ページレイアウトをバージョンアップ","/org/post/",upgrade,none
 11.1.2021 ,"展覧会「新しい生活を集める」の記録","/sp/",news,none
 11.1.2021 ,"令和三年十月の気持ちを知る・表す","/members/sign/",news,inline
 10.10 - 30.2021,"展覧会「新しい生活を集める」開催","/sp/",news,none
@@ -10,13 +10,12 @@
 10.13.2021 ,"地図を作ろう","/map/",news,none
 10.13.2021 ,"goout.pe.hu → creative-community.space/map/","/map/",upgrade,none
 10.10.2021 ,"Monthly Magazine | 令和三年十月号","/newsletters/",news,inline
-10.10.2021 ,"We’ve got good news | 新しい生活を集める","https://newlifecollection.com/news?news=482461",news,none
-10.10.2021 ,"ホームページをバージョンアップ","/ver/",upgrade,none
 10.10.2021 ,"ファビコン・ロゴ決定","/logo.png",news,none
-10.10.2021 ,"Your Drawing is Seems So Beautiful の解説","/thankyou/",ver,none
+10.10.2021 ,"ホームページをバージョンアップ","/ver/",upgrade,none
+10.10.2021 ,"We’ve got good news | 新しい生活を集める","https://newlifecollection.com/news?news=482461",news,none
 10.7.2021 ,"自分の気持ちを知る・表す 文字色の仕様をバージョンアップ","/sign/",upgrade,none
 10.1.2021 ,"令和三年九月の気持ちを知る・表す","/members/sign/",news,inline
-9.27.2021 ,"検索機能付き匿名掲示板","/members/org/",upgrade,inline
+9.27.2021 ,"言葉の強さと方向と感情","/members/org/",upgrade,inline
 9.27.2021 ,"自分の気持ちを知る・表す","/sign/",upgrade,none
 9.27.2021 ,"Your Drawing is Seems So Beautiful","/thankyou/",news,none
 9.27.2021 ,"newlifecollection.pe.hu → Members Only" ,"/members/",upgrade,inline
