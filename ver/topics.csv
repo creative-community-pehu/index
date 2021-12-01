@@ -5,7 +5,7 @@
 11.11.2021 ,"Publication | 出版 印刷する","/publication/",news,none
 11.11.2021 ,"できること | Can ☆ Do","/org/",news,none
 11.11.2021 ,"Monthly Magazine | 令和三年十一月号","/newsletters/",news,inline
-11.3.2021 ,"言葉の強さと方向と感情","/org/post/",upgrade,none
+11.3.2021 ,"言葉の強さと方向と感情","/org/post/",upgrade,inline
 11.1.2021 ,"展覧会「新しい生活を集める」の記録","/sp/",news,none
 11.1.2021 ,"令和三年十月の気持ちを知る・表す","/members/sign/202110/",news,inline
 10.10 - 30.2021,"展覧会「新しい生活を集める」開催","/sp/",news,none
@@ -16,9 +16,9 @@
 10.10.2021 ,"ファビコン・ロゴ決定","/logo.png",news,none
 10.10.2021 ,"更新履歴 | creative-community.space","/ver/",new,none
 10.10.2021 ,"We’ve got good news | 新しい生活を集める","https://newlifecollection.com/news?news=482461",news,none
-10.7.2021 ,"自分の気持ちを知る・表す","/sign/",upgrade,none
+10.7.2021 ,"自分の気持ちを知る・表す","/sign/",upgrade,inline
 9.27.2021 ,"言葉の強さと方向と感情","/members/org/",upgrade,inline
-9.27.2021 ,"自分の気持ちを知る・表す","/sign/",upgrade,none
+9.27.2021 ,"自分の気持ちを知る・表す","/sign/",upgrade,inline
 9.27.2021 ,"Your Drawing is Seems So Beautiful","/thankyou/",news,none
 9.27.2021 ,"newlifecollection.pe.hu → Members Only" ,"/members/",upgrade,inline
 9.27.2021 ,"vg.pe.hu/jp/ → creative-community.space/pehu/" ,"/pehu/",upgrade,none
