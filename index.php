@@ -29,8 +29,8 @@ body {margin:0; padding:0;}
 }
 #support {
     position: relative; z-index:10;
-    width:100%;
-    margin: 0 0 10%;
+    width:95%;
+    margin: 0 auto 10%;
 }
 #p5 {
     width: 100%;
