@@ -27,6 +27,11 @@ body {margin:0; padding:0;}
 #ver #searchBox .label {
   display: none;
 }
+#support {
+    position: relative; z-index:10;
+    width:90%;
+    margin: 0 5%;
+}
 #p5 {
     width: 100%;
     height: 100vh;
