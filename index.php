@@ -109,6 +109,7 @@ body {margin:0; padding:0;}
 <body>
 <div id="greeting"></div>
 <div id="ver"></div>
+<div id="support"></div>
 <div id="p5"></div>
 <div id="now">
 <span><?php
@@ -146,6 +147,7 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#greeting").load("/hello.php");
     $("#ver").load("/ver/");
+    $("#support").load("/support/");
     $("#p5").load("/coding/js/p5/sketch.html");
 })
 </script>
