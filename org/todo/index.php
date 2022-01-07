@@ -13,7 +13,7 @@ $link = (string)filter_input(INPUT_POST, 'link');
 $url = (string)filter_input(INPUT_POST, 'url');
 $id = (string)filter_input(INPUT_POST, 'id');
 
-$fp = fopen('cando.csv', 'a+b');
+$fp = fopen('submit.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$how, $what, $date, $info, $info_more, $pro, $pro_more, $link, $url, $id]);
