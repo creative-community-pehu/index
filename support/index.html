@@ -16,86 +16,125 @@
     決算時にご入力いただいたご住所に、受領証明書と合わせて、寄附金額に相当する特別な記念品をお送りいたします。</i></p>
     </li>
     <li id="join">
-    <h2>Name Your Price</h2><div>
-      <div ><div id="renderedCheckoutButtonHTML" style="
-      overflow: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      width: 258.96px;
-      background: #FFFFFF;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-      border-radius: 10px;
-      font-family: IBM Plex Mono, SQ Market, Helvetica, Arial, sans-serif;
-      ">
-      <div style="padding: 20px;">
-      <p style="
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 600;
-      ">お客さまの入力</p>
-      <a id="embedded-checkout-modal-checkout-button" target="_blank" data-url="https://square.link/u/AuIHiCsR?src=embd" href="https://square.link/u/AuIHiCsR?src=embed" style="
-        display: inline-block;
-        font-size: 18px;
-        line-height: 48px;
-        height: 48px;
-        color: #ffffff;
-        min-width: 212px;
-        background-color: #006aff;
-        text-align: center;
-        box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-        border-radius: 50px;
-      ">寄付する</a>
-      </div>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Mono">
+    <h2>Name Your Price</h2>
+    <div id="smart-button-container">
+      <div style="text-align: center"><label for="description">Your Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+      <div style="text-align: center"><label for="amount">Price </label><input name="amountInput" type="number" id="amount" value="" ><span> JPY</span></div>
+        <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+      <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+        <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+      <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
     </div>
-    <textarea class="checkout-button-html-hidden-textarea embedded-checkout-link"></textarea></div>
-    
-      <style>
-        .embedded-checkout-link-html-hidden-textarea,
-        .checkout-button-html-hidden-textarea {
-          opacity: 0;
-          position: absolute;
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=JPY" data-sdk-integration-source="button-factory"></script>
+    <script>
+    function initPayPalButton() {
+      var description = document.querySelector('#smart-button-container #description');
+      var amount = document.querySelector('#smart-button-container #amount');
+      var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+      var priceError = document.querySelector('#smart-button-container #priceLabelError');
+      var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+      var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+      var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+  
+      var elArr = [description, amount];
+  
+      if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+        invoiceidDiv.style.display = "block";
+      }
+  
+      var purchase_units = [];
+      purchase_units[0] = {};
+      purchase_units[0].amount = {};
+  
+      function validate(event) {
+        return event.value.length > 0;
+      }
+  
+      paypal.Buttons({
+        style: {
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+          layout: 'vertical',
+          
+        },
+  
+        onInit: function (data, actions) {
+          actions.disable();
+  
+          if(invoiceidDiv.style.display === "block") {
+            elArr.push(invoiceid);
+          }
+  
+          elArr.forEach(function (item) {
+            item.addEventListener('keyup', function (event) {
+              var result = elArr.every(validate);
+              if (result) {
+                actions.enable();
+              } else {
+                actions.disable();
+              }
+            });
+          });
+        },
+  
+        onClick: function () {
+          if (description.value.length < 1) {
+            descriptionError.style.visibility = "visible";
+          } else {
+            descriptionError.style.visibility = "hidden";
+          }
+  
+          if (amount.value.length < 1) {
+            priceError.style.visibility = "visible";
+          } else {
+            priceError.style.visibility = "hidden";
+          }
+  
+          if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+            invoiceidError.style.visibility = "visible";
+          } else {
+            invoiceidError.style.visibility = "hidden";
+          }
+  
+          purchase_units[0].description = description.value;
+          purchase_units[0].amount.value = amount.value;
+  
+          if(invoiceid.value !== '') {
+            purchase_units[0].invoice_id = invoiceid.value;
+          }
+        },
+  
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: purchase_units,
+          });
+        },
+  
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (orderData) {
+  
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+  
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+  
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+  
+        onError: function (err) {
+          console.log(err);
         }
-      </style>
-    
-      <script>
-        function showCheckoutWindow(e) {
-          e.preventDefault();
-    
-          const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
-          const title = 'Square Online Checkout';
-    
-          // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
-          const topWindow = window.top ? window.top : window;
-    
-          // Fixes dual-screen position                                Most browsers          Firefox
-          const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
-          const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
-    
-          const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-          const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-    
-          const h = height * .75;
-          const w = 500;
-    
-          const systemZoom = width / topWindow.screen.availWidth;
-          const left = (width - w) / 2 / systemZoom + dualScreenLeft;
-          const top = (height - h) / 2 / systemZoom + dualScreenTop;
-          const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
-    
-          if (window.focus) newWindow.focus();
-        }
-    
-        // This overrides the default checkout button click handler to show the embed modal
-        // instead of opening a new tab with the given link url
-        document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
-          showCheckoutWindow(e);
-        });
-      </script>
-    </div>
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+    </script>
     </li>
     </ul>
     </body>
