@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>i choose | creative-community.space</title>
+<style type="text/css">
+body {margin:0; padding:0;}
+
+.contents {
+    font-size:2.5vw;
+    width:90%;
+    margin:2.5vw auto;
+    line-height: 5vw;
+    font-family:Arial, sans-serif;
+}
+.contents div {
+    display:block;
+    clear:both;
+}
+.contents i {
+    float: right;
+    font-size: 90%;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tab {
+    color:#000;
+    text-decoration:none;
+    transition: all 500ms ease;
+}
+.tab:hover,
+.check b {
+    color:blue;
+    transition: all 500ms ease;
+}
+  
+.check {
+    float:left;
+    display:inline-block;
+    width:2.5vw;
+    margin-right:2.5vw;
+    text-align:center;
+    margin-right:2.5vw;
+}
+.check:before {
+    content:'[';
+    opacity:1;
+}
+.check:after {
+    content:']';
+    opacity:1;
+}
+.check b {
+    opacity: 0;
+    transition: all 1000ms ease;
+}
+a:hover + .check b {
+    opacity: 1;
+    transition: all 1000ms ease;
+}
+</style>
+</head>
+<body>
+<div class="contents">
+    <div>
+    <a href="http://ichoose.pe.hu/" target="_parent" class="tab">
+        <span>i choose</span>
+    </a>
+    </div>
+    <div><a href="/10q/" class="tab"
+        onmouseover="this.innerText='質問に答える'"
+        onmouseout="this.innerText='10 Questions'">
+        10 Questions</a><span class="check"><b>✔</b></span></div>
+    
+<!--
+    <div><a href="/50q/" class="tab"
+        onmouseover="this.innerText='質問に答える'"
+        onmouseout="this.innerText='50 Questions'">
+        50 Questions</a><span class="check"><b>✔</b></span></div>
+-->
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+</script>
+</body>
+</html>
