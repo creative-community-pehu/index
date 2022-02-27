@@ -81,7 +81,6 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li style="background:#fff;">
-<div id="infomation"></div>
 <div id="marquee">
 <div class="outside org_list">
 <ul>
@@ -107,11 +106,5 @@ fclose($fp);
 </div>
 </li>
 </ul>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#infomation").load("https://creative-community.space/sign/infomation/");
-})
-</script>
 </body>
 </html>
