@@ -32,79 +32,132 @@ fclose($fp);
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="https://creative-community.space/sign/stylesheet.css" />
-<title>自分の気持ちを知る・表す</title>
+<link rel="stylesheet" type="text/css" href="/sign/stylesheet.css" />
+<title>新しい生活を集める</title>
 <style type="text/css">
-#marquee {
-	position:relative;
-	z-index:10;
-	width:100%;
-	top:0; left:0;
-	padding:0; margin:0;
-	transition:.5s all;
+body  {overflow-x:hidden;}
+#bg_link {
+    position:absolute;
+    z-index:100;
+    top:4.5vw;
+    right:2.5vw;
+    font-family: "SimSong", "MS Mincho", serif;
+    transition:.5s all;
 }
-#marquee div {padding:2.5% 5%;}
-#marquee ul {
-	display:inline-block;
-	padding:0 0 2rem; margin:0;
+#bg_link b {
+    font-weight:500;
+    font-size:1rem;
+    background:#fff;
+    padding:0.5rem 0.25rem;
 }
-#marquee li {
-	display:inline-block;
-	margin: 0 0.25rem;
+#bg_link i {
+    font-size:2rem;
+    display:block;
+    padding:0.5rem 1.5rem;
+    margin-right:1rem;
 }
-#marquee .must {font-weight:900;}
-#marquee .should {font-weight:700;}
-#marquee .can {font-weight:500;}
-#marquee .may {font-weight:300;}
-#marquee .could {font-weight:200;}
-#marquee .cant {font-weight:100;}
 
-#marquee .positive {font-size:250%;}
-#marquee .negative {font-size:50%;}
-#marquee .both {font-size:100%;}
-#marquee .neither {font-size:150%;}
-#marquee .unknown {font-size:200%;}
+.bg_gradient {
+    position:fixed;
+    top:0; left:0;
+    display:block;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100vh;
+    background-size: 500% 500%;
+    animation: gradient 50s ease infinite;
+}
+#flash {
+    z-index: 1;
+    width: 75vw;
+    max-width:35rem;
+    height: 75vw;
+    max-height:35rem;
+    position: relative;
+    top:4.5vw; left:4.5vw;
+}
+#flash iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.none {
+    width: 100%;
+    height: 0vh;
+    opacity: 0;
+    overflow-y: auto;
+    transition: all 1500ms ease;
+    position: fixed; z-index:2;
+}
+.open {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    overflow-y: auto;
+    transition: all 2500ms ease;
+    position: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@media print {
+#bg_link {display: none;}
+.bg_gradient {
+  background-size: 100% 100%;
+  animation: gradient none;
+}
+}
 </style>
 </head>
 <body>
 
+<span id="bg_link">
+<b>令和三年 十月 十日 - 三十日</b><br/>
+<i>新しい生活を集める</i>
+</span>
+
+<div id="open" class="none"></div>
+<div id="flash"><iframe src="all.php"></iframe></div>
+
 <ul id="symbol_color">
+<li class="bg_gradient" style="background-image: linear-gradient(180deg,
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<li class="bg_color" style="background:#<?=h($row[1])?>;">
-<span class="bg_symbol" style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[0])?></span>
-</li>
+#<?=h($row[1])?>,
 <?php endforeach; ?>
 <?php else: ?>
-<li class="bg_color" style="background:#fff;">
-<span class="bg_symbol">✔</span>
-</li>
 <?php endif; ?>
-<li style="background:#fff;">
-<div id="marquee">
-<div class="outside org_list">
-<ul>
-<li class="">このページに表示される</li>
-<li class="must positive">色</li>
-<li class="neither">と</li>
-<li class="must positive">記号</li>
-<li class="">は、このウェブサイト内に</li>
-<li class="unknown can">2021年9月9日から10月9日</li>
-<li class="">の期間限定で設置した投稿フォームに気づいてくださった</li>
-<li class="neither">皆様が投稿</li>
-<li class="">した</li>
-<li class="must unknown">自分の気持ちを知る・表す</li>
-<li class="must positive">色</li>
-<li class="neither">と</li>
-<li class="must positive">記号</li>
-<li class="">です。</li>
-</ul>
-<ul>
-<li class="neither">ご投稿いただいた皆様ありがとうございました。</li>
-</ul>
-</div>
-</div>
+#fff);">
 </li>
 </ul>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+    $("#open").load("log.html");
+    })
+
+    let btn = document.querySelector('#bg_link');
+    let log = document.querySelector('#open');
+     
+    let btnToggleclass = function(el) {
+      el.classList.toggle('open');
+    }
+     
+    btn.addEventListener('click', function() {
+      btnToggleclass(log);
+    }, false);
+</script>
 </body>
 </html>
