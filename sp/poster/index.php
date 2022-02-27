@@ -128,7 +128,7 @@ body  {overflow-x:hidden;}
 </span>
 
 <div id="open" class="none"></div>
-<div id="flash"><iframe src="all.php"></iframe></div>
+<div id="flash"><iframe src="flash.php"></iframe></div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(180deg,
