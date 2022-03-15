@@ -63,7 +63,7 @@ body {margin:0; padding:0;}
 .contents {
     font-size:2.5vw;
     width:90%;
-    margin:0 auto;
+    margin:2.5vw auto;
     line-height: 5vw;
     font-family:Arial, sans-serif;
 }
@@ -149,6 +149,18 @@ a:hover + .check b {
         onmouseout="this.innerText='言葉の強さと方向と感情'">
         言葉の強さと方向と感情</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
 </div>
+<div class="contents">
+    <div>
+    <a href="/value/" target="_parent" class="tab">
+        <span>大切にすることを大切にする</span>
+    </a>
+    </div>
+    <div><a href="/value/index/" class="tab"
+        onmouseover="this.innerText='What do you value?'"
+        onmouseout="this.innerText='あなたの大切なものは何ですか？'">
+        あなたの大切なものは何ですか？</a><span class="check"><b>✔</b></span>
+    </div>
+</div>
 <div id="goout"></div>
 </div>
 <br/>
@@ -167,6 +179,7 @@ a:hover + .check b {
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
+    $("#value").load("/menu/value.html");
     $("#goout").load("/menu/map.html");
     })
 

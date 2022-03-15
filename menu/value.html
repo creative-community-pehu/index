@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Index | creative-community.space</title>
+<title>大切にすることを大切にする | creative-community.space</title>
 <style type="text/css">
 body {margin:0; padding:0;}
 
@@ -15,6 +15,10 @@ body {margin:0; padding:0;}
     margin:2.5vw auto;
     line-height: 5vw;
     font-family:Arial, sans-serif;
+}
+.contents div {
+    display:block;
+    clear:both;
 }
 .contents i {
     float: right;
@@ -61,25 +65,6 @@ a:hover + .check b {
 </head>
 <body>
 <div class="contents">
-<div>
-    <a href="/ver/" target="_parent" class="tab">
-        <span>目次</span>
-    </a>
-</div>
-    <div><a href="/thankyou/" class="tab"
-        onmouseover="this.innerText='Your Drawing is Seems So Beautiful'"
-        onmouseout="this.innerText='あなたの落書きを出力する'">
-        あなたの落書きを出力する</a><span class="check"><b>✔</b></span></div>
-    <div><a href="/sign/" class="tab"
-        onmouseover="this.innerText='only can browsing by members'"
-        onmouseout="this.innerText='自分の気持ちを知る・表す'">
-        自分の気持ちを知る・表す</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
-    <div><a href="/org/post/" class="tab"
-        onmouseover="this.innerText='only can browsing by members'"
-        onmouseout="this.innerText='言葉の強さと方向と感情'">
-        言葉の強さと方向と感情</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
-</div>
-<div class="contents">
     <div>
     <a href="/value/" target="_parent" class="tab">
         <span>大切にすることを大切にする</span>
@@ -90,14 +75,12 @@ a:hover + .check b {
         onmouseout="this.innerText='あなたの大切なものは何ですか？'">
         あなたの大切なものは何ですか？</a><span class="check"><b>✔</b></span>
     </div>
+    
+<!--
+-->
 </div>
-<div id="goout"></div>
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    $(function(){
-    $("#goout").load("/menu/map.html");
-    })
 </script>
 </body>
 </html>
