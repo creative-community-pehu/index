@@ -84,7 +84,7 @@ fclose($fp);
 </head>
 <body>
 <div id="faqs">
-<p><b>Become A Free Members | 会員になる</b></p>
+<p><b>会員になる | Become A Free Members</b></p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
