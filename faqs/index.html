@@ -123,10 +123,19 @@ fclose($fp);
 #top_btn a:hover {
     color:blue;
 }
+#hsl {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top:0; left:0; z-index: -2;
+}
 
 </style>
 </head>
 <body>
+<div id="hsl"></div>
+
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
 <b>is Community Site for Members Only</b> (fees free)</p>
@@ -151,5 +160,13 @@ fclose($fp);
 <?php endif; ?>
 <p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
 <p id="top_btn"><a class="cc" href="/" target-"_parent">↩</a></p>
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#hsl").load("/coding/js/hsl/");
+})
+</script>
 </html>
