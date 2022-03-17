@@ -89,7 +89,7 @@ fclose($fp);
 </head>
 <body>
 <div id="faqs">
-<p><b>creative-community.space</b> は、<span class="pehu">∧°┐</span> が運営する会員制コミュニティサイトです。</p>
+<p><b>creative-community.space</b> は、<a class="pehu">∧°┐</a> が運営する会員制コミュニティサイトです。</p>
 <p>会員制コミュニティサイトでは、誰にでもできることを自分らしく行うことの美しさを形にするオンラインコンテンツを運営する他、コミュニティ会員のみが参加できるイベントの開催／影響を受けた物事を紹介・コレクションする会員限定コンテンツの制作など、特別な技術や知識がなくても誰もが平等に参加することができる、さまざまな「場」をつくっています。</p>
 <div>
 <p>会員になる | Become A Community Members</p>
