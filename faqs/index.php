@@ -66,7 +66,6 @@ fclose($fp);
 }
 
 #faqs a {
-  color:#000;
   text-decoration: none;
   font-size: 125%;
 }
