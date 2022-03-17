@@ -85,7 +85,7 @@ fclose($fp);
 </head>
 <body>
 <div id="faqs">
-<p><b>コミュニティ会員になる</b></p>
+<p><b>FAQs | creative-community.space</b></p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
