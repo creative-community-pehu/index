@@ -144,7 +144,7 @@ $('a[href^="#"]').click(function(){
  });
 
 $(function(){
-    $("#greeting").load("/hello.html");
+    $("#greeting").load("/hello.php");
     $("#ver").load("/ver/");
     $("#p5").load("/coding/js/p5/sketch.html");
 })
