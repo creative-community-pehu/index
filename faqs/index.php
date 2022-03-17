@@ -7,12 +7,11 @@ function h($str) {
 $type = (string)filter_input(INPUT_POST, 'type');
 $info = (string)filter_input(INPUT_POST, 'info');
 $url = (string)filter_input(INPUT_POST, 'url');
-$members = (string)filter_input(INPUT_POST, 'members');
 
 $fp = fopen('contents.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$type, $info, $url, $members]);
+    fputcsv($fp, [$type, $info, $url]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -67,8 +66,7 @@ fclose($fp);
   pointer-events:none;
   user-select:none;
   display: block;
-  font-family:"Times New Roman", serif;
-  font-style:italic;
+  font-family:"Arial", sans-serif;
 }
 #faqs a {
   display: block;
@@ -91,9 +89,9 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
-<p><?=h($row[1])?></p>
-<span><?=h($row[2])?></span>
-<a class="<?=h($row[3])?>" href="<?=h($row[3])?>"></a>
+<p><?=h($row[0])?></p>
+<span><?=h($row[1])?></span>
+<a class="<?=h($row[2])?>" href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
