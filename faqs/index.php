@@ -158,6 +158,7 @@ fclose($fp);
 </div>
 <div>
 <p>ログイン | Log In</p>
+<span>会員限定ページにログインする</span>
 <a target="_parent" href="https://pehu.cart.fc2.com/login"></a>
 </div>
 <hr/>
