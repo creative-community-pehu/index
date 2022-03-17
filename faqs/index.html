@@ -4,14 +4,14 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$type = (string)filter_input(INPUT_POST, 'type');
+$title = (string)filter_input(INPUT_POST, 'type');
 $info = (string)filter_input(INPUT_POST, 'info');
 $url = (string)filter_input(INPUT_POST, 'url');
 
 $fp = fopen('contents.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$type, $info, $url]);
+    fputcsv($fp, [$title, $info, $url]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -98,6 +98,32 @@ fclose($fp);
   font-family: "MS Mincho", "SimSong", serif;
 }
 
+.cc {
+    font-family: "ipag", monospace;
+    transform:scale(1, 1.25);
+}
+#top_btn {
+    position: fixed;
+    top:1.25rem; right:0.5rem;
+    z-index: 1000;
+    margin:0 0.5rem;
+}
+#top_btn a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    color: #000;
+    text-decoration:none;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:blue;
+}
+
 </style>
 </head>
 <body>
@@ -124,5 +150,6 @@ fclose($fp);
 <?php else: ?>
 <?php endif; ?>
 <p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
+<p id="top_btn"><a class="cc" href="/" target-"_parent">↩</a></p>
 </body>
 </html>
