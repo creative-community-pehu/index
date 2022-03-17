@@ -105,8 +105,8 @@ fclose($fp);
   font-variant: common-ligatures tabular-nums;
   display:inline-block;
   transform: scale(1,1.1);
-  letter-spacing: -0.1rem;
-  word-spacing: -.1rem;
+  letter-spacing: -.05rem;
+  word-spacing: -.05rem;
 }
 
 .cc {
