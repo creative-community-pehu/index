@@ -156,6 +156,7 @@ fclose($fp);
 <span>入会を希望される方は、リンク先 の入力フォームに Eメールアドレス を入力後、自動返信メールから会員登録へお進みください。</span>
 <a target="_parent" href="https://pehu.cart.fc2.com/signup"></a>
 </div>
+<div>
 <p>ログイン | Log In</p>
 <span>会員限定ページにログインする</span>
 <a target="_parent" href="https://pehu.cart.fc2.com/login"></a>
