@@ -97,6 +97,17 @@ fclose($fp);
   font-size: 125%;
   font-family: "MS Mincho", "SimSong", serif;
 }
+.nlc {
+  font-size: 150%;
+  font-family: 'Times New Roman', serif;
+  font-weight:500;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  display:inline-block;
+  transform: scale(1,1.1);
+  letter-spacing: -0.1rem;
+  word-spacing: -.1rem;
+}
 
 .cc {
     font-family: "ipag", monospace;
@@ -138,7 +149,7 @@ fclose($fp);
 
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
-<b>is Community Site for Members Only</b> (fees free)</p>
+<b>is Community Site for Members Only <a class="nlc">New Life Collection</a></b> (fees free)</p>
 <p>誰にでもできることを自分らしく行うことの美しさを形にするオンラインコンテンツを運営する他、コミュニティ会員のみが参加できるイベントの開催／こ・こ・ろ・豊かな新しい生活をご提案するエッセイの発表など、特別な技術や知識がなくても誰もが平等に参加することができるさまざまな「場」をつくっています。</p>
 <div>
 <p>会員になる | Become a Members</p>
