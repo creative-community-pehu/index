@@ -35,7 +35,7 @@ fclose($fp);
   grid-template-columns: repeat(1, 1fr);
   margin: 5% 5% 10%;
   font-size: 1.5vw;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+  font-family: "ipag", monospace;
 }
 #faqs div {
   position: relative;
@@ -47,7 +47,6 @@ fclose($fp);
 }
 #faqs b {
   display: inline-block;
-  font-family: "ipag", monospace;
   transform:scale(1, 1.5);
 }
 #faqs p {
@@ -66,7 +65,7 @@ fclose($fp);
   pointer-events:none;
   user-select:none;
   display: block;
-  font-family:"Arial", sans-serif;
+  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
 #faqs a {
   display: block;
