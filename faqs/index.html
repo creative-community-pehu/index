@@ -117,6 +117,8 @@ fclose($fp);
     line-height: 2.75rem;
     color: #000;
     text-decoration:none;
+    border: solid 0.2px #000;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 1000ms ease;
 }
@@ -129,6 +131,7 @@ fclose($fp);
     max-height: 100vh;
     position: fixed;
     top:0; left:0; z-index: -2;
+    filter: invert(100%);
 }
 
 </style>
@@ -159,7 +162,7 @@ fclose($fp);
 <?php else: ?>
 <?php endif; ?>
 <p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
-<p id="top_btn"><a class="cc" href="/" target-"_parent">↩</a></p>
+<p id="top_btn"><a class="cc" href="/" target-"_parent">CC</a></p>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
