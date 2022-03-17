@@ -1,7 +1,29 @@
-create,"あなたの落書きを出力する","HTML graffiti","Your Drawing is Seems So Beautiful",https://creative-community.space/thankyou/
-communication,"自分の気持ちを知る・表す","Members Only","今の気持ちに合う記号と色",https://creative-community.space/sign/
-communication,"言葉の強さと方向と感情","Members Only","会員限定匿名掲示板",https://creative-community.space/org/post/
-create,"Go Out","Osaka Map","地図を作ろう",https://creative-community.space/map/
-communication,"レンタサイクル","Members Only","行ったことのない場所へ（知らない道を選んで）行く",https://creative-community.space/map/membersonly.html
-publication,"大切にすることを大切にする","What do you value?","あなたの大切なものは何ですか？",https://creative-community.space/value/
-publication,"シルクスクリーン印刷","Screen Printing","私たちがこれまでに製版したスクリーンを使用して、オリジナルアイテムを作る",https://creative-community.space/publication/
+create,"ウェブサイト制作・運営","ホスティングサービス","ウェブサイト制作・運営のサポート(詳しい詳細は準備出来次第お知らせします)",none
+create,"作業台","Work Desk","天板サイズ184×92cm・高さ70cm",none
+create,"工具類","消耗品","電動ドライバー・ノコギリ・トンカチ・単管カッター／ビス・クギなど（使用料：自由料金制）",none
+create,"真空パック機","バキュームシーラー","使用料：専用袋1枚200円〜",none
+create,"ABOX OL341","パウチラミネーター","A3/A4対応(使用料：1枚50円〜)",none
+shopping,"New Life Collection","ウェブショップ","ウェブショップ兼ニュースメディア「newlifecollection.com」で売りたいものを売る／会員限定商品販売・一部商品を限定価格で販売(詳しい詳細は準備出来次第お知らせします)",https://newlifecollection.com/
+broadcast,"GoPro HERO7 Black","アクティブカメラ","スマートフォンから遠隔操作・PCの外部カメラとしても使用できます。",https://www.tajima-motor.com/gopro/product/hero7black/
+broadcast,"LG 360 CAM","360度全天球カメラ","スマートフォンから遠隔操作・Google ストリートビューへの投稿が可能です。（YouTubeなどに投稿する動画制作は有料です。）",https://www.lg.com/us/mobile-accessories/lg-LGR105AVRZTS-360-cam
+broadcast,"audio-technica AT9913iS","スマートフォン用マイク","スマートフォン用モノラルマイクロホン",https://www.audio-technica.co.jp/product/AT9913iS
+broadcast,"iPod touch","第7世代 32GB","GoPro・360 CAM・Selpicなどの操作に使用",none
+viewing,"I-O DATA EX-LD321DB","31.5型 ディスプレイ","広視野角ADSパネル HDMI×2 DisplayPort",none
+viewing,"Intel STCK1A32WFC","スティック型パソコン","インテル® Atom™ プロセッサー Z3735F（4コア、1.33GHz） | DDR3L（1.35V、1333 MHz、2GB）| Windows 10, 32-bit* | 32GB　eMMC | IEEE802.11b/g/n、Bluetooth4.0",none
+viewing,"WiMiUS S4","プロジェクター","パソコン・Blu-ray/DVDプレイヤーから映像を6×3m簡易スクリーンに投影",none
+viewing,"Sony BDP-6700","Blu-ray/DVD","Blu-ray/DVDディスクの再生、YouTubeなどのスクリーニング・スマートフォン／タブレットのミラーリングも可能",https://www.sony.jp/bd-player/products/BDP-S6700/
+listening,"YAMAHA MSP5 STUDIO","パワードモニタースピーカー","プロフェッショナルクオリティのフラッグシップスタジオモニター",https://jp.yamaha.com/products/proaudio/speakers/msp_studio_series/index.html
+listening,"MACKIE MIX 8","アナログミキサー","実績のあるハイヘッドルーム、低ノイズを実現した5チャンネルコンパクトミキサー",https://mackie-jp.com/mixers/mix/
+listening,"FiiO BTA30","Bluetooth","いい音でBluetoothを楽しむ、高品位Bluetoothオーディオシステムを実現する先進のBTレシーバー＆トランスミッター",https://www.fiio.jp/products/bta30/
+listening,"GEMINI CDM-4000","DJ用CDプレーヤー","ミキサー一体型CD・USBオールインワンDJプレーヤー",https://www.soundhouse.co.jp/products/detail/item/203988/
+listening,"AudioComm RCS-S940R","ラジカセ","ポータブルステレオラジオカセットレコーダー",https://www.ohm-electric.co.jp/product/c13/c1303/39059/
+listening,"audio-technica AT-PL300","ステレオターンテーブルシステム","レコードを聴くという生活を当たり前にするかんたんフルオート再生プレーヤー。",https://www.audio-technica.co.jp/product/AT-PL300
+listening,"audio-technica AT-X11","ダイナミックマイク ×2","おしゃれなボーカルマイク、プロテクトリング付き。",https://www.audio-technica.co.jp/product/AT-X11
+listening,"ZOOM U-44","USBオーディオ・インターフェース","スタジオクラスの高音質をコンパクトボディに凝縮した、ポータブルでハンディな4イン／4アウト仕様のUSBオーディオ・インターフェース",https://zoomcorp.com/ja/jp/audio-interface/audio-interfaces/u-44/
+listening,"ZOOM H3-VR","VRオーディオマイク","さぁ、音のＶＲをはじめよう。",https://zoomcorp.com/ja/jp/handheld-recorders/handheld-recorders/h3-vr-360-audio-recorder/
+communication,"New Life Collection","エッセイ","ウェブショップ兼ニュースメディア「newlifecollection.com」にエッセイを投稿／限定記事閲覧(詳しい詳細は準備出来次第お知らせします)",none
+communication,"円卓","机・椅子","直径180cmの作業・会議テーブル兼卓球台",none
+communication,"GitHub","ソフトウェア開発プラットフォーム","GitHub上にソースコードをホスティングすることで数百万人もの他の開発者と一緒にコードのレビューを行ったり、プロジェクトの管理をしながら、ソフトウェアの開発を行うことができます。",https://github.co.jp/
+communication,"asana","ワークマネジメントツール","プロジェクトとタスクを一元管理できる、究極のワークマネジメントツール",https://asana.com/ja?noredirect=
+communication,"Trello","タスク管理ツール","タスクのあらゆる作業を管理、追跡してチームメイトと共有できる、業務管理ポータル",https://trello.com/ja
+communication,"Whereby","オンライン会議サービス","URLを共有するだけで誰でも簡単に使える、ダウンロードやインストール不要なブラウザ完結型のオンライン会議サービス",https://whereby.com/

@@ -88,20 +88,20 @@ fclose($fp);
   <input type="radio" name="cando" value="create" id="create">
   <label for="create" class="label">作る 壊す 遊ぶ</label></li>
   <li>
-  <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">出版 印刷する</label></li>
-  <li>
   <input type="radio" name="cando" value="shopping" id="shopping">
   <label for="shopping" class="label">販売 出店する</label></li>
   <li>
-  <input type="radio" name="cando" value="music" id="music">
-  <label for="music" class="label">音楽会 聞く</label></li>
-  <li>
-  <input type="radio" name="cando" value="broadcast" id="broadcast">
-  <label for="broadcast" class="label">動画配信 撮影する</label></li>
+  <input type="radio" name="cando" value="listening" id="listening">
+  <label for="listening" class="label">音楽会 聞く</label></li>
   <li>
   <input type="radio" name="cando" value="viewing" id="viewing">
   <label for="viewing" class="label">映像上映 見る</label></li>
+  <li>
+  <input type="radio" name="cando" value="broadcast" id="broadcast">
+  <label for="broadcast" class="label">撮影 録音 配信</label></li>
+  <li>
+  <input type="radio" name="cando" value="publication" id="publication">
+  <label for="publication" class="label">出版する</label></li>
   <li>
   <input type="radio" name="cando" value="communication" id="communication">
   <label for="communication" class="label">話す 書く 交流する</label></li>
