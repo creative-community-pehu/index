@@ -78,6 +78,7 @@ fclose($fp);
   width: 100%;
   height: 100%;
 }
+.none {display:none;}
 </style>
 </head>
 <body>
@@ -88,7 +89,7 @@ fclose($fp);
 <div>
 <p><?=h($row[1])?></p>
 <span><?=h($row[2])?></span>
-<a href="<?=h($row[2])?>"></a>
+<a class="<?=h($row[3])?>" href="<?=h($row[3])?>"></a>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
