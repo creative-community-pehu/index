@@ -128,65 +128,19 @@ a:hover + .check b {
 <body>
 <p id="top_btn"><a>CC</a></p>
 <div id="top_menu" class="hidden">
-<div id="all_menu" style="padding-top:7.5vw;">
-
-<div class="contents">
-<div>
-    <a href="/ver/" target="_parent" class="tab" class="tab"
-    onmouseover="this.innerText='Index'"
-    onmouseout="this.innerText='目次'">
-        <span>目次</span>
-    </a>
-</div>
-    <div><a href="/thankyou/" class="tab"
-        onmouseover="this.innerText='Your Drawing is Seems So Beautiful'"
-        onmouseout="this.innerText='あなたの落書きを出力する'">
-        あなたの落書きを出力する</a><span class="check"><b>✔</b></span></div>
-    <div><a href="/sign/" class="tab"
-        onmouseover="this.innerText='only can browsing by members'"
-        onmouseout="this.innerText='自分の気持ちを知る・表す'">
-        自分の気持ちを知る・表す</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
-    <div><a href="/org/post/" class="tab"
-        onmouseover="this.innerText='only can browsing by members'"
-        onmouseout="this.innerText='言葉の強さと方向と感情'">
-        言葉の強さと方向と感情</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
-</div>
-<div class="contents">
-    <div>
-    <a href="/value/" target="_parent" class="tab"
-    onmouseover="this.innerText='Valuing an Act of Valuing'"
-    onmouseout="this.innerText='大切にすることを大切にする'">
-        <span>大切にすることを大切にする</span>
-    </a>
-    </div>
-    <div><a href="/value/index/" class="tab"
-        onmouseover="this.innerText='What do you value?'"
-        onmouseout="this.innerText='あなたの大切なものは何ですか？'">
-        あなたの大切なものは何ですか？</a><span class="check"><b>✔</b></span>
-    </div>
-</div>
-<div class="contents">
-    <div>
-    <a href="https://creative-community.space/map/" target="_parent" class="tab">
-        <span>Go Out</span>
-    </a>
-    </div>
-    <div><a href="/map/" class="tab"
-        onmouseover="this.innerText='Osaka Map'"
-        onmouseout="this.innerText='地図を作ろう'">
-        地図を作ろう</a><span class="check"><b>✔</b></span></div>
-    <div><a href="/map/membersonly.html" class="tab"
-        onmouseover="this.innerText='only can browsing by members'"
-        onmouseout="this.innerText='行ったことのない場所へ行く'">
-        行ったことのない場所へ行く</a> <i>Members Only</i><span class="check"><b>✔</b></span></div>
-</div>
-</div>
+<div id="all_menu" style="padding-top:7.5vw;"></div>
 <br/>
 <div class="contents">
 <div><a href="/faqs/" class="tab"
     onmouseover="this.innerText='Become a Member'"
     onmouseout="this.innerText='会員になる'">
     会員になる</a><span class="check"><b>✔</b></span></div>
+
+<div><a href="/org/" class="tab"
+    onmouseover="this.innerText='Can ☆ Do'"
+    onmouseout="this.innerText='できること'">
+    できること</a><span class="check"><b>✔</b></span></div>
+
 <p class="singup">
 <a href="https://www.are.na/cc-group" target="_blank">CC Group</a>
 <a href="https://www.youtube.com/channel/UCkTlW5dLa_DSPZYauh8xKcQ" target="_blank">CC Tube</a>
@@ -197,6 +151,7 @@ a:hover + .check b {
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
+    $("#all_menu").load("/menu/all.html");
     })
 
     let btn = document.querySelector('#top_btn');
