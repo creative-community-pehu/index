@@ -101,7 +101,7 @@ fclose($fp);
   <label for="broadcast" class="label">撮影 録音 配信</label></li>
   <li>
   <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">出版する</label></li>
+  <label for="publication" class="label">出版 発行する</label></li>
   <li>
   <input type="radio" name="cando" value="communication" id="communication">
   <label for="communication" class="label">話す 書く 交流する</label></li>
