@@ -89,6 +89,9 @@ fclose($fp);
   width: 100%;
   height: 100%;
 }
+#faqs div:hover {
+  filter: invert(1);
+}
 .none {
   pointer-events:none;
   user-select:none;
