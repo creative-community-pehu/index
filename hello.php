@@ -41,7 +41,7 @@ Create Together
 </p>
 <div id="how" class="open">
 
-<p class="singup"><a href="/faqs/" target="_blank">Become a Members</a></p>
+<p class="singup"><a href="/faqs/">Become a Members</a></p>
 </div>
 </div>
 </div>
