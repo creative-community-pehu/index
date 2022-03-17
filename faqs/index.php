@@ -67,7 +67,7 @@ fclose($fp);
   margin-bottom:-1px;
   border:solid 1px;
   border-collapse: collapse;
-  transition:1.5s all;
+  transition:1.0s all;
 }
 #faqs div:hover {
   filter: invert(75%);
