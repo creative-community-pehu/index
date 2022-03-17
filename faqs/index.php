@@ -52,10 +52,7 @@ fclose($fp);
 #faqs p {
   margin: 0;
   padding: 0 0 2vw;
-  font-family: ;
-  position: relative; z-index:2;
-  pointer-events:none;
-  user-select:none;
+  position: relative;
   white-space: pre-line;
 }
 #faqs span {
@@ -67,7 +64,14 @@ fclose($fp);
   display: block;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
+
 #faqs a {
+  color:#000;
+  text-decoration: none;
+  font-size: 125%;
+}
+
+#faqs div a {
   display: block;
   position: absolute; z-index:1;
   top: 0;
@@ -80,11 +84,27 @@ fclose($fp);
   user-select:none;
   display:none;
 }
+
+.pehu {
+  font-family: "MS Mincho", "SimSong", serif;
+  border-bottom: solid 1px;
+  padding-bottom: 0.25rem;
+}
+
 </style>
 </head>
 <body>
 <div id="faqs">
-<p><b>会員になる | Become A Free Members</b></p>
+<p><b>creative-community.space</b> は、<a class="pehu" href="/pehu" target="_blank">∧°┐</a> が運営する会員制コミュニティサイトです。</p>
+<p>会員制コミュニティサイトでは、誰にでもできることを自分らしく行うことの美しさを形にするオンラインコンテンツを運営する他、コミュニティ会員のみが参加できるイベントの開催／影響を受けた物事を紹介・コレクションする会員限定コンテンツの制作など、特別な技術や知識がなくても誰もが平等に参加することができる、さまざまな「場」をつくっています。</p>
+<div>
+<p>会員になる | Become A Community Members</p>
+<span>入会を希望される方は、リンク先 の入力フォームに Eメールアドレス を入力後、自動返信メールから会員登録へお進みください。</span>
+<a target="_parent" href="https://pehu.cart.fc2.com/signup"></a>
+</div>
+<hr/>
+<p><br/><b>会員特典 | Members Only</b></p>
+<p>コミュニティ会員（会員費は無料です）限定コンテンツ／サービス一覧</p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
