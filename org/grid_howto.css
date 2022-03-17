@@ -1,0 +1,169 @@
+body {padding:0; margin: 0;}
+hr {border:0; clear:both; width:100%;}
+.about {
+	padding:1rem;
+}
+
+.about h1,
+.about p {
+	margin:0; padding:0;
+}
+.about h1 {
+	font-size:1.5rem;
+	font-weight:500;
+}
+.about p {
+	font-size:0.75rem;
+}
+.grid h1,
+.howto h1,
+#close_sp {
+	font-size:2.5vw;
+	font-weight:500;
+}
+#close_sp {
+	cursor: pointer;
+  border: solid 1px #fff;
+  border-radius:50%;
+  padding:0.5vw 2vw;
+}
+#close_sp:hover {
+	cursor: pointer;
+  color:#000;
+  border: solid 1px #fff;
+  background: #fff;
+}
+.grid p,
+.howto p {
+	font-size:1.5vw;
+	line-height:125%;
+	padding:1vw 0;
+}
+.grid a {
+  display: block;
+  position: absolute; z-index:1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size:2.5rem;
+  cursor:pointer;
+}
+.grid a:hover::after {
+  content: "もっと詳しく";
+  position: absolute; z-index:1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  background:#fff;
+  color:#000;
+  border:solid 1px #000;
+  border-radius:50%;
+  padding:0.5vw 2vw;
+  font-size:2.5vw;
+  text-align:center;
+  font-family: "ipag", monospace;
+}
+
+.grid,
+.howto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid .topic,
+.howto .topic {
+  position: relative;
+  padding: 1rem 1rem;
+}
+.grid .topic:nth-child(2),
+.howto .topic:nth-child(2n) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid .topic:nth-child(3),
+.howto .topic:nth-child(2n+1) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.grid .topic:first-child,
+.howto .topic:first-child,
+.grid .topic:last-child,
+.howto .topic:last-child {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.grid .tt,
+.grid .info,
+.howto .tt,
+.howto .info {
+  width:48.5%;
+  display:inline-block;
+}
+.grid .tt,
+.howto .tt {float:left;}
+.grid .info,
+.howto .info {float:right;}
+
+.grid .topic:nth-child(n+4) .tt,
+.grid .topic:nth-child(n+4) .info {
+  width:98.5%;
+  float:left;
+}
+
+.grid span,
+.howto span {
+  width:100%;
+  display:inline-block;
+}
+.grid img,
+.howto img {
+  max-width:100%;
+  max-height:100%;
+  border-radius:2.5vw;
+  display:inline-block;
+}
+
+.close {
+  width:95%;
+  margin:0 2.5%;
+  height:90vh;
+  position:fixed;
+  z-index:-1;
+  bottom:0; right:0;
+  opacity:0;
+  overflow:auto;
+  border-radius:2rem 2rem 0 0;
+}
+.open {
+  background:#000;
+  color:#fff;
+  z-index:10;
+  opacity:1;
+}
+
+@media screen and (max-width: 550px){
+.grid h1,
+.howto h1,
+#close_sp {
+	font-size:4.5vw;
+}
+#close_sp {
+  padding:1.25vw 4.5vw;
+}
+.grid p,
+.howto p {
+	font-size:2.5vw;
+}
+.grid .topic .tt,
+.grid .topic .info,
+.howto .topic .tt,
+.howto .topic .info {
+  width:98.5%;
+  float:left;
+}
+.grid a:hover::after {
+  padding:2vw 4vw;
+  font-size:4.5vw;
+}
+}
