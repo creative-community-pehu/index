@@ -78,7 +78,11 @@ fclose($fp);
   width: 100%;
   height: 100%;
 }
-.none {display:none;}
+.none {
+  pointer-events:none;
+  user-select:none;
+  display:none;
+}
 </style>
 </head>
 <body>
