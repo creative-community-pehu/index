@@ -108,7 +108,7 @@ fclose($fp);
 <b>is Community Site for Members Only</b> (fees free)</p>
 <p>誰にでもできることを自分らしく行うことの美しさを形にするオンラインコンテンツを運営する他、コミュニティ会員のみが参加できるイベントの開催／こ・こ・ろ・豊かな新しい生活をご提案するエッセイの発表など、特別な技術や知識がなくても誰もが平等に参加することができるさまざまな「場」をつくっています。</p>
 <div>
-<p>会員になる | Become A Members</p>
+<p>会員になる | Become a Members</p>
 <span>入会を希望される方は、リンク先 の入力フォームに Eメールアドレス を入力後、自動返信メールから会員登録へお進みください。</span>
 <a target="_parent" href="https://pehu.cart.fc2.com/signup"></a>
 </div>
