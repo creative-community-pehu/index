@@ -149,7 +149,7 @@ fclose($fp);
 
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
-<b>is Community Site for Members Only <a class="nlc">New Life Collection</a></b> (fees free)</p>
+<b>is Community Site for <a class="nlc">New Life Collection</a> Members Only</b> (fees free)</p>
 <p>誰にでもできることを自分らしく行うことの美しさを形にするオンラインコンテンツを運営する他、コミュニティ会員のみが参加できるイベントの開催／こ・こ・ろ・豊かな新しい生活をご提案するエッセイの発表など、特別な技術や知識がなくても誰もが平等に参加することができるさまざまな「場」をつくっています。</p>
 <div>
 <p>会員になる | Become a Members</p>
