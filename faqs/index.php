@@ -31,16 +31,14 @@ fclose($fp);
 <title>会員になる | creative-community.space</title>
 <style>
 
-#tba {
+#faqs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 5% 5% 10%;
   font-size: 1.5vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
-  pointer-events:none;
-  user-select:none;
 }
-#tba div {
+#faqs div {
   position: relative;
   padding:2.5%;
   margin-bottom:-1px;
@@ -48,12 +46,12 @@ fclose($fp);
   border-collapse: collapse;
   transition:1.5s all;
 }
-#tba b {
+#faqs b {
   display: inline-block;
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
 }
-#tba p {
+#faqs p {
   margin: 0;
   padding: 0 0 2vw;
   font-family: ;
@@ -62,7 +60,7 @@ fclose($fp);
   user-select:none;
   white-space: pre-line;
 }
-#tba span {
+#faqs span {
   display: inline-block;
   padding: 0;
   font-size: 75%;
@@ -72,16 +70,25 @@ fclose($fp);
   font-family:"Times New Roman", serif;
   font-style:italic;
 }
+#faqs a {
+  display: block;
+  position: absolute; z-index:1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
-<div id="tba">
+<div id="faqs">
 <p><b>コミュニティ会員になる</b></p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div>
 <p><?=h($row[1])?></p>
 <span><?=h($row[2])?></span>
+<a href="<?=h($row[2])?>"></a>
 </div>
 <?php endforeach; ?>
 <?php else: ?>
