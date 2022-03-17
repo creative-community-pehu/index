@@ -41,7 +41,7 @@ fclose($fp);
   position: relative;
   padding:2.5%;
   margin-bottom:-1px;
-  border:solid #000 1px;
+  border:solid 1px;
   border-collapse: collapse;
   transition:1.5s all;
 }
