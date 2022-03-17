@@ -37,28 +37,18 @@ fclose($fp);
   font-size: 1.5vw;
   font-family: "ipag", monospace;
 }
-#faqs div {
-  position: relative;
-  padding:2.5%;
-  margin-bottom:-1px;
-  border:solid 1px;
-  border-collapse: collapse;
-  transition:1.5s all;
-}
+#faqs b,
 #faqs u {
   display: inline-block;
   transform:scale(1, 1.5);
+}
+#faqs u {
   font-size:150%;
   padding-right: 1vw;
-}
-#faqs b {
-  display: inline-block;
-  transform:scale(1, 1.5);
 }
 #faqs p {
   margin: 0;
   padding: 2.5vw 0 2.5vw;
-  position: relative;
   white-space: pre-line;
 }
 #faqs span {
@@ -71,15 +61,23 @@ fclose($fp);
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
 
-
+#faqs div {
+  position: relative;
+  padding:2.5%;
+  margin-bottom:-1px;
+  border:solid 1px;
+  border-collapse: collapse;
+  transition:1.5s all;
+}
+#faqs div:hover {
+  filter: invert(70%);
+}
 #faqs div p {
-  margin: 0;
   padding: 0 0 2.5vw;
   position: relative;
   z-index: 2;
   pointer-events:none;
   user-select:none;
-  white-space: pre-line;
 }
 #faqs div a {
   display: block;
@@ -88,9 +86,6 @@ fclose($fp);
   left: 0;
   width: 100%;
   height: 100%;
-}
-#faqs div:hover {
-  filter: invert(1);
 }
 .none {
   pointer-events:none;
