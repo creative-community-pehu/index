@@ -70,7 +70,7 @@ fclose($fp);
   transition:1.5s all;
 }
 #faqs div:hover {
-  filter: invert(70%);
+  filter: invert(100%);
 }
 #faqs div p {
   padding: 0 0 2.5vw;
