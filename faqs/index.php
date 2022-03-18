@@ -134,18 +134,27 @@ fclose($fp);
 #bottom_btn a:hover {
     color:blue;
 }
+#p5 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0; left:0;
+    z-index: 0;
+}
 #hsl {
     width: 100%;
     height: 100vh;
     max-height: 100vh;
     position: fixed;
-    top:0; left:0; z-index: -2;
-    filter: invert(100%);
+    top:0; z-index: -2;
+    background-color: rgb(0, 0, 0);
 }
 
 </style>
 </head>
 <body>
+<div id="hsl"></div>
+<div id="p5"></div>
 
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
@@ -181,7 +190,8 @@ fclose($fp);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#").load("");
+    $("#p5").load("/coding/js/p5/sketch.html");
+    $("#hsl").load("/coding/js/hsl/");
 })
 </script>
 </html>
