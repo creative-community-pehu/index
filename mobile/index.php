@@ -104,7 +104,7 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#greeting").load("../hello.php");
     $("#menu").load("../menu/all.html");
-    $("#p5").load("/coding/js/p5/");
+    $("#p5").load("/coding/js/hsl/");
 })
 </script>
 
