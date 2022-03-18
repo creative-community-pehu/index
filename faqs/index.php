@@ -33,7 +33,7 @@ fclose($fp);
 #faqs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 5% 4.5% 10%;
+  margin: 2.5% 4.5% 7.5%;
   font-size: 1.5vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
