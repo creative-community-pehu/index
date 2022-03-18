@@ -120,14 +120,14 @@ body {margin:0; padding:0;}
 
 #mobile h1 {
     top:0; left:0;
-    padding:2.5rem 7.5% 5.5rem;
+    padding:4.5rem 7.5% 5.5rem;
     line-height:150%;
     font-size:1.5rem;
     font-family: "ipag", monospace;
 }
 #mobile p {
     top:0; left:0;
-    padding:2.5rem 7.5% 0;
+    padding:2.5rem 7.5%;
     line-height:150%;
     font-size:1.25rem;
     font-family: "ipag", monospace;
@@ -160,7 +160,7 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="mobile">
-<p>for Mobile</p>
+<p>Mobile</p>
 <h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
 <p>
 <br/>Instagram
