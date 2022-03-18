@@ -17,8 +17,7 @@ body {margin:0; padding:0;}
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
-#greeting #hello,
-#mobile a {
+#greeting #hello {
     filter: invert();
 }
 #greeting #hello #join {
@@ -110,12 +109,14 @@ body {margin:0; padding:0;}
 }
 @media screen and (max-width: 500px){
   #greeting,
-  #ver {
+  #ver,
+  #p5 {
   display: none;
 }
 #now {font-size:4.5vw;}
 #mobile {display:block;}
 #mobile a {
+    color:blue;
     display: inline-block;
     transform:scale(1, 2);
     top:0; left:0;
