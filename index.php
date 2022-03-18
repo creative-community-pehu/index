@@ -145,7 +145,7 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="mobile">
-<a href="/mobile/">creative-community.space/mobile/</a>
+<a href="/faqs/">creative-community.space/faqs/</a>
 </div>
 <div id="submit">
 <h1>creative-community.space</h1>
