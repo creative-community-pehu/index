@@ -118,10 +118,6 @@ body {margin:0; padding:0;}
 #mobile
 {display:block;}
 
-#mobile {
-    top:100vh;
-    background:#fff;
-}
 #mobile h1 {
     top:0; left:0;
     padding:5.5rem 7.5%;
