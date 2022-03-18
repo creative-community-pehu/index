@@ -119,7 +119,7 @@ body {margin:0; padding:0;}
     display: inline-block;
     transform:scale(1, 2);
     top:0; left:0;
-    padding:15vh 7.5%;
+    margin:15vh 7.5%;
     line-height:200%;
     font-size:5vw;
     font-family: "ipag", monospace;
