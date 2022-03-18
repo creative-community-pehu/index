@@ -144,7 +144,6 @@ fclose($fp);
 
 @media screen and (max-width: 1000px){
   #faqs {
-  margin: 5% 5% 10%;
   font-size: 2vw;
 }
 #faqs p {
