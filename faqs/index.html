@@ -116,7 +116,7 @@ fclose($fp);
 }
 #bottom_btn {
     position: fixed;
-    bottom:0rem; left:0.5rem;
+    bottom:0rem; right:1rem;
     z-index: 1000;
     margin:0 0.5rem;
 }
@@ -129,22 +129,32 @@ fclose($fp);
     line-height: 2.75rem;
     color: #000;
     text-decoration:none;
+    border: solid 1px #000;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 1000ms ease;
 }
 #bottom_btn a:hover {
-    color:blue;
+    color:#fff;
+    background-color:blue;
+    border: solid 1px blue;
+    cursor: pointer;
+    transition: all 1000ms ease;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1000px){
   #faqs {
   margin: 5% 5% 10%;
-  font-size: 2.5vw;
+  font-size: 2vw;
+}
+#faqs p {
+  line-height: 200%;
+}
 }
 
 @media screen and (max-width: 550px){
   #faqs {
-  font-size: 4.5vw;
+  font-size: 2.5vw;
 }
 }
 </style>
@@ -179,7 +189,7 @@ fclose($fp);
 <?php else: ?>
 <?php endif; ?>
 <p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
-<p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">↩</a></p>
+<p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">CC</a></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
