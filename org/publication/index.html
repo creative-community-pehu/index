@@ -16,6 +16,12 @@ hr {border:0; clear:both; width:100%;}
     font-family: "ipag", monospace;
     transform:scale(1, 1.25);
 }
+.about h1 {
+  background-color: #000;
+  color:#fff;
+  display: inline-block;
+  margin-bottom: 1vw;
+}
 
 .topic h1,
 .topic u,
@@ -28,12 +34,13 @@ hr {border:0; clear:both; width:100%;}
 }
 
 .about,
-.topic p {
-  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
-  transform:scale(1, 1.25);
-}
+.topic p,
 .grid a:hover::after {
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+}
+.about,
+.topic p {
+  transform:scale(1, 1.25);
 }
 
 #top_btn {
@@ -62,6 +69,14 @@ hr {border:0; clear:both; width:100%;}
     border: solid 0.25vw blue;
     cursor: pointer;
     transition: all 1000ms ease;
+}
+
+.topic {
+  transform:skewX(0deg);
+  transition: all 1000ms ease;
+}
+.topic:hover {
+  transform:skewX(-7.5deg);
 }
 </style>
 </head>
