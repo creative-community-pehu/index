@@ -136,13 +136,15 @@ fclose($fp);
     color:blue;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 750px){
   #faqs {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   margin: 5% 5% 10%;
   font-size: 2.5vw;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+}
+
+@media screen and (max-width: 550px){
+  #faqs {
+  font-size: 4.5vw;
 }
 }
 </style>
