@@ -43,6 +43,13 @@ body {margin:0; padding:0;}
     font-family: "ipag", monospace;
 }
 
+#p5 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0; left:0;
+    z-index: 0;
+}
 @media screen and (max-width: 500px){
 #hello {font-size: 125%;}
 #greeting,
@@ -95,6 +102,7 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#greeting").load("../hello.php");
     $("#menu").load("../menu/all.html");
+    $("#p5").load("/coding/js/p5/");
 })
 </script>
 
