@@ -78,6 +78,25 @@ hr {border:0; clear:both; width:100%;}
 .topic:hover {
   transform:skewX(-7.5deg);
 }
+.membersonly:hover::after {
+  content: "Members Only";
+  position: absolute; z-index:1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%) scale(1, 2);
+  transform : translate(-50%,-50%) scale(1, 2);
+  font-family: 'Times New Roman', serif;
+  font-weight:500;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  background:#fff;
+  color:#000;
+  border:solid 1px #000;
+  border-radius:50%;
+  padding:0.5vw 2vw;
+  font-size:2.5vw;
+  text-align:center;
+}
 </style>
 </head>
 <body>
@@ -88,7 +107,7 @@ hr {border:0; clear:both; width:100%;}
 </div>
 
 <div class="grid">
-<div class="topic">
+<div class="topic membersonly">
 <div class="tt">
 <h1>D.I.Y Book Binding</h1>
 <span><img src="https://d2w9rnfcy7mm78.cloudfront.net/15624334/original_b45ce17b9ce28dea1420efaa3ad6e429.gif?1647500140?bc=0"></span>
@@ -101,7 +120,7 @@ hr {border:0; clear:both; width:100%;}
   <p><br/>※ こちらが用意したブックカバーのご利用も可能です。</p>
 </div>
 </div>
-<div class="topic">
+<div class="topic membersonly">
 <div class="tt">
 <h1>Screen Printing</h1>
 <span><img src="https://d2w9rnfcy7mm78.cloudfront.net/13937555/original_b0763f0e4874ade6636c24eb1913ec89.gif?1636647342?bc=0"></span>
