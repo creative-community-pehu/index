@@ -188,7 +188,7 @@ fclose($fp);
 <?php else: ?>
 <?php endif; ?>
 <p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
-<p id="bottom_btn"><a class="cc" href="/" target-"_parent">↩</a></p>
+<p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">↩</a></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
