@@ -14,7 +14,8 @@ body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
 
 #greeting #hello,
-#menu {
+#menu,
+#mobile a {
     filter: invert();
 }
 #greeting #hello #join {
@@ -43,7 +44,6 @@ body {margin:0; padding:0;}
 }
 #mobile {display:block;}
 #mobile a {
-  color:blue;
   display: inline-block;
   transform:scale(1, 2);
   top:0; left:0;
