@@ -127,7 +127,7 @@ body {margin:0; padding:0;}
 }
 #mobile p {
     top:0; left:0;
-    padding:2.5rem 7.5%;
+    padding:2.5rem 7.5% 0;
     line-height:150%;
     font-size:1.25rem;
     font-family: "ipag", monospace;
