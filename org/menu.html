@@ -13,25 +13,26 @@ body {margin:0; padding:0;}
     font-family: "ipag", monospace;
     transform:scale(1, 1.25);
 }
-#top_btn {
+#org_btn {
     position: fixed;
     bottom:0;
+    right:0;
     z-index: 1000;
     margin:2.5vw;
-    font-size:4.5vw;
+    font-size:2.5vw;
 }
-#top_btn a {
+#org_btn a {
     display: block;
     text-align: center;
-    width: 7.5vw;
-    height: 6vw;
-    line-height: 6vw;
+    width: 5.5vw;
+    height: 4.5vw;
+    line-height: 4.5vw;
     border: solid 0.25vw #000;
     border-radius: 50%;
     cursor: pointer;
     transition: all 1000ms ease;
 }
-#top_btn a:hover {
+#org_btn a:hover {
     color:#fff;
     background-color:blue;
     border: solid 0.25vw blue;
@@ -109,18 +110,22 @@ a:hover + .check b {
 </style>
 </head>
 <body>
-<p id="top_btn"><a class="cc">CC</a></p>
-<div id="top_menu" class="hidden">
+<p id="org_btn"><a class="cc">CC</a></p>
+<div id="org_menu" class="hidden">
 <div id="contents">
     <div>
-    <a href="https://creative-community.space/" target="_parent" class="tab">
-        <span>creative-community.space</span>
+    <a href="/org/" class="tab"
+    onmouseover="this.innerText='機材・ツール'"
+    onmouseout="this.innerText='できること'">
+    <span>できること</span>
     </a>
     </div>
-    <div><a href="/org/" class="tab"
-        onmouseover="this.innerText='機材・ツール'"
-        onmouseout="this.innerText='できること'">
-        できること</a><span class="check"><b>✔</b></span></div>
+    <div><a href="/org/publication" class="tab"
+        onmouseover="this.innerText='Publication'"
+        onmouseout="this.innerText='出版 発行する'">
+        出版 発行する</a><span class="check"><b>✔</b></span>
+        <i>Members Only</i></div>
+<!--
     <div><a href="/org/past/" class="tab"
         onmouseover="this.innerText='したこと'"
         onmouseout="this.innerText='これまで'">
@@ -129,6 +134,9 @@ a:hover + .check b {
         onmouseover="this.innerText='みんなの投稿'"
         onmouseout="this.innerText='したいこと'">
         したいこと</a><span class="check"><b>✔</b></span></div>
+
+-->
+<!--
 <div>
 <a href="https://creative-community.space/members/" target="_parent" class="tab">
     <span>会員限定</span>
@@ -140,11 +148,12 @@ a:hover + .check b {
 	onmouseout="this.innerText='何かする時間'">
     何かする時間</a><span class="check"><b>✔</b></span></div>
 </div>
+-->
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    let btn = document.querySelector('#top_btn');
-    let index = document.querySelector('#top_menu');
+    let btn = document.querySelector('#org_btn');
+    let index = document.querySelector('#org_menu');
      
     let btnToggleclass = function(el) {
       el.classList.toggle('index');
