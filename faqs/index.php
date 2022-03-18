@@ -149,6 +149,9 @@ fclose($fp);
     top:0; z-index: -2;
     background-color: rgb(0, 0, 0);
 }
+.hue,
+.saturation,
+..lightness {display:none;}
 
 </style>
 </head>
