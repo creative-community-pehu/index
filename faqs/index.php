@@ -144,7 +144,7 @@ fclose($fp);
 
 @media screen and (max-width: 1000px){
   #faqs {
-  font-size: 2vw;
+  font-size: 1.75vw;
 }
 #faqs p {
   line-height: 200%;
