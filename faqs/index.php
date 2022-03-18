@@ -151,7 +151,7 @@ fclose($fp);
 }
 .hue,
 .saturation,
-..lightness {display:none;}
+.lightness {display:none;}
 
 </style>
 </head>
