@@ -113,17 +113,36 @@ body {margin:0; padding:0;}
   #p5 {
   display: none;
 }
-#now {font-size:4.5vw;}
-#mobile {display:block;}
-#mobile a {
-    color:blue;
+#now {font-size:1rem;}
+
+#mobile
+{display:block;}
+
+#mobile {
+    top:100vh;
+    background:#fff;
+}
+#mobile h1 {
+    top:0; left:0;
+    padding:5.5rem 7.5%;
+    line-height:150%;
+    font-size:1.5rem;
+    font-family: "ipag", monospace;
+}
+#mobile p {
+    top:0; left:0;
+    padding:2.5rem 7.5% 0;
+    line-height:150%;
+    font-size:1.25rem;
+    font-family: "ipag", monospace;
+}
+#mobile h1,
+#mobile p {
     display: inline-block;
     transform:scale(1, 2);
-    top:0; left:0;
-    margin:15vh 7.5%;
-    line-height:200%;
-    font-size:5vw;
-    font-family: "ipag", monospace;
+}
+#mobile a {
+    color:blue;
 }
 }
 </style>
@@ -145,7 +164,11 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="mobile">
-<a href="/faqs/">creative-community.space/faqs/</a>
+<h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
+<p>
+<br/>Instagram<br/>
+<a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a>
+</p>
 </div>
 <div id="submit">
 <h1>creative-community.space</h1>
