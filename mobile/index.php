@@ -13,7 +13,8 @@
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
 
-#greeting #hello {
+#greeting #hello,
+#menu {
     filter: invert();
 }
 #greeting #hello #join {
