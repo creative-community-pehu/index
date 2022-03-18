@@ -17,7 +17,8 @@ body {margin:0; padding:0;}
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
-#greeting #hello {
+#greeting #hello,
+#mobile a {
     filter: invert();
 }
 #greeting #hello #join {
@@ -43,8 +44,7 @@ body {margin:0; padding:0;}
     display:none;
     z-index: 100;
 }
-#you img,
-#mobile h1 {
+#you img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,8 +110,7 @@ body {margin:0; padding:0;}
 }
 @media screen and (max-width: 500px){
   #greeting,
-  #ver,
-  #p5 {
+  #ver {
   display: none;
 }
 #now {font-size:4.5vw;}
