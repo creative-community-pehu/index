@@ -22,6 +22,30 @@ hr {border:0; clear:both; width:100%;}
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
 }
+
+#top_btn {
+    position: fixed;
+    top:1.25rem; right:0.5rem;
+    z-index: 1000;
+    margin:0 0.5rem;
+}
+#top_btn a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    color: #000;
+    border: solid 0.2px #000;
+    border-radius: 50%;
+    text-decoration:none;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:blue;
+}
 </style>
 </head>
 <body>
@@ -151,13 +175,10 @@ hr {border:0; clear:both; width:100%;}
 <p style="text-align:center;"><a id="close_sp">CLOSE</a><p>
 </div>
 
-<div id="menu"></div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#members").load("/faqs/");
-$("#menu").load("/org/menu.html");
 })
 
 let open = document.querySelector('#btn_sp');
@@ -176,6 +197,8 @@ close.addEventListener('click', function() {
   btnToggleclass(box);
 }, false);
 </script>
+
+<p id="top_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">CC</a></p>
 
 </body>
 </html>
