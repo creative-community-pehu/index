@@ -151,11 +151,13 @@ hr {border:0; clear:both; width:100%;}
 <p style="text-align:center;"><a id="close_sp">CLOSE</a><p>
 </div>
 
+<div id="menu"></div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#members").load("/faqs/");
-$("#org_menu").load("/org/menu.html");
+$("#menu").load("/org/menu.html");
 })
 
 let open = document.querySelector('#btn_sp');
@@ -174,9 +176,6 @@ close.addEventListener('click', function() {
   btnToggleclass(box);
 }, false);
 </script>
-
-
-<div id="org_menu"></div>
 
 </body>
 </html>

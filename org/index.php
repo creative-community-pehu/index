@@ -66,7 +66,7 @@ fclose($fp);
   
 </head>
 <body>
-<div id="org_menu"></div>
+<div id="menu"></div>
   
 <div id="header">
 <u>できること</u>
@@ -146,7 +146,7 @@ fclose($fp);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#org_menu").load("menu.html");
+$("#menu").load("menu.html");
 });
 </script>
 <script src="js/searchBox.js"></script>
