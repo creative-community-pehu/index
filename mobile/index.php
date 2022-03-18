@@ -64,7 +64,7 @@ body {margin:0; padding:0;}
 #greeting {
     position: relative;
     width:90%;
-    margin: 12.5vw 5% 10vw;
+    margin: 5vw 5% 10vw;
 }
 #now {font-size:4.5vw;}
 #mobile {display:none;}
