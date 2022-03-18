@@ -35,12 +35,13 @@ fclose($fp);
   grid-template-columns: repeat(1, 1fr);
   margin: 5% 5% 10%;
   font-size: 1.5vw;
-  font-family: "ipag", monospace;
+  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
 #faqs b,
 #faqs u {
   display: inline-block;
   transform:scale(1, 1.5);
+  font-family: "ipag", monospace;
 }
 #faqs u {
   font-size:150%;
