@@ -13,6 +13,13 @@
 body {margin:0; padding:0;}
 .pehu {font-family: "SimSong", "MS Mincho", serif;}
 
+#greeting #hello {
+    filter: invert();
+}
+#greeting #hello #join {
+    filter: invert(1);
+}
+
 #greeting,
 #menu {
   display: none;
@@ -21,6 +28,7 @@ body {margin:0; padding:0;}
 #now {
   position: fixed;
   bottom:0;
+  z-index: 100;
   line-height: 200%;
   font-family: "ipag", monospace;
   transform:scale(1, 1.25);
@@ -58,13 +66,16 @@ body {margin:0; padding:0;}
   display: block;
 }
 #menu {
+  position: relative;
+  z-index: 100;
   padding: 1.25%;
   margin-bottom: 10vw;
 }
 #greeting {
-    position: relative;
-    width:90%;
-    margin: 5vw 5% 10vw;
+  position: relative;
+  z-index: 100;
+  width:90%;
+  margin: 5vw 5% 10vw;
 }
 #now {font-size:4.5vw;}
 #mobile {display:none;}
