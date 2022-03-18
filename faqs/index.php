@@ -148,8 +148,6 @@ fclose($fp);
 </style>
 </head>
 <body>
-<div id="hsl"></div>
-<div id="p5"></div>
 
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
@@ -185,8 +183,7 @@ fclose($fp);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#p5").load("/coding/js/p5/sketch.html");
-    $("#hsl").load("/coding/js/hsl/");
+    $("#").load("");
 })
 </script>
 </html>
