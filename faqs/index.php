@@ -71,7 +71,7 @@ fclose($fp);
   transition:1.0s all;
 }
 #faqs div:hover {
-  filter: invert(100%);
+  filter: invert(75%);
 }
 #faqs div p {
   padding: 0 0 2.5vw;
@@ -135,25 +135,16 @@ fclose($fp);
 #bottom_btn a:hover {
     color:blue;
 }
-#p5 {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0; left:0;
-    z-index: 0;
-}
-#hsl {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    position: fixed;
-    top:0; z-index: -2;
-    background-color: rgb(0, 0, 0);
-}
-.hue,
-.saturation,
-.lightness {display:none;}
 
+@media screen and (max-width: 550px){
+  #faqs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 5% 5% 10%;
+  font-size: 2.5vw;
+  font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+}
+}
 </style>
 </head>
 <body>
