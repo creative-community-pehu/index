@@ -142,7 +142,7 @@ fclose($fp);
     transition: all 1000ms ease;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 7500px){
   #faqs {
   font-size: 2vw;
 }
@@ -151,7 +151,7 @@ fclose($fp);
 }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 500px){
   #faqs {
   font-size: 2.5vw;
 }
