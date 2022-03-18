@@ -151,7 +151,7 @@ fclose($fp);
 }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
   #faqs {
   font-size: 2.5vw;
 }
