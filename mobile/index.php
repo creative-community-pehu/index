@@ -34,21 +34,22 @@ body {margin:0; padding:0;}
 }
 #mobile {display:block;}
 #mobile a {
-    display: inline-block;
-    transform:scale(1, 2);
-    top:0; left:0;
-    padding:7.5vw 7.5%;
-    line-height:200%;
-    font-size:4.5vw;
-    font-family: "ipag", monospace;
+  color:blue;
+  display: inline-block;
+  transform:scale(1, 2);
+  top:0; left:0;
+  padding:7.5vw 7.5%;
+  line-height:200%;
+  font-size:4.5vw;
+  font-family: "ipag", monospace;
 }
 
 #p5 {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0; left:0;
-    z-index: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top:0; left:0;
+  z-index: 0;
 }
 @media screen and (max-width: 500px){
 #hello {font-size: 125%;}
