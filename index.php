@@ -160,7 +160,7 @@ echo $date->format('F d, Y');
 <img src="/qr.png">
 </div>
 <div id="mobile">
-<p>Mobile</p>
+<p>for Mobile</p>
 <h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
 <p>
 <br/>Instagram
