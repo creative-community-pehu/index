@@ -35,7 +35,8 @@ body {margin:0; padding:0;}
     z-index: 0;
 }
 #you,
-#submit {
+#submit,
+#mobile {
     position: absolute;
     width:100%;
     min-height: 100vh;
@@ -43,18 +44,20 @@ body {margin:0; padding:0;}
     z-index: 100;
 }
 #you img {
-    width: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
 }
+#you img {
+    width: 5rem;
+}
 
 #now {
   position: fixed;
   bottom:0;
-  line-height: 5vw;
+  line-height: 200%;
   font-family: "ipag", monospace;
   transform:scale(1, 1.25);
   font-size:2.5vw;
@@ -104,6 +107,40 @@ body {margin:0; padding:0;}
     transform:scale(1, 2);
 }
 }
+@media screen and (max-width: 500px){
+  #greeting,
+  #ver,
+  #p5 {
+  display: none;
+}
+#now {font-size:1rem;}
+
+#mobile
+{display:block;}
+
+#mobile h1 {
+    top:0; left:0;
+    padding:4.5rem 7.5% 5.5rem;
+    line-height:150%;
+    font-size:1.5rem;
+    font-family: "ipag", monospace;
+}
+#mobile p {
+    top:0; left:0;
+    padding:2.5rem 7.5% 0;
+    line-height:150%;
+    font-size:1.25rem;
+    font-family: "ipag", monospace;
+}
+#mobile h1,
+#mobile p {
+    display: inline-block;
+    transform:scale(1, 2);
+}
+#mobile a {
+    color:blue;
+}
+}
 </style>
 </head>
 <body>
@@ -121,6 +158,14 @@ echo $date->format('F d, Y');
 
 <div id="you">
 <img src="/qr.png">
+</div>
+<div id="mobile">
+<p>for Mobile</p>
+<h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
+<p>
+<br/>Instagram
+<a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a>
+</p>
 </div>
 <div id="submit">
 <h1>creative-community.space</h1>
