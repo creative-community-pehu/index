@@ -135,9 +135,7 @@ body {margin:0; padding:0;}
     display: inline-block;
     transform:scale(1, 2);
 }
-#mobile a {
-    color:blue;
-}
+#mobile a {color:blue;}
 }
 </style>
 </head>
