@@ -35,8 +35,7 @@ body {margin:0; padding:0;}
     z-index: 0;
 }
 #you,
-#submit,
-#mobile {
+#submit {
     position: absolute;
     width:100%;
     min-height: 100vh;
