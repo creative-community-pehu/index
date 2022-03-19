@@ -33,7 +33,7 @@ fclose($fp);
 #faqs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 5% 5% 10%;
+  margin: 2.5% 4.5% 5.5%;
   font-size: 1.5vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
@@ -71,7 +71,7 @@ fclose($fp);
   transition:1.0s all;
 }
 #faqs div:hover {
-  filter: invert(100%);
+  filter: invert(75%);
 }
 #faqs div p {
   padding: 0 0 2.5vw;
@@ -116,7 +116,7 @@ fclose($fp);
 }
 #bottom_btn {
     position: fixed;
-    bottom:0.5rem; left:0.5rem;
+    bottom:0rem; right:1rem;
     z-index: 1000;
     margin:0 0.5rem;
 }
@@ -129,36 +129,36 @@ fclose($fp);
     line-height: 2.75rem;
     color: #000;
     text-decoration:none;
+    border: solid 1px #000;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 1000ms ease;
 }
 #bottom_btn a:hover {
-    color:blue;
+    color:#fff;
+    background-color:blue;
+    border: solid 1px blue;
+    cursor: pointer;
+    transition: all 1000ms ease;
 }
-#p5 {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0; left:0;
-    z-index: 0;
-}
-#hsl {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    position: fixed;
-    top:0; z-index: -2;
-    background-color: rgb(0, 0, 0);
-}
-.hue,
-.saturation,
-.lightness {display:none;}
 
+@media screen and (max-width: 1000px){
+  #faqs {
+  font-size: 1.75vw;
+}
+#faqs p {
+  line-height: 200%;
+}
+}
+
+@media screen and (max-width: 550px){
+  #faqs {
+  font-size: 2.5vw;
+}
+}
 </style>
 </head>
 <body>
-<div id="hsl"></div>
-<div id="p5"></div>
 
 <div id="faqs">
 <p><u>creative-community.space</u> は、 <a class="pehu">∧°┐</a> が運営する <b>会員制コミュニティサイト</b> です。<br/>
@@ -187,15 +187,14 @@ fclose($fp);
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
-<p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア「newlifecollection.com」と連動し、運営・管理しています。</p>
-<p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">↩</a></p>
+<p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア <a class="nlc">New Life Collection.com</a> と連動し、運営・管理しています。</p>
+<p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">CC</a></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#p5").load("/coding/js/p5/sketch.html");
-    $("#hsl").load("/coding/js/hsl/");
+    $("#").load("");
 })
 </script>
 </html>
