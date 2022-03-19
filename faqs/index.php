@@ -116,7 +116,7 @@ fclose($fp);
 }
 #bottom_btn {
     position: fixed;
-    bottom:1rem; right:1rem;
+    bottom:0.5rem; right:1rem;
     z-index: 1000;
     margin:0 0.5rem;
 }
