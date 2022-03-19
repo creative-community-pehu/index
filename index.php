@@ -119,7 +119,7 @@ body {margin:0; padding:0;}
 
 #mobile h1 {
     top:0; left:0;
-    padding:4.5rem 7.5% 2.5rem;
+    padding:2.5rem 7.5%;
     line-height:150%;
     font-size:1.5rem;
     font-family: "ipag", monospace;
