@@ -33,7 +33,7 @@ fclose($fp);
 #faqs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 2.5% 4.5% 5.5%;
+  margin: 2.5% 4.5% 4.5%;
   font-size: 1.5vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
@@ -116,7 +116,7 @@ fclose($fp);
 }
 #bottom_btn {
     position: fixed;
-    bottom:0rem; right:1rem;
+    bottom:0.5rem; right:1rem;
     z-index: 1000;
     margin:0 0.5rem;
 }
@@ -187,7 +187,7 @@ fclose($fp);
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
-<p>※ 会員情報／いくつかのコンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア <a class="nlc">New Life Collection.com</a> と連動し、運営・管理しています。</p>
+<p>※ 会員情報／会員限定コンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア <a class="nlc">newlifecollection.com</a> と連動し、運営・管理しています。</p>
 <p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">CC</a></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

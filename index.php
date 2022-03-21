@@ -34,9 +34,9 @@ body {margin:0; padding:0;}
     top:0; left:0;
     z-index: 0;
 }
+#mobile {display:none;}
 #you,
-#submit,
-#mobile {
+#submit {
     position: absolute;
     width:100%;
     min-height: 100vh;
@@ -119,15 +119,14 @@ body {margin:0; padding:0;}
 {display:block;}
 
 #mobile h1 {
-    top:0; left:0;
-    padding:4.5rem 7.5% 5.5rem;
+    padding:0 7.5% 2.5rem;
     line-height:150%;
     font-size:1.5rem;
     font-family: "ipag", monospace;
 }
 #mobile p {
     top:0; left:0;
-    padding:2.5rem 7.5% 0;
+    padding:2.5rem 7.5%;
     line-height:150%;
     font-size:1.25rem;
     font-family: "ipag", monospace;
@@ -137,9 +136,7 @@ body {margin:0; padding:0;}
     display: inline-block;
     transform:scale(1, 2);
 }
-#mobile a {
-    color:blue;
-}
+#mobile a {color:blue;}
 }
 </style>
 </head>
