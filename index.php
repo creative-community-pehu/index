@@ -122,7 +122,8 @@ body {margin:0; padding:0;}
 }
 @media screen and (max-width: 500px){
   #greeting,
-  #ver {
+  #ver,
+  #sketch {
   display: none;
 }
 #now {font-size:1rem;}
