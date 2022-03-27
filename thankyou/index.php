@@ -22,16 +22,18 @@ body {margin:0; padding:0;}
 
 }
 .hue {
-  top: 2vw;
   width: 100%;
   position: fixed;
+  top: 2vw;
+  z-index: 100;
 }
 
 .saturation,
 .lightness {
+  width:2vw;
   position: fixed;
   top: 50%;
-  width:2vw;
+  z-index: 100;
   transform-origin: 50% 50% 0;
   transform: translateY(-50%) translateX(-50%);
   -webkit- transform: translateY(-50%) translateX(-50%);
