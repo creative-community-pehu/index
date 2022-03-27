@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
-body {margin:0; padding:0;}
+body {margin:0; padding:0; background:#000;}
 
 .hue,
 .saturation,
