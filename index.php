@@ -122,8 +122,7 @@ body {margin:0; padding:0;}
 }
 @media screen and (max-width: 500px){
   #greeting,
-  #ver,
-  #sketch {
+  #ver {
   display: none;
 }
 #now {font-size:1rem;}
@@ -169,7 +168,7 @@ echo $date->format('F d, Y');
 <div id="you">
 <img src="/qr.png">
 </div>
-<div id="mobile">
+<div id="mobile" class="hsl">
 <p>for Mobile</p>
 <h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
 <p>
@@ -211,7 +210,7 @@ $(document).on('mousemove', function(e){
     var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#now').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#now .hsl').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
       $('#saturationcount').text(sraw + '%');
       $('#lightnesscount').text(lraw + '%');
   }
