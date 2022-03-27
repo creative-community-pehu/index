@@ -10,6 +10,44 @@
 <link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
 body {margin:0; padding:0;}
+
+.hue,
+.saturation,
+.lightness {
+  font-size: 2vw;
+  line-height: 2.5vw;
+  text-align: center;
+  white-space: nowrap;
+  filter: invert();
+
+}
+.hue {
+  top: 2vw;
+  width: 100%;
+  position: fixed;
+}
+
+.saturationwrap,
+.lightnesswrap {
+  position: fixed;
+  top: 50%;
+  width:2vw;
+  transform-origin: 50% 50% 0;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+.saturationwrap {
+  transform: rotate(90deg);
+  left:2vw;
+  margin-bottom: 12.5vw;
+}
+.lightnesswrap {
+  transform: rotate(-90deg);
+  right:2vw;
+  margin-top: 12.5vw;
+}
+
 #greeting {
     position: relative; z-index:10;
     width:80%;
@@ -25,7 +63,7 @@ hr {
     height: 100vh;
     position: fixed;
     top:0; left:0;
-    z-index: 0;
+    z-index: 1;
     animation: colorchange 40s linear infinite;
 }
 
@@ -101,6 +139,13 @@ hr {
 
 <div id="greeting"></div>
 
+<div class="hue">Hue <span id="huecount"></span></div>
+<div class="saturationwrap">
+<div class="saturation">Saturation <span id="saturationcount"></span></div>
+</div>
+<div class="lightnesswrap">
+<div class="lightness">Lightness <span id="lightnesscount"></span></div>
+</div>
 <div id="you">
 <h1><span>Drawing by</span>
 <img src="/qr.png">
@@ -130,6 +175,7 @@ creative-community.space
     $(function(){
     $("#greeting").load("hello.html");
     })
+
 $(document).on('mousemove', function(e){
   var hueraw = parseInt(255 - Math.round((e.pageY + 0.1) / ($(window).height()) * 255));
   var hue = '"srff"' + hueraw;
@@ -145,6 +191,43 @@ $(document).on('mousemove', function(e){
       $('#now').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
       $('#saturationcount').text(sraw + '%');
       $('#lightnesscount').text(lraw + '%');
+  }
+});
+
+var COLOURS = [ '#EEE' ];
+var radius = 0;
+
+Sketch.create({
+  container: document.getElementById( 'sketch' ),
+  autoclear: false,
+  retina: 'auto',
+
+  setup: function() {
+    console.log( 'setup' );
+  },
+  update: function() {
+    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
+  },
+
+  // Event handlers
+  keydown: function() {
+    if ( this.keys.C ) this.clear();
+  },
+
+  touchmove: function() {
+
+    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+      touch = this.touches[i];
+      this.lineCap = 'round';
+      this.lineJoin = 'round';
+      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
+      this.lineWidth = radius;
+
+      this.beginPath();
+      this.moveTo( touch.ox, touch.oy );
+      this.lineTo( touch.x, touch.y );
+      this.stroke();
+    }
   }
 });
 </script>
