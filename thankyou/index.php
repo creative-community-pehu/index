@@ -54,7 +54,8 @@ body {margin:0; padding:0;}
     margin: 12.5vw 10% 10vw;
 }
 #greeting #hello,
-hr {
+hr,
+.hsl {
     filter: invert();
 }
 
@@ -139,9 +140,9 @@ hr {
 
 <div id="greeting"></div>
 
-<div class="hue">Hue <span id="huecount"></span></div>
-<div class="saturation">Saturation <span id="saturationcount"></span></div>
-<div class="lightness">Lightness <span id="lightnesscount"></span></div>
+<div class="hue hsl">Hue <span id="huecount"></span></div>
+<div class="saturation hsl">Saturation <span id="saturationcount"></span></div>
+<div class="lightness hsl">Lightness <span id="lightnesscount"></span></div>
 <div id="you">
 <h1><span>Drawing by</span>
 <img src="/qr.png">
@@ -184,7 +185,7 @@ $(document).on('mousemove', function(e){
     var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#now').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('.hsl').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
       $('#saturationcount').text(sraw + '%');
       $('#lightnesscount').text(lraw + '%');
   }
