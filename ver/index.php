@@ -202,13 +202,6 @@ li {list-style: none;}
 </head>
 <body data-feedly-extension-follow-feed="1.0.3" cz-shortcut-listen="true">
 <div id="color" class="wrapper">
-  <div class="hue">Hue <span id="huecount"></span></div>
-  <div class="saturationwrap">
-    <div class="saturation">Saturation <span id="saturationcount"></span></div>
-  </div>
-  <div class="lightnesswrap">
-    <div class="lightness">Lightness <span id="lightnesscount"></span></div>
-  </div>
 
 <div id="index"></div>
 <div id="grid">
@@ -280,8 +273,6 @@ $(document).on('mousemove', function(e){
     var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#saturationcount').text(sraw + '%');
-      $('#lightnesscount').text(lraw + '%');
   }
 });
 
