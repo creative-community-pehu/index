@@ -149,7 +149,10 @@ body {margin:0; padding:0;}
     display: inline-block;
     transform:scale(1, 2);
 }
-#mobile a {filter: invert();}
+#mobile a {
+    color:yellow;
+    filter: invert();
+}
 }
 </style>
 </head>
