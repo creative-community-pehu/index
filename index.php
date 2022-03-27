@@ -148,7 +148,7 @@ body {margin:0; padding:0;}
     display: inline-block;
     transform:scale(1, 2);
 }
-#mobile a {color:blue;}
+#mobile a {filter: invert();}
 }
 </style>
 </head>
@@ -168,7 +168,7 @@ echo $date->format('F d, Y');
 <div id="you">
 <img src="/qr.png">
 </div>
-<div id="mobile" class="hsl">
+<div id="mobile">
 <p>for Mobile</p>
 <h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
 <p>
@@ -210,7 +210,7 @@ $(document).on('mousemove', function(e){
     var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#now .hsl').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#now, #mobile a').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
       $('#saturationcount').text(sraw + '%');
       $('#lightnesscount').text(lraw + '%');
   }
