@@ -46,73 +46,15 @@ html, body {
   background: #000;
 }
 
-.hue {
-  top: 0;
-  width: 100%;
+.hue,
+.saturation,
+.lightness {
   font-size: 2vw;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: none;
   text-align: center;
   white-space: nowrap;
-  filter: invert();
-}
-
-.saturationwrap {
-  height: 2.5vw;
-  width: 2.5vw;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  position: absolute;
-  margin: auto;
-  transform: rotate(-90deg);
-
-}
-
-.saturation {
-  left: -47vh;
-  width: 100vh;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  height: 2.5vw;
-  line-height: 2.5vw;
-  font-size: 2vw;
-  padding-right: 0.75vw;
-  margin: auto;
-  position: absolute;
-  text-align: center;
-  filter: invert();
-}
-
-.lightnesswrap {
-  height: 2.5vw;
-  width: 2.5vw;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  position: absolute;
-  margin: auto;
-  transform: rotate(90deg);
-}
-
-.lightness {
-  padding-left: 0.75vw;
-  left: -48vh;
-  width: 100vh;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  height: 2.5vw;
-  line-height: 2.5vw;
-  font-size: 2vw;
-  padding-right: 0.75vw;
-  margin: auto;
-  position: absolute;
-  text-align: center;
-  filter: invert();
 }
 
 #index {
@@ -122,15 +64,6 @@ html, body {
 }
 #tba {
   filter: invert();
-}
-
-#hsl {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    position: fixed;
-    top:0; left:0; z-index: -2;
-    background-color: rgb(0, 0, 0);
 }
 
 #grid {
@@ -347,7 +280,7 @@ $(document).on('mousemove', function(e){
     var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
       $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#color, #rolling, .innertext').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#grid').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
       $('#saturationcount').text(sraw + '%');
       $('#lightnesscount').text(lraw + '%');
   }
