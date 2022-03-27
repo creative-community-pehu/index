@@ -17,7 +17,9 @@ body {margin:0; padding:0;}
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
-#greeting #hello {
+#greeting #hello,
+#grid div,
+#tba {
     filter: invert();
 }
 #greeting #hello #join {
