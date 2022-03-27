@@ -65,6 +65,7 @@ body {margin:0; padding:0;}
   font-family: "ipag", monospace;
   transform:scale(1, 1.25);
   font-size:2.5vw;
+  color:#fff;
   padding:0;
   margin:0 2.5%;
   width:95%;
@@ -150,7 +151,7 @@ body {margin:0; padding:0;}
     transform:scale(1, 2);
 }
 #mobile a {
-    color:yellow;
+    color: yellow;
     filter: invert();
 }
 }
