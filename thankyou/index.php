@@ -27,8 +27,8 @@ body {margin:0; padding:0;}
   position: fixed;
 }
 
-.saturationwrap,
-.lightnesswrap {
+.saturation,
+.lightness {
   position: fixed;
   top: 50%;
   width:2vw;
@@ -37,12 +37,12 @@ body {margin:0; padding:0;}
   -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
-.saturationwrap {
+.saturation {
   transform: rotate(90deg);
   left:2vw;
   margin-bottom: 12.5vw;
 }
-.lightnesswrap {
+.lightness {
   transform: rotate(-90deg);
   right:2vw;
   margin-top: 12.5vw;
@@ -140,12 +140,8 @@ hr {
 <div id="greeting"></div>
 
 <div class="hue">Hue <span id="huecount"></span></div>
-<div class="saturationwrap">
 <div class="saturation">Saturation <span id="saturationcount"></span></div>
-</div>
-<div class="lightnesswrap">
 <div class="lightness">Lightness <span id="lightnesscount"></span></div>
-</div>
 <div id="you">
 <h1><span>Drawing by</span>
 <img src="/qr.png">
