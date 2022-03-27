@@ -27,12 +27,13 @@ body {margin:0; padding:0;}
 #ver #searchBox .label {
   display: none;
 }
-#p5 {
+#sketch {
     width: 100%;
     height: 100vh;
     position: fixed;
     top:0; left:0;
     z-index: 0;
+    animation: colorchange 40s linear infinite;
 }
 #mobile {display:none;}
 #you,
@@ -67,6 +68,15 @@ body {margin:0; padding:0;}
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+}
+
+@keyframes colorchange
+{
+  0%   {background: rgba(255,255,255, .0);}
+  25%  {background: rgba(125, 125, 215, .25);}
+  50%  {background: rgba(0, 0, 0, .25);}
+  75%  {background: rgba(125, 125, 125, .25);}
+  100% {background: rgba(255,255,255, .0);}
 }
 
 @media print{
@@ -110,7 +120,7 @@ body {margin:0; padding:0;}
 @media screen and (max-width: 500px){
   #greeting,
   #ver,
-  #p5 {
+  #sketch {
   display: none;
 }
 #now {font-size:1rem;}
@@ -143,7 +153,6 @@ body {margin:0; padding:0;}
 <body>
 <div id="greeting"></div>
 <div id="ver"></div>
-<div id="p5"></div>
 <div id="now">
 <span><?php
 $date = new DateTime();
@@ -152,6 +161,7 @@ echo $date->format('F d, Y');
 ?></span>
 <span id="showTime"></span>
 </div>
+<div id="sketch"></div>
 
 <div id="you">
 <img src="/qr.png">
@@ -173,6 +183,7 @@ we.are.pe.hu@gmail.com
 </div>
 
 <script src="now.js"></script>
+<script src="https://creative-community.space/coding/js/p5/sketch.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -185,10 +196,47 @@ $('a[href^="#"]').click(function(){
    return false;
  });
 
+var COLOURS = [ '#EEE' ];
+var radius = 0;
+
+Sketch.create({
+  container: document.getElementById( 'sketch' ),
+  autoclear: false,
+  retina: 'auto',
+
+  setup: function() {
+    console.log( 'setup' );
+  },
+  update: function() {
+    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
+  },
+
+  // Event handlers
+  keydown: function() {
+    if ( this.keys.C ) this.clear();
+  },
+
+  touchmove: function() {
+
+    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+      touch = this.touches[i];
+      this.lineCap = 'round';
+      this.lineJoin = 'round';
+      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
+      this.lineWidth = radius;
+
+      this.beginPath();
+      this.moveTo( touch.ox, touch.oy );
+      this.lineTo( touch.x, touch.y );
+      this.stroke();
+    }
+  }
+});
+
+
 $(function(){
-    $("#greeting").load("/hello.php");
-    $("#ver").load("/ver/");
-    $("#p5").load("/coding/js/p5/sketch.html");
+    $("#greeting").load("hello.php");
+    $("#ver").load("ver/");
 })
 </script>
 
