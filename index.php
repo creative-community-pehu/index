@@ -19,7 +19,8 @@ body {margin:0; padding:0;}
 }
 #greeting #hello,
 #grid div,
-#now {
+#now,
+#tobe {
     filter: invert();
 }
 #greeting #hello #join {
