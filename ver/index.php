@@ -33,6 +33,91 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
+html, body {
+  padding: 0;
+  margin: 0;
+}
+#color {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.hue {
+  top: 0;
+  width: 100%;
+  font-size: 2vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  filter: invert();
+}
+
+.saturationwrap {
+  height: 2.5vw;
+  width: 2.5vw;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+  transform: rotate(-90deg);
+
+}
+
+.saturation {
+  left: -47vh;
+  width: 100vh;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  font-size: 2vw;
+  padding-right: 0.75vw;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  filter: invert();
+}
+
+.lightnesswrap {
+  height: 2.5vw;
+  width: 2.5vw;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  transform: rotate(90deg);
+}
+
+.lightness {
+  padding-left: 0.75vw;
+  left: -48vh;
+  width: 100vh;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  font-size: 2vw;
+  padding-right: 0.75vw;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  filter: invert();
+}
+
 #index {
     position: fixed;
     z-index: 1000;
@@ -75,7 +160,6 @@ fclose($fp);
   grid-row-end: 3;
   padding:2.5%;
 }
-
 #grid div:nth-of-type(2) {
   grid-column-start: 1;
   grid-row-start: 3;
@@ -186,7 +270,16 @@ li {list-style: none;}
 
 </style>
 </head>
-<body>
+<body data-feedly-extension-follow-feed="1.0.3" cz-shortcut-listen="true">
+   <div class="wrapper" id="color">
+      <div class="hue">Hue <span id="huecount"></span></div>
+      <div class="saturationwrap">
+        <div class="saturation">Saturation <span id="saturationcount"></span></div>
+      </div>
+      <div class="lightnesswrap">
+        <div class="lightness">Lightness <span id="lightnesscount"></span></div>
+      </div>
+   </div>
 <div id="index"></div>
 <div id="grid">
 <div>
@@ -233,10 +326,11 @@ li {list-style: none;}
   </ul>
   </form>
 
-<div id="hsl"></div>
 
 <script src="/ver/searchBox.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="https://creative-community.space/coding/js/randomcolor.js"></script>
+<script src="https://creative-community.space/coding/js/hsl/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://creative-community.space/coding/js/hsl/script.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 $(function() {
@@ -259,7 +353,6 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#index").load("/menu/");
     $("#tobe").load("/ver/tba.php");
-    $("#hsl").load("/coding/js/hsl/");
 })
 </script>
 </body>
