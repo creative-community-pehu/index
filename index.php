@@ -19,7 +19,7 @@ body {margin:0; padding:0;}
 }
 #greeting #hello,
 #grid div,
-#tba {
+#now {
     filter: invert();
 }
 #greeting #hello #join {
