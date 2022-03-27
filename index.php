@@ -171,8 +171,7 @@ echo $date->format('F d, Y');
 <div id="mobile">
 <p>for Mobile</p>
 <h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
-<p>
-<br/>Instagram
+<p style="margin-top:5vw;">Instagram
 <a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a>
 </p>
 </div>
