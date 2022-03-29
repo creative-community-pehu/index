@@ -105,7 +105,6 @@ fclose($fp);
   font-family:"Times New Roman", serif;
   font-style:italic;
   display: block;
-
 }
 #grid span {
   display: inline-block;
