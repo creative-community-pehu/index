@@ -9,31 +9,65 @@
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
 <link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
-body {margin:0; padding:0;}
+body {margin:0; padding:0; background:#000;}
+
+.hue,
+.saturation,
+.lightness {
+  font-size: 2vw;
+  line-height: 2.5vw;
+  text-align: center;
+  white-space: nowrap;
+  filter: invert();
+
+}
+.hue {
+  width: 100%;
+  position: fixed;
+  top: 2vw;
+  z-index: 100;
+}
+
+.saturation,
+.lightness {
+  width:2vw;
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  transform-origin: 50% 50% 0;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+.saturation {
+  transform: rotate(90deg);
+  left:2vw;
+  margin-bottom: 12.5vw;
+}
+.lightness {
+  transform: rotate(-90deg);
+  right:2vw;
+  margin-top: 12.5vw;
+}
+
 #greeting {
     position: relative; z-index:10;
     width:80%;
     margin: 12.5vw 10% 10vw;
 }
 #greeting #hello,
-hr {
+hr,
+.hsl {
     filter: invert();
 }
 
-#p5 {
+#sketch {
     width: 100%;
     height: 100vh;
     position: fixed;
     top:0; left:0;
-    z-index: 0;
-}
-#hsl {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    position: fixed;
-    top:0; z-index: -2;
-    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    animation: colorchange 40s linear infinite;
 }
 
 #you,
@@ -100,16 +134,17 @@ hr {
 }
 </style>
 </head>
-<body>
+<body id="color">
 
 <div id="menu">
 <div><a class="tab" href="#" style="font-size:5rem;" onclick="history.back(-1);return false;">↵</a></div>
 </div>
 
 <div id="greeting"></div>
-<div id="hsl"></div>
-<div id="p5"></div>
 
+<div class="hue hsl">Hue <span id="huecount"></span></div>
+<div class="saturation hsl">Saturation <span id="saturationcount"></span></div>
+<div class="lightness hsl">Lightness <span id="lightnesscount"></span></div>
 <div id="you">
 <h1><span>Drawing by</span>
 <img src="/qr.png">
@@ -130,14 +165,70 @@ Thank You,<br/>
 creative-community.space
 </p>
 </div>
+<div id="sketch"></div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://creative-community.space/coding/js/p5/sketch.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
-    $("#greeting").load("/thankyou/hello.html");
-    $("#p5").load("/coding/js/p5/sketch.html");
-    $("#hsl").load("/coding/js/hsl/");
+    $("#greeting").load("hello.html");
     })
+
+$(document).on('mousemove', function(e){
+  var hueraw = parseInt(255 - Math.round((e.pageY + 0.1) / ($(window).height()) * 255));
+  var hue = '"srff"' + hueraw;
+
+    $('#huecount').text(hueraw);
+    $('#lightnesscount').text(hueraw + '%');
+    $('#saturationcount').text(hueraw + '%');
+
+    if((e.pageX <= $(window).width()/1)){
+    var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
+      var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
+      $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('.hsl').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#saturationcount').text(sraw + '%');
+      $('#lightnesscount').text(lraw + '%');
+  }
+});
+
+var COLOURS = [ '#EEE' ];
+var radius = 0;
+
+Sketch.create({
+  container: document.getElementById( 'sketch' ),
+  autoclear: false,
+  retina: 'auto',
+
+  setup: function() {
+    console.log( 'setup' );
+  },
+  update: function() {
+    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
+  },
+
+  // Event handlers
+  keydown: function() {
+    if ( this.keys.C ) this.clear();
+  },
+
+  touchmove: function() {
+
+    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+      touch = this.touches[i];
+      this.lineCap = 'round';
+      this.lineJoin = 'round';
+      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
+      this.lineWidth = radius;
+
+      this.beginPath();
+      this.moveTo( touch.ox, touch.oy );
+      this.lineTo( touch.x, touch.y );
+      this.stroke();
+    }
+  }
+});
 </script>
 
 </body>

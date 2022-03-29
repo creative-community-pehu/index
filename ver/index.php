@@ -33,22 +33,14 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <title>Update | creative-community.space</title>
 <style>
+html, body {
+  padding: 0;
+  margin: 0;
+}
 #index {
     position: fixed;
     z-index: 1000;
     top:0;
-}
-#tba {
-  filter: invert();
-}
-
-#hsl {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    position: fixed;
-    top:0; left:0; z-index: -2;
-    background-color: rgb(0, 0, 0);
 }
 
 #grid {
@@ -66,7 +58,6 @@ fclose($fp);
   border:solid #000 1px;
   border-collapse: collapse;
   transition:1.5s all;
-  filter: invert();
 }
 #grid div:first-child {
   grid-column-start: 1;
@@ -75,7 +66,6 @@ fclose($fp);
   grid-row-end: 3;
   padding:2.5%;
 }
-
 #grid div:nth-of-type(2) {
   grid-column-start: 1;
   grid-row-start: 3;
@@ -160,7 +150,6 @@ li {list-style: none;}
   flex-wrap: wrap;
   font-family: "ipag", monospace;
   transform:scale(1, 1.5);
-  filter: invert();
 }
 #searchBox .label,
 #searchBox input[type="reset"] {
@@ -185,7 +174,7 @@ li {list-style: none;}
 
 </style>
 </head>
-<body>
+<body data-feedly-extension-follow-feed="1.0.3" cz-shortcut-listen="true">
 <div id="index"></div>
 <div id="grid">
 <div>
@@ -232,10 +221,10 @@ li {list-style: none;}
   </ul>
   </form>
 
-<div id="hsl"></div>
 
 <script src="/ver/searchBox.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="https://creative-community.space/coding/js/randomcolor.js"></script>
+<script src="https://creative-community.space/coding/js/hsl/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 $(function() {
@@ -258,7 +247,6 @@ $('a[href^="#"]').click(function(){
 $(function(){
     $("#index").load("/menu/");
     $("#tobe").load("/ver/tba.php");
-    $("#hsl").load("/coding/js/hsl/");
 })
 </script>
 </body>

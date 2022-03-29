@@ -6,7 +6,7 @@
 <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。
 やりたいことをみんなで実現するクリエイティブ・コミュニティを作りましょう。">
 <link rel="icon" href="/logo.png">
-<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<link rel="stylesheet" href="https://creative-community.space/coding/hello/close_open.css"/>
 <title> Hello | creative-community.space </title>
 <style type="text/css">
 #hello u,
@@ -46,6 +46,6 @@ Create Together
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/hello/open_close.js"></script>
+<script src="https://creative-community.space/coding/hello/open_close.js"></script>
 </body>
 </html>
