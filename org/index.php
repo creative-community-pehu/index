@@ -33,6 +33,7 @@ fclose($fp);
 <meta name="description" content="FREE TIME | 何かする時間">
 
 <script src="../js/ityped.js"></script>
+<link rel="icon" href="logo.png">
 <link rel="stylesheet" href="css/ityped.css"/>
 <link rel="stylesheet" href="css/org.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
