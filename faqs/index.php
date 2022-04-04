@@ -187,7 +187,7 @@ fclose($fp);
 <a href="/value/"></a>
 </div>
 <hr/>
-<p><b>会員限定 | Members Only</b><br/>
+<p><br/><b>会員限定 | Members Only</b><br/>
 コミュニティ会員限定コンテンツ／サービス一覧</p>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
