@@ -187,6 +187,7 @@ fclose($fp);
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>
+<hr/>
 <p>※ 会員情報／会員限定コンテンツは、<a class="pehu">∧°┐</a> が運営するオウンドメディア <a class="nlc">newlifecollection.com</a> と連動し、運営・管理しています。</p>
 <p id="bottom_btn"><a class="cc" href="#" onClick="history.back(); return false;" target-"_parent">CC</a></p>
 </body>
