@@ -85,6 +85,7 @@ fclose($fp);
   <label class="freetime" for="cando"></label>
   <input type="checkbox" id="cando" />
   <ul class="search-box cando" id="click">
+  <!--
   <li>
   <input type="radio" name="cando" value="create" id="create">
   <label for="create" class="label">作る 壊す 遊ぶ</label></li>
@@ -101,6 +102,7 @@ fclose($fp);
   <input type="radio" name="cando" value="broadcast" id="broadcast">
   <label for="broadcast" class="label">撮影 録音 配信</label></li>
   <li>
+  -->
   <input type="radio" name="cando" value="publication" id="publication">
   <label for="publication" class="label">出版 発行する</label></li>
   <li>
