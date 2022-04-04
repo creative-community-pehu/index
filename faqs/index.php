@@ -175,18 +175,6 @@ fclose($fp);
 <a target="_parent" href="https://pehu.cart.fc2.com/login"></a>
 </div>
 <hr/>
-<p><b>creative-community.space</b></p>
-<div>
-<p>あなたの落書きを出力する</p>
-<span>Your Drawing is Seems So Beautiful</span>
-<a href="/thankyou/"></a>
-</div>
-<div>
-<p>大切にすることを大切にするための場所</p>
-<span>this is a space for valuing an act of valuing</span>
-<a href="/value/"></a>
-</div>
-<hr/>
 <p><br/><b>会員限定 | Members Only</b><br/>
 コミュニティ会員限定コンテンツ／サービス一覧</p>
 <?php if (!empty($rows)): ?>
