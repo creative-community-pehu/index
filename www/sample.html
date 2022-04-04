@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>Title</title>
+    <style type="text/css">
+
+      .cover {background-image: url();}
+      .a {background-image: url();}
+      .b {background-image: url();}
+      .c {background-image: url();}
+      .back {background-image: url();}
+      .library li {background-size: 100%;}
+
+      @media screen and (max-width: 1100px){
+      }
+    </style>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="preview.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="scrollable.js"></script>
+
+  </head>
+  <body>
+    <ul class="mousedragscrollable library">
+      <li>
+        <div class="contents">
+          <div class="value">
+          <h1 class="info">Title</h1>
+          </div>
+        <p class="center">
+        <span class="by">Special</span>
+        <span class="by">Edition</span>
+        </p>
+        </div>
+      </li>
+
+      <li class="cover"></li>
+
+      <li>
+        <div class="contents">
+        <h2>Sub Title</h2>
+        <p>Infomation</p>
+        </div>
+      </li>
+
+      <li class="a"></li>
+
+      <li class="b"></li>
+
+      <li class="c">
+        <div class="outside">
+        <span class="buy">
+        <a href="" target="_parent">BUY</a>
+        </span>
+        </div>
+      </li>
+      <li class="back">
+        <div class="contents">
+          <h2 class="center">Center</h2>  
+          <p>
+          <span class="by">Credit</span>
+          <br/>
+          <span class="as">as</span>
+          <span class="by">by</span>
+          <span class="name">name</span>
+          </p>        
+        </div>
+      </li>
+      
+    </ul>
+  </body>
+
+  <script>$(".mousedragscrollable").mousedragscrollable();</script>
+
+</html>
