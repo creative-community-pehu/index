@@ -85,10 +85,10 @@ fclose($fp);
   <label class="freetime" for="cando"></label>
   <input type="checkbox" id="cando" />
   <ul class="search-box cando" id="click">
-  <!--
   <li>
   <input type="radio" name="cando" value="create" id="create">
   <label for="create" class="label">作る 壊す 遊ぶ</label></li>
+  <!--
   <li>
   <input type="radio" name="cando" value="shopping" id="shopping">
   <label for="shopping" class="label">販売 出店する</label></li>
