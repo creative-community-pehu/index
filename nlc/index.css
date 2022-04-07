@@ -1,0 +1,804 @@
+html, body, div, nav, section, article,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, #wrap, #contents,
+form, fieldset, input, textarea,
+blockquote,
+table, th, td,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+}
+
+ul, ol, li, dl, dt, dd {
+    list-style: none;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+img,
+table,
+fieldset,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border: none;
+}
+
+input[type="submit"] {
+    color: #000;
+    font-size: 1rem;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2rem;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    clear: both;
+}
+
+/*============================================================
+	common - element style
+============================================================*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    color:#000;
+	padding:0; margin:0;
+	font-family:"YuGothic","Yu Gothic","Arial", sans-serif;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.nlc_gradient {
+    color: #fff;
+    background: linear-gradient(-90deg, #eee, #FFC778, #b3cbf6);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+input[type="submit"].nlc_style:hover {border:#fff;}
+
+.gradient_font,
+.gradient_font_link a,
+input[type="submit"].nlc_style,
+#member .list_form dd:nth-last-of-type(1) a,
+#member .menber_menu a,
+#member input[type="submit"]:hover,
+#signup input[type="submit"]:hover,
+#signup dd::after {
+    text-decoration: none;
+    background: linear-gradient(90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientBG 5s ease infinite;
+}
+.gradient_font_link a:hover,
+#panel_menu .nlc_style a:hover,
+input[type="submit"].nlc_style:hover,
+#laws dt,
+#member dt,
+#signup dt,
+#inquiry dt,
+#member .list_form dd:nth-last-of-type(1) a:hover,
+#member .menber_menu a:hover {
+    color: #fff;
+    background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    animation: gradientBG 2.5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/*============================================================
+	font-family - font style
+============================================================*/
+/*= IE11 游ゴシックなし =*/
+@media all and (-ms-high-contrast: none) {
+    *::-ms-backdrop, body {
+      font-family: 'Arial', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    }
+}
+/*= IE10 游ゴシックなし =*/
+@media all and (-ms-high-contrast: none) {
+    body {
+      font-family: 'Arial', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    }
+}
+.nlc_style,
+#laws dd,
+#member dd,
+#signup dd,
+#inquiry dt {
+    font-family: 'Times New Roman', serif;
+    font-weight:500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1,1.1);
+    letter-spacing: -0.01rem;
+    word-spacing: -.1rem;
+}
+.nlc_style .strong {
+    font-size: 150%;
+    font-weight: 500;
+}
+#greeting b {
+    font-size: 125%;
+    font-weight: 500;
+}
+
+#greeting i,
+#shopinfo.info_detail .shopinfo_comment i,
+#itemdetail .comment1 a {
+    font-family: 'Times New Roman', serif;
+    font-size: 125%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contents_title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/**********************************************************
+    Section Style Setting
+***********************************************************/
+/*============================================================
+	Section - header
+============================================================*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0.5rem 1rem 1rem;
+    z-index: 9999;
+}
+#header ul a {
+    color: #000;
+    font-size: 1.5rem;
+}
+#header li {
+    display: inline-block;
+    padding:0.5rem;
+}
+
+#header .category_menu {
+    float: right;
+    position: relative;
+}
+#header .login_menu {
+    float: left;
+}
+#header .cart_menu,
+#header .user_menu {
+    float: right;
+}
+#header .hello {
+    font-size: 0.9rem;
+    line-height: 100%;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: inline-block;
+}
+
+/*= header_icon =*/
+.category_icon {
+    background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/head_category_ic.png");
+}
+.panel_menu_open .category_icon {
+    background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/head_category_close_ic.png");
+}
+
+.category_icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 2.5rem auto;
+    -webkit-background-size: 2.5rem auto;
+    -moz-background-size: 2.5rem auto;
+    vertical-align: middle;
+}
+#header .cart_menu {
+    width: 4rem;
+    height: 2.5rem;
+}
+#header .cart_menu img {
+    width: 100%;
+    height: 100%;
+}
+#header .cart_menu a {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/*============================================================
+	Section - footer
+============================================================*/
+footer {
+    padding: 2.5rem 0 0;
+}
+
+.pagetop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 20vw;
+    max-width: 200px;
+    margin: 0.5rem 0;
+    z-index: 999;
+}
+#pagetop img {
+    width: 100%;
+    animation:10s linear infinite rotation;
+}
+
+#copyright {
+  float: left;
+}
+@keyframes rotation{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(-360deg); }
+}
+
+/* =================================================
+	Section - panel_menu (メニュー)
+================================================= */
+.panel_menu_open #main {
+    display: none;
+}
+
+#panel_menu, #panel_menu.panel_menu_open {
+    transition: transform 2.5s;
+    -webkit-transition: transform 2.5s;
+    -moz-transition: transform 2.5s;
+}
+#panel_menu {
+    background-color: rgba(255,255,255,0.75);
+    width: 100%;
+    top:0;
+    position: absolute;
+    visibility: hidden;
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#panel_menu a {
+  display: block;
+  padding: 1rem;
+}
+
+#panel_menu.panel_menu_open {
+    position: static;
+    visibility: visible;
+    min-height: 100vh;
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#panel_inside {
+    position:absolute;
+    top:50%; left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    -webkit-transform:translateY(-50%) translateX(-50%);
+}
+#panel_inside form {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.menu input[type="search"],
+.menu input[type="text"] {
+    color:#000;
+    background-color: rgba(255,255,255,5.5);
+    border: 2px solid red;
+    padding: 0.5rem;
+    width:70%;
+    font-size: 2rem;
+}
+.menu input[type="submit"].search_icon {
+    color: #000;
+    border: #000 solid 2px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    font-size: 125%;
+}
+.menu input[type="submit"].logout {
+    margin: 0.5rem 0;
+    border: #fff solid 2px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+.menu input[type="submit"].search_icon:hover,
+#pwreissue input[type="submit"]:hover {
+    color: #fff;
+    background:red;
+    border: red solid 2px;
+}
+.menu .section_list {
+    margin: 2rem 0 0;
+    font-size: 1.5rem;
+}
+
+/*============================================================
+	Common - Base layout
+============================================================*/
+#over_wrap {
+    position: relative;
+    padding: 4.5rem 1rem 2rem;
+ }
+ #logo {
+     display: inline-block;
+     max-width: 30rem;
+     width: 55vw;
+     padding:0.5vw 0.25rem;
+ }
+ #logo img {
+     width: 100%;
+ }
+ #greeting {
+     font-size: 4.5rem;
+     margin: 2.5rem 0.5rem;
+     font-weight: 400;
+     font-stretch: condensed;
+     font-variant: common-ligatures tabular-nums;
+     transform: scale(1,1.1);
+     letter-spacing: -0.01rem;
+     word-spacing: -.1rem;
+ }
+
+ #panel_inside {
+     width: 100%;
+     max-width: 750px;
+     margin: auto;
+ }
+ #login,
+ #memberssignup_page,
+ #pwreissue,
+ #signup,
+ #laws,
+ #inquiry,
+ #withdraw,
+ #checkcart .message,
+ #member dl {
+     width: 100%;
+     max-width: 750px;
+ }
+ #login,
+ #memberssignup_page,
+ #pwreissue,
+ #signup,
+ #inquiry,
+ #withdraw,
+ #checkcart .message {
+     padding: 1rem;
+     margin:2.5rem auto;
+     background-color: rgba(255,255,255,5.5);
+ }
+ .contents_body {
+     margin:1rem auto;
+ }
+
+/*= list_form =*/
+.list_form dd,
+.list_form dt,
+.list_form li {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.list_form dd:nth-last-of-type(1),
+.list_form dt:nth-last-of-type(1),
+.list_form li:nth-last-of-type(1) {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/*===============================================
+	Page - checkcart (カートの中身)
+================================================= */
+#checkcart .message h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 2.5rem 0;
+    font-family: 'Times New Roman', serif;
+}
+#checkcart .list {
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: 8px;
+  }
+  
+  #checkcart .item {
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  #checkcart .price {
+    margin: 8px 0;
+  }
+  
+  #checkcart .select,
+  #checkcart .del {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  #checkcart .select {
+    margin-right: 8px;
+  }
+  
+  #checkcart .item dl {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  #checkcart .item dl::after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
+  
+  #checkcart .item dt {
+    float: left;
+    width: 120px;
+  }
+  
+  #checkcart .item dt span {
+    display: block;
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+  }
+  
+  #checkcart .item dd {
+    margin-left: 130px;
+  }
+  
+  #checkcart .item dd .name {
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  
+  #checkcart .order {
+    text-align: center;
+  }
+  
+  #checkcart .order .tortal {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  
+/*===============================================
+	Page - member (会員ページ)
+================================================= */
+
+#member .list_form dt:nth-last-of-type(1) {
+  display: none;
+}
+#member .list_form dd:nth-last-of-type(1) {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+}
+#member .list_form dd:nth-last-of-type(1),
+#member .menber_menu {
+  display: flex;
+  display: -webkit-box;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+}
+
+#member .list_form dd:nth-last-of-type(1) a {
+  width: 47.5%;
+}
+#member .menber_menu a {
+  width: 95%;
+  margin: auto;
+}
+#member .list_form dd:nth-last-of-type(1) a,
+#member .menber_menu a {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 4.5rem;
+  -webkit-border-radius: 4.5rem;
+  -moz-border-radius: 4.5rem;
+  display: flex;
+  display: -webkit-box;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+#member input[type="submit"] {
+    margin-right: 0.75rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.25rem;
+    border: 2px solid #000;
+}
+/*===============================================
+	Page - laws (特定商取引法)
+================================================= */
+ #laws,
+ #laws .contents_body,
+ #inquiry .form_inquiry,
+ footer form {
+    margin:4.5rem auto;
+}
+#laws dd {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+  
+/*===============================================
+	Page - login & login_page
+				 (会員ログイン・レジ会員ログイン 共通)
+================================================= */
+#login input,
+#login textarea,
+#login_page input,
+#login_page textarea {
+    width: 100%;
+}
+#member #greeting {
+    padding-bottom:2.5rem;
+}
+
+#member dl,
+#signup dl {
+    margin:4.5rem auto;
+}
+
+#laws dt,
+#member dt,
+#signup dt {
+    font-weight: bold;
+    float: left;
+    margin: 0 1rem 0 0;
+    padding: 0 0.25rem;
+    font-size: 1rem;
+}
+
+#member dd,
+#signup dd {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+#member dd::after,
+#signup dd::after {
+  content: "";
+  position: absolute;
+  top:-1.5rem;
+  right:0;
+  display: inline-block;
+  font-size: 1rem;
+  border-bottom: #000 solid 1px;
+}
+
+#signup dd:nth-of-type(1)::after {
+  content: "ID";
+}
+#signup dd:nth-of-type(2)::after {
+  content: "Pass";
+}
+#signup dd:nth-of-type(3)::after {
+  content: "Name";
+}
+#signup dd:nth-of-type(4)::after {
+  content: "Email";
+}
+#signup dd:nth-of-type(5)::after {
+  content: "TEL";
+}
+#signup dd:nth-of-type(6)::after {
+  content: "ZIP";
+}
+#signup dd:nth-of-type(7)::after {
+  content: "Address";
+}
+
+.message {
+    margin: 1rem 0;
+}
+/*===============================================
+	Page - login (会員ログイン)
+================================================= */
+
+/*===============================================
+	Page - login_page (レジ会員ログイン)
+================================================= */
+
+/*===============================================
+	Page - signup (会員登録)
+================================================= */
+
+/*===============================================
+	Page - pwreissue (パスワードの再発送)
+================================================= */
+#pwreissue input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    color: #000;
+    border: #000 solid 2px;
+    border-radius: 2rem;
+}
+/*===============================================
+	Page - withdraw (退会)
+================================================= */
+/*===============================================
+	Page - inquiry (お問い合わせ)
+================================================= */
+#inquiry textarea {
+  height: 25vh;
+}
+#inquiry dt {
+    font-size: 0.9rem;
+    padding: 0 0.25rem;
+    display: inline-block;
+}
+
+/* =================================================
+	Common - formparts style
+================================================= */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  border: none;
+  white-space: nowrap;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  font-size: 1.25rem;
+}
+
+textarea {
+  white-space: normal;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 95%;
+  border: 2px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+}
+
+.button_style.next {
+    width: 95%;
+    display: block;
+}
+
+.formbutton {
+  text-align: center;
+  margin: 2.5rem 0 0;
+}
+.formbutton input[type="submit"],
+.button_style.next {
+    color: #000;
+    font-size: 2rem;
+    border: #000 solid 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+}
+footer .formbutton input[type="submit"],
+.formbutton input[type="submit"]:hover {
+    border: #fff solid 2px;
+}
+.button_style.next:hover,
+.formbutton .next:hover {
+    border: red solid 2px;
+    color: #fff;
+    background-color: red;
+}
+
+.system_message {
+    color: #fff;
+    background-color: red;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+}
+.required {
+    color: #ff0000;
+  }
+select {
+  color: #333333;
+  border: 1px solid #000000;
+  background-color: #f6f6f6;
+  background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/select_arrow.png");
+  background-repeat: no-repeat;
+  background-size: 8px 6px;
+  -webkit-background-size: 8px 6px;
+  -moz-background-size: 8px 6px;
+  background-position: 95% 50%;
+  text-indent: .01px;
+  /*Firefox用*/
+  text-overflow: "";
+  /*Firefox用*/
+  max-width: 100%;
+  padding: 8px 2em 8px 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+@media screen and (max-width: 950px){
+input[type="submit"].nlc_style,
+#member input[type="submit"]:hover,
+#signup input[type="submit"]:hover {
+    color: #fff;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    border: #fff 2px solid;
+}
+#greeting {
+   font-size: 2.5rem;
+}
+#member #greeting {
+    padding-bottom:0;
+}
+}

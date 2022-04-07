@@ -172,7 +172,7 @@ fclose($fp);
 <div>
 <p>ログイン | Log In</p>
 <span>会員ページにログインすると、限定コンテンツや特別イベントへアクセスできます。</span>
-<a target="_parent" href="https://pehu.cart.fc2.com/login"></a>
+<a target="_parent" href="https://newlifecollection.com/login_redirect"></a>
 </div>
 <hr/>
 <p><br/><b>会員限定 | Members Only</b><br/>
