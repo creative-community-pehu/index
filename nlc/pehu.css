@@ -1,0 +1,24 @@
+.pehu {font-family: "MS Mincho", "SimSong", serif;}
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+}
+
+footer .pehu {
+  margin: 0 0.2rem 0 0.5rem;
+}
+#faqs {
+  margin-bottom: 2.5rem;
+}
+#faqs a {
+  font-family:"YuGothic","Yu Gothic","Arial", sans-serif;
+  font-weight:500;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  transform: scale(1,1);
+  letter-spacing:0.2rem;
+  padding: 0.1rem 0 0.1rem 0.25rem;
+  white-space: nowrap;
+  margin:0 0.5rem;
+  border-radius: 0.25rem;
+}
