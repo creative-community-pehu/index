@@ -37,7 +37,7 @@
 }
 #abi .abi_more img {
     width:55%;
-    max-width:555px;
+    max-width:450px;
 }
 #abi .abi_more img:hover {
     transform:scale(1.5);
