@@ -1,3 +1,30 @@
+#Essay.content_section {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#Essay .item_name {
+    text-align: center;
+    line-height: 250%;
+    padding: 0;
+    background-color: #fffbe6;
+}
+#Essay .comment1 {
+    padding: 2.5rem 4.5vw 0;
+    font-size: 1.1rem;
+    line-height: 200%;
+}
+#Essay .comment1 .by {
+    text-align: center;
+}
+#Essay .comment1 .by u {
+    background:#43B149;
+    text-decoration: none;
+    padding: 2.5px;
+}
+#Essay .comment2 {
+    padding: 2.5vw;
+    line-height: 200%;
+}
+
 #plugin2 #symbol {
     width: 15rem;
     height: 12.5rem;
