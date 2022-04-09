@@ -11,7 +11,7 @@ p {
 }
 
 a {
-    overflow: hidden;
+    word-break: break-all;
     text-decoration: none;
     color: #000;
 }
@@ -20,7 +20,9 @@ ul, ol, li, dl, dt, dd {
     list-style: none;
 }
 
-footer::after {
+header::after,
+footer::after,
+#itemdetail .item::after {
     content: "";
     clear: both;
     height: 0;
@@ -40,7 +42,6 @@ input[type="button"] {
 input[type="submit"] {
     color: #000;
     font-size: 1rem;
-    border: #000 solid 1px;
     background-color: #fff;
     padding: 0.25rem 0.5rem;
     border-radius: 2rem;
@@ -53,6 +54,8 @@ hr {
     border: none;
     clear: both;
 }
+
+.price_0 {display:none;}
 
 /*============================================================
 	common - element style
@@ -86,7 +89,12 @@ input[type="submit"].nlc_style,
 #member .menber_menu a,
 #member input[type="submit"]:hover,
 #signup input[type="submit"]:hover,
-#signup dd::after {
+#signup dd::after,
+#regi_checkout dd::after,
+#itemdetail .comment1 a,
+#itemdetail .comment2 a,
+.infourl a:hover,
+input[type="submit"].buynow:hover {
     text-decoration: none;
     background: linear-gradient(90deg, #b3cbf6, #FFC778, #eee);
     background-size: 400% 400%;
@@ -102,7 +110,14 @@ input[type="submit"].nlc_style:hover,
 #signup dt,
 #inquiry dt,
 #member .list_form dd:nth-last-of-type(1) a:hover,
-#member .menber_menu a:hover {
+#member .menber_menu a:hover,
+input[type="submit"].buynow,
+#itemdetail .comment1 a:hover,
+#itemdetail .comment2 a:hover,
+.infourl a,
+#itemdetail .infourl a,
+#regi_checkout dt,
+#plugin1 .close:hover {
     color: #fff;
     background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
     background-size: 400% 400%;
@@ -145,14 +160,17 @@ input[type="submit"].nlc_style:hover,
 #laws dd,
 #member dd,
 #signup dd,
-#inquiry dt {
+#inquiry dt,
+#itemdetail .comment1 b,
+#regi_checkout .order u,
+.infourl {
     font-family: 'Times New Roman', serif;
     font-weight:500;
     font-stretch: condensed;
     font-variant: common-ligatures tabular-nums;
     transform: scale(1,1.1);
-    letter-spacing: -0.01rem;
-    word-spacing: -.1rem;
+    letter-spacing: -0.1rem;
+    word-spacing: -.25rem;
 }
 .nlc_style .strong {
     font-size: 150%;
@@ -164,8 +182,7 @@ input[type="submit"].nlc_style:hover,
 }
 
 .greeting i,
-#shopinfo.info_detail .shopinfo_comment i,
-#itemdetail .comment1 a {
+#shopinfo.info_detail .shopinfo_comment i {
     font-family: 'Times New Roman', serif;
     font-size: 125%;
     font-weight: 500;
@@ -201,14 +218,14 @@ input[type="submit"].nlc_style:hover,
 }
 
 #header .category_menu {
-    float: right;
+    float: left;
     position: relative;
 }
 #header .login_menu {
     float: left;
 }
 #header .cart_menu,
-#header .user_menu {
+#header .search_menu {
     float: right;
 }
 #header .hello {
@@ -216,6 +233,22 @@ input[type="submit"].nlc_style:hover,
     line-height: 100%;
 }
 
+#header .search_menu input[type="text"] {
+    color:#000;
+    background-color: rgba(255,255,255,5.5);
+    border: 2px solid red;
+    padding: 0.5rem 1rem;
+    width:25vw;
+    font-size: 1.25rem;
+}
+#header .search_menu input[type="submit"].search_icon {
+    color: #000;
+    border: #000 solid 2px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-size: 125%;
+    margin-left: 0.5rem;
+}
 .icon {
     background-repeat: no-repeat;
     background-position: left top;
@@ -285,6 +318,7 @@ footer {
 
 #faqs {
     margin-bottom: 2.5rem;
+padding-right:250px;
 }
 #faqs a {
     font-family:"YuGothic","Yu Gothic","Arial", sans-serif;
@@ -372,7 +406,12 @@ footer {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
 }
+#header input[type="submit"].logout {
+    font-size: 1.25rem;
+    border: #000 solid 1px;
+}
 .menu input[type="submit"].search_icon:hover,
+#header .search_menu input[type="submit"].search_icon:hover,
 #pwreissue input[type="submit"]:hover {
     color: #fff;
     background:red;
@@ -438,13 +477,7 @@ a.advertisement {
 }
 #plugin1 .close:hover {
     cursor:pointer;
-    color: #fff;
     opacity: 0.5;
-    background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
-    background-size: 400% 400%;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: #fff;
-    animation: gradientBG 2.5s ease infinite;
 }
 
 .mousedragscrollable {
@@ -498,9 +531,6 @@ a.advertisement {
     margin-right: 1rem;
     overflow: hidden;
 }
-.mousedragscrollable .plugin_contents:nth-last-of-type(1) {
-    margin-right: 0;
-}
 .mousedragscrollable .plg_body {
     width: 100%;
     height: 100%;
@@ -511,6 +541,53 @@ a.advertisement {
     user-select: none;
 }
 
+#plugin2 #symbol {
+    width: 15rem;
+    height: 12.5rem;
+    position: relative;
+    margin: 2.5rem auto;
+    background:#43B149;
+    border-radius: 50rem;
+    animation-name: wakaba;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    animation-direction:alternate;
+}
+#plugin2 #symbol::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background:#000;
+    animation-name: rotate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+    animation-direction:alternate;
+}
+  
+@keyframes wakaba {
+    from  {border-radius: 45rem 55rem;}
+    to  {border-radius: 50rem;}
+}
+
+@keyframes rotate {
+    from  {
+      width: 5rem;
+      height: 2.5rem;
+      bottom:0%; right: 10%;
+      margin: 2.5%;
+      transform:translate(-0%, -0%) skewX(-60deg);
+    }
+    to  {
+        width: 14.5rem;
+        height: 12rem;
+        border-radius: 50rem;
+        bottom:0%; right: 0%;
+        transform:translate(-0%, -0%) skewX(-5deg);
+    }
+}
 /*============================================================
 	Common - Base layout
 ============================================================*/
@@ -551,7 +628,10 @@ a.advertisement {
  #inquiry,
  #withdraw,
  #checkcart .message,
- #member dl {
+ #member dl,
+ #login_page,
+ #regi_checkout,
+ #complete {
      width: 100%;
      max-width: 750px;
  }
@@ -561,7 +641,10 @@ a.advertisement {
  #signup,
  #inquiry,
  #withdraw,
- #checkcart .message {
+ #checkcart .message,
+ #login_page,
+ #regi_checkout,
+ #complete {
      padding: 1rem;
      margin:2.5rem auto;
      background-color: rgba(255,255,255,5.5);
@@ -589,8 +672,360 @@ a.advertisement {
 }
 
 /*===============================================
+	Page - itemdetail
+================================================= */
+#itemdetail {margin: 0;}
+#itemdetail .itemdetail_info {
+    width: 95%;
+    max-width: 1250px;
+    margin: 2.5rem auto;
+    position: relative;
+}
+#itemdetail .item_name {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  word-break: break-all;
+}
+
+#itemdetail a {
+  font-size:110%;
+  line-height: 250%;
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.5rem;
+}
+#itemdetail a:hover {
+  font-style:italic;
+}
+
+#itemdetail b {font-size: 150%;}
+#itemdetail i {font-size: 125%;}
+
+#itemdetail p {
+  margin: 1rem 0;
+}
+#itemdetail hr {
+  margin: 2.5rem 0;
+  clear: both;
+  border:none;
+}
+
+#itemdetail .itemdetail_image {
+    float: left;
+    display: inline-block;
+    width: 55%;
+    margin-right: 4.5vw;
+    margin-bottom: 1rem;
+    max-width: 750px;
+}
+
+#itemdetail .itemdetail_image .thumb {
+  text-align: center;
+  float: left;
+  width: 7.5rem;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+#itemdetail .itemdetail_image .thumb img {
+  width: 100%;
+}
+
+#itemdetail .itemdetail_image .thumb:first-child {
+  width: 100%;
+}
+
+#itemdetail .comment1 {
+  font-size: 1.25rem;
+  line-height: 200%;
+}
+
+#itemdetail .item_price {
+  font-size: 1.5rem;
+  margin: 4.5rem 0 1rem;
+  clear: both;
+}
+#itemdetail .price_replace {
+  font-size: 175%;
+  margin-right: 0.5rem;
+}
+#itemdetail .item_price_normal {
+  font-size: 55%;
+}
+#itemdetail .item .item_type,
+#itemdetail .item .item_stock,
+#itemdetail .item .item_count {
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+  float: left;
+}
+input[type="submit"].buynow {
+    display: inline-block;
+    width: 100%;
+    margin: 2.5rem 0;
+    border: #fff solid 2px;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 500;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+.infourl {text-align: center;}
+.infourl a,
+#itemdetail .infourl a {
+    display: inline-block;
+    margin: 2rem 0;
+    border: #fff solid 2px;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    border-radius: 5rem;
+    text-align: center;
+}
+input[type="submit"].buynow:hover,
+.infourl a:hover,,
+#itemdetail .infourl a:hover {
+    border: #000 solid 2px;
+}
+
+
+#itemdetail .item_comment {
+  margin: 4.5vw auto;
+  clear: both;
+}
+
+#itemdetail .comment2 {
+  font-size: 1rem;
+  margin: 2.5rem auto;
+  max-width:1500px;
+  width: 95%;
+  position: relative;
+}
+
+#itemdetail #images {
+	width:100%;
+	padding:1rem 0;
+	margin:auto;
+	position:relative;
+	clear:both;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+#itemdetail #images span {
+    flex: none;
+	scroll-snap-align:start;
+	padding:0; margin-right:2rem;
+	height:55vw;
+	max-height:450px;
+}
+#itemdetail #images img {
+	height:100%;
+	border:solid 0.1vw #000;
+}
+#itemdetail #images:before {
+    content:"→";
+    z-index:1;
+    bottom:0;
+    left:01rem;
+    position:absolute;
+    font-size:4.5rem;
+}
+
+#itemdetail iframe {
+	border:solid 0.25vw #000;
+	color:#000;
+	display:block;
+	margin:2.5rem auto;
+	border-radius:5vw;
+    width:80vw; height:45vw;
+}
+
+#itemdetail #wholesale {
+	border:solid 1px #000;
+	color:#000;
+    max-width: 45rem;
+    width: 95%;
+	display:block;
+	margin:1rem auto 2.5rem;
+    padding: 0.5rem 1rem;
+}
+#itemdetail #wholesale a {
+	border:solid 1px #000;
+    border-radius: 2rem;
+	color:#000;
+    text-align: center;
+	display:block;
+	margin:1rem auto 1.5rem;
+    padding: 0.5rem;
+}
+
+#itemdetail .limited_notlogin_notice {
+    margin:4.5rem auto;
+    padding: 2.5rem;
+    width: 95%;
+}
+
+/*===============================================
+	Section - recommend (おすすめ商品)
+================================================= */
+
+ul#recommend {
+    font-family: Arial;
+    font-weight:500; font-size:1.5rem;
+    margin: 4.5rem auto 4.5vw;
+    max-width:1250px;
+    width: 95%;
+    position: relative;
+}
+
+ul#recommend h2 {
+    font-weight: 500;
+    text-decoration:underline;
+    margin-bottom: 1rem;
+}
+ul#recommend li {
+	position:relative;
+	padding:0.5rem;
+    width: 100%;
+    clear: both;
+}
+ul#recommend li img {
+    width: 15%;
+	max-width:5rem; 
+    float:left;
+	margin-right:2.5vw;
+}
+ul#recommend li .title {
+    padding: 1vw 0;
+    display: inline-block;
+    float:left;
+    width: 80%;
+}
+ul#recommend li a {
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+}
+ul#recommend li a:hover {
+    color:red;
+}
+
+/*===============================================
 	Page - checkcart (カートの中身)
 ================================================= */
+
+#checkcart
+{width:95%; max-width: 1250px; margin:4.5rem auto;}
+
+#checkcart .edit a,
+#checkcart .count input[type="submit"],
+#checkcart .count select {
+	font-size:1rem;
+	margin-right:0; padding:0.5rem;
+	border:1px solid #000;
+	border-radius:3rem;
+}
+#checkcart .count select {width:75%; max-width: 3rem;}
+
+#checkcart .table {
+	width:100%;
+	position:relative;
+	top:0; left:0;
+	padding-bottom:2.5rem;
+}
+#checkcart .tr1 {
+	font-size:120%;
+	padding:1rem;
+}
+#checkcart .tr2 {
+	font-size:125%;
+	padding:2.5rem;
+}
+#checkcart .tr3 {
+	font-size:150%;
+	padding:1rem 0;
+}
+.prev_cart a {font-size: 1.5rem; padding: 1rem;}
+
+#regi_checkout .list {
+    position:relative;
+    padding: 2.5rem 0;
+}
+#regi_checkout .item {
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#regi_checkout .item p {
+    display: inline-block;
+    padding-right: 2.5%;
+}
+#regi_checkout .item .name {
+    font-size: 150%;
+    width: 65%;
+}
+#regi_checkout .item .select {
+    font-size: 100%;
+    width: 10%;
+    text-align: center;
+}
+#regi_checkout .item .price {
+    font-size: 100%;
+    width: 20%;
+    text-align: right;
+}
+#regi_checkout .order {
+    font-size: 120%;
+}
+#regi_checkout .order p {
+    padding: 1rem 0;
+}
+#regi_checkout .order b,
+#regi_checkout .order .tortal {
+    font-size: 125%;
+    font-weight: 500;
+}
+#regi_checkout .order b {
+    float:right;
+}
+#regi_checkout .order u {
+    font-size: 150%;
+    float:right;
+    margin-left: 2rem;
+}
+
+.list .td3 font
+{display:none;}
+.list .td3 input
+{margin-right:1vw;}
+.list .td3 
+{font-size:2vw;}
+.list .td4 
+{font-size:1vw;}
+.list .td4 input[type="text"]
+{font-size:2vw;}
+.list th {width:25vw; text-align:left;}
+
+#international {
+	color:red;
+	font-size:150%;
+	line-height:60%;
+	pointer-events:none;
+	position:absolute;
+	z-index:100; top:1%;
+}
+#international span {
+	font-size:75%;
+	line-height:200%;
+}
+
+
 #checkcart .message h1 {
     font-size: 3.5rem;
     font-weight: 500;
@@ -746,10 +1181,14 @@ a.advertisement {
 #signup dl {
     margin:4.5rem auto;
 }
+#regi_checkout dl {
+    margin:2.5rem auto 0;
+}
 
 #laws dt,
 #member dt,
-#signup dt {
+#signup dt,
+#regi_checkout dt {
     font-weight: bold;
     float: left;
     margin: 0 1rem 0 0;
@@ -758,7 +1197,8 @@ a.advertisement {
 }
 
 #member dd,
-#signup dd {
+#signup dd,
+#regi_checkout dd {
     font-size: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
@@ -768,37 +1208,68 @@ a.advertisement {
     display: inline-block;
 }
 
+.list_form dd font {
+  content: "";
+  position: absolute;
+  top:0.5rem;
+  right:0;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
 #member dd::after,
-#signup dd::after {
+#signup dd::after,
+#regi_checkout dd::after {
   content: "";
   position: absolute;
   top:-1.5rem;
   right:0;
   display: inline-block;
   font-size: 1rem;
+}
+
+#member dd::after,
+#signup dd::after {
   border-bottom: #000 solid 1px;
 }
 
-#signup dd:nth-of-type(1)::after {
+#signup dd:nth-of-type(1)::after,
+#regi_checkout .info_regist dd:nth-of-type(1)::after {
   content: "ID";
 }
-#signup dd:nth-of-type(2)::after {
+#signup dd:nth-of-type(2)::after,
+#regi_checkout .info_regist dd:nth-of-type(2)::after {
   content: "Pass";
 }
-#signup dd:nth-of-type(3)::after {
+#signup dd:nth-of-type(3)::after,
+#regi_checkout .info_user dd:nth-of-type(1)::after {
   content: "Name";
 }
-#signup dd:nth-of-type(4)::after {
+#signup dd:nth-of-type(4)::after,
+#regi_checkout .info_user dd:nth-of-type(2)::after {
   content: "Email";
 }
-#signup dd:nth-of-type(5)::after {
+#regi_checkout .info_user dd:nth-of-type(3)::after {
+  content: "Email (Confirmation)";
+}
+#signup dd:nth-of-type(5)::after,
+#regi_checkout .info_user dd:nth-of-type(4)::after {
   content: "TEL";
 }
-#signup dd:nth-of-type(6)::after {
+#signup dd:nth-of-type(6)::after,
+#regi_checkout .info_user dd:nth-of-type(5)::after {
   content: "ZIP";
 }
-#signup dd:nth-of-type(7)::after {
+#signup dd:nth-of-type(7)::after,
+#regi_checkout .info_user dd:nth-of-type(6)::after {
   content: "Address";
+}
+#regi_checkout .info_user dd:nth-of-type(8)::after {
+  content: "Note";
+}
+
+#regi_checkout .info_how dd:nth-of-type(1)::after {
+  content: "Payment Method";
 }
 
 .message {
@@ -944,10 +1415,22 @@ select {
     for mobile
 ================================================= */
 
+@media screen and (max-width: 750px){
+    #itemdetail .itemdetail_image {
+      width: 100%;
+      margin-right: 0;
+    }
+    ul#recommend {
+        font-size:1.25rem;
+    }
+}
+
 @media screen and (max-width: 950px){
 input[type="submit"].nlc_style,
 #member input[type="submit"]:hover,
-#signup input[type="submit"]:hover {
+#signup input[type="submit"]:hover,
+#itemdetail .comment1 a,
+#itemdetail .comment2 a {
     color: #fff;
     -webkit-background-clip: border-box;
     -webkit-text-fill-color: #fff;
@@ -961,5 +1444,8 @@ input[type="submit"].nlc_style,
 }
 footer {
     font-size: 1rem;
+}
+#faqs {
+    padding-right:0;
 }
 }
