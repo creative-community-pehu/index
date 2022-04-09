@@ -6,6 +6,9 @@
     width:30vw;
     max-width: 250px;
 }
+#abi h2 {
+    width:65%;
+}
 #abi .comment1 #big {
     display:inline-block;
     font-size:0.75rem;
