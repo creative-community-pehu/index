@@ -1,0 +1,49 @@
+
+
+#plugin2 #symbol {
+    width: 15rem;
+    height: 12.5rem;
+    position: relative;
+    margin: 2.5rem auto;
+    background:#43B149;
+    border-radius: 50rem;
+    animation-name: wakaba;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    animation-direction:alternate;
+}
+#plugin2 #symbol::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background:#000;
+    animation-name: rotate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+    animation-direction:alternate;
+}
+  
+@keyframes wakaba {
+    from  {border-radius: 45rem 55rem;}
+    to  {border-radius: 50rem;}
+}
+
+@keyframes rotate {
+    from  {
+      width: 5rem;
+      height: 2.5rem;
+      bottom:0%; right: 10%;
+      margin: 2.5%;
+      transform:translate(-0%, -0%) skewX(-60deg);
+    }
+    to  {
+        width: 14.5rem;
+        height: 12rem;
+        border-radius: 50rem;
+        bottom:0%; right: 0%;
+        transform:translate(-0%, -0%) skewX(-5deg);
+    }
+}
