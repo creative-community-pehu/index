@@ -1,7 +1,8 @@
+.goout {font-family: "Kristina";}
 @font-face {
   font-family: "Kristina";
-  src: url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf"),
-  url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf");
+  src: url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf"),
+  url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf");
 }
 
 @font-face {
@@ -19,10 +20,10 @@
 }
 
 #cover {
+    font-family: "Kristina";
     background:lemonchiffon;
     width: 100%;
     height: 100%;
-    font-family: "Kristina";
 }
 #cover .center {
     position: absolute;
