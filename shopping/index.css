@@ -129,6 +129,7 @@ input[type="submit"].nlc_style,
 #signup input[type="submit"]:hover,
 #signup dd::after,
 #regi_checkout dd::after,
+#shopinfo.info_detail .shopinfo_comment a,
 #itemdetail .comment1 a,
 #itemdetail .comment2 a,
 .infourl a:hover,
@@ -151,6 +152,7 @@ input[type="submit"].nlc_style:hover,
 #member .list_form dd:nth-last-of-type(1) a:hover,
 #member .menber_menu a:hover,
 input[type="submit"].buynow,
+#shopinfo.info_detail .shopinfo_comment a:hover,
 #itemdetail .comment1 a:hover,
 #itemdetail .comment2 a:hover,
 .infourl a,
@@ -232,13 +234,16 @@ input[type="submit"].buynow,
     font-weight: 500;
 }
 
-.greeting b {
+.greeting b,
+#shopinfo.info_detail .shopinfo_comment b,
+#shopinfo.info_detail .shopinfo_comment strong {
     font-size: 125%;
     font-weight: 500;
 }
 
 .greeting i,
-#shopinfo.info_detail .shopinfo_comment i {
+#shopinfo.info_detail .shopinfo_comment i,
+#shopinfo.info_detail .shopinfo_comment em {
     font-family: 'Times New Roman', serif;
     font-size: 125%;
     font-weight: 500;
@@ -612,7 +617,7 @@ footer {
 }
 
 #shopinfo.info_detail .content_section {
-    width: 80%;
+    width: 90%;
     max-width: 750px;
     margin: auto;
 }
@@ -635,8 +640,9 @@ footer {
 }
 
 #shopinfo.info_detail .shopinfo_comment {
-    font-size: 1rem;
-    margin: 2.5rem 0;
+    font-size: 1.25rem;
+    line-height: 200%;
+    margin: 2.5rem 0 4.5rem;
 }
 
 #shopinfo.info_detail .shopinfo_comment a {
@@ -647,6 +653,19 @@ footer {
     margin: 0.5rem 0;
     font-size: 110%;
     text-align: center;
+}
+
+#shopinfo.info_detail .shopinfo_comment img {
+    max-width: 100%;
+}
+
+#shopinfo.info_detail .shopinfo_comment .news {
+    display: block;
+    margin: 2.5rem 0;
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+    border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
+    border-image-slice: 1;
 }
 
 
@@ -1295,6 +1314,7 @@ ul#recommend li a:hover {
 #checkcart {
     width: 95%;
     max-width: 1250px;
+    padding: 1rem;
     margin: 4.5rem auto;
 }
 
@@ -1521,6 +1541,10 @@ ul#recommend li a:hover {
 	Page - member (会員ページ)
 ================================================= */
 
+#member dl {
+    padding: 0 1rem;
+}
+
 #member .list_form dt:nth-last-of-type(1) {
     display: none;
 }
@@ -1578,6 +1602,7 @@ ul#recommend li a:hover {
 #laws .contents_body,
 #inquiry .form_inquiry {
     margin: 4.5rem auto;
+    padding: 1rem;
 }
 
 #laws dd {
@@ -1921,6 +1946,9 @@ select {
     }
     #shopinfo.info_top ul {
         margin-left: 4.25rem;
+    }
+    #shopinfo.info_detail .shopinfo_comment {
+        font-size: 1rem;
     }
     footer {
         font-size: 1rem;
