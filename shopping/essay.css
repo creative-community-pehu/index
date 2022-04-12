@@ -1,42 +1,50 @@
 #Essay.content_section {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 #Essay .item_name {
     text-align: center;
     line-height: 250%;
     padding: 0;
     background-color: #fffbe6;
 }
+
 #Essay .comment1 {
     padding: 2.5rem 4.5vw 0;
     font-size: 1.1rem;
     line-height: 200%;
 }
+
 #Essay .comment1 .by {
     text-align: center;
 }
+
 #Essay .comment1 .by u {
-    background:#43B149;
+    background: #43B149;
     text-decoration: none;
     padding: 2.5px;
 }
-#Essay .comment2 {
+
+#Essay .comment2 p {
     padding: 2.5vw;
     line-height: 200%;
     font-size: 1rem;
 }
+
 #Essay .comment2 .date {
     text-align: right;
     font-size: 75%;
     margin-top: 4.5rem;
 }
+
 #Essay .comment2 .date::before {
     content: "Posted on";
     margin-right: 0.5rem;
 }
+
 #Essay .comment2 .date u {
-    color:#fff;
-    background:#43B149;
+    color: #fff;
+    background: #43B149;
     text-decoration: none;
     padding: 1px 2.5px;
 }
@@ -46,45 +54,52 @@
     height: 12.5rem;
     position: relative;
     margin: 2.5rem auto;
-    background:#43B149;
+    background: #43B149;
     border-radius: 50rem;
     animation-name: wakaba;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-timing-function:ease-out;
-    animation-direction:alternate;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
 }
+
 #plugin2 #symbol::after {
     content: "";
     position: absolute;
     z-index: -1;
     display: block;
-    background:#000;
+    background: #000;
     animation-name: rotate;
     animation-duration: 25s;
     animation-iteration-count: infinite;
-    animation-timing-function:ease-in;
-    animation-direction:alternate;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
 }
-  
+
 @keyframes wakaba {
-    from  {border-radius: 45rem 55rem;}
-    to  {border-radius: 50rem;}
+    from {
+        border-radius: 45rem 55rem;
+    }
+    to {
+        border-radius: 50rem;
+    }
 }
 
 @keyframes rotate {
-    from  {
-      width: 5rem;
-      height: 2.5rem;
-      bottom:0%; right: 10%;
-      margin: 2.5%;
-      transform:translate(-0%, -0%) skewX(-60deg);
+    from {
+        width: 5rem;
+        height: 2.5rem;
+        bottom: 0%;
+        right: 10%;
+        margin: 2.5%;
+        transform: translate(-0%, -0%) skewX(-60deg);
     }
-    to  {
+    to {
         width: 14.5rem;
         height: 12rem;
         border-radius: 50rem;
-        bottom:0%; right: 0%;
-        transform:translate(-0%, -0%) skewX(-5deg);
+        bottom: 0%;
+        right: 0%;
+        transform: translate(-0%, -0%) skewX(-5deg);
     }
 }
