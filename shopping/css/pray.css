@@ -1,33 +1,47 @@
-#piece {
-    border: 0.25vw solid #F3C5C6;
-    padding: 2.5vw;
-    border-radius: 5vw;
+.peace {
+    padding: 0 2.5vw;
+    font-family: "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", "HGMaruGothicMPRO";
 }
 
-#piece a {
+.peace a {
     background-color: #F3C5C6;
     color: #fff;
     border-radius: 5vw;
 }
 
-#piece u {
+.peace i {
+    font-style: normal;
+    font-size: 150%;
+}
+
+.peace u {
     background-color: #F3C5C6;
     color: #fff;
-    border-radius: 5vw;
-    padding: 2vw 1vw 1vw;
+    border-radius: 2.5rem;
+    padding: 1.25rem 1rem 0.75rem;
+    line-height: 300%;
     text-decoration: none;
+    font-size: 75%;
+}
+
+.piece {
+    border: 2px solid #F3C5C6;
+    padding: 0.5rem 2.5vw;
+    border-radius: 2rem;
+    clear: both;
 }
 
 #pray {
-    padding: 1vw 5vw;
-    margin: 2.5vw;
+    padding: 2.5vw 5vw;
     background-color: #F3C5C6;
     color: #fff;
-    border-radius: 10vw;
+    border-radius: 2.5vw;
+    line-height: 200%;
     -webkit-filter: blur(0.5vw);
     filter: blur(0.5vw);
     animation-name: back;
     animation-duration: 2s;
+    font-family: "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", "HGMaruGothicMPRO";
 }
 
 #pray:hover {
@@ -38,7 +52,8 @@
 }
 
 #pray .by {
-    font-size: 125%;
+    text-align: center;
+    margin-bottom: 4.5vw;
 }
 
 #pray img {
