@@ -5,7 +5,7 @@
 #Essay .item_name {
     text-align: center;
     line-height: 250%;
-    padding: 0;
+    padding: 0 1rem;
     background-color: #fffbe6;
 }
 
@@ -26,7 +26,7 @@
 }
 
 #Essay .comment2 p {
-    padding: 2.5vw;
+    padding: 0.5rem 2.5vw;
     line-height: 200%;
     font-size: 1rem;
 }
