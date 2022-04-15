@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Kristina";
+    src: url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf"), url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf");
+}
+
+@font-face {
+    font-family: "DiaPro";
+    src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+}
+
+#GoOut.contents_inner {
+    padding: 0 0 1rem;
+    background: lemonchiffon;
+}
+
+#GoOut .item_name {
+    font-family: "Kristina", "DiaPro";
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.5rem;
+    padding: 4.5rem 0 1.25vw;
+    transform: scale(1, 1.5);
+    color: lightskyblue;
+    animation: 0.75s linear infinite alternate play;
+}
+
+@keyframes play {
+    from {
+        letter-spacing: 0.1rem
+    }
+    to {
+        letter-spacing: .25rem
+    }
+}
+
+@-webkit-keyframes play {
+    from {
+        letter-spacing: 0.1rem
+    }
+    to {
+        letter-spacing: .25rem
+    }
+}
+
+#GoOut .itemdetail_image {
+    display: none;
+}
+
+#GoOut .comment1 {
+    padding: 2.5rem 4.5vw 0;
+    font-family: "Gill Sans";
+    font-size: 90%;
+    line-height: 200%;
+    text-transform: uppercase;
+}
+
+#GoOut .comment2 p {
+    padding: 0 2.5vw 0;
+    font-family: "DiaPro";
+}
+
+@media screen and (max-width: 750px) {
+    #GoOut .item_name {
+        font-size: 1.25rem;
+    }
+}
