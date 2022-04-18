@@ -24,6 +24,10 @@
     animation: 0.75s linear infinite alternate play;
 }
 
+#GoOut .by {
+    text-align: center;
+}
+
 @keyframes play {
     from {
         letter-spacing: 0.1rem

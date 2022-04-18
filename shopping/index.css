@@ -1059,6 +1059,17 @@ input[type="submit"].buynow:hover,
     position: relative;
 }
 
+#itemdetail .comment2 p {
+    line-height: 200%;
+}
+
+#itemdetail .comment2 .moreinfo {
+    font-size: 1vw;
+    padding: 1.5vw;
+    margin: 0 0 2.5vw;
+    background-color: #eee;
+}
+
 #itemdetail #images {
     width: 100%;
     padding: 1rem 0;
@@ -1907,6 +1918,9 @@ select {
     }
     #itemdetail .comment2 {
         font-size: 1rem;
+    }
+    #itemdetail .comment2 .moreinfo {
+        font-size: 0.75rem;
     }
     ul#recommend {
         font-size: 1.25rem;
