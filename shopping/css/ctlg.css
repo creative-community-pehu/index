@@ -1,7 +1,3 @@
-#VG_CTLG {
-    font-family: 'Great Vibes', cursive;
-}
-
 #VG_CTLG .item_name,
 #VG_CTLG .comment1 a {
     transform: scale(1, 2);
@@ -9,6 +5,7 @@
 
 #VG_CTLG .item_name {
     padding: 1rem 0;
+    font-family: 'Great Vibes', cursive;
 }
 
 #VG_CTLG .link {
