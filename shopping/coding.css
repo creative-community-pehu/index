@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/fontbook/NewYork.otf");
+}
+
+@font-face {
+    font-family: authenticsans;
+    src: url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-60.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-90.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-130.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-150.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-Condensed-60.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-Condensed-90.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-Condensed-130.otf), url(https://creative-community.space/coding/fontbook/family/authentic_sans/AUTHENTICSans-Condensed-150.otf)
+}
+
+#HowtoCoding {}
+
+#HowtoCoding .item_name {
+    font-family: "NewYork";
+}
+
+#HowtoCoding .comment1 {
+    font-family: "authenticsans";
+}
+
+#HowtoCoding .workshop {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75%;
+    transform: scale(1, 1.1);
+    letter-spacing: -.025rem;
+    word-spacing: -.025rem;
+    line-height: 150%;
+}
+
+#HowtoCoding .comment2 span {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 1rem 10%;
+    position: relative;
+    bottom: 2.5rem;
+}
