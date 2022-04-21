@@ -19,6 +19,8 @@
 }
 
 #HowtoCoding .workshop {
+    display: block;
+    position: relative;
     font-family: 'Times New Roman', Times, serif;
     font-size: 75%;
     transform: scale(1, 1.1);
