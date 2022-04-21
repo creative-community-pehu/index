@@ -189,7 +189,7 @@ we.are.pe.hu@gmail.com
 </div>
 
 <script src="now.js"></script>
-<script src="https://creative-community.space/coding/js/p5/sketch.js"></script>
+<script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">

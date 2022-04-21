@@ -224,7 +224,7 @@ li {list-style: none;}
 
 <script src="/ver/searchBox.js"></script>
 <script src="https://creative-community.space/coding/js/randomcolor.js"></script>
-<script src="https://creative-community.space/coding/js/hsl/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://creative-community.space/coding/js/hsl/jquery-min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 $(function() {
