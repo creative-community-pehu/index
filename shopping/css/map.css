@@ -28,6 +28,11 @@
     text-align: center;
 }
 
+#GoOut .comment2 .moreinfo {
+    background: #fff;
+    color: lightskyblue;
+}
+
 @keyframes play {
     from {
         letter-spacing: 0.1rem
