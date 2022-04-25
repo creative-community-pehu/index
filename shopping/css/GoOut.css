@@ -68,6 +68,16 @@
     font-family: "DiaPro";
 }
 
+@media screen and (max-width: 920px) {
+    #GoOut .item_name {
+        font-size: 1.25rem;
+    }
+    #GoOut .item_name {
+        letter-spacing: 0.25rem;
+        animation: 0 none;
+    }
+}
+
 @media screen and (max-width: 750px) {
     #GoOut .item_name {
         font-size: 1.25rem;
