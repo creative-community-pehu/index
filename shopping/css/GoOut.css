@@ -31,6 +31,7 @@
 #GoOut .comment2 .moreinfo {
     background: #fff;
     color: #000;
+    text-align: center;
 }
 
 @keyframes play {
@@ -75,6 +76,9 @@
     #GoOut .item_name {
         letter-spacing: 0.25rem;
         animation: 0 none;
+    }
+    #GoOut .comment2 .moreinfo {
+        text-align: left;
     }
 }
 
