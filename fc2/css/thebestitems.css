@@ -58,7 +58,7 @@
     display: block;
     position: relative;
     width: 400px;
-    max-width: 100%;
+    max-width: 75vw;
     height: 10rem;
     background-size: cover;
     background-image: url(https://cart-imgs.fc2.com/upfile/pehu/abi_logo_2.jpg);
