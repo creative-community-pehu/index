@@ -8,10 +8,6 @@
     padding: 1rem 0;
 }
 
-#VG_CTLG .link {
-    padding: 4.5rem 0 0;
-}
-
 #VG_CTLG.content_section::before {
     content: 'VG CTLG';
     transform: scale(1, 5);

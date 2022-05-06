@@ -1528,10 +1528,18 @@ Section - hotitem (売れ筋商品)
 }
 
 #hotitem h2 {
+    font-size: 3rem;
     font-weight: 500;
-    text-decoration: underline;
-    margin-bottom: 1rem;
+    padding: 1rem 0 2rem;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hotitem h2 i {
+    border: solid 2px #000;
+    color: #000;
+    padding: 0.25rem 3rem;
+    border-radius: 5rem;
 }
 
 #hotitem .mousedragscrollable {
@@ -1545,17 +1553,18 @@ Section - hotitem (売れ筋商品)
 
 #hotitem .mousedragscrollable div {
     display: block;
-    width: 15vw;
-    height: 15vw;
+    width: 25vw;
+    height: 25vw;
     max-width: 7.5rem;
     max-height: 7.5rem;
-    margin: 0 0.5rem 0 0;
+    margin: 0 0.5rem 0.5rem 0;
     scroll-snap-align: start;
 }
 
 #hotitem .mousedragscrollable div img {
-    width: 15vw;
-    height: 15vw;
+    width: auto;
+    width: 25vw;
+    height: 25vw;
     max-width: 7.5rem;
     max-height: 7.5rem;
 }
@@ -2217,7 +2226,7 @@ for mobile
     }
     .greeting b,
     .greeting i {
-        display: block;
+        font-size: 150%;
     }
     #member .greeting {
         padding-bottom: 0;
@@ -2259,6 +2268,14 @@ for mobile
         font-size: 1rem;
         margin: 0 1vw;
     }
+    #hotitem h2 {
+        font-size: 5.5vw;
+        padding: 2.5vw 0 4.5vw;
+    }
+    #hotitem h2 i {
+        padding: 0.5vw 4.5vw;
+        border-radius: 5vw;
+    }
     #KonCheck:before {
         margin: -2.5vw 5% 0;
         font-size: 5vw;
@@ -2296,5 +2313,9 @@ for mobile
     }
     #itemlist .items p {
         margin-top: 1rem;
+    }
+    .greeting b,
+    .greeting i {
+        display: block;
     }
 }
