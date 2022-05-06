@@ -9,12 +9,6 @@
     src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
 }
 
-#∧°┐.content_section::before {
-    font-family: "MS Mincho", "SimSong", serif;
-    content: '∧°┐';
-    margin: 1rem 0;
-}
-
 #MembersOnly.content_section::before {
     font-family: 'Times New Roman', serif;
     content: 'Members Only';

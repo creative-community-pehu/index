@@ -57,9 +57,9 @@
     content: '';
     display: block;
     position: relative;
-    width: 400px;
-    max-width: 75vw;
+    width: 100%;
+    max-width: 450px;
     height: 10rem;
-    background-size: cover;
+    background-size: 100%;
     background-image: url(https://cart-imgs.fc2.com/upfile/pehu/abi_logo_2.jpg);
 }
