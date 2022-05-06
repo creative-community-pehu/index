@@ -24,14 +24,58 @@
     animation: 0.75s linear infinite alternate play;
 }
 
+#GoOut.content_section::before {
+    content: 'Go Out';
+    font-family: "Kristina";
+    display: block;
+    color: lightskyblue;
+    padding: 2.5rem;
+    margin: 1rem auto 2.5rem;
+    font-size: 4.5rem;
+    text-align: center;
+    animation: 0.75s linear infinite alternate play;
+}
+
+#GoOut.content_section {
+    padding: 1vw;
+    background: lemonchiffon;
+}
+
+#GoOut.content_section .item_noimage .name {
+    font-family: "Kristina", "DiaPro", serif;
+    display: block;
+}
+
+#GoOut .itemdetail_image {
+    display: none;
+}
+
 #GoOut .by {
     text-align: center;
 }
 
+#GoOut .comment1 {
+    padding: 2.5rem 4.5vw 0;
+    font-family: "Gill Sans";
+    font-size: 90%;
+    line-height: 200%;
+    text-transform: uppercase;
+}
+
+#GoOut .comment2 {
+    font-family: 'Libre Baskerville', "YuMincho", "Yu Mincho", "游明朝体", serif;
+}
+
+#GoOut .comment2 p {
+    padding: 0 2.5vw 0;
+}
+
+#GoOut .moreinfo,
 #GoOut .comment2 .moreinfo {
     background: #fff;
     color: #000;
     text-align: center;
+    font-family: "DiaPro";
 }
 
 @keyframes play {
@@ -52,23 +96,6 @@
     }
 }
 
-#GoOut .itemdetail_image {
-    display: none;
-}
-
-#GoOut .comment1 {
-    padding: 2.5rem 4.5vw 0;
-    font-family: "Gill Sans";
-    font-size: 90%;
-    line-height: 200%;
-    text-transform: uppercase;
-}
-
-#GoOut .comment2 p {
-    padding: 0 2.5vw 0;
-    font-family: "DiaPro";
-}
-
 @media screen and (max-width: 920px) {
     #GoOut .item_name {
         font-size: 1.25rem;
@@ -85,5 +112,13 @@
 @media screen and (max-width: 750px) {
     #GoOut .item_name {
         font-size: 1.25rem;
+    }
+    #GoOut.content_section .name {
+        display: none;
+    }
+    #GoOut .moreinfo b {
+        display: block;
+        clear: both;
+        margin-bottom: 1rem;
     }
 }

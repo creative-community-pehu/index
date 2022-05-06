@@ -1,0 +1,30 @@
+#VG_CTLG .item_name,
+#VG_CTLG.content_section .name {
+    font-family: 'Great Vibes', cursive;
+}
+
+#VG_CTLG .item_name {
+    transform: scale(1, 2);
+    padding: 1rem 0;
+}
+
+#VG_CTLG .link {
+    padding: 4.5rem 0 0;
+}
+
+#VG_CTLG.content_section::before {
+    content: 'VG CTLG';
+    transform: scale(1, 5);
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    padding: 10rem 0.5rem;
+    display: block;
+    position: fixed;
+    text-shadow: 1px 1px #fff;
+    top: -2.5rem;
+    right: 0;
+    font-size: 125%;
+    z-index: 100;
+    pointer-events: none;
+    user-select: none;
+}

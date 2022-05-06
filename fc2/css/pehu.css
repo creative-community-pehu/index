@@ -1,0 +1,41 @@
+.pehu {
+    font-family: "MS Mincho", "SimSong", serif;
+    display: inline-block;
+    line-height: 200%;
+}
+
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+}
+
+#∧°┐.content_section::before {
+    font-family: "MS Mincho", "SimSong", serif;
+    content: '∧°┐';
+    margin: 1rem 0;
+}
+
+#MembersOnly.content_section::before {
+    font-family: 'Times New Roman', serif;
+    content: 'Members Only';
+    margin: 1rem 1rem 0;
+    font-weight: 400;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    letter-spacing: -0.01rem;
+    word-spacing: -.1rem;
+    background: linear-gradient(90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientBG 5s ease infinite;
+}
+
+#MembersOnly.content_section .limited_icon {
+    display: none;
+}
+
+footer .pehu {
+    margin: 0 0.2rem 0 0.5rem;
+}

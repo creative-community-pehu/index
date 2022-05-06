@@ -8,6 +8,41 @@
     src: url(https://creative-community.space/coding/fontbook/family/Orchard-Linear.otf);
 }
 
+@font-face {
+    font-family: "ipag";
+    src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
+}
+
+#ChottoCrazy.content_section::before {
+    content: 'chotto crazy';
+    font-family: "Orchard";
+    display: block;
+    color: #fff;
+    font-style: italic;
+    padding: 2.5rem;
+    margin: 1rem auto 2.5rem;
+    font-size: 4.5rem;
+    text-align: center;
+    -webkit-text-stroke: 0.05rem #000;
+    text-stroke: 0.05rem #000;
+}
+
+#ChottoCrazy.content_section .name {
+    font-family: "Orchard", "ipag", monospace;
+}
+
+#ChottoCrazy.content_section .item_noimage .name {
+    font-size: 300%;
+    text-align: center;
+    -webkit-text-stroke: 0.05rem #000;
+    text-stroke: 0.05rem #000;
+}
+
+#ChottoCrazy.content_section .item_noimage {
+    color: #fff;
+    background: #eee;
+}
+
 #ChottoCrazy.contents_inner {
     background: #eee;
     padding-bottom: 1rem;
@@ -51,6 +86,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}
+
+#ChottoCrazy .comment2 .item_name::before {
+    display: none;
 }
 
 #ChottoCrazy u {
@@ -138,4 +177,56 @@
     margin: 0 auto 2vw;
     font-size: 2vw;
     display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+    #itemdetail .itemdetail_image {
+        width: 100%;
+        margin-right: 0;
+    }
+    #itemdetail .comment2 {
+        font-size: 1rem;
+    }
+    #itemdetail .comment2 .moreinfo {
+        font-size: 0.75rem;
+    }
+    ul#recommend {
+        font-size: 1.25rem;
+    }
+    #itemlist .items .item_inner,
+    #itemlist .items .item_inner:nth-child(n+6) {
+        width: 92.5vw;
+        margin: 0 auto 2rem;
+    }
+    #itemlist .items .item_image,
+    #itemlist .items .item_inner:nth-child(n+6) .item_image {
+        width: 100%;
+        max-height: 100vw;
+    }
+    #itemlist .items .item_image img,
+    #itemlist .items .item_inner:nth-child(n+6) .item_image img {
+        max-height: 100vw;
+    }
+    #itemlist .items .name {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #itemlist .items .item_image img {
+        max-width: 100%;
+        max-height: 90vw;
+    }
+    #itemlist .items .item_noimage {
+        height: 20rem;
+    }
+    .content_section::before {
+        font-size: 2.5rem;
+        display: inline-block;
+        margin: 1rem 0 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #ChottoCrazy .item_name::before {
+        display: none;
+    }
 }
