@@ -76,6 +76,20 @@
     animation-direction: alternate;
 }
 
+#Essay .submit a {
+    display: block;
+    width: 75%;
+    max-width: 25rem;
+    color: #fff;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background: #43B149;
+    border-radius: 50rem;
+}
+
 @keyframes wakaba {
     from {
         border-radius: 45rem 55rem;

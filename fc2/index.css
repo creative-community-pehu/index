@@ -694,7 +694,7 @@ Section - category_tabs
 
 #category_sub {
     position: relative;
-    padding: 1.5rem 0 2rem;
+    padding: 1.5rem 2.5vw 2rem;
     margin: 0 0;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
@@ -728,7 +728,7 @@ Section - category_tabs
 Page - itemlist
 ================================================= */
 
-#itemlist {
+#itemlist .content_section {
     padding: 0 2.5vw;
 }
 
@@ -1289,7 +1289,7 @@ input[type="submit"].buynow:hover,
     margin: 2.5rem auto;
     max-width: 1500px;
     width: 95%;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 4.5vw;
     position: relative;
 }
 
@@ -2255,7 +2255,7 @@ for mobile
         margin: 0.25rem;
     }
     #category_sub {
-        padding: 2rem 0 1rem;
+        padding: 2rem 2.5vw 1rem;
         font-size: 1rem;
         margin-bottom: 1rem;
     }
