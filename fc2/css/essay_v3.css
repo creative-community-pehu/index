@@ -38,7 +38,7 @@
 }
 
 #Essay .comment2 .date::before {
-    content: "Posted on";
+    content: "Posted";
     margin-right: 0.5rem;
 }
 
