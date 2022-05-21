@@ -1297,7 +1297,7 @@ input[type="submit"].buynow:hover,
     line-height: 200%;
 }
 
-#itemdetail .comment2 .moreinfo {
+#itemdetail .moreinfo {
     font-size: 1vw;
     padding: 1.5vw;
     margin: 0 0 2.5vw;
@@ -2171,7 +2171,7 @@ for mobile
     #itemdetail .comment2 {
         font-size: 1rem;
     }
-    #itemdetail .comment2 .moreinfo {
+    #itemdetail .moreinfo {
         font-size: 0.75rem;
     }
     ul#recommend {
