@@ -1,7 +1,7 @@
 create,"Your Drawing is Seems So Beautiful","広告","あなたの落書きを出力する",/thankyou/
 communication,"自分の気持ちを知る・表す","会員限定","35の記号と18の色から今の気持ちに合う記号と色を投稿する",/sign/
 communication,"言葉の強さと方向と感情","会員限定","気持ちの強さと、思考の方向を絵文字で整理・管理する匿名掲示板",post/
-communication,"大切にすることを大切にする","ウェブサイト","あなたの大切なものは何ですか？",/value/index/
+publication,"大切にすることを大切にする","ウェブサイト","あなたの大切なものは何ですか？",/value/index/
 create,"Go Out","地図を作ろう","Mapboxを使ってデジタル地図を作る",/map/
 communication,"things that i (we) heard","外へ出かける","私（わたしたち）が聞いた言葉を集める",/map/things/
-communication,"エッセイを投稿する","会員限定","日々の生活にまつわる会員限定エッセイを「New Life Collection」に投稿する",/essay/
+publication,"エッセイを投稿する","会員限定","日々の生活にまつわる会員限定エッセイを「New Life Collection」に投稿する",/essay/
