@@ -2,20 +2,17 @@ body {
     overflow-x: hidden;
 }
 
-hr {
+#ichoose hr {
     border: none;
 }
 
-#ichoose br {
+#ichoose .comment1 br,
+#ichoose .item_name {
     display: none;
 }
 
 #ichoose {
     font-family: "Times New Roman", "Times", serif;
-}
-
-#ichoose h3 u {
-    font-size: 2.5vw;
 }
 
 #ichoose p {
@@ -39,17 +36,15 @@ hr {
     font-size: 200%;
 }
 
+#ichoose .comment1 {
+    font-size: 1.5vw;
+}
+
 .question {
-    padding: 5vw 10vw;
+    padding: 5vw 0;
     font-family: "Times New Roman", "Times", serif;
     text-align: center;
     font-size: 2.5vw;
-}
-
-.question h2 {
-    font-size: 2.5vw;
-    font-weight: 500;
-    padding: 0;
 }
 
 .question p {
@@ -153,60 +148,11 @@ hr {
     background: transparent;
 }
 
-#start,
-#next {
-    position: fixed;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    z-index: 100;
-    bottom: 20vh;
-    left: 0%;
-}
-
-#next input[type=submit] {
-    font-size: 2.5vw;
-    font-family: "Times New Roman", "Times", serif;
-}
-
-#start button,
-#start input[type=submit],
-#start a,
-#next button,
-#next a {
-    display: inline-block;
-    position: absolute;
-    color: red;
-    background: #fff;
-    font-size: 2.5vw;
-    font-family: "Times New Roman", "Times", serif;
-    text-decoration: none;
-    padding: 0.75vw 1.25vw;
-    margin: auto;
-    border: 0.125vw solid red;
-    border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-
-#start button:hover,
-#start input[type=submit]:hover,
-#next button:hover,
-#next input[type=submit]:hover,
-#next a:hover {
-    cursor: pointer;
-    background: red;
-    color: #fff;
-}
-
 #answer span,
 #answer label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    cursor: pointer;
     padding: 1.5vw;
     box-sizing: border-box;
     -webkit-transition: color 0.2s linear;
@@ -233,12 +179,6 @@ hr {
     font-size: 100%;
 }
 
-#answer span:hover,
-#answer label:hover,
-#answer input[type=radio]:checked+#answer span {
-    color: red;
-}
-
 #answer label:before {
     -webkit-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
@@ -263,102 +203,32 @@ hr {
 }
 
 #who {
-    font-size: 2.5vw;
     position: relative;
-    margin: 20vw 0 0;
 }
 
-.name {
+#who .name {
     font-size: 2.5vw;
-    margin: 2.5vw 5vw;
+    margin: 2.5vw 10vw;
     padding: 0 2.5vw;
 }
 
-.message {
-    font-size: 2.5vw;
+#who .name u {
+    font-size: 75%;
+}
+
+#who .message {
+    font-size: 2vw;
     border: 0.1vw solid;
     margin: 0 5vw;
     padding: 2.5vw;
     clear: both;
 }
 
-.name u {
-    font-size: 75%;
-}
-
-.link {
-    font-size: 2.5vw;
-    text-align: center;
-    margin: 5vw 0;
-    width: 100%;
-}
-
-.link a {
-    border: 0.1vw solid;
-    padding: 1vw;
-    margin: 0 1vw;
-}
-
-.letsplay {
-    font-size: 150%;
+#who .link {
+    font-size: 2vw;
     text-align: center;
 }
 
-.more {
-    position: absolute;
-    bottom: -10vw;
-    width: 100%;
-    text-align: center;
-}
-
-.more i a,
-.letsplay i a {
-    display: inline-block;
-    margin: 2.5rem 0 0;
-}
-
-.more i a:hover,
-.letsplay i a:hover {
-    color: #fff;
-    background: red;
-    cursor: pointer;
-}
-
-.frame iframe {
-    overflow: hidden;
-}
-
-.collection {
-    position: fixed;
-    font-size: 3vw;
-    padding: 1% 0;
-    width: 100vh;
-    top: 0;
-    left: 100%;
-    transform-origin: left top;
-    transform: rotateZ( 90deg);
-}
-
-#back {
-    padding: 2.5vw 0 0;
-    text-align: center;
-}
-
-#ichoose .name u {
-    display: block;
-    padding: 0;
-    margin: 0;
-    line-height: 100%;
-}
-
-@media screen and (max-width: 500px) {
-    .collection {
-        font-size: 10vw;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .collection {
-        font-size: 5.5vw;
-    }
+#who .link a {
+    margin: 1vw;
 }
