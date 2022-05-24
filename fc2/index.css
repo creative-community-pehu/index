@@ -902,7 +902,9 @@ Plugin
 ============================================================*/
 
 #plugin1 .plg_body,
-.mousedragscrollable .plg_body {
+.mousedragscrollable .plg_body,
+.plugin_type2 .plg_body img,
+.plugin_type3 .plg_body img {
     position: absolute;
     margin: 0;
     padding: 0;
