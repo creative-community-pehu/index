@@ -61,5 +61,5 @@ $(function() {
 });
 </script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="/2020/otobuil/beta/active.js"></script>
+  <script type="text/javascript" src="active.js"></script>
 </body>
