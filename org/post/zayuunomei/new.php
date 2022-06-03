@@ -28,11 +28,11 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="http://chottocrazy.pe.hu/2020/css/marquee.css" />
+<link rel="stylesheet" type="text/css" href="http://creative-community.space/coding/js/marquee/marquee.css" />
 <link href="style.css" rel="stylesheet">
 <title>あなたの新しい座右の銘 | 大 chotto crazy 2020</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://vg.pe.hu/js/endless_scroll_min.js" type="text/javascript"></script>
+<script src="http://creative-community.space/coding/js/marquee/endless_scroll_min.js" type="text/javascript"></script>
 <script src="bgm.js" type="text/javascript"></script>
 </head>
 	
@@ -59,7 +59,7 @@ fclose($fp);
 <?php endif; ?>
 </ul>
 </section>
-<h3><a href="http://zayuunomei.chottocrazy.pe.hu/">TOPに戻る</a></h3>
+<h3><a href="index.php">TOPに戻る</a></h3>
 	
 <script type="text/javascript">
 $(function() {

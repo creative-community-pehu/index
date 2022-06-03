@@ -37,19 +37,6 @@ fclose($fp);
 $(function(){
 })
 </script>
-<style type="text/css">
-@font-face {
-  font-family: "inscrutable";
-  src: url(/font/inscrutable.otf);
-}
-@font-face {
-  font-family: "Orchard";
-  src: url(/font/Orchard-Linear.otf);
-}
-#credit b {
-  font-family:"Orchard";
-}
-</style>
 </head>
 <body>
 <div id="howto" class="popup" style="display:none;" onclick="sound()">
