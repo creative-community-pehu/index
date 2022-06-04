@@ -1,169 +1,189 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Index | creative-community.space</title>
-<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
-<style type="text/css">
-body {margin:0; padding:0;}
-#top_btn {
-    position: fixed;
-    top:0;
-    z-index: 1000;
-    text-align: center;
-    margin:2.5vw;
-    font-size:2.5vw;
-}
-#top_btn a {
-    display: block;
-    text-align: center;
-    width: 5vw;
-    height: 4vw;
-    font-family: "ipag", monospace;
-    transform:scale(1, 1.25);
-    line-height: 4.5vw;
-    border: solid 0.25vw #000;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
-#top_btn a:hover {
-    color:#fff;
-    background-color:blue;
-    border: solid 0.25vw blue;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
-.hidden {
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    transition: all 1500ms ease;
-    position: fixed;
-    top:0;
-    z-index: 999;
-    overflow-y: hidden;
-}
-.index {
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-    transition: all 2500ms ease;
-    position: fixed;
-    top:0;
-    z-index: 999;
-    overflow-y: auto;
-    background-color: #fff;
-}
-#members_menu {padding-top:1vw;}
-
-.contents {
-    font-size:2.5vw;
-    width:90%;
-    margin:2.5vw auto;
-    line-height: 5vw;
-    font-family:Arial, sans-serif;
-}
-.contents div {
-    display:block;
-    clear:both;
-}
-.contents i {
-    float: right;
-    font-size: 90%;
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
-}
-.tab {
-    color:#000;
-    text-decoration:none;
-    transition: all 500ms ease;
-}
-.tab:hover,
-.check b {
-    color:blue;
-    transition: all 500ms ease;
-}
-  
-.check {
-    float:left;
-    display:inline-block;
-    width:2.5vw;
-    margin-right:2.5vw;
-    text-align:center;
-    margin-right:2.5vw;
-}
-.check:before {
-    content:'[';
-    opacity:1;
-}
-.check:after {
-    content:']';
-    opacity:1;
-}
-.check b {
-    opacity: 0;
-    transition: all 1000ms ease;
-}
-a:hover + .check b {
-    opacity: 1;
-    transition: all 1000ms ease;
-}
-
-.singup a {
-  display:inline-block;
-  font-size:100%;
-  text-decoration:none;
-  color:#000;
-  padding:0.25vw 1.5vw;
-  margin:0.5rem 0;
-  border:0.1vw solid;
-  border-radius:2.5rem;
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Index | creative-community.space</title>
+    <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #top_btn {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            margin: 2.5vw;
+            font-size: 2.5vw;
+        }
+        
+        #top_btn a {
+            display: block;
+            text-align: center;
+            width: 5vw;
+            height: 4vw;
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+            line-height: 4.5vw;
+            border: solid 0.25vw #000;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 1000ms ease;
+        }
+        
+        #top_btn a:hover {
+            color: #fff;
+            background-color: blue;
+            border: solid 0.25vw blue;
+            cursor: pointer;
+            transition: all 1000ms ease;
+        }
+        
+        .hidden {
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            transition: all 1500ms ease;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            overflow-y: hidden;
+        }
+        
+        .index {
+            width: 100%;
+            height: 100vh;
+            opacity: 1;
+            transition: all 2500ms ease;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            overflow-y: auto;
+            background-color: #fff;
+        }
+        
+        #members_menu {
+            padding-top: 1vw;
+        }
+        
+        .contents {
+            font-size: 2.5vw;
+            width: 90%;
+            margin: 2.5vw auto;
+            line-height: 5vw;
+            font-family: Arial, sans-serif;
+        }
+        
+        .contents div {
+            display: block;
+            clear: both;
+        }
+        
+        .contents i {
+            float: right;
+            font-size: 90%;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .tab {
+            color: #000;
+            text-decoration: none;
+            transition: all 500ms ease;
+        }
+        
+        .tab:hover,
+        .check b {
+            color: blue;
+            transition: all 500ms ease;
+        }
+        
+        .check {
+            float: left;
+            display: inline-block;
+            width: 2.5vw;
+            margin-right: 2.5vw;
+            text-align: center;
+            margin-right: 2.5vw;
+        }
+        
+        .check:before {
+            content: '[';
+            opacity: 1;
+        }
+        
+        .check:after {
+            content: ']';
+            opacity: 1;
+        }
+        
+        .check b {
+            opacity: 0;
+            transition: all 1000ms ease;
+        }
+        
+        a:hover+.check b {
+            opacity: 1;
+            transition: all 1000ms ease;
+        }
+        
+        .singup a {
+            display: inline-block;
+            font-size: 100%;
+            text-decoration: none;
+            color: #000;
+            padding: 0.25vw 1.5vw;
+            margin: 0.5rem 0;
+            border: 0.1vw solid;
+            border-radius: 2.5rem;
+        }
+    </style>
 </head>
-<body>
-<p id="top_btn"><a>CC</a></p>
-<div id="top_menu" class="hidden">
-<div id="all_menu" style="padding-top:7.5vw;"></div>
-<br/>
-<div class="contents">
-<div><a href="/faqs/" class="tab"
-    onmouseover="this.innerText='Become a Member'"
-    onmouseout="this.innerText='会員になる'">
-    会員になる</a><span class="check"><b>✔</b></span></div>
 
+<body>
+    <p id="top_btn"><a>CC</a></p>
+    <div id="top_menu" class="hidden">
+        <div id="all_menu" style="padding-top:7.5vw;"></div>
+        <br/>
+        <div class="contents">
+            <div><a href="/faqs/" class="tab" onmouseover="this.innerText='Become a Member'" onmouseout="this.innerText='会員になる'">
+    会員になる</a><span class="check"><b>✔</b></span></div>
+            <!--
 <div><a href="/org/" class="tab"
     onmouseover="this.innerText='Can ☆ Do'"
     onmouseout="this.innerText='できること'">
     できること</a><span class="check"><b>✔</b></span></div>
+-->
+            <p class="singup">
+                <a href="https://www.are.na/cc-group" target="_blank">CC Group</a>
+                <a href="https://www.youtube.com/channel/UCkTlW5dLa_DSPZYauh8xKcQ" target="_blank">CC Tube</a>
+                <a href="https://jmty.jp/profiles/5ea2bd1441cf72229dbb0eb3" target="_blank">CC Local</a>
+                <a href="https://www.instagram.com/c_c.mobile/" target="_blank">c_c.mobile</a>
+            </p>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#all_menu").load("/menu/all.html");
+            })
 
-<p class="singup">
-<a href="https://www.are.na/cc-group" target="_blank">CC Group</a>
-<a href="https://www.youtube.com/channel/UCkTlW5dLa_DSPZYauh8xKcQ" target="_blank">CC Tube</a>
-<a href="https://jmty.jp/profiles/5ea2bd1441cf72229dbb0eb3" target="_blank">CC Local</a>
-<a href="https://www.instagram.com/c_c.mobile/" target="_blank">c_c.mobile</a>
-</p>
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-    $(function(){
-    $("#all_menu").load("/menu/all.html");
-    })
+            let btn = document.querySelector('#top_btn');
+            let index = document.querySelector('#top_menu');
 
-    let btn = document.querySelector('#top_btn');
-    let index = document.querySelector('#top_menu');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
-</script>
+            let btnToggleclass = function(el) {
+                el.classList.toggle('index');
+            }
+
+            btn.addEventListener('click', function() {
+                btnToggleclass(index);
+            }, false);
+        </script>
 </body>
+
 </html>
