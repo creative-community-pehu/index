@@ -1,6 +1,14 @@
+create,"Your Drawing is Seems So Beautiful","絵を描く","あなたの落書きを出力する",/thankyou/
+communication,"自分の気持ちを知る・表す","交流する","35の記号と18の色から今の気持ちに合う記号と色を投稿する",/sign/
+communication,"言葉の強さと方向と感情","メモをとる","気持ちの強さと、思考の方向を、絵文字で整理・管理する",post/
+publication,"大切にすることを大切にする","発表する","あなたの大切なものは何ですか？",/value/index/
+create,"Go Out","地図を作る","Mapboxを使ってデジタル地図を作る",/map/
+communication,"things that i (we) heard","外へ出かける","私（わたしたち）が聞いた言葉を集める",/map/things/
+publication,"会員限定エッセイ","発表する","日々の生活にまつわる会員限定エッセイを投稿する",/essay/
+
 create,"ウェブサイト制作・運営","ホスティングサービス","ウェブサイト制作・運営のサポート(詳しい詳細は準備出来次第お知らせします)",none
 create,"作業台","Work Desk","天板サイズ184×92cm・高さ70cm",none
-create,"工具類","消耗品","電動ドライバー・ノコギリ・トンカチ・単管カッター／ビス・クギなど（使用料：自由料金制）",none
+create,"工具類","消耗品","電動ドライバー・インパクト・ノコギリ・トンカチ・単管カッター／ビス・クギなど",none
 create,"真空パック機","バキュームシーラー","使用料：専用袋1枚200円〜",none
 create,"ABOX OL341","パウチラミネーター","A3/A4対応(使用料：1枚50円〜)",none
 shopping,"New Life Collection","ウェブショップ","ウェブショップ兼ニュースメディア「newlifecollection.com」で売りたいものを売る／会員限定商品販売・一部商品を限定価格で販売(詳しい詳細は準備出来次第お知らせします)",https://newlifecollection.com/
