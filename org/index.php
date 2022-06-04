@@ -47,7 +47,7 @@ fclose($fp);
 }
 
 .freetime:after {
-  content:"Can ☆ Do";
+  content:"I (We) owned";
   font-size: 7rem;
   color: #fff;
   text-shadow: 0 0 1vw red;
@@ -78,7 +78,7 @@ fclose($fp);
 <div id="list">
 <div id="cover_freetime">
 <div class="content">
-<span>何か</span>
+<span>Things that</span>
 <div id="index">
   <form id="information">
   <div class="menu">
