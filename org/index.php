@@ -90,7 +90,7 @@ fclose($fp);
   <label for="create" class="label">作る 壊す 遊ぶ</label></li>
   <li>
   <input type="radio" name="cando" value="publication" id="publication">
-  <label for="publication" class="label">印刷 製本する</label></li>
+  <label for="publication" class="label">印刷 出版する</label></li>
   <li>
   <input type="radio" name="cando" value="listening" id="listening">
   <label for="listening" class="label">録音する 聞く</label></li>
