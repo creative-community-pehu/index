@@ -26,11 +26,11 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>できること | creative-community.space</title>
+<title>ORG | creative-community.space</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="FREE TIME | 何かする時間">
+<meta name="description" content="ORG | 機材・ツール一覧">
 
 <script src="../js/ityped.js"></script>
 <link rel="icon" href="logo.png">
@@ -70,7 +70,7 @@ fclose($fp);
 <div id="menu"></div>
   
 <div id="header">
-<u>できること</u>
+<u>ORG</u>
 <u>準備中</u>
 <u>機材・ツール一覧</u>
 </div>
