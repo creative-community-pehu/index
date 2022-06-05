@@ -46,6 +46,10 @@ fclose($fp);
   flex-wrap: wrap;
 }
 
+#org li {
+    font-family: "ipag","YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+}
+
 .freetime:after {
   content:"I (We) owned";
   font-size: 7rem;
