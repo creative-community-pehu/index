@@ -48,6 +48,7 @@ fclose($fp);
 
 #org li {
     font-family: "ipag","YuGothic","Yu Gothic","游ゴシック体", sans-serif;
+    line-height:150%;
 }
 
 .freetime:after {
