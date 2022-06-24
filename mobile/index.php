@@ -113,6 +113,7 @@
             line-height: 200%;
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
+            color: #fff;
             font-size: 2.5vw;
             padding: 0;
             margin: 0 2.5%;
@@ -178,9 +179,6 @@
             });
             jQuery('.rambom a').css({
                 'background': getRumRgba()
-            });
-            jQuery('#now').css({
-                'color': getRumRgba()
             });
         })
     </script>
