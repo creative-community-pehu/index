@@ -10,11 +10,11 @@
 <title> Hello | creative-community.space </title>
 <style type="text/css">
 #hello p {
-    line-height: 125%;
+    line-height: 150%;
 }
 #hello span {
     display: inline-block;
-    padding-top: 2.5vw;
+    padding-top: 4.5vw;
 }
 #hello u,
 #hello i {
