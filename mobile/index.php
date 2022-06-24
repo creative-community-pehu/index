@@ -49,8 +49,8 @@
             text-decoration:none;
         }
 
-        h2,
-        h3,
+        h2 a,
+        h3 a,
         #sign::before {
             font-family: 'Times New Roman', serif;
             font-weight: 500;
@@ -94,6 +94,7 @@
         h3 {
             font-size: 4.5vw;
             text-align: center;
+            font-family: "ipag", monospace;
         }
         
         h2 {
