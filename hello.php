@@ -10,7 +10,7 @@
 <title> Hello | creative-community.space </title>
 <style type="text/css">
 #hello p {
-    line-height: 200%;
+    line-height: 125%;
 }
 #hello u,
 #hello i {
