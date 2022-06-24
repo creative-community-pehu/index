@@ -151,7 +151,6 @@
     <script type="text/javascript">
         $(function() {
             $("#greeting").load("../hello.php");
-            $("#p5").load("/coding/js/p5/");
         })
 
         function getRumRgba() {
