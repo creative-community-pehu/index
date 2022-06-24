@@ -47,7 +47,7 @@
             position: relative;
             width: 85%;
             height: 55vw;
-            margin: 5vw 10% 5vw 5%;
+            margin: 5vw 10% 10vw 5%;
         }
 
         #sign::before {
@@ -76,7 +76,7 @@
             position: relative;
             width: 90%;
             height: 55vw;
-            margin: 5vw auto;
+            margin: 5vw auto 10vw;
             clear: both;
         }
         
@@ -122,7 +122,7 @@
         #full {
             position: relative;
             width: 90%;
-            margin: 5vw auto;
+            margin: 5vw auto 10vw;
             border-radius: 5vw;
             clear: both;
         }
