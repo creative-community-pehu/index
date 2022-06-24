@@ -108,7 +108,7 @@
             background: #fff;
             border: 1px solid #000;
             border-radius: 50%;
-            padding: 0.5vw 2vw;
+            padding: 0.5vw 4.5vw;
             top: 75%;
             font-size: 2.5vw;
             font-family: "DiaPro";
