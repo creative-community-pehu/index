@@ -30,19 +30,7 @@ that <u data-click="create">Creates</u>
 このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。
 </b>
 </p>
-<p>
-<u data-click="how">Let's</u>
-Create Together
-<u data-click="here">Creative Community</u>
-<b id="here" class="open">to Do the things that you want to do
-<br/>
-やりたいことをみんなで実現するクリエイティブ・コミュニティを作りましょう。
-</b>
-</p>
-<div id="how" class="open">
-
 <p class="singup"><a href="/faqs/">Become a Members</a></p>
-</div>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
