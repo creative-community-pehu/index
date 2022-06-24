@@ -39,7 +39,6 @@
             width: 85%;
             height: 55vw;
             margin: 5vw 10% 5vw 5%;
-            background: #000;
         }
         
         #sign::before {
