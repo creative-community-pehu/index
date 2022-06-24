@@ -151,7 +151,7 @@
     <script type="text/javascript">
         $(function() {
             $("#greeting").load("../hello.php");
-            $("#sign").load("/sign/gradation.php");
+            $("#sign").load("/sign/bg_gradient.php");
             $("#p5").load("/coding/js/p5/");
         })
 
