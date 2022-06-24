@@ -110,6 +110,7 @@
             padding: 0.5rem 2rem;
             top: 75%;
             font-size: 2.5vw;
+            font-family: "DiaPro";
             margin: 0;
             left: 50%;
             top: 75%;
