@@ -12,6 +12,10 @@
 #hello p {
     line-height: 125%;
 }
+#hello span {
+    display: inline-block;
+    padding-top: 2.5vw;
+}
 #hello u,
 #hello i {
     font-family:"Times New Roman", serif;
@@ -30,7 +34,7 @@ that <u data-click="create">Creates</u>
 <u data-click="communicate">Communication</u>
 <b id="communicate" class="open">through the things that everyone can do</b>
 <br/>
-このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。
+<span>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</span>
 </b>
 </p>
 <p class="singup"><a href="/faqs/">Become a Members</a></p>
