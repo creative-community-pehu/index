@@ -113,7 +113,7 @@
             font-family: "DiaPro";
             margin: 0;
             left: 50%;
-            top: 60%;
+            top: 70%;
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
         }
