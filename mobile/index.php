@@ -49,8 +49,6 @@
             text-decoration:none;
         }
 
-        h2 a,
-        h3 a,
         #sign::before {
             font-family: 'Times New Roman', serif;
             font-weight: 500;
