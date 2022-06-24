@@ -128,9 +128,10 @@
 <body>
     <div id="greeting"></div>
     <div id="sign">
+        <a href="/sign/">
         <iframe src="/sign/flash.php"></iframe>
+        </a>
     </div>
-    <h2><a href="/sign/">Colors and Symbols That Suits Our Feelings</a></h2>
     <div id="full">
         <div id="p5">
             <iframe src="/coding/js/p5/"></iframe>
