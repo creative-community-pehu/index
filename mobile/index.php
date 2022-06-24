@@ -82,11 +82,12 @@
         #map::before {
             content: 'Go Out';
             display: block;
+            position: absolute;
             z-index: 10;
-            margin: 0;
-            left: 50%;
             font-size: 15vw;
             font-family: "Kristina";
+            margin: 0;
+            left: 50%;
             top: 50%;
             font-weight: 900;
             text-align: center;
