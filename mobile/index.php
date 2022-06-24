@@ -84,6 +84,7 @@
             display: block;
             position: absolute;
             z-index: 10;
+            color: lightskyblue;
             font-size: 15vw;
             font-family: "Kristina";
             margin: 0;
