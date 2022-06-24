@@ -8,7 +8,7 @@
     <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。
 やりたいことをみんなで実現するクリエイティブ・コミュニティを作りましょう。">
     <title>Mobile | creative-community.space</title>
-    <link rel="icon" href="../logo.png">
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="/coding/fontbook/css/font-family.css" />
     <style type="text/css">
         body {
@@ -228,7 +228,7 @@
     <script src="../now.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#greeting").load("../hello.php");
+            $("#greeting").load("hello.php");
         })
 
         function getRumRgba() {

@@ -121,41 +121,12 @@ body {margin:0; padding:0;}
     transform:scale(1, 2);
 }
 }
-@media screen and (max-width: 500px){
-  #greeting,
-  #ver,
-  #sketch {
-  display: none;
-}
-#now {font-size:1rem;}
-
-#mobile
-{display:block;}
-
-#mobile h1 {
-    padding:0 7.5% 2.5rem;
-    line-height:150%;
-    font-size:1.5rem;
-    font-family: "ipag", monospace;
-}
-#mobile p {
-    top:0; left:0;
-    padding:2.5rem 7.5%;
-    line-height:150%;
-    font-size:1.25rem;
-    font-family: "ipag", monospace;
-}
-#mobile h1,
-#mobile p {
-    display: inline-block;
-    transform:scale(1, 2);
-}
-#mobile a {
-    color: yellow;
-    filter: invert();
-}
-}
 </style>
+  <script>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    redirect:window.location.replace("mobile.php");
+  }
+  </script>
 </head>
 <body id="color">
 <div id="greeting"></div>
@@ -172,13 +143,6 @@ echo $date->format('F d, Y');
 
 <div id="you">
 <img src="/qr.png">
-</div>
-<div id="mobile">
-<p>for Mobile</p>
-<h1><a href="/faqs/">creative-community.space/faqs/</a></h1>
-<p style="margin-top:5vw;">Instagram
-<a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a>
-</p>
 </div>
 <div id="submit">
 <h1>creative-community.space</h1>
