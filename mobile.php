@@ -165,23 +165,6 @@
             border: #000 solid 0.45vw;
             border-radius: 5vw;
         }
-        #sketch {
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top:0; left:0;
-            z-index: 0;
-            animation: colorchange 40s linear infinite;
-        }
-
-@keyframes colorchange
-{
-  0%   {background: rgba(255,255,255, .0);}
-  25%  {background: rgba(125, 125, 215, .25);}
-  50%  {background: rgba(0, 0, 0, .25);}
-  75%  {background: rgba(125, 125, 125, .25);}
-  100% {background: rgba(255,255,255, .0);}
-}
         
         #now {
             position: fixed;
@@ -238,7 +221,6 @@
         </span>
         <span id="showTime"></span>
     </div>
-    <div id="sketch"></div>
 
     <script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -268,39 +250,6 @@
                 'background': getRumRgba()
             });
         })
-Sketch.create({
-  container: document.getElementById( 'sketch' ),
-  autoclear: false,
-  retina: 'auto',
-
-  setup: function() {
-    console.log( 'setup' );
-  },
-  update: function() {
-    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
-  },
-
-  // Event handlers
-  keydown: function() {
-    if ( this.keys.C ) this.clear();
-  },
-
-  touchmove: function() {
-
-    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
-      touch = this.touches[i];
-      this.lineCap = 'round';
-      this.lineJoin = 'round';
-      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
-      this.lineWidth = radius;
-
-      this.beginPath();
-      this.moveTo( touch.ox, touch.oy );
-      this.lineTo( touch.x, touch.y );
-      this.stroke();
-    }
-  }
-});
     </script>
 
 </body>
