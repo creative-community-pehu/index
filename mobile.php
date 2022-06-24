@@ -46,7 +46,7 @@
         #sign {
             position: relative;
             width: 85%;
-            height: 55vw;
+            height: 60vw;
             margin: 5vw 10% 10vw 5%;
         }
 
@@ -90,7 +90,7 @@
             font-family: "Kristina";
             margin: 0;
             left: 50%;
-            top: 50%;
+            top: 45%;
             font-weight: 900;
             text-align: center;
             width: 100%;
@@ -108,7 +108,7 @@
             background: #fff;
             border: 1px solid #000;
             border-radius: 50%;
-            padding: 0.5rem 2rem;
+            padding: 0.5vw 1.25vw;
             top: 75%;
             font-size: 2.5vw;
             font-family: "DiaPro";
