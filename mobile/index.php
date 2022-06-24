@@ -48,7 +48,7 @@
             z-index: 100;
             text-decoration:none;
         }
-        
+
         h2,
         h3,
         #sign::before {
@@ -92,7 +92,7 @@
         
         h2,
         h3 {
-            font-size: 4.5vw;
+            font-size: 2.5vw;
             text-align: center;
         }
         
