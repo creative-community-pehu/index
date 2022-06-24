@@ -127,7 +127,7 @@
 <body>
     <div id="greeting"></div>
     <div id="sign">
-        <iframe src="/sign/bg_gradient.php"></iframe>
+        <iframe src="/sign/flash.php"></iframe>
     </div>
     <h2><a href="/sign/">Colors and Symbols That Suits Our Feelings</a></h2>
     <div id="full">
