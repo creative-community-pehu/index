@@ -185,6 +185,7 @@
         hr {
             border: none;
             padding: 2.5vw;
+            clear: both;
         }
     </style>
 </head>
