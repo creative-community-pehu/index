@@ -41,6 +41,14 @@
             margin: 5vw 10% 5vw 5%;
         }
         
+        #sign a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            text-decoration:none;
+        }
+        
         #sign::before {
             content: '色と記号で、自分の気持ちを知る・表す';
             display: block;
@@ -128,9 +136,8 @@
 <body>
     <div id="greeting"></div>
     <div id="sign">
-        <a href="/sign/">
+        <a href="/sign/"></a>
         <iframe src="/sign/flash.php"></iframe>
-        </a>
     </div>
     <div id="full">
         <div id="p5">
