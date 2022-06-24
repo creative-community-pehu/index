@@ -184,7 +184,7 @@
         }
         hr {
             border: none;
-            padding: 2.5vw;
+            padding: 1.25vw;
             clear: both;
         }
     </style>
