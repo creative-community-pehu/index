@@ -27,13 +27,19 @@
             margin: 12.5vw 10% 10vw;
         }
         
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5vw;
+        }
+        
         #sign {
             position: relative;
             width: 85%;
             height: 55vw;
             margin: 5vw 10% 5vw 5%;
             background: #000;
-            border-radius: 5vw;
         }
         
         #sign::before {
@@ -69,8 +75,6 @@
             width: 45%;
             height: 40vw;
             float: left;
-            background: #000;
-            border-radius: 5vw;
             margin-right: 2.5vw;
             margin-bottom: 5vw;
         }
@@ -123,10 +127,14 @@
 
 <body>
     <div id="greeting"></div>
-    <div id="sign"></div>
+    <div id="sign">
+        <iframe src="/sign/bg_gradient.php"></iframe>
+    </div>
     <h2><a href="/sign/">Colors and Symbols That Suits Our Feelings</a></h2>
     <div id="full">
-        <div id="p5"></div>
+        <div id="p5">
+            <iframe src="/coding/js/p5/"></iframe>
+        </div>
         <h3>HTML graffiti</h3>
         <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
         <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
@@ -148,7 +156,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="../now.js"></script>
+    <script src="../now.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#greeting").load("../hello.php");
