@@ -14,7 +14,6 @@
         body {
             margin: 0;
             padding: 0;
-            background:#000;
         }
         
         .pehu {
@@ -174,6 +173,15 @@
             z-index: 0;
             animation: colorchange 40s linear infinite;
         }
+
+@keyframes colorchange
+{
+  0%   {background: rgba(255,255,255, .0);}
+  25%  {background: rgba(125, 125, 215, .25);}
+  50%  {background: rgba(0, 0, 0, .25);}
+  75%  {background: rgba(125, 125, 125, .25);}
+  100% {background: rgba(255,255,255, .0);}
+}
         
         #now {
             position: fixed;
