@@ -49,6 +49,17 @@
             text-decoration:none;
         }
         
+        h2,
+        h3,
+        #sign::before {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            word-spacing: -0.125ch;
+        }
+        
         #sign::before {
             content: '色と記号で、自分の気持ちを知る・表す';
             display: block;
@@ -58,13 +69,6 @@
             margin: 0;
             width: 100%;
             font-size: 2.5vw;
-            font-family: 'Times New Roman', serif;
-            font-weight: 500;
-            font-stretch: condensed;
-            font-variant: common-ligatures tabular-nums;
-            display: inline-block;
-            transform: scale(1, 1.1);
-            word-spacing: -0.125ch;
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
         }
@@ -86,21 +90,21 @@
             margin-bottom: 5vw;
         }
         
+        h2,
+        h3 {
+            font-size: 4.5vw;
+            text-align: center;
+        }
+        
         h2 {
-            font-family: 'Arial Narrow', sans-serif;
             width: 90%;
             margin: 5vw auto;
-            text-align: center;
-            font-size: 4.5vw;
         }
         
         h3 {
-            font-family: 'Arial Narrow', sans-serif;
             width: 45%;
             float: left;
             display: inline-block;
-            text-align: center;
-            font-size: 4.5vw;
             margin: 1.25% 2.5% 2.5%;
         }
         
@@ -141,9 +145,9 @@
     </div>
     <div id="full">
         <div id="p5">
-            <iframe src="/coding/js/p5/"></iframe>
+            <iframe src="/org/post/sample.html"></iframe>
         </div>
-        <h3>HTML graffiti</h3>
+        <h3>言葉の強さと方向と感情</h3>
         <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
         <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
     </div>
