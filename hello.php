@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://creative-community.space/coding/hello/close_open.css"/>
 <title> Hello | creative-community.space </title>
 <style type="text/css">
+#hello p {
+    line-height: 200%;
+}
 #hello u,
 #hello i {
     font-family:"Times New Roman", serif;
