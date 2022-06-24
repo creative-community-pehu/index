@@ -34,19 +34,20 @@
             border-radius: 5vw;
         }
         
-        #sign {
-            position: relative;
-            width: 85%;
-            height: 55vw;
-            margin: 5vw 10% 5vw 5%;
-        }
-        
-        #sign a {
+        #sign a,
+        #map a {
             position: absolute;
             width: 100%;
             height: 100%;
             z-index: 100;
             text-decoration:none;
+        }
+        
+        #sign {
+            position: relative;
+            width: 85%;
+            height: 55vw;
+            margin: 5vw 10% 5vw 5%;
         }
 
         #sign::before {
