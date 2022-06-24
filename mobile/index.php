@@ -71,6 +71,14 @@
             writing-mode: vertical-rl;
         }
         
+        #map {
+            position: relative;
+            width: 90%;
+            height: 55vw;
+            margin: 5vw auto;
+            clear: both;
+        }
+        
         #full {
             position: relative;
             width: 90%;
@@ -150,7 +158,7 @@
         <h3>ORG</h3>
         <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
     </div>
-    <div id="sign">
+    <div id="map">
         <a href="/map/"></a>
         <iframe src="/map/cover.html"></iframe>
     </div>
