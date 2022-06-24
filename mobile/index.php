@@ -150,6 +150,10 @@
         <h3>ORG</h3>
         <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
     </div>
+    <div id="sign">
+        <a href="/map/"></a>
+        <iframe src="/map/cover.html"></iframe>
+    </div>
     <div id="full">
         <h3>Instagram</h3>
         <h3 class="rambom"><a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a></h3>
