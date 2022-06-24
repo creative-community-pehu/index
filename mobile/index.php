@@ -113,7 +113,7 @@
             line-height: 200%;
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
-            color: #fff;
+            color: #000;
             font-size: 2.5vw;
             padding: 0;
             margin: 0 2.5%;
