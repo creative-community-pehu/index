@@ -34,7 +34,6 @@
             border-radius: 5vw;
         }
         
-        #sign a,
         #map a {
             position: absolute;
             width: 100%;
@@ -192,7 +191,6 @@
 <body>
     <div id="greeting"></div>
     <div id="sign">
-        <a href="/sign/"></a>
         <iframe src="/sign/flash.php"></iframe>
     </div>
     <div id="full">
@@ -200,6 +198,7 @@
             <iframe src="/org/post/sample.html"></iframe>
         </div>
         <h3>Members Only</h3>
+        <h3><a href="/sign/">今の気持ちに合う色と記号</a></h3>
         <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
     </div>
     <hr/>
