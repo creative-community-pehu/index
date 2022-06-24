@@ -76,7 +76,7 @@
             position: relative;
             width: 90%;
             height: 55vw;
-            margin: 5vw auto 10vw;
+            margin: 10vw auto;
             clear: both;
         }
         
