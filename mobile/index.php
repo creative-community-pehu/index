@@ -32,22 +32,6 @@
             width: 85%;
             height: 55vw;
             margin: 5vw 10% 5vw 5%;
-        }
-        
-        #sign iframe {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: #ccc;
-            border: none;
-            border-radius: 5vw;
-        }
-        
-        #sign {
-            position: relative;
-            width: 85%;
-            height: 55vw;
-            margin: 5vw 10% 5vw 5%;
             background: #000;
             border-radius: 5vw;
         }
@@ -139,9 +123,7 @@
 
 <body>
     <div id="greeting"></div>
-    <div id="sign">
-        <iframe src="../sign/flash.php"></ifame>
-    </div>
+    <div id="sign"></div>
     <h2><a href="/sign/">Colors and Symbols That Suits Our Feelings</a></h2>
     <div id="full">
         <div id="p5"></div>
@@ -169,6 +151,7 @@
     <script type="text/javascript">
         $(function() {
             $("#greeting").load("../hello.php");
+            $("#sign").load("/sign/gradation.php");
             $("#p5").load("/coding/js/p5/");
         })
 
