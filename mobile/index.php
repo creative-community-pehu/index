@@ -92,7 +92,7 @@
         
         h2,
         h3 {
-            font-size: 2.5vw;
+            font-size: 4.5vw;
             text-align: center;
         }
         
@@ -113,6 +113,7 @@
             display: inline-block;
             width: 90%;
             padding: 2.5% 5%;
+            font-size: 75%;
             text-decoration: none;
             color: #000;
             border: #000 solid 0.45vw;
@@ -147,9 +148,8 @@
         <div id="p5">
             <iframe src="/org/post/sample.html"></iframe>
         </div>
-        <h3>言葉の強さと方向と感情</h3>
-        <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
-        <h3><a href="/thankyou/">Your Drawing is Seems So Beautiful</a></h3>
+        <h3>ORG</h3>
+        <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
     </div>
     <div id="full">
         <h3>Instagram</h3>
