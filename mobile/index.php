@@ -76,7 +76,7 @@
             position: relative;
             width: 90%;
             height: 55vw;
-            margin: 10vw auto;
+            margin: 5vw auto 10vw;
             clear: both;
         }
         
@@ -182,6 +182,10 @@
             flex-direction: row;
             justify-content: space-between;
         }
+        hr {
+            border: none;
+            padding: 2.5vw;
+        }
     </style>
 </head>
 
@@ -198,6 +202,7 @@
         <h3>Members Only</h3>
         <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
     </div>
+    <hr/>
     <div id="map">
         <a href="/map/"></a>
         <iframe src="/map/mov.html"></iframe>
