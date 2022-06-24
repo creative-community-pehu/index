@@ -79,6 +79,23 @@
             clear: both;
         }
         
+        #map::before {
+            content: 'Go Out';
+            display: block;
+            z-index: 10;
+            margin: 0;
+            left: 50%;
+            font-size: 15vw;
+            font-family: "Kristina";
+            top: 50%;
+            font-weight: 900;
+            text-align: center;
+            width: 100%;
+            transition: 1s all;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+        
         #full {
             position: relative;
             width: 90%;
