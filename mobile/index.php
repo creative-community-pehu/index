@@ -112,6 +112,7 @@
             display: inline-block;
             width: 90%;
             padding: 2.5% 5%;
+            font-size: 75%;
             text-decoration: none;
             color: #000;
             border: #000 solid 0.45vw;
