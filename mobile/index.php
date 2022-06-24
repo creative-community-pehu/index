@@ -98,6 +98,25 @@
             -webkit-transform: translate(-50%, -50%);
         }
         
+        #map::after {
+            content: '行ったことのない場所へ行く';
+            display: inline-block;
+            position: absolute;
+            z-index: 10;
+            color: #000;
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 50%;
+            padding: 0.5rem 2rem;
+            top: 75%;
+            font-size: 1.25rem;
+            margin: 0;
+            left: 50%;
+            top: 75%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+        
         #full {
             position: relative;
             width: 90%;
