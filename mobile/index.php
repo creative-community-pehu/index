@@ -109,7 +109,7 @@
             border-radius: 50%;
             padding: 0.5rem 2rem;
             top: 75%;
-            font-size: 1.25rem;
+            font-size: 2.5vw;
             margin: 0;
             left: 50%;
             top: 75%;
