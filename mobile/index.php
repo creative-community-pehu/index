@@ -160,7 +160,7 @@
     </div>
     <div id="map">
         <a href="/map/"></a>
-        <iframe src="/map/cover.html"></iframe>
+        <iframe src="/map/mov.html"></iframe>
     </div>
     <div id="full">
         <h3>Instagram</h3>
