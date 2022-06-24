@@ -150,7 +150,7 @@
             width: 45%;
             float: left;
             display: inline-block;
-            margin: 2.5% 2.5% 5%;
+            margin: 2.5%;
         }
         
         h2 a,
