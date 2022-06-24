@@ -157,7 +157,7 @@
         h3 a {
             display: inline-block;
             width: 90%;
-            padding: 2.5% 5%;
+            padding: 5%;
             font-size: 55%;
             text-decoration: none;
             color: #000;
