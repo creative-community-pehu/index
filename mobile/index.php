@@ -122,7 +122,7 @@
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
             color: #000;
-            font-size: 2.5vw;
+            font-size: 4.5vw;
             padding: 0;
             margin: 0 2.5%;
             width: 95%;
