@@ -37,7 +37,7 @@ that <u data-click="create">Creates</u>
 <span>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</span>
 </b>
 </p>
-<p class="singup"><a href="/faqs/">Become a Members</a></p>
+<p class="singup"><a href="https://pehu.cart.fc2.com/signup">Become a Members</a></p>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
