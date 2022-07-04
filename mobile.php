@@ -209,6 +209,8 @@
     <div id="full">
         <h3>Instagram</h3>
         <h3 class="rambom"><a href="https://www.instagram.com/c_c.mobile/">@c_c.mobile</a></h3>
+        <h3>Become a Members</h3>
+        <h3 class="rambom"><a href="https://pehu.cart.fc2.com/signup">Signup</a></h3>
     </div>
     <div id="now">
         <span>
