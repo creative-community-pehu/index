@@ -79,7 +79,7 @@
             background-color: #fff;
         }
         
-        #gradation {
+        #background {
             position: fixed;
             top: 0;
             left: 0;
@@ -95,14 +95,14 @@
         <div><a class="tab" href="#submit">Submit</a><span class="check"><b>✔</b></span></div>
     </div>
 
-    <div id="gradation" class="change"></div>
+    <div id="background"></div>
     <div id="submit" class="change"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#gradation").load("background.php");
+            $("#background").load("background.php");
             $("#submit").load("submit.html");
         })
 
