@@ -94,7 +94,7 @@ fclose($fp);
 }
 #log_items hr {
   border:none;
-  padding:0.5vw;
+  padding:0.25vw;
 }
 </style>
 </head>
