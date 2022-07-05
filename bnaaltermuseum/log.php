@@ -65,13 +65,13 @@ fclose($fp);
 }
 #log_items p {
   margin:0;
-  font-size:75%;
-  line-height:150%;
+  font-size:55%;
+  line-height:125%;
 }
 #log_items u {
   display:inline-block;
-  width:4vw;
-  height:4vw;
+  width:5vw;
+  height:5vw;
   position:relative;
 }
 #log_items span {
