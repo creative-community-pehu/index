@@ -138,14 +138,18 @@ fclose($fp);
         #background,
         #flash,
         #sign {
-            position: fixed;
             top: 0;
             left: 0;
         }
         
+        #flash,
         #background {
+            position: fixed;
             width: 100%;
             height: 100vh;
+        }
+        #sign {
+            position: relative;
         }
         
         #flash iframe {
