@@ -161,12 +161,7 @@ fclose($fp);
 <body>
 
     <a id="update" href="submit.html" target="_parent">
-      <b>
-        <?php
-        date_default_timezone_set('Asia/Tokyo');
-        print(date('Y年n月j日'))
-        ?>
-      </b>
+      <b>自分の気持ちを知る・表す</b>
       <br/>
       <i>
       <?php
@@ -182,7 +177,7 @@ fclose($fp);
         <div><a class="tab" href="#sign">
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        print(date('Y年n月j日'))
+        print(date('Y 年 n 月 j 日'))
         ?>
         </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">Flash</a><span class="check"><b>✔</b></span></div>
