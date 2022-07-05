@@ -145,10 +145,10 @@ fclose($fp);
             left: 0;
         }
         
-        #background {
+        #background
+        #flash, {
             position: fixed;
         }
-        #flash,
         #sign {
             position: absolute;
         }
