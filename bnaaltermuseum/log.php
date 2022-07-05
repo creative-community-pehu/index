@@ -55,7 +55,6 @@ fclose($fp);
                 height: 75vh;
                 margin: 10vh 25% 0;
                 z-index: 1000;
-                background: rgba(255, 255, 255, 0.75);
                 overflow-y: auto;
                 font-family: "MS Mincho", "SimSong", serif;
                 font-weight: 500;
