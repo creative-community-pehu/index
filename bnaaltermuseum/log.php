@@ -96,14 +96,14 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li>
-<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>　
-Posted by <i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
+<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u><br/>
+IP <i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li>
 <p>
-Posted by <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
+IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
 </p>
 </li>
 <?php endif; ?>
