@@ -162,7 +162,7 @@ fclose($fp);
                 </li>
                 <?php endif; ?>
                 <li>
-                    <p>This is The Collection of 
+                    This is The Collection of 
                         <br/>Colors and Symbols That expresses<br/>
                         <i>
                           <?php
@@ -170,8 +170,6 @@ fclose($fp);
                           print(date('l jS \o\f F Y'))
                           ?>
                         </i>
-                        <br/>
-                    </p>
                     <hr/>
                 </li>
             </ul>
