@@ -144,13 +144,13 @@ fclose($fp);
             top: 0;
             left: 0;
         }
-        
-        #background
-        #flash, {
-            position: fixed;
-        }
+        #background,
         #sign {
             position: absolute;
+        }
+        
+        #flash {
+            position: fixed;
         }
         
         #flash iframe {
