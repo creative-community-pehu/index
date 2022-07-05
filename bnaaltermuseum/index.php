@@ -68,6 +68,11 @@ fclose($fp);
                 writing-mode: vertical-rl;
                 transition: .5s all;
             }
+#update:hover {
+    cursor: pointer;
+    background: #eee;
+    transition: .5s all;
+}
             
             #update b {
                 font-weight: 500;
