@@ -109,9 +109,8 @@ body  {overflow-x:hidden;}
 <b>自分の気持ちを知る・表す</b><br/>
 <i>
 <?php
-$mod = filemtime("$today.csv");
 date_default_timezone_set('Asia/Tokyo');
-print "".date("m.d.y H:i",$mod);
+print "".date("m.d.y);
 ?>
 </i> Update
 </span>
