@@ -99,8 +99,8 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <li>
 <p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
-IP <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b><br/>
-Posted on <i><?=h($row[2])?></i></p>
+IP <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
+<p>Posted on <i><?=h($row[2])?></i></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
