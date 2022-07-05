@@ -39,7 +39,7 @@ fclose($fp);
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
 #log {
-  font-size:4vw;
+  font-size:2.5vw;
   width:45%;
   height:75vh;
   margin:12.5vh auto;
@@ -65,8 +65,8 @@ fclose($fp);
 }
 #log_items p {
   margin:0;
-  font-size:45%;
-  line-height:125%;
+  font-size:75%;
+  line-height:200%;
 }
 #log_items u {
   display:inline-block;
