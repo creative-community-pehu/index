@@ -1,0 +1,246 @@
+body {
+  font-family: "SimSong", "MS Mincho", serif;
+  font-weight: 500;
+  padding:0;
+  margin:0;
+}
+#bg_submit {
+  position:fixed;
+  z-index:50;
+}
+#bg_link {
+  position:fixed;
+  z-index:5;
+  color:#000;
+  line-height:1.5rem;
+  letter-spacing:.1rem;
+  font-family: "SimSong", "MS Mincho", serif;
+  font-size:0.9rem;
+  text-decoration:none;
+  display:inline-block;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+	transition:.5s all;
+}
+#bg_link i {padding:0.25rem 0.125rem;}
+
+#post,
+#symbol_color,
+#bg_submit {
+  top:0; left:0;
+  padding:0; margin:0;
+  width:100%;
+}
+#post,
+#bg_submit {
+  height:100vh;
+}
+#post {
+  position:relative;
+}
+#symbol_color {
+  position:relative;
+}
+
+#symbol,
+#color {
+  display:block;
+  width:50vw;
+  max-width: 750px;
+  height:100vh;
+  position:absolute;
+  margin:0;
+  font-family: "SimSong", "MS Mincho", serif;
+}
+#symbol {left:0;}
+#color {right:0;}
+
+#symbol .title,
+#color .title {
+  display:block;
+  position:absolute;
+  pointer-events:none;
+  width:100%;
+  text-align:center;
+  font-size:1.25vw;
+  padding:1.25% 0;
+}
+#symbol .title b,
+#color .title b {
+  font-family: 'Times New Roman', serif;
+  font-size:1.5vw;
+  font-weight:500;
+  line-height:200%;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  display:inline-block;
+  transform: scale(1,1.1);
+  word-spacing: -.25ch;
+}
+#post button,
+#post #button,
+#symbol_color .bg_symbol {
+  position:absolute;
+  padding:0;
+  margin:0;
+  top:50%; left:50%;
+  z-index:10;
+  display: flex;
+  flex-wrap: wrap;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+#symbol ul,
+#color ul {
+  position:absolute;
+  padding:0;
+  margin:0;
+  top:55%; left:50%;
+  z-index:10;
+  padding:0; margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+
+#symbol ul,
+#color ul {
+  width:80%;
+  z-index:5;
+}
+
+#symbol li,
+#color li,
+#symbol_color li {
+  list-style: none;
+}
+#symbol li {
+  width:20%;
+  text-align:center;
+  font-size:2vw;
+}
+#symbol .label {
+  display: inline-block;
+  margin:0.5vw;
+  padding:0.25vw;
+  width:3vw;
+  height:4vh;
+  color: #000;
+  border-radius:0.5vw;
+  border:transparent solid 0.25vw;
+}
+
+#color li {
+  width:33%;
+  text-align:center;
+  font-size:2vw;
+}
+#color .label {
+  display: inline-block;
+  width:75%;
+  height:4.5vh;
+  margin:0.5vw;
+  padding:0.25vw;
+  border-radius:1vw;
+  border:transparent solid 0.25vw;
+}
+
+#symbol input[type="radio"],
+#color input[type="radio"] {
+  display: none;
+}
+#symbol input[type="radio"]:checked + label {
+  color:#fff;
+  border:#000 solid 0.25vw;
+	text-shadow:0.1vw 0.1vw #000;
+}
+#color input[type="radio"]:checked + label {
+  border:#000 solid 0.25vw;
+}
+
+#symbol_color {
+  z-index:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  display: flex;
+  flex-direction:column-reverse;
+}
+#symbol_color .bg_color {
+  position:relative;
+  top:0; left:0;
+  padding:0; margin:0;
+  width:100%;
+  height:100vh;
+  display:block;
+}
+#symbol_color .bg_symbol {font-size:15vw;}
+
+#post button,
+#post #button {
+  font-size:1.5rem;
+  background:#fff;
+  padding:0.25rem 1rem;
+  border-radius:2rem;
+  border:#000 solid 0.2vw;
+}
+#post button:hover,
+#post #button:hover,
+#bg_link:hover {
+  cursor:pointer;
+  background:#eee;
+	transition:.5s all;
+}
+button,
+#button {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-style:italic;
+  font-family: "MS 明朝","MS Mincho", serif;
+}
+
+
+@media screen and (max-width: 550px){
+#symbol,
+#color {
+  display:block;
+  width:100%;
+  height:50vh;
+  position:relative;
+  margin:0;
+  transform: rotate(90deg);
+}
+#symbol ul,
+#color ul {
+  top:55%; left:50%;
+}
+#symbol ul,
+#color ul {
+  width:50%;
+  z-index:5;
+}
+#symbol li {
+  width:20%;
+  text-align:center;
+  font-size:3.5vw;
+}
+#symbol .label {
+  margin:0.5vw;
+  padding:0.5vw;
+  width:5vw;
+  height:5vw;
+}
+#color li {
+  width:33%;
+  text-align:center;
+}
+#color .label {
+  display: inline-block;
+  width:75%;
+  height:5.5vw;
+  margin:1vw;
+  border-radius:1vw;
+  border:transparent solid 0.25vw;
+}
+#symbol_color .bg_symbol {font-size:20vw;}
+}
