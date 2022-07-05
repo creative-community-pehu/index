@@ -122,7 +122,7 @@ print(date('Y年n月j日'))
 <p>
 <?php
 date_default_timezone_set('Asia/Tokyo');
-print("It is " . date('l jS \o\f F Y'))
+print(date('l jS \o\f F Y'))
 ?>
 <br/></p>
 </li>
