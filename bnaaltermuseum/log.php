@@ -18,7 +18,7 @@ $ip = $ips[0];
 $fp = fopen('$today.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color, $timestamp, $ip]);
+    fputcsv($fp, [$symbol, $color, $timestamp, $today]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
