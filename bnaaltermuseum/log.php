@@ -122,8 +122,9 @@ fclose($fp);
 date_default_timezone_set('Asia/Tokyo');
 print(date('Y年n月j日'))
 ?>
+の
 </sup>
-の<br/>
+<br/>
 気持ちを表す <b>色と記号</b>
 <p><br/>This is The Colors and Symbols That Suits on 
 <?php
