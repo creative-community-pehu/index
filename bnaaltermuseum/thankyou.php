@@ -12,14 +12,14 @@ $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
 $timestamp = time() ;
 $filename =  $today . ".csv"; 
 
-$forwardedFor = $_SERVER["HTTP_X_FORWARDED_FOR"];
+$forwardedFor = $_SERVER["REMOTE_ADDR"];
 $ips = explode(",", $forwardedFor);
 $ip = $ips[0];
 
 $fp = fopen($filename, 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip]);
+    fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip,]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
