@@ -85,6 +85,64 @@ body  {overflow-x:hidden;}
     transition: all 2500ms ease;
     position: fixed;
 }
+#log {
+  font-size:2.5vw;
+  width:45%;
+  height:75vh;
+  margin:12.5vh auto;
+  background:rgba(255,255,255,0.75);
+  overflow-y:auto;
+}
+#log_items {
+  padding:0 2.5vw;
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+#log_items li {
+  width:100%;
+  position:relative;
+  margin:0;
+  padding:2.5vw 0 0;
+  word-break: break-word;
+}
+#log_items p {
+  margin:0;
+  font-size:75%;
+  line-height:150%;
+}
+#log_items u {
+  display:inline-block;
+  width:5vw;
+  height:5vw;
+  position:relative;
+  float:left;
+  margin-top: 0.45vw;
+  margin-right: 2.5vw;
+}
+#log_items span {
+  position:absolute;
+  padding:0;
+  margin:0;
+  font-size:150%;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+#log_items b {
+  font-size:150%;
+}
+#log_items i {
+  font-size:125%;
+}
+#log_items hr {
+  border:none;
+  padding:0;
+}
 @keyframes gradient {
   0% {
     background-position: 100% 0%;
@@ -124,7 +182,45 @@ print(date('l jS \o\f F Y'))
 </i>
 </span>
 
-<div id="open" class="none"></div>
+<div id="log" class="none">
+<ul id="log_items">
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
+<li>
+<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
+<b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
+<p>Posted on <i><?=h($row[2])?></i></p>
+</li>
+<?php endforeach; ?>
+<?php else: ?>
+<li>
+<p>
+<i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
+</p>
+</li>
+<?php endif; ?>
+<li>
+<sup>
+<?php
+date_default_timezone_set('Asia/Tokyo');
+print(date('Y年n月j日'))
+?>
+の
+</sup>
+<br/>
+気持ちを表す <b>色と記号</b>
+<p><br/>This is The Colors and Symbols That expresses 
+<i>
+<?php
+date_default_timezone_set('Asia/Tokyo');
+print(date('l jS \o\f F Y'))
+?>
+</i>
+<br/></p>
+<hr/>
+</li>
+</ul>
+</div>
 
 <ul id="symbol_color">
 <li class="bg_gradient" style="background-image: linear-gradient(0deg,
@@ -140,12 +236,9 @@ print(date('l jS \o\f F Y'))
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    $(function(){
-    $("#open").load("log.php");
-    })
 
     let btn = document.querySelector('#bg_link');
-    let log = document.querySelector('#open');
+    let log = document.querySelector('#log');
      
     let btnToggleclass = function(el) {
       el.classList.toggle('open');
