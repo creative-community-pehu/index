@@ -53,7 +53,7 @@ fclose($fp);
         }
         
         #update {
-            position: absolute;
+            position: fixed;
             top: 1rem;
             right: 1rem;
             color: #000;
