@@ -145,6 +145,14 @@ fclose($fp);
             left: 0;
         }
         
+        #background {
+            position: fixed;
+        }
+        #flash,
+        #sign {
+            position: absolute;
+        }
+        
         #flash iframe {
             width: 100%;
             height: 100%;
