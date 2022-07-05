@@ -148,6 +148,10 @@ fclose($fp);
             left: 0;
         }
         
+        #background {
+            z-index: 0;
+        }
+        
         #flash iframe {
             width: 100%;
             height: 100%;
