@@ -6,17 +6,17 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$today = date("Ymd");
+$today = date("md");
 $symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
 $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
-$timestamp = date("g:i:s A T");
+$timestamp = date("g:i:s A \J\S\T");
 $filename =  $today . ".csv"; 
 
 $forwardedFor = $_SERVER["REMOTE_ADDR"];
 $ips = explode(",", $forwardedFor);
 $ip = $ips[0];
 
-$fp = fopen($filename, 'a+b');
+$fp = fopen("2022/" . $filename, 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip,]);
@@ -108,6 +108,8 @@ fclose($fp);
             
             #log_items b {
                 font-size: 150%;
+                user-select:none;
+                pointer-events:none;
             }
             
             #log_items i {
@@ -146,7 +148,7 @@ fclose($fp);
                 <li>
                     <p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
                         <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
-                    <p>Posted on <i><?=h($row[2])?></i></p>
+                    <p style="user-select:none; pointer-events:none;">Posted on <i><?=h($row[2])?></i></p>
                 </li>
                 <?php endforeach; ?>
                 <?php else: ?>
