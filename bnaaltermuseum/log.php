@@ -126,6 +126,7 @@ print(date('l jS \o\f F Y'))
 ?>
 <br/>
 </p>
+<hr/>
 </li>
 </ul>
 </div>
