@@ -74,6 +74,7 @@ fclose($fp);
   height:5vw;
   position:relative;
   float:left;
+  margin-top: 2.5vw;
   margin-right: 2.5vw;
 }
 #log_items span {
@@ -99,14 +100,14 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <li>
 <p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
-IP <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
+<b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
 <p>Posted on <i><?=h($row[2])?></i></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li>
 <p>
-IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
+<i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
 </p>
 </li>
 <?php endif; ?>
