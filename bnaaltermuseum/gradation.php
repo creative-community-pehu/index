@@ -10,7 +10,7 @@ $today = date("Ymd");
 $symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
 $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
 $timestamp = time() ;
-$filename =  $today.csv; 
+$filename =  $today..csv; 
 
 $forwardedFor = $_SERVER["HTTP_X_FORWARDED_FOR"];
 $ips = explode(",", $forwardedFor);
