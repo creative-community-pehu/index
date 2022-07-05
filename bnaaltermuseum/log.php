@@ -9,7 +9,7 @@ function h($str) {
 $today = date("Ymd");
 $symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
 $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
-$timestamp = date("g:i:s A \JST");
+$timestamp = date("g:i:s A JST");
 $filename =  $today . ".csv"; 
 
 $forwardedFor = $_SERVER["REMOTE_ADDR"];
