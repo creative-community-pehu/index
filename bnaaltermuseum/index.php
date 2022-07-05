@@ -135,17 +135,16 @@ fclose($fp);
             transition: all 1000ms ease;
         }
         
-        #submit {
-            z-index: 500;
-            overflow-y: auto;
-        }
-        
-        #background {
+        #background,
+        #flash {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100vh;
+        }
+        #flash {
+            z-index: 500;
         }
     </style>
 </head>
