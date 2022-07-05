@@ -97,13 +97,13 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <li>
 <p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
-<i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
+Posted by <i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li>
 <p>
-Posted on <i>00.00.00 00:00</i>
+Posted by <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
 </p>
 </li>
 <?php endif; ?>
