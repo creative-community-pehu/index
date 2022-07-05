@@ -73,6 +73,8 @@ fclose($fp);
   width:5vw;
   height:5vw;
   position:relative;
+  float:left;
+  margin-right: 2.5vw;
 }
 #log_items span {
   position:absolute;
