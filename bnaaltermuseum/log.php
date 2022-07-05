@@ -122,7 +122,7 @@ date_default_timezone_set('Asia/Tokyo');
 print(date('Y年n月j日'))
 ?>
 の<br/>
-気持ちを表す <b>記号と色</b>
+気持ちを表す <b>色と記号</b>
 <p><br/>This is The Colors and Symbols That Suits on 
 <?php
 date_default_timezone_set('Asia/Tokyo');
