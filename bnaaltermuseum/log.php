@@ -118,7 +118,7 @@ fclose($fp);
 <?php endif; ?>
 <li>今日の気持ちを表す<br/>
 <b>記号と色</b>
-<p>This is The Collection of Colors and Symbols That Suits on Today<br/></p>
+<p><br/>This is The Collection of Colors and Symbols That Suits on Today<br/></p>
 <hr/>
 </li>
 </ul>
