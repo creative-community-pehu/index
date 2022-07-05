@@ -113,7 +113,10 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li>
-Log
+  <?php
+date_default_timezone_set('Asia/Tokyo');
+print(date('Y年n月j日'))
+?>
 </li>
 </ul>
 </div>
