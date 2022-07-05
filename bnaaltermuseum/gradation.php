@@ -79,7 +79,6 @@ body  {overflow-x:hidden;}
 }
 .open {
     z-index: 1;
-    width: 100%;
     opacity: 1;
     overflow-y: auto;
     transition: all 2500ms ease;
@@ -87,9 +86,9 @@ body  {overflow-x:hidden;}
 }
 #log {
   font-size:2.5vw;
-  width:45%;
+  width:50%;
   height:75vh;
-  margin:12.5vh auto;
+  margin:12.5vh 25%;
   background:rgba(255,255,255,0.75);
   overflow-y:auto;
 }
