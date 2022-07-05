@@ -6,11 +6,11 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$today = date("md");
+$today = date("Ymd");
 $symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
 $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
 $timestamp = date("g:i:s A \J\S\T");
-$filename =  . "2022/" . $today . ".csv"; 
+$filename =  $today . ".csv"; 
 
 $forwardedFor = $_SERVER["REMOTE_ADDR"];
 $ips = explode(",", $forwardedFor);
@@ -30,7 +30,6 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
