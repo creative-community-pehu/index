@@ -119,6 +119,14 @@ fclose($fp);
                 border: none;
                 padding: 0;
             }
+
+            @media screen and (max-width: 550px) {
+                #log {
+                    width: 75%;
+                height: 55vh;
+                margin: 10vh 25% 0;
+            }
+        }
         </style>
     </head>
 
