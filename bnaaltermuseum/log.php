@@ -143,7 +143,7 @@ fclose($fp);
                 <?php endif; ?>
                 <li>
                     <p>This is The Collection of 
-                        <br/>Colors and Symbols That expresses
+                        <br/>Colors and Symbols That expresses<br/>
                         <i>
                           <?php
                           date_default_timezone_set('Asia/Tokyo');
