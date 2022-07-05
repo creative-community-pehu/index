@@ -40,7 +40,7 @@ fclose($fp);
 <style type="text/css">
 #log {
   font-size:2.5vw;
-  width:50%;
+  width:45%;
   height:75vh;
   margin:12.5vh auto;
   background:rgba(255,255,255,0.75);
@@ -74,7 +74,7 @@ fclose($fp);
   height:5vw;
   position:relative;
   float:left;
-  margin-top: 0.5vw;
+  margin-top: 0.45vw;
   margin-right: 2.5vw;
 }
 #log_items span {
