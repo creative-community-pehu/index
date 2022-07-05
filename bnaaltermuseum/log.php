@@ -40,10 +40,6 @@ fclose($fp);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>自分の気持ちを知る・表す</title>
         <style type="text/css">
-        @font-face {
-            font-family: "MS Mincho";
-            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-        }
             body {
                 padding: 0;
                 margin: 0;
