@@ -161,15 +161,6 @@ fclose($fp);
 
     <a id="update" href="submit.html" target="_parent">
       <b>自分の気持ちを知る・表す</b>
-      <br/>
-      <i>
-      <?php
-      $mod = filemtime($filename);
-      date_default_timezone_set('Asia/Tokyo');
-      print "".date("g:i:s A \J\S\T",$mod);
-      ?>
-      </i>
-      Update
     </a>
 
     <div id="menu" class="nlc">
