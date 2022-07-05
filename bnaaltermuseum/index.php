@@ -143,8 +143,11 @@ fclose($fp);
             width: 100%;
             height: 100vh;
         }
-        #flash {
-            z-index: 500;
+        
+        #flash iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -177,7 +180,7 @@ fclose($fp);
 
     <div id="background"></div>
     <div id="sign" class="change"></div>
-    <div id="flash" class="change"></div>
+    <div id="flash" class="change"><iframe src="flash.php"></iframe></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -185,7 +188,6 @@ fclose($fp);
         $(function() {
             $("#background").load("background.php");
             $("#sign").load("log.php");
-            $("#flash").load("flash.php");
         })
 
         $(function() {
