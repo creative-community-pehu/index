@@ -68,6 +68,11 @@ fclose($fp);
             writing-mode: vertical-rl;
             transition: .5s all;
         }
+        #update:hover {
+            cursor:pointer;
+            background:#eee;
+            transition:.5s all;
+        }
         
         #update b {
             font-weight: 500;
@@ -155,7 +160,7 @@ fclose($fp);
 
 <body>
 
-    <span id="update">
+    <a id="update" href="submit.html" target="_parent">
       <b>
         <?php
         date_default_timezone_set('Asia/Tokyo');
@@ -171,12 +176,16 @@ fclose($fp);
       ?>
       </i>
       Update
-    </span>
+    </a>
 
     <div id="menu" class="nlc">
+        <div><a class="tab" href="#sign">
+        <?php
+        date_default_timezone_set('Asia/Tokyo');
+        print(date('Y年n月j日'))
+        ?>
+        </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">Flash</a><span class="check"><b>✔</b></span></div>
-        <div><a class="tab" href="submit.html">Submit</a><span class="check"><b>✔</b></span></div>
-        <div><a class="tab" href="#sign">View The Collection</a><span class="check"><b>✔</b></span></div>
     </div>
 
     <div id="background"></div>
