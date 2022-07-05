@@ -136,7 +136,8 @@ fclose($fp);
         }
         
         #background,
-        #flash {
+        #flash,
+        #sign {
             position: fixed;
             top: 0;
             left: 0;
