@@ -119,7 +119,12 @@ date_default_timezone_set('Asia/Tokyo');
 print(date('Y年n月j日'))
 ?>
 </b>
-<br/>
+<p>
+<?php
+date_default_timezone_set('Asia/Tokyo');
+print("Color and Symbol for " . date('l jS \o\f F Y'))
+?>
+<br/></p>
 </li>
 </ul>
 </div>
