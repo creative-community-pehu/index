@@ -51,7 +51,7 @@ fclose($fp);
             
             #log {
                 font-size: 2.5vw;
-                width: 50%;
+                width: 45%;
                 height: 75vh;
                 margin: 10vh 25% 0;
                 z-index: 1000;
