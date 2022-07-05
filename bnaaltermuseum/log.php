@@ -96,8 +96,8 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li>
-<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u> <?=h($row[4])?><br/>
-Posted on <i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[2])?></i></p>
+<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
+<i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
