@@ -171,12 +171,12 @@ fclose($fp);
         ?>
         </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">
-            更新 
             <?php
             $mod = filemtime($filename);
             date_default_timezone_set('Asia/Tokyo');
-            print "".date("G:i:s T",$mod);
+            print "".date("G 時 i 分 s 秒",$mod);
             ?>
+            更新
         </a><span class="check"><b>✔</b></span></div>
     </div>
 
