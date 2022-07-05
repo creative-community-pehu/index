@@ -130,6 +130,10 @@ fclose($fp);
                 #log_items {
                     padding: 0 4.5vw;
                 }
+                #log_items u {
+                    width: 7.5vw;
+                    height: 7.5vw;
+                }
             }
         </style>
     </head>
