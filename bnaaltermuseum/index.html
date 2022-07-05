@@ -19,6 +19,35 @@
             word-spacing: -.25ch;
         }
         
+        #update {
+            position: absolute;
+            z-index: 10;
+            top: 1rem;
+            right: 1rem;
+            color: #000;
+            line-height: 1.5rem;
+            letter-spacing: .1rem;
+            font-family: "SimSong", "MS Mincho", serif;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            transition: .5s all;
+        }
+        
+        #update b {
+            font-weight: 500;
+            font-size: 125%;
+            background: #fff;
+            padding: 0.5rem 0.25rem;
+            text-orientation: upright;
+        }
+        
+        #update i {
+            padding: 0.5rem 0.125rem;
+        }
+        
         #menu {
             position: fixed;
             z-index: 1000;
@@ -76,7 +105,6 @@
         #submit {
             z-index: 500;
             overflow-y: auto;
-            background-color: #fff;
         }
         
         #background {
@@ -91,19 +119,41 @@
 
 <body>
 
+    <span id="update">
+      <b>
+        <?php
+        date_default_timezone_set('Asia/Tokyo');
+        print(date('Y年n月j日'))
+        ?>
+      </b>
+      <br/>
+      <i>
+      <?php
+      $mod = filemtime($filename);
+      date_default_timezone_set('Asia/Tokyo');
+      print "".date("g:i:s A \J\S\T",$mod);
+      ?>
+      </i>
+      Update
+    </span>
+
     <div id="menu" class="nlc">
-        <div><a class="tab" href="#submit">Submit</a><span class="check"><b>✔</b></span></div>
+        <div><a class="tab" href="#flash">Flash</a><span class="check"><b>✔</b></span></div>
+        <div><a class="tab" href="submit.html">Submit</a><span class="check"><b>✔</b></span></div>
+        <div><a class="tab" href="#sign">View The Collection</a><span class="check"><b>✔</b></span></div>
     </div>
 
     <div id="background"></div>
-    <div id="submit" class="change"></div>
+    <div id="sign" class="change"></div>
+    <div id="flash" class="change"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#background").load("background.php");
-            $("#submit").load("submit.html");
+            $("#sign").load("log.php");
+            $("#flash").load("flash.php");
         })
 
         $(function() {
