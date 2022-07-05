@@ -124,7 +124,8 @@ print(date('Y年n月j日'))
 date_default_timezone_set('Asia/Tokyo');
 print(date('l jS \o\f F Y'))
 ?>
-<br/></p>
+<br/>
+</p>
 </li>
 </ul>
 </div>
