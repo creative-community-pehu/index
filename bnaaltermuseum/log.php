@@ -121,10 +121,10 @@ fclose($fp);
 
             @media screen and (max-width: 550px) {
                 #log {
-                    font-size: 4.5vw;
-                    width: 75%;
+                    font-size: 4vw;
+                    width: 70%;
                     height: 55vh;
-                    margin: 10vh 12.5% 0;
+                    margin: 10vh 15% 0;
                 }
                 #log_items {
                     padding: 0 5vw;
