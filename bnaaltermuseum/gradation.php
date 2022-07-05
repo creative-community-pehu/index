@@ -36,7 +36,7 @@ fclose($fp);
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/sign/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 <title>自分の気持ちを知る・表す</title>
 <style type="text/css">
 body  {overflow-x:hidden;}
@@ -53,6 +53,7 @@ body  {overflow-x:hidden;}
   font-size:150%;
   background:#fff;
   padding:0.5rem 0.25rem;
+  text-orientation: upright;
 }
 #bg_link i {padding:0.5rem 0.125rem;}
 
