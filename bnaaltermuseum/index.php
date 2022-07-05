@@ -173,7 +173,7 @@ fclose($fp);
         <div><a class="tab" href="#sign">
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        print(date('Y 年 n 月 j 日'). " $week_name[$w] 曜日")
+        print(date('Y 年 n 月 j 日'). "（$week_name[$w]）")
         ?>
         </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">
