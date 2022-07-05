@@ -142,8 +142,7 @@ fclose($fp);
                 </li>
                 <?php endif; ?>
                 <li>
-                    <p>
-                        <br/>This is The Collection of 
+                    <p>This is The Collection of 
                         <br/>Colors and Symbols That expresses
                         <i>
                           <?php
