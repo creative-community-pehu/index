@@ -76,7 +76,6 @@ fclose($fp);
         
         #update b {
             font-weight: 500;
-            font-size: 110%;
             background: #fff;
             padding: 0.5rem 0.25rem;
             text-orientation: upright;
