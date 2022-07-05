@@ -40,7 +40,7 @@ fclose($fp);
 <style type="text/css">
 #log {
   font-size:2.5vw;
-  width:45%;
+  width:50%;
   height:75vh;
   margin:12.5vh auto;
   background:rgba(255,255,255,0.75);
@@ -66,7 +66,7 @@ fclose($fp);
 #log_items p {
   margin:0;
   font-size:75%;
-  line-height:200%;
+  line-height:150%;
 }
 #log_items u {
   display:inline-block;
