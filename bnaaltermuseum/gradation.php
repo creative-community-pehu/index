@@ -39,7 +39,7 @@ fclose($fp);
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>自分の気持ちを知る・表す</title>
-        <link rel="stylesheet" type="text/css" href="gradient.css" />
+        <link rel="stylesheet" type="text/css" href="gradation.css" />
     </head>
 
     <body>
