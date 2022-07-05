@@ -110,9 +110,9 @@ body  {overflow-x:hidden;}
 <i>
 <?php
 date_default_timezone_set('Asia/Tokyo');
-print "".date("m.d.y);
+print "".date("m.d.y H:i",);
 ?>
-</i> Update
+</i>
 </span>
 
 <div id="open" class="none"></div>
