@@ -107,11 +107,17 @@ body  {overflow-x:hidden;}
 <body>
 
 <span id="bg_link">
-<b>自分の気持ちを知る・表す</b><br/>
+<b>
+<?php
+date_default_timezone_set('Asia/Tokyo');
+print(date('Y年n月j日'))
+?>
+</b>
+<br/>
 <i>
 <?php
 date_default_timezone_set('Asia/Tokyo');
-print(date('Y年m月d日'))
+print(date('l jS \o\f F Y'))
 ?>
 </i>
 </span>
