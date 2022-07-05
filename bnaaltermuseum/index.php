@@ -180,14 +180,12 @@ fclose($fp);
         ?>
         </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">
-            <i>
-                <?php
-                $mod = filemtime($filename);
-                date_default_timezone_set('Asia/Tokyo');
-                print "".date("g:i:s A \J\S\T",$mod);
-                ?>
-                </i>
-                Update
+            <?php
+            $mod = filemtime($filename);
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("G:i:s T",$mod);
+            ?>
+            更新
         </a><span class="check"><b>✔</b></span></div>
     </div>
 
