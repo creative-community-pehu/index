@@ -109,7 +109,7 @@ body  {overflow-x:hidden;}
 <b>自分の気持ちを知る・表す</b><br/>
 <i>
 <?php
-$mod = filemtime("symbol_color.csv");
+$mod = filemtime("$today.csv");
 date_default_timezone_set('Asia/Tokyo');
 print "".date("m.d.y H:i",$mod);
 ?>
@@ -133,7 +133,7 @@ print "".date("m.d.y H:i",$mod);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     $(function(){
-    $("#open").load("/sign/log.php");
+    $("#open").load("log.php");
     })
 
     let btn = document.querySelector('#bg_link');
