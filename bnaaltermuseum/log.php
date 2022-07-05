@@ -66,7 +66,7 @@ fclose($fp);
 #log_items p {
   margin:0;
   font-size:50%;
-  line-height:100%;
+  line-height:110%;
 }
 #log_items u {
   display:inline-block;
