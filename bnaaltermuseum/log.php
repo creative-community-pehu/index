@@ -126,8 +126,11 @@ fclose($fp);
                     width: 75%;
                     height: 55vh;
                     margin: 10vh 12.5% 0;
+                }
+                #log_items {
+                    padding: 0 4.5vw;
+                }
             }
-        }
         </style>
     </head>
 
