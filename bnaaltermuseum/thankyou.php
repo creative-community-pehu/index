@@ -73,14 +73,14 @@ fclose($fp);
 </head>
 <body>
 <div class="inside">
-<h1><span id="rename"></span></h1>
+<h1><span id="thankyou"></span></h1>
 <p class="notice"><b>自分の気持ちを知る・表す</b></p>
 </div>
 </div>
 <script>
 var text = ["Thank You","for","Submit" ];
 var counter = 0;
-var elem = document.getElementById("rename");
+var elem = document.getElementById("thankyou");
 var inst = setInterval(change, 550);
 
 elem.innerHTML = text[counter];
