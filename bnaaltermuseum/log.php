@@ -92,6 +92,10 @@ fclose($fp);
 #log_items i {
   font-size:125%;
 }
+#log_items hr {
+  border:none;
+  padding:2.5vw;
+}
 </style>
 </head>
 <body>
