@@ -54,7 +54,6 @@ fclose($fp);
         
         #update {
             position: absolute;
-            z-index: 10;
             top: 1rem;
             right: 1rem;
             color: #000;
