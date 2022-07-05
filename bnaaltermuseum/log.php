@@ -57,7 +57,7 @@ fclose($fp);
                 z-index: 1000;
                 background: rgba(255, 255, 255, 0.75);
                 overflow-y: auto;
-                font-family: 'Times New Roman', serif;
+                font-family: "SimSong", "MS Mincho", serif;
                 font-weight: 500;
             }
             
