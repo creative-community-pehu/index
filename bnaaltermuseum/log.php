@@ -113,10 +113,12 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li>
-  <?php
+<b>
+<?php
 date_default_timezone_set('Asia/Tokyo');
 print(date('Y年n月j日'))
 ?>
+</b>
 </li>
 </ul>
 </div>
