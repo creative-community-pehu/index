@@ -96,7 +96,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li>
-<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u><br/>
+<p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
 IP <i style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></i></p>
 </li>
 <?php endforeach; ?>
