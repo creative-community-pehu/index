@@ -112,7 +112,7 @@ fclose($fp);
 </p>
 </li>
 <?php endif; ?>
-<li>
+<li style="text-arign:center;">
 <b>
 <?php
 date_default_timezone_set('Asia/Tokyo');
