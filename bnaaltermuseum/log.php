@@ -117,19 +117,7 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li>
-<b>
-<?php
-date_default_timezone_set('Asia/Tokyo');
-print(date('Y年n月j日'))
-?>
-</b>
-<p>
-<?php
-date_default_timezone_set('Asia/Tokyo');
-print(date('l jS \o\f F Y'))
-?>
-<br/>
-</p>
+<b>自分の気持ちを知る・表す</b>
 <hr/>
 </li>
 </ul>
