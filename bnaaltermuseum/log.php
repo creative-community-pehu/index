@@ -127,7 +127,7 @@ fclose($fp);
                     margin: 10vh 12.5% 0;
                 }
                 #log_items {
-                    padding: 0 4.5vw;
+                    padding: 0 5vw;
                 }
                 #log_items u {
                     width: 7.5vw;
