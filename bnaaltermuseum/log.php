@@ -142,15 +142,9 @@ fclose($fp);
                 </li>
                 <?php endif; ?>
                 <li>
-                    <sup>
-                      <?php
-                      date_default_timezone_set('Asia/Tokyo');
-                      print(date('Y年n月j日'))
-                      ?>
-                      の
-                    </sup>
-                    <br/> 気持ちを表す <b>色と記号</b>
-                    <p><br/>This is The Colors and Symbols That expresses
+                    <p>
+                        <br/>This is The Collection of 
+                        <br/>Colors and Symbols That expresses
                         <i>
                           <?php
                           date_default_timezone_set('Asia/Tokyo');
