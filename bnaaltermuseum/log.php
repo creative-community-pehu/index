@@ -81,6 +81,7 @@ fclose($fp);
   position:absolute;
   padding:0;
   margin:0;
+  font-size:150%;
   top:50%; left:50%;
   transform:translate(-50%,-50%);
   -webkit-transform:translate(-50%,-50%);
