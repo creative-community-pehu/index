@@ -118,7 +118,7 @@ fclose($fp);
 <?php endif; ?>
 <li>今日の気持ちを表す<br/>
 <b>記号と色</b>
-<p><br/>This is The Colors and Symbols That Looks on 
+<p><br/>This is The Colors and Symbols That Suits on 
 <?php
 date_default_timezone_set('Asia/Tokyo');
 print(date('l jS \o\f F Y'))
