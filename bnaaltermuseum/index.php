@@ -7,6 +7,8 @@ function h($str) {
 }
 
 $today = date("Ymd");
+$w = date("w");
+$week_name = array("日", "月", "火", "水", "木", "金", "土");
 $symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
 $color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
 $timestamp = date("g:i:s A \J\S\T");
@@ -171,7 +173,7 @@ fclose($fp);
         <div><a class="tab" href="#sign">
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        print(date('Y 年 n 月 j 日'))
+        print(date('Y 年 n 月 j 日'). "($week_name[$w])")
         ?>
         </a><span class="check"><b>✔</b></span></div>
         <div><a class="tab" href="#flash">
