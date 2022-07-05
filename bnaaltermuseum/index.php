@@ -179,7 +179,16 @@ fclose($fp);
         print(date('Y 年 n 月 j 日'))
         ?>
         </a><span class="check"><b>✔</b></span></div>
-        <div><a class="tab" href="#flash">Flash</a><span class="check"><b>✔</b></span></div>
+        <div><a class="tab" href="#flash">
+            <i>
+                <?php
+                $mod = filemtime($filename);
+                date_default_timezone_set('Asia/Tokyo');
+                print "".date("g:i:s A \J\S\T",$mod);
+                ?>
+                </i>
+                Update
+        </a><span class="check"><b>✔</b></span></div>
     </div>
 
     <div id="background"></div>
