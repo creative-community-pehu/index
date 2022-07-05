@@ -52,7 +52,7 @@ fclose($fp);
             #log {
                 font-size: 2.5vw;
                 width: 50%;
-                height: 70vh;
+                height: 75vh;
                 margin: 10vh 25% 0;
                 z-index: 1000;
                 background: rgba(255, 255, 255, 0.75);
