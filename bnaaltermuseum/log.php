@@ -123,8 +123,8 @@ fclose($fp);
             @media screen and (max-width: 550px) {
                 #log {
                     width: 75%;
-                height: 55vh;
-                margin: 10vh 25% 0;
+                    height: 55vh;
+                    margin: 10vh 12.5% 0;
             }
         }
         </style>
