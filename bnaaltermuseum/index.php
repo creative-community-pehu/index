@@ -138,7 +138,6 @@ fclose($fp);
         #background,
         #flash,
         #sign {
-            position: absolute;
             width: 100%;
             height: 100vh;
             top: 0;
