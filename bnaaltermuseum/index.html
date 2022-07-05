@@ -73,6 +73,12 @@
             transition: all 1000ms ease;
         }
         
+        #submit {
+            z-index: 500;
+            overflow-y: auto;
+            background-color: #fff;
+        }
+        
         #gradation {
             position: fixed;
             top: 0;
@@ -86,18 +92,28 @@
 <body>
 
     <div id="menu" class="nlc">
-        <div><a class="tab" href="submit.html">Submit</a><span class="check"><b>✔</b></span></div>
+        <div><a class="tab" href="#submit">Submit</a><span class="check"><b>✔</b></span></div>
     </div>
 
-    <div id="gradation"></div>
+    <div id="gradation" class="change"></div>
+    <div id="submit" class="change"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#gradation").load("gradation.php");
-            $("#all").load("all.php");
+            $("#submit").load("submit.html");
         })
+
+        $(function() {
+            $('.change').hide();
+
+            $('.tab').on('click', function() {
+                $('.change').not($($(this).attr('href'))).hide();
+                $($(this).attr('href')).fadeToggle(1000);
+            });
+        });
 
         $('a[href^="#"]').click(function() {
             var href = $(this).attr("href");

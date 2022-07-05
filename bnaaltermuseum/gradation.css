@@ -1,7 +1,6 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 li {
@@ -43,7 +42,7 @@ li {
     padding: 0.5rem 0.125rem;
 }
 
-#symbol_color {
+#gradient {
     position: relative;
     top: 0;
     left: 0;
@@ -57,7 +56,7 @@ li {
     flex-direction: column-reverse;
 }
 
-.bg_gradient {
+.bg {
     position: relative;
     top: 0;
     left: 0;
@@ -174,7 +173,7 @@ li {
     #update {
         display: none;
     }
-    .bg_gradient {
+    .bg {
         background-size: 100% 100%;
         animation: gradient none;
     }

@@ -102,8 +102,8 @@ fclose($fp);
             </ul>
         </div>
 
-        <ul id="symbol_color">
-            <li class="bg_gradient" style="background-image: linear-gradient(0deg,
+        <ul id="gradient">
+            <li class="bg" style="background-image: linear-gradient(0deg,
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             #<?=h($row[1])?>,
