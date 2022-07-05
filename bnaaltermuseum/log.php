@@ -40,6 +40,10 @@ fclose($fp);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>自分の気持ちを知る・表す</title>
         <style type="text/css">
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
             body {
                 padding: 0;
                 margin: 0;
@@ -57,7 +61,7 @@ fclose($fp);
                 z-index: 1000;
                 background: rgba(255, 255, 255, 0.75);
                 overflow-y: auto;
-                font-family: "SimSong", "MS Mincho", serif;
+                font-family: "MS Mincho", "SimSong", serif;
                 font-weight: 500;
             }
             
