@@ -174,7 +174,7 @@ fclose($fp);
             <?php
             $mod = filemtime($filename);
             date_default_timezone_set('Asia/Tokyo');
-            print "".date("G 時 i 分 s 秒",$mod);
+            print "".date("G:i:s",$mod);
             ?>
             更新
         </a><span class="check"><b>✔</b></span></div>
