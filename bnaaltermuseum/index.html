@@ -8,6 +8,71 @@
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <title>自分の気持ちを知る・表す</title>
     <style type="text/css">
+        .nlc {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            line-height: 200%;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            display: inline-block;
+            transform: scale(1, 1.1);
+            word-spacing: -.25ch;
+        }
+        
+        #menu {
+            position: fixed;
+            z-index: 1000;
+            bottom: 0;
+            left: 0;
+            width: 95%;
+            padding: 0.25rem 2.5%;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        #menu .tab {
+            color: #000;
+            text-decoration: none;
+            transition: all 500ms ease;
+        }
+        
+        #menu .tab:hover,
+        #menu .check b {
+            cursor: pointer;
+            color: #fff;
+            transition: all 500ms ease;
+        }
+        
+        #menu .check {
+            float: left;
+            display: inline-block;
+            width: 2.5rem;
+            margin-right: 0rem;
+            text-align: center;
+        }
+        
+        #menu .check:before {
+            content: '[';
+            opacity: 1;
+        }
+        
+        #menu .check:after {
+            content: ']';
+            opacity: 1;
+        }
+        
+        .check b {
+            opacity: 0;
+            transition: all 1000ms ease;
+        }
+        
+        .tab:hover+.check b {
+            opacity: 1;
+            transition: all 1000ms ease;
+        }
+        
         #gradation {
             position: fixed;
             top: 0;
@@ -19,6 +84,10 @@
 </head>
 
 <body>
+
+    <div id="menu" class="nlc">
+        <div><a class="tab" href="submit.html">Submit</a><span class="check"><b>✔</b></span></div>
+    </div>
 
     <div id="gradation"></div>
 
