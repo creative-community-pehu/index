@@ -74,7 +74,7 @@ fclose($fp);
   height:5vw;
   position:relative;
   float:left;
-  margin-top: 1.25vw;
+  margin-top: 1vw;
   margin-right: 2.5vw;
 }
 #log_items span {
