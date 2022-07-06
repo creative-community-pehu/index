@@ -165,7 +165,7 @@
 </head>
 
 <body id="color">
-    <div id="greeting" class="hsl"></div>
+    <div id="greeting"></div>
 
     <div class="hue hsl">Hue <span id="huecount"></span></div>
     <div class="saturation hsl">Saturation <span id="saturationcount"></span></div>
