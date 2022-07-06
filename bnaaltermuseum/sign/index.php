@@ -53,12 +53,12 @@ fclose($fp);
             top: 2.5vw;
             right: 2.5vw;
             z-index: 50;
-            border: solid #000 1px;
+            border: solid #000 0.1vw;
             border-radius: 50%;
             text-decoration: none;
             transition: .5s all;
-            width: 2rem;
-            height: 2rem;
+            width: 4.5vw;
+            height: 4.5vw;
         }
         
         #update:hover {
@@ -79,7 +79,7 @@ fclose($fp);
             color: #000;
             letter-spacing: .1vw;
             font-family: "SimSong", "MS Mincho", serif;
-            font-size: 1.5rem;
+            font-size: 2.5vw;
         }
         
         #menu {
@@ -154,6 +154,19 @@ fclose($fp);
             width: 100%;
             height: 100%;
             border: none;
+        }
+        
+        @media screen and (max-width: 550px) {
+            #update {
+                z-index: 50;
+                border: solid #000 1px;
+                width: 2rem;
+                height: 2rem;
+            }
+            #update b {
+                letter-spacing: .1rem;
+                font-size: 1.5rem;
+            }
         }
         
         @media print {
