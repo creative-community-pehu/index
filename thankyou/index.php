@@ -136,10 +136,6 @@ hr,
 </head>
 <body id="color">
 
-<div id="menu">
-<div><a class="tab" href="#" style="font-size:5rem;" onclick="history.back(-1);return false;">↵</a></div>
-</div>
-
 <div id="greeting"></div>
 
 <div class="hue hsl">Hue <span id="huecount"></span></div>
