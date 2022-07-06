@@ -35,7 +35,6 @@ fclose($fp);
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="refresh" content="60; URL=#">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="menu.css" />
     <title>自分の気持ちを知る・表す</title>
     <style type="text/css">
         .nlc {
