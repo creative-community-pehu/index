@@ -68,7 +68,7 @@
             position: fixed;
             z-index: 10;
             width: 80%;
-            height: 70vh;
+            max-height: 70vh;
             overflow: auto;
             margin: 12.5vh 10% 0;
         }
@@ -99,7 +99,7 @@
         
         @media screen and (max-width: 550px) {
             #greeting {
-                height: 55vh;
+                max-height: 55vh;
             }
         }
         
