@@ -121,7 +121,7 @@
             #submit h1 {
                 top: 0;
                 left: 0;
-                padding: 7.5rem 12.5% 5.5;
+                padding: 7.5rem 12.5% 5.5rem;
                 line-height: 150%;
                 font-size: 1.5rem;
                 font-family: "ipag", monospace;
