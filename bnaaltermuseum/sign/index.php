@@ -52,6 +52,7 @@ fclose($fp);
             position: fixed;
             top: 1rem;
             right: 1rem;
+            z-index: 50;
             color: #000;
             line-height: 1.5rem;
             letter-spacing: .1rem;
