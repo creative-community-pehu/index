@@ -33,11 +33,6 @@ fclose($fp);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>自分の気持ちを知る・表す</title>
         <style type="text/css">
-.SFCompact {font-family: "SF Compact";}
-@font-face {
-  font-family: "SF Compact";
-  src: url("https://creative-community.space/coding/fontbook/family/SF-Compact-Text-Regular.otf");
-}
             body {
                 padding: 0;
                 margin: 0;
@@ -54,7 +49,7 @@ fclose($fp);
                 margin: 10vh 25% 0;
                 z-index: 1000;
                 overflow-y: auto;
-                font-family: "Helvetica Neue" , "SF Compact", Helvetica, "YuGothic" , sans-serif;
+                font-family: "MS Mincho", "SimSong", serif;
                 font-weight: 500;
             }
             
