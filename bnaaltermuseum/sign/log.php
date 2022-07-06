@@ -267,6 +267,7 @@ fclose($fp);
     ?>
 </sup>
             <sup id="time" style="text-transform: uppercase;">
+            Last Modified 
     <?php
     $mod = filemtime($source_file);
     date_default_timezone_set('Asia/Tokyo');
