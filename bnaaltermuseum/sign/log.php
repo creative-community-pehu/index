@@ -185,7 +185,7 @@ fclose($fp);
                     position: absolute;
                     top: 0;
                     width: 15%;
-                    margin: 0.25vw 1.25vw 2.5vw;
+                    margin: 0.5vw 1.25vw 2vw;
                     padding: 1vw 0;
                     border: solid 1px #000;
                     display: block;
