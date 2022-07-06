@@ -66,8 +66,6 @@ fclose($fp);
                 display: inline-block;
                 transform: scale(1, 1.1);
                 word-spacing: -.25ch;
-                border-top: 1px solid #000;
-                border-bottom: 1px solid #000;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
