@@ -50,7 +50,10 @@ fclose($fp);
             }
             
             #mod b {
-                font-size: 7.5vw;
+                padding: 0.45rem 1.25% 0.25rem;
+                display: inline-block;
+                font-size: 5.5vw;
+                transform: scale(1, 1.5);
             }
             
             #mod p {
@@ -181,7 +184,7 @@ fclose($fp);
                 #mod p {
                     position: absolute;
                     top: 0;
-                    width: 20%;
+                    width: 15%;
                     margin: 2.5vw 1.25vw;
                     padding: 1vw 0;
                     border: solid 1px #000;
@@ -243,7 +246,7 @@ fclose($fp);
     <body>
 
         <div id="mod">
-            <b>𝕷𝖆𝖘𝖙 𝕸𝖔𝖉𝖎𝖋𝖎𝖊𝖉</b>
+            <b>𝕮𝖔𝖑𝖔𝖗𝖘 𝖆𝖓𝖉 𝕾𝖞𝖒𝖇𝖔𝖑𝖘</b>
             <p>
                 <sup id="no" style="text-transform: uppercase;">
         #
