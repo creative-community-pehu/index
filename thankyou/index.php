@@ -62,7 +62,7 @@
             width: 80%;
             height: 70vh;
             overflow: auto;
-            margin: 15vh 10% 0;
+            margin: 12.5vh 10% 0;
         }
         
         hr,
