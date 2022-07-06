@@ -88,10 +88,6 @@
             z-index: 100;
         }
         
-        #you img {
-            width: 3.5rem;
-        }
-        
         @media print {
             #greeting,
             #menu {
@@ -156,9 +152,10 @@
     <div class="saturation hsl">Saturation <span id="saturationcount"></span></div>
     <div class="lightness hsl">Lightness <span id="lightnesscount"></span></div>
     <div id="you">
-        <h1><span>Drawing by</span>
-            <img src="/qr.png">
-            <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
+        <h1>
+            <span>Drawing by</span>
+            <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span>
+        </h1>
     </div>
     <div id="submit">
         <h1>OMG!<br/> Your Drawing is Seems So Beautiful<3
