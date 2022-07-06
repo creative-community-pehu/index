@@ -173,23 +173,55 @@ fclose($fp);
                 height: 7.5vw;
             }
         }
-        
-        @media print {
-            #mod {
-                height: auto;
-                background-color: #fff;
+            
+            @media print {
+                #mod {
+                    height: auto;
+                    background-color: #fff;
+                }
+                #mod p {
+                    position: relative;
+                    top: 0;
+                }
+                #mod sup#time {
+                    display: none;
+                }
+                #mod sup#ed {
+                    display: inline-flex;
+                }
+                #log {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    font-size: 1vw;
+                    width: 20%;
+                    height: 10vw;
+                    margin: 0;
+                    z-index: 1000;
+                    overflow-y: auto;
+                    font-family: "MS Mincho", "SimSong", serif;
+                    font-weight: 500;
+                }
+                #log_items li {
+                    float: left;
+                    display: inline-block;
+                    margin: 0.25vw;
+                }
+                #log_items .post {
+                    display: none;
+                }
+                #log_items u {
+                    display: inline-block;
+                    width: 2vw;
+                    height: 2vw;
+                    position: relative;
+                    float: left;
+                }
+                #log_items b,
+                #log_items i {
+                    display: none;
+                }
             }
-            #mod p {
-                position: relative;
-                top: 0;
-            }
-            #mod sup#time {
-                display: none;
-            }
-            #mod sup#ed {
-                display: inline-flex;
-            }
-        }
     </style>
 </head>
 
@@ -232,7 +264,7 @@ fclose($fp);
                     <u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
                     <b style="color:#<?=h($row[1])?>; user-select:none; pointer-events:none; filter: invert();"><?=h($row[3])?></b>
                 </p>
-                <p style="user-select:none; pointer-events:none; text-transform: uppercase;">
+                <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">
                     <?=h($row[2])?>
                 </p>
             </li>
@@ -243,7 +275,7 @@ fclose($fp);
                     <u style="background:#000;"><span style="color:#fff;">?</span></u>
                     <b style="color:#000; user-select:none; pointer-events:none;">Under Construction</b>
                 </p>
-                <p style="user-select:none; pointer-events:none; text-transform: uppercase;">IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i></p>
+                <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i></p>
             </li>
             <?php endif; ?>
         </ul>
