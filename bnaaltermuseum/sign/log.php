@@ -202,7 +202,7 @@ fclose($fp);
                     position: relative;
                     top: 0;
                     right: 0;
-                    font-size: 1vw;
+                    font-size: 2.5vw;
                     width: 100%;
                     height: auto;
                     margin: 0;
@@ -217,24 +217,29 @@ fclose($fp);
                     border-bottom: 1px solid #000;
                     display: -webkit-flex;
                     display: flex;
-                    -webkit-align-items: stretch;
-                    align-items: stretch;
-                    -webkit-flex-direction: row;
-                    flex-direction: row;
+                    -webkit-align-items: start;
+                    align-items: start;
+                    -webkit-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
                 }
                 #log_items li {
                     display: inline-flex;
                     padding: 0.25vw;
                     margin: 0;
                 }
-                #log_items .post {
-                    display: none;
+                #log_items p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 100%;
+                    line-height: 150%;
                 }
                 #log_items u {
-                    display: block;
+                    margin: 0.5vw 1vw 0;
                     width: 2.5vw;
                     height: 2.5vw;
+                    font-size: 1.25vw;
                 }
+                #log_items .post,
                 #log_items b,
                 #log_items i {
                     display: none;
