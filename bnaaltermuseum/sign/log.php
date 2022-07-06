@@ -181,6 +181,16 @@ fclose($fp);
                 #mod p {
                     position: absolute;
                     top: 0;
+                    width: 20%;
+                    margin: 2.5vw 1.25vw;
+                    padding: 0.5vw 0;
+                    border: solid 1px #000;
+                    display: block;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                #mod sup {
+                    display: block;
                 }
                 #mod sup#time {
                     display: none;
