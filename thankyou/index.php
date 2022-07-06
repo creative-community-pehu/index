@@ -60,9 +60,9 @@
             position: fixed;
             z-index: 10;
             width: 80%;
-            height: 70vh;
+            height: 75vh;
             overflow: auto;
-            margin: 12.5vh 10% 0;
+            margin: 12.5vw 10% 0;
         }
         
         hr,
