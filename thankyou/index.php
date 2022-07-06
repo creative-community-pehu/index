@@ -8,7 +8,6 @@
 <title>Your Drawing is Seems So Beautiful</title>
 <link rel="icon" href="/logo.png">
 <link rel="stylesheet" href="/coding/fontbook/css/font-family.css"/>
-<link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
 <style type="text/css">
 body {margin:0; padding:0; background:#000;}
 
@@ -168,7 +167,7 @@ creative-community.space
 </div>
 <div id="sketch"></div>
 
-<script src="https://creative-community.space/coding/js/p5/sketch.js"></script>
+<script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
