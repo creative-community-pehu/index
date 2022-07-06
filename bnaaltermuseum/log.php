@@ -7,19 +7,12 @@ function h($str) {
 }
 
 $today = date("Ymd");
-$symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
-$color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
-$timestamp = date("g:i:s A T");
-$filename =  $today . ".csv"; 
+$source_file =  $today . ".csv";
 
-$forwardedFor = $_SERVER["REMOTE_ADDR"];
-$ips = explode(",", $forwardedFor);
-$ip = $ips[0];
-
-$fp = fopen($filename, 'a+b');
+$fp = fopen($source_file, 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip,]);
+    fputcsv($fp, [$symbol, $color, $timestamp, $ip,]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -143,24 +136,38 @@ fclose($fp);
 
         <div id="log">
             <ul id="log_items">
+                <li>
+                    <hr/>
+                    <p style="text-align:center;">
+                        <b>
+                        <?php
+                        echo sizeof(file($source_file));
+                        ?>
+                        </b>
+                        Posts by <i>Members</i> of 
+                        <br/><b>New Life Collection</b><br/>
+                    </p>
+                </li>
                 <?php if (!empty($rows)): ?>
                 <?php foreach ($rows as $row): ?>
                 <li>
                     <p><u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
-                        <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[4])?></b></p>
+                        <b style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[3])?></b></p>
                     <p style="user-select:none; pointer-events:none;">Posted on <i><?=h($row[2])?></i></p>
                 </li>
                 <?php endforeach; ?>
                 <?php else: ?>
                 <li>
                     <p>
-                        <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i>
+                        <u style="background:#000;"><span style="color:#fff;">?</span></u>
+                        <b style="color:#000;">Under Construction</b>
                     </p>
+                    <p id="showTime"></p>
                 </li>
                 <?php endif; ?>
                 <li>
-                    <p>This is The Collection of 
-                        <br/>Colors and Symbols That expresses<br/>
+                    <p>
+                        Colors and Symbols That expresses<br/>
                         <i>
                           <?php
                           date_default_timezone_set('Asia/Tokyo');
@@ -170,9 +177,37 @@ fclose($fp);
                         <br/>
                     </p>
                     <hr/>
+                    <p>
+                    Last Modified on 
+                        <?php
+                        $mod = filemtime($source_file);
+                        date_default_timezone_set('Asia/Tokyo');
+                        print "".date("G:i:s T",$mod);
+                        ?>
+                    </p>
+                    <hr/>
                 </li>
             </ul>
         </div>
+
+<script type="text/javascript">
+function set2(num) {
+  let ret;
+  if (num < 10) { ret = "0" + num; }
+  else { ret = num; }
+  return ret;
+}
+function showClock() {
+  const nowTime = new Date();
+  const nowHour = set2(nowTime.getHours());
+  const nowMin = set2(nowTime.getMinutes());
+  const nowSec = set2(nowTime.getSeconds());
+  const msg = "" + nowHour + ":" + nowMin + ":" + nowSec + "";
+  document.getElementById("showTime").innerHTML = msg;
+}
+setInterval('showClock()', 1000);
+</script>
+
     </body>
 
     </html>

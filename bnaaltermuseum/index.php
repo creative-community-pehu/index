@@ -6,22 +6,16 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$today = date("Ymd");
 $w = date("w");
 $week_name = array("日", "月", "火", "水", "木", "金", "土");
-$symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
-$color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
-$timestamp = date("g:i:s A \J\S\T");
-$filename =  $today . ".csv"; 
 
-$forwardedFor = $_SERVER["REMOTE_ADDR"];
-$ips = explode(",", $forwardedFor);
-$ip = $ips[0];
+$today = date("Ymd");
+$source_file =  $today . ".csv";
 
-$fp = fopen($filename, 'a+b');
+$fp = fopen($source_file, 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip,]);
+    fputcsv($fp, [$symbol, $color, $timestamp, $ip,]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -39,7 +33,7 @@ fclose($fp);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="refresh" content="60; URL=">
+    <meta http-equiv="refresh" content="60; URL=#">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <title>自分の気持ちを知る・表す</title>
@@ -65,6 +59,7 @@ fclose($fp);
             font-family: "SimSong", "MS Mincho", serif;
             font-size: 0.9rem;
             text-decoration: none;
+            text-orientation: upright;
             display: inline-block;
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
@@ -80,11 +75,10 @@ fclose($fp);
             font-weight: 500;
             background: #fff;
             padding: 0.5rem 0.25rem;
-            text-orientation: upright;
         }
         
         #update i {
-            padding: 0.5rem 0.125rem;
+            padding: 0.5rem 0.125rem 0.25rem;
         }
         
         #menu {
@@ -164,8 +158,7 @@ fclose($fp);
 </head>
 
 <body>
-
-    <a id="update" href="submit.html" target="_parent">
+<a id="update" href="submit.html" target="_parent">
       <b>自分の気持ちを知る・表す</b>
     </a>
 
@@ -174,16 +167,11 @@ fclose($fp);
         <?php
         date_default_timezone_set('Asia/Tokyo');
         print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
-        ?>
-        </a><span class="check"><b>✔</b></span></div>
-        <div><a class="tab" href="#flash">
-            <?php
-            $mod = filemtime($filename);
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("G:i:s",$mod);
-            ?>
-            更新
-        </a><span class="check"><b>✔</b></span></div>
+        ?></a>
+        <span class="check"><b>✔</b></span>
+        </div>
+        <div><a id="showTime" class="tab" href="#flash"></a><span class="check"><b>✔</b></span>
+        </div>
     </div>
 
     <div id="background"></div>

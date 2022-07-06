@@ -6,20 +6,13 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$today = date("Ymd");
-$symbol = (string)filter_input(INPUT_POST, 'symbol'); // $_POST['symbol']
-$color = (string)filter_input(INPUT_POST, 'color'); // $_POST['color']
-$timestamp = date("g:i:s A \J\S\T");
-$filename =  $today . ".csv"; 
+$sign = date("d");
+$source_file =  $sign . ".csv";
 
-$forwardedFor = $_SERVER["REMOTE_ADDR"];
-$ips = explode(",", $forwardedFor);
-$ip = $ips[0];
-
-$fp = fopen($filename, 'a+b');
+$fp = fopen($source_file, 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$symbol, $color, $timestamp, $today, $ip,]);
+    fputcsv($fp, [$symbol, $color, $timestamp, $ip,]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -145,8 +138,8 @@ fclose($fp);
             <?php endforeach; ?>
             <?php else: ?>
             <li>
-                <span class="color" style="background:#000;">
-                  <b class="symbol" style="color:#000;">☑︎</b>
+                <span class="color" style="background:#fff;">
+                  <b class="symbol" style="color:#fff;">?</b>
                 </span>
             </li>
             <?php endif; ?>
