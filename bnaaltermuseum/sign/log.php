@@ -33,223 +33,225 @@ fclose($fp);
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>自分の気持ちを知る・表す</title>
     <style type="text/css">
-        body {
-            padding: 0;
-            margin: 0;
-        }
-        
-        #mod {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Times New Roman', serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #mod b {
-            padding: 0rem 1.25% 0.25rem;
-            font-size: 5.5vw;
-            transform: scale(1, 1.5);
-        }
-        
-        #mod p {
-            position: absolute;
-            top: 0;
-            width: 97.5%;
-            margin: 0;
-            padding: 0.5rem 1.25% 0.25rem;
-            font-size: 2vw;
-            font-weight: 500;
-            font-stretch: condensed;
-            font-variant: common-ligatures tabular-nums;
-            display: inline-block;
-            transform: scale(1, 1.1);
-            word-spacing: -.25ch;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        #mod #ed {
-            display: none;
-        }
-        
-        #mod sup {
-            display: inline-flex;
-        }
-        
-        li {
-            list-style: none;
-        }
-        
-        #log {
-            font-size: 2.5vw;
-            width: 45%;
-            height: 70vh;
-            margin: 12.5vh 25% 0;
-            z-index: 1000;
-            overflow-y: auto;
-            font-family: "MS Mincho", "SimSong", serif;
-            font-weight: 500;
-        }
-        
-        #log_items {
-            padding: 0 2.5vw;
-            list-style: none;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-align-items: flex-start;
-            align-items: flex-start;
-            -webkit-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-        }
-        
-        #log_items li {
-            width: 100%;
-            position: relative;
-            margin: 0;
-            padding: 2.5vw 0 0;
-            word-break: break-word;
-        }
-        
-        #log_items p {
-            margin: 0;
-            font-size: 75%;
-            line-height: 150%;
-        }
-        
-        #log_items u {
-            display: inline-block;
-            width: 5vw;
-            height: 5vw;
-            position: relative;
-            float: left;
-            margin-top: 0.45vw;
-            margin-right: 2.5vw;
-        }
-        
-        #log_items span {
-            position: absolute;
-            padding: 0;
-            margin: 0;
-            font-size: 150%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-        }
-        
-        #log_items b {
-            font-size: 150%;
-        }
-        
-        #log_items i {
-            font-size: 125%;
-        }
-        
-        #log_items hr {
-            border: none;
-            padding: 0;
-        }
-        
-        @media screen and (max-width: 550px) {
-            #mod b {
-                font-size: 7.5vw;
+            body {
+                padding: 0;
+                margin: 0;
             }
-            #mod p {
-                font-size: 4.5vw;
-            }
-            #log {
-                font-size: 4vw;
-                width: 70%;
-                height: 55vh;
-                margin: 12.5vh 15% 0;
-            }
-            #log_items {
-                padding: 0 5vw;
-            }
-            #log_items u {
-                width: 7.5vw;
-                height: 7.5vw;
-            }
-        }
-        
-        @media print {
+            
             #mod {
-                position: relative;
-                height: auto;
-                background-color: #fff;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                font-family: 'Times New Roman', serif;
+                color:#fff;
+                text-align: center;
+                margin: 0;
+                padding: 0;
             }
+            
+            #mod b {
+                padding: 0rem 1.25% 0.25rem;
+                font-size: 5.5vw;
+                transform: scale(1, 1.5);
+            }
+            
             #mod p {
                 position: absolute;
                 top: 0;
-                width: 15%;
-                margin: 0.5vw 1.25vw 2vw;
-                padding: 1vw 0;
-                border: solid 1px #000;
-                display: block;
+                width: 97.5%;
+                margin: 0;
+                padding: 0.5rem 1.25% 0.25rem;
+                font-size: 2vw;
+                font-weight: 500;
+                font-stretch: condensed;
+                font-variant: common-ligatures tabular-nums;
+                display: inline-block;
+                transform: scale(1, 1.1);
+                word-spacing: -.25ch;
+                display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
+            
             #mod #ed {
-                display: inline-block;
-            }
-            #mod sup {
-                display: block;
-            }
-            #mod sup#time {
                 display: none;
             }
-            #log {
-                position: relative;
-                top: 0;
-                right: 0;
-                font-size: 2.5vw;
-                width: 100%;
-                height: auto;
-                margin: 0;
-                padding: 0 0 2.5vw;
-                background-color: #fff;
-                z-index: 0;
+            
+            #mod sup {
+                display: inline-flex;
             }
+            
+            li {
+                list-style: none;
+            }
+            
+            #log {
+                font-size: 2.5vw;
+                width: 45%;
+                height: 70vh;
+                margin: 12.5vh 25% 0;
+                z-index: 1000;
+                overflow-y: auto;
+                font-family: "MS Mincho", "SimSong", serif;
+                font-weight: 500;
+            }
+            
             #log_items {
-                padding: 0 0 0.25vw;
-                margin: 0;
-                border-top: 1px solid #000;
-                border-bottom: 1px solid #000;
+                padding: 0 2.5vw;
+                list-style: none;
                 display: -webkit-flex;
                 display: flex;
-                -webkit-align-items: start;
-                align-items: start;
-                flex-flow: row-reverse nowrap;
+                -webkit-align-items: flex-start;
+                align-items: flex-start;
+                -webkit-flex-direction: column-reverse;
+                flex-direction: column-reverse;
             }
+            
             #log_items li {
-                display: inline-flex;
-                padding: 0.25vw;
+                width: 100%;
+                position: relative;
                 margin: 0;
+                padding: 2.5vw 0 0;
+                word-break: break-word;
             }
+            
             #log_items p {
                 margin: 0;
-                padding: 0;
-                font-size: 100%;
+                font-size: 75%;
                 line-height: 150%;
             }
+            
             #log_items u {
-                margin: 0.5vw 1vw 0;
-                width: 2.5vw;
-                height: 2.5vw;
-                font-size: 1.25vw;
-                clear: both;
+                display: inline-block;
+                width: 5vw;
+                height: 5vw;
+                position: relative;
+                float: left;
+                margin-top: 0.45vw;
+                margin-right: 2.5vw;
             }
-            #log_items .post,
-            #log_items b,
+            
+            #log_items span {
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                font-size: 150%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+            
+            #log_items b {
+                font-size: 150%;
+            }
+            
             #log_items i {
-                display: none;
+                font-size: 125%;
             }
-        }
+            
+            #log_items hr {
+                border: none;
+                padding: 0;
+            }
+            
+            @media screen and (max-width: 550px) {
+                #mod b {
+                    font-size: 7.5vw;
+                }
+                #mod p {
+                    font-size: 4.5vw;
+                }
+                #log {
+                    font-size: 4vw;
+                    width: 70%;
+                    height: 55vh;
+                    margin: 12.5vh 15% 0;
+                }
+                #log_items {
+                    padding: 0 5vw;
+                }
+                #log_items u {
+                    width: 7.5vw;
+                    height: 7.5vw;
+                }
+            }
+            
+            @media print {
+                #mod {
+                    position: relative;
+                    height: auto;
+                    color:#000;
+                    background-color: #fff;
+                }
+                #mod p {
+                    position: absolute;
+                    top: 0;
+                    width: 15%;
+                    margin: 0.5vw 1.25vw 2vw;
+                    padding: 1vw 0;
+                    border: solid 1px #000;
+                    display: block;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                #mod #ed {
+                    display: inline-block;
+                }
+                #mod sup {
+                    display: block;
+                }
+                #mod sup#time {
+                    display: none;
+                }
+                #log {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    font-size: 2.5vw;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    padding: 0 0 2.5vw;
+                    background-color: #fff;
+                    z-index: 0;
+                }
+                #log_items {
+                    padding: 0 0 0.25vw;
+                    margin: 0;
+                    border-top: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: start;
+                    align-items: start;
+                    flex-flow: row-reverse nowrap;
+                }
+                #log_items li {
+                    display: inline-flex;
+                    padding: 0.25vw;
+                    margin: 0;
+                }
+                #log_items p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 100%;
+                    line-height: 150%;
+                }
+                #log_items u {
+                    margin: 0.5vw 1vw 0;
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    font-size: 1.25vw;
+                    clear: both;
+                }
+                #log_items .post,
+                #log_items b,
+                #log_items i {
+                    display: none;
+                }
+            }
     </style>
 </head>
 
