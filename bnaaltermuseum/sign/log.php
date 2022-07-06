@@ -183,7 +183,7 @@ fclose($fp);
                     top: 0;
                     width: 20%;
                     margin: 2.5vw 1.25vw;
-                    padding: 0.5vw 0;
+                    padding: 1vw 0;
                     border: solid 1px #000;
                     display: block;
                     justify-content: space-between;
