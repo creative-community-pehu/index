@@ -161,8 +161,8 @@
             <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
     </div>
     <div id="submit">
-        <h1>OMG!<br/> Your Drawing is Seems So Beautiful
-            <3<br/> Print it to PDF and Send it to us !!<br/>
+        <h1>OMG!<br/> Your Drawing is Seems So Beautiful<3
+        <br/>Let's Print it to PDF and Send to us !!<br/>
             <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
         </h1>
         <p>
