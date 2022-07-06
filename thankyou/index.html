@@ -150,39 +150,39 @@
 </head>
 
 <body id="color">
-    <div id="greeting" class="hsl"></div>
+    <div id="greeting"></div>
 
-    <div class="hue hsl">Hue <span id="huecount"></span></div>
-    <div class="saturation hsl">Saturation <span id="saturationcount"></span></div>
-    <div class="lightness hsl">Lightness <span id="lightnesscount"></span></div>
-    <div id="you">
+    <div class="hue hsl ">Hue <span id="huecount "></span></div>
+    <div class="saturation hsl ">Saturation <span id="saturationcount "></span></div>
+    <div class="lightness hsl ">Lightness <span id="lightnesscount "></span></div>
+    <div id="you ">
         <h1><span>Drawing by</span>
-            <img src="/qr.png">
+            <img src="/qr.png ">
             <span><?php echo $_SERVER['REMOTE_ADDR']; ?></span></h1>
     </div>
-    <div id="submit">
+    <div id="submit ">
         <h1>OMG!<br/> Your Drawing is Seems So Beautiful
             <3<br/> Print it to PDF and Send it to us !!<br/>
-            <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
+            <a href="mailto:pehu@creative-community.space ">pehu@creative-community.space</a> *
         </h1>
         <p>
             This Email address is for receive-only.<br/> We will reply from other addresses.<br/> Thank You,<br/>
             <br/> creative-community.space
         </p>
     </div>
-    <div id="sketch"></div>
+    <div id="sketch "></div>
 
-    <script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/p5/sketch/sketch.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
     <script>
         $(function() {
-            $("#greeting").load("hello.html");
+            $("#greeting ").load("hello.html ");
         })
 
         $(document).on('mousemove', function(e) {
             var hueraw = parseInt(255 - Math.round((e.pageY + 0.1) / ($(window).height()) * 255));
-            var hue = '"srff"' + hueraw;
+            var hue = '"srff "' + hueraw;
 
             $('#huecount').text(hueraw);
             $('#lightnesscount').text(hueraw + '%');
