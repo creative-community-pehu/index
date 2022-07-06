@@ -74,7 +74,7 @@ fclose($fp);
                 flex-wrap: wrap;
             }
             
-            #mod sup#ed {
+            #mod #ed {
                 display: none;
             }
             
@@ -192,6 +192,9 @@ fclose($fp);
                     justify-content: space-between;
                     flex-wrap: wrap;
                 }
+                #mod #ed {
+                    display: block;
+                }
                 #mod sup {
                     display: block;
                 }
@@ -250,7 +253,7 @@ fclose($fp);
     <body>
 
         <div id="mod">
-            <b>𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
+            <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
             <p>
                 <sup id="no" style="text-transform: uppercase;">
         #
