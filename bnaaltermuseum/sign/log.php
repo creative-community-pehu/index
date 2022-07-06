@@ -255,7 +255,7 @@ fclose($fp);
     <body>
 
         <div id="mod">
-            <sup id="time" style="text-transform: uppercase;">last modified</sup>
+            <sup id="time">Last Modified</sup>
             <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
             <p>
                 <sup id="no" style="text-transform: uppercase;">
