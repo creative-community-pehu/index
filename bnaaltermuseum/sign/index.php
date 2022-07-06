@@ -58,8 +58,8 @@ fclose($fp);
             border-radius: 50%;
             text-decoration: none;
             transition: .5s all;
-            width: 4.5vw;
-            height: 4.5vw;
+            width: 3vw;
+            height: 3vw;
         }
         
         #update:hover {
@@ -162,7 +162,7 @@ fclose($fp);
         @media screen and (max-width: 550px) {
             #update {
                 z-index: 50;
-                border: solid #000 1px;
+                border: solid #fff 1px;
                 width: 2rem;
                 height: 2rem;
             }
