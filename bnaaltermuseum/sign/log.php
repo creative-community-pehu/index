@@ -201,7 +201,7 @@ function showClock() {
   const nowHour = set2(nowTime.getHours());
   const nowMin = set2(nowTime.getMinutes());
   const nowSec = set2(nowTime.getSeconds());
-  const msg = "" + nowHour + ":" + nowMin + ":" + nowSec + "";
+  const msg = "" + nowHour + ":" + nowMin + ":" + nowSec + " JST";
   document.getElementById("showTime").innerHTML = msg;
 }
 setInterval('showClock()', 1000);
