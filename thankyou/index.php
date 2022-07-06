@@ -60,9 +60,9 @@
             position: fixed;
             z-index: 10;
             width: 80%;
-            height: 75vh;
+            height: 70vh;
             overflow: auto;
-            margin: 12.5vw 10% 0;
+            margin: 12.5vh 10% 0;
         }
         
         hr,
@@ -87,6 +87,12 @@
             min-height: 100vh;
             display: none;
             z-index: 100;
+        }
+        
+        @media screen and (max-width: 550px) {
+            #greeting {
+                height: 55vh;
+            }
         }
         
         @media print {
