@@ -56,6 +56,14 @@
             margin-top: 12.5vw;
         }
         
+        #color {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
         #greeting {
             position: fixed;
             z-index: 10;
@@ -99,6 +107,10 @@
             #greeting,
             #menu {
                 display: none;
+            }
+            #color {
+                position: relative;
+                height: 200vh;
             }
             #you,
             #submit {
