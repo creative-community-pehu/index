@@ -135,7 +135,6 @@ hr,
 </style>
 </head>
 <body id="color">
-
 <div id="greeting"></div>
 
 <div class="hue hsl">Hue <span id="huecount"></span></div>
