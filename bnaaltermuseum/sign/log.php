@@ -219,8 +219,7 @@ fclose($fp);
                     display: flex;
                     -webkit-align-items: start;
                     align-items: start;
-                    -webkit-flex-direction: row-reverse;
-                    flex-direction: row-reverse;
+                    flex-flow: row-reverse nowrap;
                 }
                 #log_items li {
                     display: inline-flex;
