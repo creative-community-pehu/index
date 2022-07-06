@@ -68,9 +68,9 @@
             position: fixed;
             z-index: 10;
             width: 80%;
-            max-height: 70vh;
+            max-height: 72.5vh;
             overflow: auto;
-            margin: 12.5vh 10% 0;
+            margin: 10vh 10% 0;
             color: #fff;
         }
         
