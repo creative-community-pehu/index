@@ -154,6 +154,12 @@ fclose($fp);
             height: 100%;
             border: none;
         }
+        
+        @media print {
+            #menu {
+                display: none;
+            }
+        }
     </style>
 </head>
 
