@@ -159,6 +159,9 @@ fclose($fp);
                 #mod b {
                     font-size: 7.5vw;
                 }
+                #mod p {
+                    font-size: 4.5vw;
+                }
                 #log {
                     font-size: 4vw;
                     width: 70%;
