@@ -50,7 +50,7 @@ fclose($fp);
             }
             
             #mod b {
-                padding: 0.45rem 1.25% 0.25rem;
+                padding: 0rem 1.25% 0.25rem;
                 display: inline-block;
                 font-size: 5.5vw;
                 transform: scale(1, 1.5);
