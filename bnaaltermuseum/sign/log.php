@@ -138,14 +138,22 @@ fclose($fp);
             <ul id="log_items">
                 <li>
                     <hr/>
-                    <p style="text-align:center;">
+                    <p>
                         <b>
                         <?php
                         echo sizeof(file($source_file));
                         ?>
                         </b>
-                        Posts by <i>Members</i> of 
-                        <br/><b>New Life Collection</b><br/>
+                        Posts<br/>
+                    </p>
+                    <hr/>
+                    <p>
+                    Last Modified on 
+                        <?php
+                        $mod = filemtime($source_file);
+                        date_default_timezone_set('Asia/Tokyo');
+                        print "".date("G:i:s T",$mod);
+                        ?>
                     </p>
                 </li>
                 <?php if (!empty($rows)): ?>
@@ -175,15 +183,6 @@ fclose($fp);
                           ?>
                         </i>
                         <br/>
-                    </p>
-                    <hr/>
-                    <p>
-                    Last Modified on 
-                        <?php
-                        $mod = filemtime($source_file);
-                        date_default_timezone_set('Asia/Tokyo');
-                        print "".date("G:i:s T",$mod);
-                        ?>
                     </p>
                     <hr/>
                 </li>
