@@ -51,7 +51,6 @@ fclose($fp);
             
             #mod b {
                 padding: 0rem 1.25% 0.25rem;
-                display: inline-block;
                 font-size: 5.5vw;
                 transform: scale(1, 1.5);
             }
@@ -193,7 +192,7 @@ fclose($fp);
                     flex-wrap: wrap;
                 }
                 #mod #ed {
-                    display: block;
+                    display: inline-block;
                 }
                 #mod sup {
                     display: block;
