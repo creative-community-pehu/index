@@ -246,7 +246,7 @@ fclose($fp);
     <body>
 
         <div id="mod">
-            <b>𝕮𝖔𝖑𝖔𝖗𝖘 𝖆𝖓𝖉 𝕾𝖞𝖒𝖇𝖔𝖑𝖘</b>
+            <b>𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
             <p>
                 <sup id="no" style="text-transform: uppercase;">
         #
