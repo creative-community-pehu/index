@@ -50,35 +50,36 @@ fclose($fp);
         
         #update {
             position: fixed;
-            top: 1rem;
-            right: 1rem;
+            top: 2.5vw;
+            right: 2.5vw;
             z-index: 50;
-            color: #000;
-            line-height: 1.5rem;
-            letter-spacing: .1rem;
-            font-family: "SimSong", "MS Mincho", serif;
-            font-size: 0.9rem;
+            border: solid #000 1px;
+            border-radius: 50%;
             text-decoration: none;
-            text-orientation: upright;
-            display: inline-block;
-            -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
             transition: .5s all;
+            width: 2rem;
+            height: 2rem;
         }
+        
         #update:hover {
-            cursor:pointer;
-            background:#eee;
-            transition:.5s all;
+            cursor: pointer;
+            background: #fff;
+            transition: .5s all;
         }
         
         #update b {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
             font-weight: 500;
-            background: #fff;
-            padding: 0.5rem 0.25rem;
-        }
-        
-        #update i {
-            padding: 0.5rem 0.125rem 0.25rem;
+            color: #000;
+            letter-spacing: .1vw;
+            font-family: "SimSong", "MS Mincho", serif;
+            font-size: 1.5rem;
         }
         
         #menu {
@@ -156,7 +157,8 @@ fclose($fp);
         }
         
         @media print {
-            #menu {
+            #menu,
+            #update {
                 display: none;
             }
         }
@@ -164,19 +166,22 @@ fclose($fp);
 </head>
 
 <body>
-<a id="update" href="submit.html" target="_parent">
-      <b>自分の気持ちを知る・表す</b>
+    <a id="update" href="submit.html" target="_parent">
+        <b>i</b>
     </a>
 
     <div id="menu" class="nlc">
-        <div><a class="tab" href="#sign">
-        <?php
-        date_default_timezone_set('Asia/Tokyo');
-        print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
-        ?></a>
-        <span class="check"><b>✔</b></span>
+        <div>
+            <a class="tab" href="#sign">
+                <?php
+    date_default_timezone_set('Asia/Tokyo');
+    print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
+    ?>
+            </a>
+            <span class="check"><b>✔</b></span>
         </div>
-        <div><a id="showTime" class="tab" href="#flash"></a><span class="check"><b>✔</b></span>
+        <div>
+            <a id="showTime" class="tab" href="#flash"></a><span class="check"><b>✔</b></span>
         </div>
     </div>
 
