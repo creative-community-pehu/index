@@ -57,7 +57,7 @@ fclose($fp);
         
         #mod p {
             position: absolute;
-            bottom: 0;
+            top: 0;
             width: 97.5%;
             margin: 0;
             padding: 0.5rem 1.25% 0.25rem;
@@ -256,7 +256,6 @@ fclose($fp);
 <body>
 
     <div id="mod">
-        <sup id="time" style="font-size: 1.25rem; padding:1.25rem;">Last Modified</sup>
         <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
         <p>
             <sup id="no" style="text-transform: uppercase;">
