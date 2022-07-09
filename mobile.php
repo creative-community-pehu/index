@@ -199,7 +199,7 @@
         </div>
         <h3><a href="/sign/">今の気持ちに合う色と記号</a></h3>
         <h3><a href="/org/post/">言葉の強さと方向と感情</a></h3>
-        <h3><a href="/thankyou/">あなたの落書きを出力する</a></h3>
+        <h3><a href="/ver/thankyou/">あなたの落書きを出力する</a></h3>
     </div>
     <hr/>
     <div id="map">
