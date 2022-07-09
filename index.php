@@ -26,7 +26,7 @@ body {margin:0; padding:0;}
 #greeting #hello #join {
     filter: invert(1);
 }
-#ver #grid div:nth-child(n + 17),
+#ver #grid div:nth-child(n + 12),
 #ver #searchBox .label {
   display: none;
 }
