@@ -9,7 +9,7 @@ $info = (string)filter_input(INPUT_POST, 'info');
 $url = (string)filter_input(INPUT_POST, 'url');
 $members = (string)filter_input(INPUT_POST, 'members');
 
-$fp = fopen('topics.csv', 'a+b');
+$fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$type, $info, $url, $members]);
@@ -276,7 +276,7 @@ fclose($fp);
             });
 
             $(function() {
-                $("#tobe").load("/ver/tba.php");
+                $("#tobe").load("/ver/tobe.php");
             })
         </script>
     </body>
