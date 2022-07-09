@@ -35,9 +35,10 @@ that <u data-click="create">Creates</u>
 <b id="communicate" class="open">through the things that everyone can do</b>
 <br/>
 <span>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</span>
+<br/>
+<span class="singup"><a href="/members/">Members Only</a></span>
 </b>
 </p>
-<p class="singup"><a href="/members/">Members Only</a></p>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
