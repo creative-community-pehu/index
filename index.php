@@ -132,11 +132,13 @@ body {margin:0; padding:0;}
 <div id="greeting"></div>
 <div id="ver"></div>
 <div id="now">
-<span><?php
+<span>
+<?php
 $date = new DateTime();
 date_default_timezone_set('Asia/Tokyo');
 echo $date->format('F d, Y');
-?></span>
+?>
+</span>
 <span id="showTime"></span>
 </div>
 <div id="sketch"></div>
@@ -220,7 +222,6 @@ Sketch.create({
     }
   }
 });
-
 
 $(function(){
     $("#greeting").load("hello.php");
