@@ -36,7 +36,7 @@ that <u data-click="create">Creates</u>
 <br/>
 <span>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</span>
 <br/>
-<span class="singup"><a href="/members/">Members Only</a></span>
+<span class="singup"><a href="/members/">CC</a></span>
 </b>
 </p>
 </div>
