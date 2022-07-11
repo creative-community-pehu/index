@@ -262,6 +262,11 @@ fclose($fp);
             notes = Tone.Frequency("A6").harmonize([12, 14, 16, 19, 21, 24]);
         });
 
+        $(".label").hover(function() {
+            let randNote = Math.floor(Math.random() * notes.length);
+            synth.triggerAttackRelease(notes[randNote], "6n");
+        });
+
         $(".list_toggle").hover(function() {
             let randNote = Math.floor(Math.random() * notes.length);
             synth.triggerAttackRelease(notes[randNote], "6n");
