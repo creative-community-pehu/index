@@ -87,7 +87,6 @@ nav li .reset-button,
         height: 80vh;
     }
     footer {
-        padding:1rem;
         line-height: 200%;
 }
 }
