@@ -82,6 +82,11 @@ nav li .reset-button,
     text-decoration: double underline;
 }
 
+@media print {
+    #main {
+        height: 80vh;
+    }
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="greeting.js"></script>
