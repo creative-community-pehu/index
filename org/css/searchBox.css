@@ -67,6 +67,8 @@ nav li .reset-button:hover {
 }
 
 .org .what {
+    position: absolute;
+    z-index: 1;
     margin: 0.5rem 0;
 }
 
@@ -74,6 +76,7 @@ nav li .reset-button:hover {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
     text-decoration: double underline;
 }
 
