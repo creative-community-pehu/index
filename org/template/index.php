@@ -118,7 +118,7 @@ marquee,
                         <label for="js" class="label">JavaScript</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="全部見る" class="reset-button">
+                        <input type="reset" name="reset" value="View All" class="reset-button">
                     </li>
                 </ol>
             </form>
