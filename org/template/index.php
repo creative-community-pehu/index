@@ -165,7 +165,7 @@ nav li .reset-button,
                     <?php endif; ?>
                 </ol>
             </li>
-            <li class="collection" id="list"></li>
+            <li class="collection" id="website"></li>
         </ul>
     </main>
 
@@ -192,7 +192,7 @@ nav li .reset-button,
 
     <script type="text/javascript ">
         $(function() {
-            $("#list").load("list.php");
+            $("#website").load("website.php");
         })
 
         $('a[href^="# "]').click(function() {
