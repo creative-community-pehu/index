@@ -122,6 +122,10 @@ fclose($fp);
             cursor: pointer;
         }
         
+        hr {
+            border: none;
+        }
+        
         #print {
             display: none;
         }
@@ -199,21 +203,14 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-          <span><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="25rem" alt="BnA Alter Museum"></span>
+            <hr/>
+            <img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum">
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
               <?php
               echo $_SERVER['SERVER_NAME'];
               echo $_SERVER['REQUEST_URI'];
               ?>
           </a>
-          <br/>
-          <span>
-              <?php
-              echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-              echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
-              echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-              ?>
-        </span>
         </address>
         <address id="address">
           <span>URL : </span>

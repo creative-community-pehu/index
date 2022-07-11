@@ -96,6 +96,23 @@
             text-decoration: wavy underline;
             cursor: pointer;
         }
+        
+        hr {
+            border: none;
+        }
+        
+        #print {
+            display: none;
+        }
+        
+        @media print {
+            #address {
+                display: none;
+            }
+            #print {
+                display: block;
+            }
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="greeting.js"></script>
@@ -188,6 +205,10 @@
     </main>
 
     <footer id="footer">
+        <address id="print">
+            <hr/>
+            <img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum">
+        </address>
         <address id="address">
           <span>URL : </span>
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
