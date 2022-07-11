@@ -68,6 +68,7 @@ h2 {
 
 form,
 marquee,
+#presents,
 .mousedragscrollable p,
 #footer span,
 #footer a, {
@@ -94,11 +95,11 @@ marquee,
         <marquee>PHP | CSV ファイル を 使って、所有するもののコレクションページを作成する</marquee>
         <nav id="nav">
             <h1>Things that I (We) owned</h1>
-            <h1 id="presents">
+            <p id="presents">
                 <b>私（わたしたち）が所有するもの</b>
                 <br/><span>Things that I (We) owned</span>
                 <br/><span>Things that I (We) owned</span>
-            </h1>
+            </p>
             <form>
                 <ol class="search-box">
                     <li>index</li>
