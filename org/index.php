@@ -204,10 +204,10 @@ fclose($fp);
     <footer id="footer">
         <address id="print">
             <hr/>
-            <span>more info</span>
+            <span class="nlc_style">more info</span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
             <br/>
-            <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
+            <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
             <?php
             echo $_SERVER['SERVER_NAME'];
             echo $_SERVER['REQUEST_URI'];
