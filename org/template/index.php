@@ -69,6 +69,7 @@ h2 {
 form,
 marquee,
 #presents,
+.reset-button,
 .mousedragscrollable p,
 #footer span,
 #footer a, {
