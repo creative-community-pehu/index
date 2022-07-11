@@ -2,16 +2,16 @@
 function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
-$how = (string)filter_input(INPUT_POST, 'how');
+$org = (string)filter_input(INPUT_POST, 'org');
 $what = (string)filter_input(INPUT_POST, 'what');
-$date = (string)filter_input(INPUT_POST, 'date');
 $info = (string)filter_input(INPUT_POST, 'info');
-$more = (string)filter_input(INPUT_POST, 'more');
+$link = (string)filter_input(INPUT_POST, 'link');
+$url = (string)filter_input(INPUT_POST, 'url');
 
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$how, $what, $date, $info, $more]);
+    fputcsv($fp, [$org, $what, $info, $link, $url]);
     rewind($fp);
 }
 
@@ -102,8 +102,20 @@ marquee,
                 <ol class="search-box org">
                     <li>index</li>
                     <li>
-                        <input type="radio" name="org" value="test" id="test">
-                        <label for="test" class="label">test</label>
+                        <input type="radio" name="org" value="php" id="php">
+                        <label for="php" class="label">php</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="csv" id="csv">
+                        <label for="csv" class="label">csv</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="css" id="css">
+                        <label for="css" class="label">css</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="js" id="js">
+                        <label for="js" class="label">JavaScript</label>
                     </li>
                     <li class="reset">
                         <input type="reset" name="reset" value="全部見る" class="reset-button">
@@ -130,11 +142,11 @@ marquee,
                         <p class="what">
                             <?=h($row[1])?>
                         </p>
-                        <sup class="date"><?=h($row[2])?></sup>
+                        <sup class="date"><?=h($row[0])?></sup>
                         <div class="info">
-                            <span><?=h($row[3])?></span>
+                            <span><?=h($row[2])?></span>
                         </div>
-                        <a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
+                        <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
