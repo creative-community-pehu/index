@@ -162,12 +162,13 @@ marquee,
           <span>LINKS</span>
           <a>HyperLink</a><br/>
           <span>
+              USER 
               <?php
               echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
               echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
-              echo 'USER : '. $_SERVER['HTTP_USER_AGENT'].".";
+              echo ''. $_SERVER['HTTP_USER_AGENT'].".";
               ?>
-           </span>
+        </span>
         </address>
     </footer>
 
