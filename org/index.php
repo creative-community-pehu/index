@@ -205,12 +205,12 @@ fclose($fp);
         <address id="print">
             <hr/>
             <img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum">
-          <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
-              <?php
-              echo $_SERVER['SERVER_NAME'];
-              echo $_SERVER['REQUEST_URI'];
-              ?>
-          </a>
+            <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
+            <?php
+            echo $_SERVER['SERVER_NAME'];
+            echo $_SERVER['REQUEST_URI'];
+            ?>
+            </a>
         </address>
         <address id="address">
           <span>URL : </span>
@@ -227,7 +227,7 @@ fclose($fp);
               echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
               echo ''. $_SERVER['HTTP_USER_AGENT'].".";
               ?>
-        </span>
+          </span>
         </address>
     </footer>
 
