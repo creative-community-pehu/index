@@ -269,6 +269,21 @@
             let randNote = Math.floor(Math.random() * notes.length);
             synth.triggerAttackRelease(notes[randNote], "6n");
         });
+
+        $(function() {
+            jQuery('.list_toggle:hover').css({
+                'background': getRumRgba()
+            });
+        });
+
+        function getRumRgba() {
+            var clr = 'linear-gradient(0deg,rgba(';
+            for (i = 0; i < 3; i++) {
+                clr = clr + Math.floor(Math.random() * 255) + ',';
+            }
+            clr = clr + Math.floor(Math.random() * 10) / 10 + '), rgba(0,0,0,0) 75%)'
+            return clr;
+        }
     </script>
 </body>
 
