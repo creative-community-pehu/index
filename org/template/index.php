@@ -164,7 +164,13 @@ nav li .reset-button,
     <footer id="footer">
         <address id="address">
           <span>LINKS</span>
-          <a>HyperLink</a><br/>
+          <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
+              <?php
+              echo $_SERVER['SERVER_NAME'];
+              echo $_SERVER['REQUEST_URI'];
+              ?>
+          </a>
+          <br/>
           <span>
               USER 
               <?php
