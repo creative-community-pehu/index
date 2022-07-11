@@ -129,7 +129,7 @@ fclose($fp);
         #print {
             display: none;
         }
-        @media screen and (max-width: 550px){
+        @media screen and (max-width: 750px){
             #main {
                 height: 80vh;
             }
