@@ -203,7 +203,7 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <img src="qr.png" width="30rem" alt="creative-community.space/org/">
+            <img src="qr.png" width="35rem" alt="creative-community.space/org/">
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
         </address>
         <address id="address">
