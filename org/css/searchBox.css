@@ -96,8 +96,8 @@ nav li .reset-button:hover {
     text-indent: -999px;
 }
 
-.org .list_item a:hover~.what {
-    border-bottom: 1px solid #ccc;
+.org .list_item a:hover {
+    background-color: #ccc;
 }
 
 @media print {
