@@ -49,14 +49,24 @@ nav li .reset-button:hover {
 }
 
 .org {
-    padding: 0 1rem;
+    color: #aaa;
+    padding: 0 0.25rem 0;
     margin: 0;
     list-style-type: none;
 }
 
+.org h2 {
+    padding: 0 0.5rem;
+}
+
 .org li {
     position: relative;
+    padding: 1rem 0.5rem 0;
     font-family: "ipag", monospace;
+}
+
+.org li:hover {
+    border-bottom: solid #ccc 1px;
 }
 
 .org .what,
@@ -74,16 +84,15 @@ nav li .reset-button:hover {
 
 .org .date {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5rem;
+    right: 0.5rem;
     z-index: 1;
     text-decoration: double underline;
 }
 
 .org .info {
-    color: #000;
     font-size: 75%;
-    margin: 0 0 1rem;
+    margin: 0.5rem 0;
 }
 
 .org .info span {
@@ -98,10 +107,6 @@ nav li .reset-button:hover {
     width: 100%;
     height: 100%;
     text-indent: -999px;
-}
-
-.org .list_item a:hover {
-    border-bottom: 1px dashed #ccc;
 }
 
 @media print {

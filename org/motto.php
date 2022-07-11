@@ -45,7 +45,7 @@ fclose($fp);
 
         h3 {
             font-size:1.25rem;
-            margin: 1rem 0;
+            margin: 1rem 0.5rem;
             font-weight: 500;
         }
 
@@ -59,9 +59,9 @@ fclose($fp);
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <sup class="date"><?=h($row[1])?></sup>
-                <p class="info">
+                <h3 class="info">
                     <span class="pehu"><?=h($row[2])?></span>
-                </p>
+                </h3>
                 <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_blank"></a>
             </li>
             <?php endforeach; ?>
