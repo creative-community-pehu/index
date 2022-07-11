@@ -107,9 +107,9 @@ fclose($fp);
           LINKS
           <a class="cc_style">HyperLink</a><br/>
           <?php
-          echo 'USER : '. $_SERVER['HTTP_USER_AGENT']." | ";
           echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
           echo 'PORT : '. $_SERVER['REMOTE_PORT'].".";
+          echo 'USER : '. $_SERVER['HTTP_USER_AGENT']." | ";
           ?>
         </address>
     </footer>
