@@ -205,6 +205,7 @@ fclose($fp);
         <address id="print">
             <hr/>
             <img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum">
+            <br/>
             <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
             <?php
             echo $_SERVER['SERVER_NAME'];
