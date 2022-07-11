@@ -99,12 +99,12 @@ marquee,
                 <b>私（わたしたち）が所有するもの</b>
                 <br/><span>Things that I (We) owned</span>
                 <br/>
-                <span>
+                <u>
                     <?php
                     echo $_SERVER['SERVER_NAME'];
                     echo $_SERVER['REQUEST_URI'];
                     ?>
-                </span>
+                </u>
                 </p>
             <form>
                 <ol class="search-box">
