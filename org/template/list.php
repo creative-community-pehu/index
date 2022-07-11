@@ -51,13 +51,13 @@ fclose($fp);
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <h3 class="pehu"><?=h($row[2])?></h3>
+                <h3><?=h($row[2])?></h3>
                 <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_blank"></a>
             </li>
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
-                <h3 class="pehu">P E H U is</h3>
+                <h3>Title</h3>
             </li>
             <?php endif; ?>
         </ol>
