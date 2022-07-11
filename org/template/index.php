@@ -156,6 +156,7 @@ marquee,
                     <?php endif; ?>
                 </ol>
             </li>
+            <li class="collection" id="list"></li>
         </ul>
     </main>
 
@@ -175,6 +176,10 @@ marquee,
     </footer>
 
     <script type="text/javascript ">
+        $(function() {
+            $("#list").load("list.php");
+        })
+
         $('a[href^="# "]').click(function() {
             var href = $(this).attr("href ");
             var target = $(href == "# " || href == " " ? 'html' : href);
