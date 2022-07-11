@@ -35,8 +35,8 @@ fclose($fp);
         <link rel="stylesheet" href="css/searchBox.css" />
         <style>
         h3 {
-            font-size:1.25rem;
-            margin: 1rem 0;
+            font-size:1rem;
+            margin: 0.5rem 0;
             font-weight: 500;
             display: inline-block;
             font-family: "Arial Narrow",monospace;
