@@ -8,7 +8,7 @@ $motto = (string)filter_input(INPUT_POST, 'motto');
 $link = (string)filter_input(INPUT_POST, 'link');
 $url = (string)filter_input(INPUT_POST, 'url');
 
-$fp = fopen('motto.csv', 'a+b');
+$fp = fopen('list.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $is, $motto, $link, $url]);
@@ -34,27 +34,17 @@ fclose($fp);
         <link rel="stylesheet" href="template/index.css" />
         <link rel="stylesheet" href="css/searchBox.css" />
         <style>
-        @font-face {
-            font-family: "MS Mincho";
-            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-        }
-        
-        .pehu {
-            font-family: "MS Mincho", serif;
-        }
-
         h3 {
-            font-size:1.25rem;
-            margin: 1rem 0.5rem;
-            font-weight: 500;
+            display: inline-block;
+            font-family: "Arial Narrow",monospace;
+            transform: scale(1, 1.25);
         }
-
         </style>
     </head>
 
     <body>
-        <ol class="org pehu">
-            <h3 class="pehu">∧°┐</h3>
+        <ol class="org">
+            <h2>∧°┐</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
