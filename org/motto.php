@@ -58,19 +58,13 @@ fclose($fp);
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <sup class="date"><?=h($row[1])?></sup>
-                <h3 class="info">
-                    <span class="pehu"><?=h($row[2])?></span>
-                </h3>
+                <h3 class="info pehu"><?=h($row[2])?></h3>
                 <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_blank"></a>
             </li>
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
-                <sup class="date">date</sup>
-                <p class="info">
-                    <span class="pehu">Infomation</span>
-            </p>
+                <h3 class="pehu">P E H U is</h3>
             </li>
             <?php endif; ?>
         </ol>
