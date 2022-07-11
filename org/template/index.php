@@ -163,7 +163,7 @@ nav li .reset-button,
 
     <footer id="footer">
         <address id="address">
-          <span>URL</span>
+          <span>URL : </span>
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
               <?php
               echo $_SERVER['SERVER_NAME'];
