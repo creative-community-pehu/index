@@ -163,7 +163,7 @@ nav li .reset-button,
 
     <footer id="footer">
         <address id="address">
-          <span>LINKS</span>
+          <span>URL</span>
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
               <?php
               echo $_SERVER['SERVER_NAME'];
@@ -172,7 +172,6 @@ nav li .reset-button,
           </a>
           <br/>
           <span>
-              USER 
               <?php
               echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
               echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
