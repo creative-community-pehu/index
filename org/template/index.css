@@ -61,6 +61,7 @@ header ._more {
 footer {
     margin: 0;
     padding: 1rem;
+    line-height: 200%;
 }
 
 footer address {
