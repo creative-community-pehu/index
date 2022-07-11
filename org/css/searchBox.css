@@ -10,13 +10,13 @@ nav ol {
     display: inline-block;
     list-style-type: none;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 1rem 0.5rem;
 }
 
 nav li {
     margin: 0;
     display: inline-block;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0 1rem 0.5rem;
     text-transform: uppercase;
 }
 
@@ -30,14 +30,16 @@ nav li label::before {
 }
 
 nav li .reset-button {
+    font-size: 0.5rem;
     display: inline-block;
-    margin: 0 0.5rem;
-    padding: 0 0.25rem;
+    margin: 0.25rem 0.5rem;
+    padding: 0.125rem 0.25rem;
     background: #fff;
     color: #ccc;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     transition: all 1000ms ease;
+    text-transform: uppercase;
 }
 
 nav li .reset-button:hover {
@@ -47,7 +49,7 @@ nav li .reset-button:hover {
 }
 
 .org {
-    padding: 0;
+    padding: 0 1rem;
     margin: 0;
     list-style-type: none;
 }
@@ -98,4 +100,10 @@ nav li .reset-button:hover {
 
 .org .info a:hover {
     background-color: red;
+}
+
+@media print {
+    nav li .reset-button {
+        display: none;
+    }
 }

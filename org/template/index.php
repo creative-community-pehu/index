@@ -8,7 +8,7 @@ $date = (string)filter_input(INPUT_POST, 'date');
 $info = (string)filter_input(INPUT_POST, 'info');
 $more = (string)filter_input(INPUT_POST, 'more');
 
-$fp = fopen('template.csv', 'a+b');
+$fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$how, $what, $date, $info, $more]);
@@ -27,20 +27,12 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-<title>Things that I (We) owned | creative-community.space</title>
+<title>Template | Things that I (We) owned</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/org/template/index.css" />
+<link rel="stylesheet" href="/org/css/searchBox.css" />
 <style>
-@font-face {
-    font-family: "ipag";
-    src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
-}
-
-@font-face {
-    font-family: "MS Mincho";
-    src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-}
-
 header,
 header marquee,
 #main {
@@ -63,7 +55,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-.nlc_style,
 h1,
 h2 {
     font-family: 'Times New Roman', serif;
@@ -75,33 +66,14 @@ h2 {
     word-spacing: -.1ch;
 }
 
-.nlc_style {
-    display: inline-block;
-}
-
-.cc_style,
 form,
 marquee,
-.mousedragscrollable p {
+.mousedragscrollable p,
+#footer span,
+#footer a, {
     display: inline-block;
-    font-family: "ipag", monospace;
+    font-family: "Arial Narrow",monospace;
     transform: scale(1, 1.25);
-}
-
-.vg_style {
-    font-family: 'Great Vibes', cursive;
-    transform: scale(1, 1.5);
-    display: inline-block;
-}
-
-.pehu {
-    font-family: "MS Mincho", serif;
-}
-
-h1.nlc_style {
-    font-size: 2.5rem;
-    padding: 0 1rem;
-    margin: 0;
 }
 
 #test:checked~label {
@@ -109,22 +81,22 @@ h1.nlc_style {
 }
 
 </style>
-<link rel="stylesheet" href="css/index.css" />
-<link rel="stylesheet" href="css/org.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="greeting.js"></script>
+<script src="/org/js/searchBox.js"></script>
+<script src="/www/scrollable.js"></script>
 </head>
 
 <body>
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
-        <marquee>Greeting</marquee>
+        <marquee>PHP | CSV ファイル を 使って、所有するもののコレクションページを作成する</marquee>
         <nav id="nav">
-            <h1 class="nlc_style">Things that I (We) owned</h1>
+            <h1>Things that I (We) owned</h1>
             <h1 id="presents">
-                <b class="cc_style">「私（わたしたち）が所有するもの」</b>
-                <br/><span class="cc_style">説明</span>
+                <b>「私（わたしたち）が所有するもの」</b>
+                <br/><span>Things that I (We) owned</span>
             </h1>
             <form>
                 <ol class="search-box org">
@@ -143,9 +115,15 @@ h1.nlc_style {
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li class="list">
-                <h2>ORG</h2>
+            <li class="collection">
                 <ol class="org">
+                    <h2>Download</h2>
+                    <p id="greeting"></p>
+                </ol>
+            </li>
+            <li class="collection">
+                <ol class="org">
+                <h2>/org/template/</h2>
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
@@ -170,29 +148,23 @@ h1.nlc_style {
                     <?php endif; ?>
                 </ol>
             </li>
-            <li class="list">
-                <h2>template.php</h2>
-                <p id="greeting"></p>
-            </li>
         </ul>
     </main>
 
     <footer id="footer">
-        <address id="address" class="cc_style">
-          LINKS
-          <a class="cc_style">HyperLink</a><br/>
-          <?php
-          echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-          echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
-          echo 'USER : '. $_SERVER['HTTP_USER_AGENT'].".";
-          ?>
+        <address id="address">
+          <span>LINKS</span>
+          <a>HyperLink</a><br/>
+          <span>
+              <?php
+              echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+              echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
+              echo 'USER : '. $_SERVER['HTTP_USER_AGENT'].".";
+              ?>
+           </span>
         </address>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/template.js"></script>
-    <script src="js/searchBox.js"></script>
-    <script src="js/mousedragscrollable.js"></script>
     <script type="text/javascript ">
         $('a[href^="# "]').click(function() {
             var href = $(this).attr("href ");
