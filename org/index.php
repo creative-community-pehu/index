@@ -143,6 +143,10 @@ fclose($fp);
     <script src="greeting.js"></script>
     <script src="js/searchBox.js"></script>
     <script src="../www/scrollable.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 </head>
 
 <body>
