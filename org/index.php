@@ -203,10 +203,10 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
-            <img src="qr.png" width="25rem" alt="creative-community.space/org/">
+            <img src="qr.png" width="30rem" alt="creative-community.space/org/">
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
             <br/>
+            <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
             <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
             <?php
             echo $_SERVER['SERVER_NAME'];
