@@ -87,7 +87,7 @@ nav li .reset-button:hover {
     white-space: pre-wrap;
 }
 
-.org .info a {
+.org .list_item a {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,7 +96,7 @@ nav li .reset-button:hover {
     text-indent: -999px;
 }
 
-.org .info a:hover {
+.org .list_item a:hover {
     background-color: #aaa;
 }
 
