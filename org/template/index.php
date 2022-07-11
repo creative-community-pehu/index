@@ -95,7 +95,8 @@ marquee,
         <nav id="nav">
             <h1>Things that I (We) owned</h1>
             <h1 id="presents">
-                <b>「私（わたしたち）が所有するもの」</b>
+                <b>私（わたしたち）が所有するもの</b>
+                <br/><span>Things that I (We) owned</span>
                 <br/><span>Things that I (We) owned</span>
             </h1>
             <form>
