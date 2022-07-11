@@ -193,7 +193,7 @@ fclose($fp);
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button cc_style">
+                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label">
                     </li>
                 </ol>
             </form>

@@ -139,7 +139,7 @@ nav li .reset-button,
                         <label for="js" class="label">JavaScript</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button">
+                        <input type="reset" name="reset" value="View All" class="reset-button label">
                     </li>
                 </ol>
             </form>
