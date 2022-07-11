@@ -98,8 +98,13 @@ marquee,
             <p id="presents">
                 <b>私（わたしたち）が所有するもの</b>
                 <br/><span>Things that I (We) owned</span>
-                <br/><span>Things that I (We) owned</span>
-            </p>
+                <br/>
+                <span>
+                    <?php
+                    echo $_SERVER['SERVER_NAME'];
+                    ?>
+                </span>
+                </p>
             <form>
                 <ol class="search-box">
                     <li>index</li>
