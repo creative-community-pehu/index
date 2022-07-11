@@ -83,12 +83,12 @@ nav li .reset-button,
 }
 
 @media print {
-    #main {
-        height: 80vh;
+    #address {
+        display: none;
     }
-    footer {
-        line-height: 200%;
-}
+    #print {
+        display: block;
+    }
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -178,7 +178,11 @@ nav li .reset-button,
               echo $_SERVER['REQUEST_URI'];
               ?>
           </a>
-          <br/>
+        </address>
+    </footer>
+
+    <footer id="footer">
+        <address id="print">
           <span>
               <?php
               echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
