@@ -35,6 +35,9 @@ fclose($fp);
         <link rel="stylesheet" href="css/searchBox.css" />
         <style>
         h3 {
+            font-size:1.25rem;
+            margin: 1rem 0;
+            font-weight: 500;
             display: inline-block;
             font-family: "Arial Narrow",monospace;
             transform: scale(1, 1.25);
@@ -44,7 +47,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h2>∧°┐</h2>
+            <h2>Website</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
