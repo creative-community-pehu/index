@@ -121,6 +121,19 @@ fclose($fp);
             text-decoration: wavy underline;
             cursor: pointer;
         }
+        
+        #print {
+            display: none;
+        }
+
+        @media print {
+            #address {
+                display: none;
+            }
+            #print {
+                display: block;
+            }
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="greeting.js"></script>
@@ -181,38 +194,27 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li class="collection" id="motto"></li>
-            <li class="collection">
-                <ol class="org">
-                    <h2>New Life Collection</h2>
-                    <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                        <p class="what">
-                            <?=h($row[1])?>
-                        </p>
-                        <sup class="date"><?=h($row[2])?></sup>
-                        <div class="info">
-                            <span class="cc_style"><?=h($row[3])?></span>
-                        </div>
-                        <a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
-                    </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <li class="list_item list_toggle" data-org="test">
-                        <p class="what">What</p>
-                        <sup class="date">date</sup>
-                        <div class="info">
-                            <span class="cc_style">Infomation</span>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                </ol>
-            </li>
         </ul>
     </main>
 
     <footer id="footer">
+        <address id="print">
+          <span><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="25rem" alt="BnA Alter Museum"></span>
+          <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
+              <?php
+              echo $_SERVER['SERVER_NAME'];
+              echo $_SERVER['REQUEST_URI'];
+              ?>
+          </a>
+          <br/>
+          <span>
+              <?php
+              echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+              echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
+              echo ''. $_SERVER['HTTP_USER_AGENT'].".";
+              ?>
+        </span>
+        </address>
         <address id="address">
           <span>URL : </span>
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
@@ -234,7 +236,7 @@ fclose($fp);
 
     <script type="text/javascript ">
         $(function() {
-            $("#motto").load("motto.php");
+            $("#").load("");
         })
 
         $('a[href^="# "]').click(function() {
