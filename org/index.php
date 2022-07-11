@@ -204,7 +204,7 @@ fclose($fp);
     <footer id="footer">
         <address id="print">
             <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
-            <p style="float:left;"><img src="qr.png" width="20rem" alt="BnA Alter Museum"></p>
+            <img src="qr.png" width="25rem" alt="creative-community.space/org/">
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
             <br/>
             <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
