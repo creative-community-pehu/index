@@ -179,9 +179,6 @@ nav li .reset-button,
               ?>
           </a>
         </address>
-    </footer>
-
-    <footer id="footer">
         <address id="print">
           <span>
               <?php
