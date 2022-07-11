@@ -99,7 +99,7 @@ marquee,
                 <br/><span>Things that I (We) owned</span>
             </h1>
             <form>
-                <ol class="search-box org">
+                <ol class="search-box">
                     <li>index</li>
                     <li>
                         <input type="radio" name="org" value="php" id="php">
