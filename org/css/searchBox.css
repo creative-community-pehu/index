@@ -101,7 +101,7 @@ nav li .reset-button:hover {
 }
 
 .org .list_item a:hover {
-    background-color: #ccc;
+    border-bottom: 1px dashed #ccc;
 }
 
 @media print {
