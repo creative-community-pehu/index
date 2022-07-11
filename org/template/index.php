@@ -169,7 +169,7 @@ nav li .reset-button,
               USER 
               <?php
               echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-              echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
+              echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
               echo ''. $_SERVER['HTTP_USER_AGENT'].".";
               ?>
         </span>
