@@ -129,7 +129,7 @@ marquee,
         <ul class="mousedragscrollable">
             <li class="collection">
                 <ol class="org">
-                <h2>index</h2>
+                <h2>How to Coding</h2>
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
