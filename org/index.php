@@ -129,6 +129,11 @@ fclose($fp);
         #print {
             display: none;
         }
+        @media screen and (max-width: 750px){
+            #main {
+                height: 80vh;
+            }
+        }
 
         @media print {
             #address {
