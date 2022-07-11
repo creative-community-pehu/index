@@ -47,7 +47,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h2>Website</h2>
+            <h2>Websites</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
