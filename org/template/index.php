@@ -102,6 +102,7 @@ marquee,
                 <span>
                     <?php
                     echo $_SERVER['SERVER_NAME'];
+                    echo $_SERVER['REQUEST_URI'];
                     ?>
                 </span>
                 </p>
