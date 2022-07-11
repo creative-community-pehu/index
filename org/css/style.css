@@ -1,21 +1,3 @@
-@font-face {
-    font-family: "ipag";
-    src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
-}
-
-@font-face {
-    font-family: "MS Mincho";
-    src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-}
-
-.is-hide,
-.nothing,
-.none,
-input,
-input[type="radio"] {
-    display: none;
-}
-
 body,
 header p,
 nav,
@@ -24,24 +6,8 @@ h2 {
     padding: 0;
 }
 
-.nlc_style,
-h1,
-h2 {
-    font-family: 'Times New Roman', serif;
-    font-weight: 500;
-    font-stretch: condensed;
-    font-variant: common-ligatures tabular-nums;
-    transform: scale(1, 1.1);
-    letter-spacing: -0.1rem;
-    word-spacing: -.1ch;
-}
-
-.nlc_style,
 h1 {
     display: inline-block;
-}
-
-h1 {
     line-height: 300%;
 }
 
@@ -50,26 +16,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-.cc_style,
-form,
-marquee,
-.mousedragscrollable p {
-    display: inline-block;
-    font-family: "ipag", monospace;
-    transform: scale(1, 1.25);
-}
-
-.vg_style {
-    font-family: 'Great Vibes', cursive;
-    transform: scale(1, 1.5);
-    display: inline-block;
-}
-
-.pehu {
-    font-family: "MS Mincho", serif;
-}
-
-h1.nlc_style {
+#nav h1 {
     font-size: 2.5rem;
     padding: 0 1rem;
     margin: 0;
@@ -83,72 +30,6 @@ h1.nlc_style {
 header,
 footer {
     font-size: 0.75rem;
-}
-
-header,
-header marquee,
-#main {
-    border-bottom: 1px dashed #ccc;
-}
-
-header a,
-header label,
-footer a {
-    color: #ccc;
-    text-decoration: none;
-    transition: all 1000ms ease;
-}
-
-header a:hover,
-header label:hover,
-footer a:hover {
-    color: #333;
-    text-decoration: wavy underline;
-    cursor: pointer;
-}
-
-nav ol {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0 1rem;
-}
-
-nav li {
-    margin: 0;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-nav li label::before {
-    display: inline-block;
-    color: #000;
-    content: '|';
-    font-size: 100%;
-    font-weight: bold;
-    padding: 0 0.5rem 0 0.25rem;
-}
-
-#test:checked~label {
-    text-decoration: double underline;
-}
-
-nav li .reset-button {
-    display: inline-block;
-    margin: 0 0.5rem;
-    padding: 0 0.25rem;
-    background: #fff;
-    color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    transition: all 1000ms ease;
-}
-
-nav li .reset-button:hover {
-    color: #fff;
-    background: #ccc;
-    cursor: pointer;
 }
 
 header marquee {
@@ -199,60 +80,6 @@ footer address {
     background-position: center;
     background-repeat: no-repeat;
     border-right: 1px solid #ccc;
-}
-
-.org {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.org li {
-    font-family: "ipag", monospace;
-    position: relative;
-}
-
-.org .what {
-    pointer-events: none;
-    margin: 0.5rem 0;
-}
-
-.org .date {
-    position: absolute;
-    top: 0.5rem;
-    right: 0;
-    text-decoration: double overline;
-}
-
-.org .info {
-    position: relative;
-    color: #000;
-    font-size: 75%;
-    margin: 0 0 1rem;
-}
-
-.org .info span {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    pointer-events: none;
-    white-space: pre-wrap;
-}
-
-.org .info a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
-    text-indent: -999px;
-    z-index: 0;
-    border-radius: 0.5em;
-}
-
-.org .info a:hover {
-    background-color: red;
 }
 
 header #presents {

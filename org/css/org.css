@@ -1,10 +1,3 @@
-body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    font-family: "ipag", monospace;
-}
-
 .is-hide,
 .nothing,
 .none,
@@ -13,219 +6,77 @@ input[type="radio"] {
     display: none;
 }
 
-#list #cover_freetime {
-    width: 50%;
-    float: left;
-}
-
-#index {
-    position: relative;
-    width: 100%;
-    font-family: "ipag", monospace;
-}
-
-.menu {
-    padding: 0;
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    border: 0.5rem solid;
-    margin: 1.25rem 0;
-    height: 9.5rem;
-}
-
-.freetime {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.freetime:hover {
-    background: red;
-    opacity: 0.75;
-    cursor: pointer;
-}
-
-#list #org {
-    width: 45%;
-    max-width: 45%;
-    height: 95vh;
-    float: right;
-    overflow-y: scroll;
-}
-
-#list #org ul {
-    padding: 12.5% 0 0;
-}
-
-@-webkit-keyframes fontmotion {
-    0% {
-        font-family: "Astonish";
-        top: 50%;
-        left: 50%;
-    }
-    25% {
-        font-family: "Etiquette";
-        top: 25%;
-        left: 50%;
-    }
-    50% {
-        font-family: "Hunterland";
-        top: 50%;
-        left: 50%;
-    }
-    75% {
-        font-family: "Flumberywhitedemo";
-        top: 75%;
-        left: 50%;
-    }
-    100% {
-        font-family: "Astonish";
-        top: 50%;
-        left: 50%;
-    }
-}
-
-.menu ul {
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    list-style: none;
-}
-
-.menu li {
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-#how:checked~#click,
-#cando:checked~#click,
-#past:checked~#click,
-#tobe:checked~#click {
-    height: 15rem;
-    overflow: auto;
-}
-
-#how:checked~#click li,
-#cando:checked~#click li,
-#past:checked~#click li,
-#tobe:checked~#click li {
-    height: 5rem;
-    opacity: 1;
-}
-
-.menu .label {
-    width: 95%;
-    padding: 1rem 2.5%;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.reset-button,
-button {
+nav ol {
     display: inline-block;
-    font-size: 2rem;
-    margin: 1rem 0 0;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
 }
 
-.label:hover,
-.reset-button:hover,
-button:hover {
-    color: #fff;
-    cursor: pointer;
-    background: red;
-    text-shadow: 0 0 1vw #000;
+nav li {
+    margin: 0;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
-#header {
-    position: absolute;
-    line-height: 5vw;
-    font-family: Arial, sans-serif;
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0 2.5%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#header b {
-    font-size: 200%;
-    animation: 2s linear infinite fontmotion;
-}
-
-#header u {
-    font-family: "ipag", monospace;
-    text-decoration: none;
-    transform: scale(1, 1.25);
-}
-
-#org {
-    position: relative;
+nav li label::before {
+    display: inline-block;
     color: #000;
-    font-size: 1.5rem;
-    padding: 0 2.5% 5vh;
-    margin: auto;
-    width: 90%;
-    max-width: 75rem;
+    content: '|';
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0 0.5rem 0 0.25rem;
 }
 
-#org ul {
-    display: flex;
-    list-style: none;
+nav li .reset-button {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0 0.25rem;
+    background: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: all 1000ms ease;
+}
+
+nav li .reset-button:hover {
+    color: #fff;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.org {
     padding: 0;
     margin: 0;
-    align-content: flex-start;
+    list-style-type: none;
 }
 
-#org li {
+.org li {
     font-family: "ipag", monospace;
-    width: 100%;
     position: relative;
-    margin: 0 auto 1rem;
 }
 
-#org .what {
-    color: red;
+.org .what {
     pointer-events: none;
     margin: 0.5rem 0;
 }
 
-#org .date {
+.org .date {
     position: absolute;
     top: 0;
     right: 0;
-    text-align: center;
-    background: #fff;
-    border: 0.1rem solid;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    text-decoration: double underline;
 }
 
-#org .info {
+.org .info {
     position: relative;
     color: #000;
     font-size: 75%;
-    padding: 1rem;
-    margin: 1.25rem 0 0.5rem;
-    border: 1px solid #000;
-    border-radius: 0.5em;
+    margin: 0 0 1rem;
 }
 
-#org .info span {
+.org .info span {
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -233,7 +84,7 @@ button:hover {
     white-space: pre-wrap;
 }
 
-#org .info a {
+.org .info a {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,88 +96,6 @@ button:hover {
     border-radius: 0.5em;
 }
 
-#org .info a:hover {
+.org .info a:hover {
     background-color: red;
-}
-
-@media screen and (max-width: 1200px) {
-    #list #cover_freetime {
-        width: 100%;
-        float: none;
-    }
-    #list #org {
-        width: 90%;
-        max-width: 75rem;
-        height: auto;
-        float: none;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    #org ul {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .menu {
-        border: 1vw solid;
-        margin: 2.5vw 0;
-        height: 20vw;
-    }
-    #list .freetime:after {
-        font-size: 15vw;
-        width: 125%;
-    }
-    #how:checked~#click,
-    #cando:checked~#click,
-    #past:checked~#click,
-    #tobe:checked~#click {
-        height: 40vw;
-        overflow: auto;
-    }
-    #how:checked~#click li,
-    #cando:checked~#click li,
-    #past:checked~#click li,
-    #tobe:checked~#click li {
-        height: 10vw;
-        opacity: 1;
-    }
-    .menu .label {
-        width: 95%;
-        padding: 2.5vw 2.5%;
-        font-size: 4.5vw;
-    }
-    .reset-button,
-    button {
-        font-size: 4.5vw;
-        margin: 1vw 0 0;
-        padding: 1vw 2vw;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    #header {
-        font-size: 3vw;
-    }
-    #org {
-        font-size: 3vw;
-    }
-    #org li {
-        margin: 0 auto 2.5vw;
-    }
-    #org .date {
-        padding: 1vw;
-    }
-    #org .what {
-        margin: 1vw 0;
-    }
-    #org .info {
-        padding: 2.5vw;
-        margin: 2.5vw 0 1vw;
-        border: 0.25vw solid #000;
-        border-radius: 2.5vw;
-    }
-    #org .info a {
-        border-radius: 2.5vw;
-    }
 }

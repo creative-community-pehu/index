@@ -27,12 +27,92 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Things that I (We) owned | creative-community.space</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<title>Things that I (We) owned | creative-community.space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@font-face {
+    font-family: "ipag";
+    src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
+}
+
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+}
+
+header,
+header marquee,
+#main {
+    border-bottom: 1px dashed #ccc;
+}
+
+header a,
+header label,
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 1000ms ease;
+}
+
+header a:hover,
+header label:hover,
+footer a:hover {
+    color: #333;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.nlc_style,
+h1,
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    letter-spacing: -0.1rem;
+    word-spacing: -.1ch;
+}
+
+.nlc_style {
+    display: inline-block;
+}
+
+.cc_style,
+form,
+marquee,
+.mousedragscrollable p {
+    display: inline-block;
+    font-family: "ipag", monospace;
+    transform: scale(1, 1.25);
+}
+
+.vg_style {
+    font-family: 'Great Vibes', cursive;
+    transform: scale(1, 1.5);
+    display: inline-block;
+}
+
+.pehu {
+    font-family: "MS Mincho", serif;
+}
+
+h1.nlc_style {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+#test:checked~label {
+    text-decoration: double underline;
+}
+
+</style>
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/org.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -91,13 +171,8 @@ fclose($fp);
                 </ol>
             </li>
             <li class="list">
-                <h2>このウェブサイトについて</h2>
+                <h2>template.php</h2>
                 <p id="greeting"></p>
-                <hr/>
-                <p>
-                    Download
-                    <br/> index.php
-                </p>
             </li>
         </ul>
     </main>
