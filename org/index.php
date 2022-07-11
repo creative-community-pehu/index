@@ -203,7 +203,7 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <u class="cc_style" style="font-size:75%;">Website</u>
+            <u class="cc_style" style="font-size:75%; line-height: 150%;">Website</u>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
             <br/>
             <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
