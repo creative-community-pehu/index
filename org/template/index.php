@@ -139,13 +139,9 @@ marquee,
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                        <p class="what">
-                            <?=h($row[1])?>
-                        </p>
+                        <p class="what"><?=h($row[1])?></p>
                         <sup class="date"><?=h($row[0])?></sup>
-                        <div class="info">
-                            <span><?=h($row[2])?></span>
-                        </div>
+                        <div class="info"><span><?=h($row[2])?></span></div>
                         <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
                     </li>
                     <?php endforeach; ?>
@@ -153,9 +149,7 @@ marquee,
                     <li class="list_item list_toggle" data-org="test">
                         <p class="what">What</p>
                         <sup class="date">date</sup>
-                        <div class="info">
-                            <span>Infomation</span>
-                        </div>
+                        <div class="info"><span>Infomation</span></div>
                     </li>
                     <?php endif; ?>
                 </ol>

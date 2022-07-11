@@ -55,12 +55,18 @@ nav li .reset-button:hover {
 }
 
 .org li {
-    font-family: "ipag", monospace;
     position: relative;
+    font-family: "ipag", monospace;
+}
+
+.org .what,
+.org .date,
+.org .info {
+    pointer-events: none;
+    user-select: none;
 }
 
 .org .what {
-    pointer-events: none;
     margin: 0.5rem 0;
 }
 
@@ -72,17 +78,12 @@ nav li .reset-button:hover {
 }
 
 .org .info {
-    position: relative;
     color: #000;
     font-size: 75%;
     margin: 0 0 1rem;
 }
 
 .org .info span {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    pointer-events: none;
     white-space: pre-wrap;
 }
 
@@ -92,14 +93,11 @@ nav li .reset-button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
     text-indent: -999px;
-    z-index: 0;
-    border-radius: 0.5em;
 }
 
 .org .info a:hover {
-    background-color: red;
+    background-color: #aaa;
 }
 
 @media print {
