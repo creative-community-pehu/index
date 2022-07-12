@@ -124,7 +124,7 @@ fclose($fp);
         
         hr {
             border: none;
-            padding: 0.75rem;
+            padding: 1rem;
         }
         
         #print {
