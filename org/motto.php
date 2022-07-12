@@ -41,11 +41,11 @@ fclose($fp);
         .pehu,
         h3 {
             font-family: "MS Mincho", serif;
+            margin: 1rem 0.5rem;
         }
 
         h3 {
             font-size:1.25rem;
-            margin: 1rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
         }
