@@ -51,6 +51,7 @@ nav li .reset-button:hover {
 .org {
     padding: 0 0.25rem 0;
     margin: 0;
+    overflow: auto;
     list-style-type: none;
 }
 
