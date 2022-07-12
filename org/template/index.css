@@ -105,9 +105,10 @@ header #presents {
     display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
     #nav h1 {
         font-size: 2rem;
+        line-height: 300%;
     }
 }
 
