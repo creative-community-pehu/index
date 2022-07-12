@@ -121,12 +121,6 @@ fclose($fp);
             text-decoration: wavy underline;
             cursor: pointer;
         }
-
-        iframe {
-            width:100%;
-            height: 100%;
-            border:none;
-        }
         
         hr {
             border: none;
