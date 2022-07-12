@@ -41,7 +41,7 @@ fclose($fp);
 
         h3 {
             font-family: "MS Mincho", serif;
-            font-size:1.25rem;
+            font-size:1.5rem;
             margin: 1rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
@@ -57,7 +57,6 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h3>P E H U is</h3>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
