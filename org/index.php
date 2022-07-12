@@ -202,6 +202,7 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
+            <li id="sign"></li>
         </ul>
     </main>
 
@@ -238,7 +239,7 @@ fclose($fp);
 
     <script type="text/javascript ">
         $(function() {
-            $("#").load("");
+            $("#sign").load("/sign/background.php");
         })
 
         $('a[href^="# "]').click(function() {
