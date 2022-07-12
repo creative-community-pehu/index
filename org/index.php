@@ -212,20 +212,20 @@ fclose($fp);
             <li id="images" class="collection">
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                    <img src="<?=h($row[2])?>">
+                        <?php foreach ($rows as $row): ?>
+                            <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+                            <img src="<?=h($row[2])?>">
+                        </li>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                            <li class="list_item list_toggle min" data-org="test">
+                                <img src="/logo.png">
+                            </li>
+                            <?php endif; ?>
+                        </ol>
                     </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <li class="list_item list_toggle min" data-org="test">
-                    <img src="/logo.png">
-                    </li>
-                    <?php endif; ?>
-                </ol>
-            </li>
-        </ul>
-    </main>
+                </ul>
+            </main>
 
     <footer id="footer">
         <address id="print">
