@@ -49,7 +49,7 @@ fclose($fp);
 
         .org li:hover h3 {
             color: #aaa;
-            transition: all 1000ms ease;
+            transition: all 500ms ease;
         }
 
         </style>
