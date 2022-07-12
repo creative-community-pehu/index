@@ -90,7 +90,8 @@ footer address {
     margin: 0.75% 0 0;
     height: 97.5%;
     white-space: normal;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-position: center;
     background-repeat: no-repeat;
 }
