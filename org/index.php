@@ -114,12 +114,6 @@ fclose($fp);
             border-right: 1px solid #ccc;
         }
         
-        .mousedragscrollable #sign {
-            width: 25rem;
-            max-width: 95vw;
-            border-right: 1px solid #ccc;
-        }
-        
         header a:hover,
         header label:hover,
         footer a:hover {
@@ -214,9 +208,6 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li id="sign">
-                <iframe src="/sign/background.php">
-            </li>
         </ul>
     </main>
 
