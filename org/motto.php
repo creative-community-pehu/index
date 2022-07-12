@@ -57,7 +57,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h3 style="padding-bottom:1rem;">∧°┐</h3>
+            <h3 style="padding-bottom: 0.5rem;">∧°┐</h3>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
