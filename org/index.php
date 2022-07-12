@@ -111,7 +111,6 @@ fclose($fp);
         .mousedragscrollable .list {
             width: 15rem;
             max-width: 75vw;
-            border-right: 1px solid #ccc;
         }
         
         header a:hover,
