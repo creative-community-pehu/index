@@ -44,12 +44,12 @@ fclose($fp);
             font-size:1.25rem;
             margin: 1rem 0.5rem;
             font-weight: 500;
-            transition: all 250ms ease;
+            transition: all 500ms ease;
         }
 
         .org li:hover h3 {
             color: #aaa;
-            transition: all 500ms ease;
+            transition: all 250ms ease;
         }
 
         </style>
