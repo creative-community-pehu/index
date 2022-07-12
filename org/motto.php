@@ -46,11 +46,15 @@ fclose($fp);
             font-weight: 500;
         }
 
+        .org li:hover h3 {
+            color: #aaa;
+        }
+
         </style>
     </head>
 
     <body>
-        <ol class="org pehu">
+        <ol class="org">
             <h3>∧°┐</h3>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
