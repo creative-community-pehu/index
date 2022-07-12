@@ -81,15 +81,6 @@ nav li .reset-button,
 #test:checked~label {
     text-decoration: double underline;
 }
-
-@media print {
-    #address {
-        display: none;
-    }
-    #print {
-        display: block;
-    }
-}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="greeting.js"></script>
@@ -174,15 +165,6 @@ nav li .reset-button,
     </main>
 
     <footer id="footer">
-        <address id="address">
-          <span>URL : </span>
-          <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
-              <?php
-              echo $_SERVER['SERVER_NAME'];
-              echo $_SERVER['REQUEST_URI'];
-              ?>
-          </a>
-        </address>
         <address id="print">
           <span>
               <?php
