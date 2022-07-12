@@ -59,7 +59,6 @@ fclose($fp);
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <h3 class="info pehu"><?=h($row[2])?></h3>
-                <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_blank"></a>
             </li>
             <?php endforeach; ?>
             <?php else: ?>
