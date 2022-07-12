@@ -60,6 +60,7 @@ fclose($fp);
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+            <sup class="date"><?=h($row[1])?></sup>
                 <h3 style="text-align:center;"><?=h($row[2])?></h3>
                 <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
            </li>
