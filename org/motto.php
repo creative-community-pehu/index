@@ -60,7 +60,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h2 class="pehu">∧°┐</h2>
+            <p class="pehu">∧°┐</p>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
