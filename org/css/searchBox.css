@@ -64,10 +64,6 @@ nav li .reset-button:hover {
     font-family: "ipag", monospace;
 }
 
-.org li:hover {
-    border-bottom: solid #ccc 1px;
-}
-
 .org .what,
 .org .date,
 .org .info {
