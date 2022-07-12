@@ -121,6 +121,12 @@ fclose($fp);
             text-decoration: wavy underline;
             cursor: pointer;
         }
+
+        iframe {
+            width:100%;
+            height: 100%;
+            border:none;
+        }
         
         hr {
             border: none;
@@ -202,7 +208,9 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li id="sign"></li>
+            <li id="sign">
+                <iframe src="/sign/background.php">
+            </li>
         </ul>
     </main>
 
@@ -239,7 +247,7 @@ fclose($fp);
 
     <script type="text/javascript ">
         $(function() {
-            $("#sign").load("/sign/background.php");
+            $("#").load("");
         })
 
         $('a[href^="# "]').click(function() {
