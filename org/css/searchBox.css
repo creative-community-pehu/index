@@ -65,11 +65,6 @@ nav li .reset-button:hover {
     transition: all 500ms ease;
 }
 
-.list_item:hover .list_item {
-    color: #aaa;
-    transition: all 1000ms ease;
-}
-
 .org .what,
 .org .date,
 .org .info {
@@ -98,6 +93,20 @@ nav li .reset-button:hover {
 
 .org .info span {
     white-space: pre-wrap;
+}
+
+.org .list_item .what,
+.org .list_item .date,
+.org .list_item .info {
+    color: #000;
+    transition: all 1000ms ease;
+}
+
+.org .list_item:hover .what,
+.org .list_item:hover .date,
+.org .list_item:hover .info {
+    color: #aaa;
+    transition: all 500ms ease;
 }
 
 .org .list_item a {

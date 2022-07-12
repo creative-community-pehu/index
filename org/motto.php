@@ -44,12 +44,12 @@ fclose($fp);
             font-size:1.25rem;
             margin: 1rem 0.5rem;
             font-weight: 500;
-            transition: all 500ms ease;
+            transition: all 1000ms ease;
         }
 
         .org li:hover h3 {
             color: #aaa;
-            transition: all 250ms ease;
+            transition: all 500ms ease;
         }
 
         </style>
@@ -61,12 +61,12 @@ fclose($fp);
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <h3><?=h($row[2])?></h3>
+                <h3 style="text-align:center;"><?=h($row[2])?></h3>
             </li>
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
-                <h3>P E H U is</h3>
+                <h3 style="text-align:center;">P E H U is</h3>
             </li>
             <?php endif; ?>
         </ol>
