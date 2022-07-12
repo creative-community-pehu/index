@@ -3,15 +3,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
-$what = (string)filter_input(INPUT_POST, 'what');
-$info = (string)filter_input(INPUT_POST, 'info');
+$size = (string)filter_input(INPUT_POST, 'size');
+$img = (string)filter_input(INPUT_POST, 'img');
 $link = (string)filter_input(INPUT_POST, 'link');
 $url = (string)filter_input(INPUT_POST, 'url');
 
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $what, $info, $link, $url]);
+    fputcsv($fp, [$org, $size, $img, $link, $url]);
     rewind($fp);
 }
 
@@ -32,17 +32,10 @@ fclose($fp);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template/index.css" />
     <link rel="stylesheet" href="css/searchBox.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
-        }
-        
-        @font-face {
-            font-family: "MS Mincho";
-            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
         }
         
         header,
@@ -88,16 +81,6 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        .vg_style {
-            font-family: 'Great Vibes', cursive;
-            transform: scale(1, 1.5);
-            display: inline-block;
-        }
-        
-        .pehu {
-            font-family: "MS Mincho", serif;
-        }
-        
         #bought:checked~label,
         #gift:checked~label,
         #free:checked~label,
@@ -108,10 +91,26 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable .list {
-            width: 15rem;
-            max-width: 75vw;
-            overflow-y: scroll;
+        #images {
+            width: 100%;
+        }
+        
+        #catalog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .org .list_item img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
         
         header a:hover,
@@ -124,6 +123,13 @@ fclose($fp);
         
         #print {
             display: none;
+        }
+        
+        @media screen and (max-width: 750px) {
+            #catalog {
+                position: absolute;
+                top: 25%;
+            }
         }
         
         @media print {
@@ -202,30 +208,18 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li class="collection" id="motto"></li>
-            <li class="collection">
-                <ol class="org">
-                    <h2>New Life Collection</h2>
+            <li id="images" class="collection">
+                <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                        <p class="what">
-                            <?=h($row[1])?>
-                        </p>
-                        <sup class="date"><?=h($row[2])?></sup>
-                        <div class="info">
-                            <span class="cc_style"><?=h($row[3])?></span>
-                        </div>
-                        <a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
+                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+                    <img src="<?=h($row[2])?>">
+                    <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
-                    <li class="list_item list_toggle" data-org="test">
-                        <p class="what">What</p>
-                        <sup class="date">date</sup>
-                        <div class="info">
-                            <span class="cc_style">Infomation</span>
-                        </div>
+                    <li class="list_item list_toggle min" data-org="test">
+                    <img src="/logo.png">
                     </li>
                     <?php endif; ?>
                 </ol>
