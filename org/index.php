@@ -125,13 +125,16 @@ fclose($fp);
         #print {
             display: none;
         }
-
+        
         @media print {
             #address {
                 display: none;
             }
             #print {
                 display: block;
+            }
+            .mousedragscrollable .list {
+                overflow: hidden;
             }
         }
     </style>

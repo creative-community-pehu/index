@@ -129,7 +129,8 @@ header #presents {
         font-size: 125%;
         line-height: 200%;
     }
-    .mousedragscrollable {
+    .mousedragscrollable,
+    .mousedragscrollable .collection {
         overflow: hidden;
     }
 }
