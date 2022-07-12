@@ -57,7 +57,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h3>∧°┐</h3>
+            <h3>P E H U is</h3>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
@@ -66,7 +66,7 @@ fclose($fp);
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
-                <h3 style="text-align:center;">P E H U is</h3>
+                <h3 style="text-align:center;">MOTTO</h3>
             </li>
             <?php endif; ?>
         </ol>
