@@ -61,7 +61,8 @@ fclose($fp);
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <h3 style="text-align:center;"><?=h($row[2])?></h3>
-            </li>
+                <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
+           </li>
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
