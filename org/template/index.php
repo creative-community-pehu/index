@@ -208,7 +208,7 @@ nav li .reset-button,
 
             volume = new Tone.Volume(-10);
             synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-            notes = Tone.Frequency("C6").harmonize([12, 14, 16, 19, 21, 24]);
+            notes = Tone.Frequency("A6").harmonize([12, 14, 16, 19, 21, 24]);
         });
 
         $(".label").click(function(e) {
