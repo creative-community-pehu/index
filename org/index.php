@@ -251,7 +251,7 @@ fclose($fp);
             ?>
             </a>
         </address>
-        <address id="address">
+        <address id="address" class="cc_style">
           <span>URL : </span>
           <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
               <?php
