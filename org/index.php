@@ -109,7 +109,13 @@ fclose($fp);
         }
         
         .mousedragscrollable .list {
-            width: 20rem;
+            width: 15rem;
+            max-width: 75vw;
+            border-right: 1px solid #ccc;
+        }
+        
+        .mousedragscrollable #sign {
+            width: 25rem;
             max-width: 95vw;
             border-right: 1px solid #ccc;
         }
