@@ -91,7 +91,7 @@ footer address {
     height: 97.5%;
     white-space: normal;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -99,7 +99,6 @@ footer address {
 .mousedragscrollable .collection {
     width: 15rem;
     max-width: 75vw;
-    border-right: 1px solid #ccc;
 }
 
 header #presents {
