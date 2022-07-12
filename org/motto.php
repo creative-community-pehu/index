@@ -42,7 +42,7 @@ fclose($fp);
         h3 {
             font-family: "MS Mincho", serif;
             font-size:1.25rem;
-            margin: 1rem 0.5rem;
+            margin: 1.25rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
         }
