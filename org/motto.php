@@ -38,9 +38,12 @@ fclose($fp);
             font-family: "MS Mincho";
             src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
         }
-
+        .pehu,
         h3 {
             font-family: "MS Mincho", serif;
+        }
+
+        h3 {
             font-size:1.25rem;
             margin: 1rem 0.5rem;
             font-weight: 500;
@@ -57,7 +60,7 @@ fclose($fp);
 
     <body>
         <ol class="org">
-            <h3>∧°┐</h3>
+            <h2 class="pehu">∧°┐</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
