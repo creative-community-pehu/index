@@ -168,7 +168,7 @@
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button cc_style">
+                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label">
                     </li>
                 </ol>
             </form>
@@ -207,10 +207,10 @@
             </li>
         </ul>
     </main>
+
     <footer id="footer">
         <address id="print">
-            <hr/>
-            <u class="cc_style">Website</u>
+            <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="200rem" alt="BnA Alter Museum"></p>
             <br/>
             <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
@@ -263,6 +263,16 @@
             volume = new Tone.Volume(-10);
             synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
             notes = Tone.Frequency("A6").harmonize([12, 14, 16, 19, 21, 24]);
+        });
+
+        $("._more").click(function(e) {
+            let randNote = Math.floor(Math.random() * notes.length);
+            synth.triggerAttackRelease(notes[randNote], "2n");
+        });
+
+        $(".label").click(function(e) {
+            let randNote = Math.floor(Math.random() * notes.length);
+            synth.triggerAttackRelease(notes[randNote], "2n");
         });
 
         $(".list_toggle").hover(function() {
