@@ -208,6 +208,34 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
+            <li class="collection" id="motto"></li>
+            <li class="collection">
+                <ol class="org">
+                    <h2>New Life Collection</h2>
+                    <?php if (!empty($rows)): ?>
+                    <?php foreach ($rows as $row): ?>
+                    <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                        <p class="what">
+                            <?=h($row[1])?>
+                        </p>
+                        <sup class="date"><?=h($row[2])?></sup>
+                        <div class="info">
+                            <span class="cc_style"><?=h($row[3])?></span>
+                        </div>
+                        <a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
+                    </li>
+                    <?php endforeach; ?>
+                    <?php else: ?>
+                    <li class="list_item list_toggle" data-org="test">
+                        <p class="what">What</p>
+                        <sup class="date">date</sup>
+                        <div class="info">
+                            <span class="cc_style">Infomation</span>
+                        </div>
+                    </li>
+                    <?php endif; ?>
+                </ol>
+            </li>
         </ul>
     </main>
 
@@ -244,7 +272,7 @@ fclose($fp);
 
     <script type="text/javascript ">
         $(function() {
-            $("#").load("");
+            $("#motto").load("motto.php");
         })
 
         $('a[href^="# "]').click(function() {
