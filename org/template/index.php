@@ -71,8 +71,7 @@ marquee,
 #presents,
 nav li .reset-button,
 .mousedragscrollable p,
-#footer span,
-#footer a {
+#footer span {
     display: inline-block;
     font-family: "Arial Narrow",monospace;
     transform: scale(1, 1.25);
