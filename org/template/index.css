@@ -133,4 +133,7 @@ header #presents {
     .mousedragscrollable .collection {
         overflow: hidden;
     }
+    .mousedragscrollable .collection {
+        border-right: 1px solid #ccc;
+    }
 }

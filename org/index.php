@@ -135,6 +135,7 @@ fclose($fp);
             }
             .mousedragscrollable .list {
                 overflow: hidden;
+                border-right: 1px solid #ccc;
             }
         }
     </style>
