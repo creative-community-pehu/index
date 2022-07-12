@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>∧° ┐ | Things that I (We) owned</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template/index.css" />
+    <link rel="stylesheet" href="css/searchBox.css" />
+    <link rel="stylesheet" href="images.css" />
+    <style>
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+    </style>
+</head>
+
+<body>
+    <ol id="catalog" class="org">
+        <li class="list_item list_toggle note" data-org="sale">
+            <img src="https://creative-community.space/value/gallery/000.png">
+            <a href="/value/gallery/"></a>
+        </li>
+        <li class="list_item list_toggle a1" data-org="sale">
+            <img src="https://creative-community.space/pehu/motto/bag.gif">
+            <a href="/pehu/motto/"></a>
+        </li>
+        <li class="list_item list_toggle a3" data-org="sale">
+            <img src="https://creative-community.space/pehu/publication/5dition/5dition.png">
+            <a href="../publication/5dition/"></a>
+        </li>
+        <li class="list_item list_toggle a4" data-org="sale">
+            <img src="https://creative-community.space/pehu/weare/bookcover.png">
+            <a href="/pehu/weare/"></a>
+        </li>
+        <li class="list_item list_toggle a5" data-org="sale">
+            <img src="https://creative-community.space/pehu/2019/pr/xmas.png">
+        </li>
+        <li class="list_item list_toggle a5" data-org="sale">
+            <img src="https://creative-community.space/pehu/2019/pr/box.png">
+            <a href="/pehu/2019/"></a>
+        </li>
+        <li class="list_item list_toggle min" data-org="sale">
+            <img src="https://creative-community.space/pehu/dm/this.png">
+            <a href="/pehu/dm/"></a>
+        </li>
+        <li class="list_item list_toggle min" data-org="sale">
+            <img src="https://creative-community.space/value/still/000.png">
+            <a href="/value/still/"></a>
+        </li>
+        <li class="list_item list_toggle note" data-org="sale">
+            <img src="https://creative-community.space/essay/thinknote/pr/cover.png">
+            <a href="/essay/"></a>
+        </li>
+        <li class="list_item list_toggle a6" data-org="sale">
+            <img src="https://creative-community.space/pehu/31q/a.png">
+            <a href="http://ichoose.pe.hu/"></a>
+        </li>
+        <li class="list_item list_toggle b5" data-org="sale">
+            <img src="https://creative-community.space/value/book/book.png">
+            <a href="/value/book/"></a>
+        </li>
+    </ol>
+
+    <script type="text/javascript">
+        var volume;
+        var synth;
+        var notes;
+
+        $(document).ready(function(event) {
+            // StartAudioContext(Tone.context, window);  
+            $(window).click(function() {
+                Tone.context.resume();
+            });
+
+            volume = new Tone.Volume(-10);
+            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
+            notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
+        });
+
+        $(".list_toggle").hover(function() {
+            let randNote = Math.floor(Math.random() * notes.length);
+            synth.triggerAttackRelease(notes[randNote], "6n");
+        });
+    </script>
+</body>
+
+</html>
