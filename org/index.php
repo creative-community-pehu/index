@@ -215,7 +215,6 @@ fclose($fp);
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
                     <img src="<?=h($row[2])?>">
-                    <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
