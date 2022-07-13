@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <!--
     <meta http-equiv="refresh" content="60; URL=#">
-    -->
     <style>
         body,
         #sign {
@@ -52,7 +50,7 @@
             top: 0;
             left: 0;
             width: 15rem;
-            height: 4rem;
+            height: 5rem;
             margin: 1rem 2rem;
             padding: 0;
             border: solid 1px #000;
@@ -66,7 +64,7 @@
         
         #mod sup {
             font-size: 0.75rem;
-            line-height:200%;
+            line-height: 200%;
             width: 90%;
             position: absolute;
             top: 50%;
@@ -100,19 +98,20 @@
             position: relative;
             font-size: 0.75rem;
             letter-spacing: .5rem;
-            padding: 0.125rem 0 0;
-            margin: 0.5rem 0 0;
+            padding: 0.125rem 0;
+            margin: 1rem 0 0;
             border-top: 1px solid #000;
         }
         
-        #weather::before {
-            content: '今日の天気';
-            position: absolute;
-            top: 0.125rem;
-            left: 0;
+        #weather span {
+            float: left;
+            display: block;
             padding: 0 2rem;
-            z-index: 10;
-            background-color: #fff;
+            left: 0;
+        }
+        
+        #weather marquee {
+            display: block;
         }
         
         #sign {
@@ -153,7 +152,10 @@
             <b>宿泊者限定</b>
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
-        <marquee id="weather"></marquee>
+        <div id="weather">
+            <span>今日の天気</span>
+            <marquee></marquee>
+        </div>
     </div>
 
     <div id="sign">
@@ -162,7 +164,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        var messageList = $('#weather');
+        var messageList = $('#weather marquee');
 
         //openweathermap（天気予報API）に接続
         var request = new XMLHttpRequest();
