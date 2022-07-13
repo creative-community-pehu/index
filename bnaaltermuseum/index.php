@@ -142,9 +142,8 @@
             <sup style="text-transform: uppercase;">
                 #
                 <?php
-                $mod = filemtime($source_file);
                 date_default_timezone_set('Asia/Tokyo');
-                print "".date("jMyD",$mod);
+                echo date("jMyD");
                 ?>
                 <br/>自分の気持ちを知る・表す</sup>
         </p>
