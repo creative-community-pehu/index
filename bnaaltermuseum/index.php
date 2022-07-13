@@ -147,11 +147,11 @@
             $week_name = array("日", "月", "火", "水", "木", "金", "土");
             print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
             ?>
-            <br/>の色と記号</sup>
+            <br/>の 気持ちを知る・表す 色と記号</sup>
         </p>
 
         <div id="credit">
-            <b>自分の気持ちを知る・表す</b>
+            <b>宿泊者限定</b>
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
         <marquee id="weather"></marquee>
