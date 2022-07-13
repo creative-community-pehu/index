@@ -33,7 +33,6 @@ fclose($fp);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="refresh" content="60; URL=#">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>自分の気持ちを知る・表す</title>
     <style type="text/css">
@@ -48,13 +47,12 @@ fclose($fp);
             word-spacing: -.25ch;
         }
         
-        #update {
+        #btn {
             position: fixed;
             top: 2.5vw;
             right: 2.5vw;
-            z-index: 50;
-            color: #fff;
-            border: solid #fff 0.1vw;
+            z-index: 100;
+            color: #000;
             border-radius: 50%;
             text-decoration: none;
             transition: .5s all;
@@ -62,15 +60,13 @@ fclose($fp);
             height: 3vw;
         }
         
-        #update:hover {
+        #btn:hover {
             cursor: pointer;
-            color: #000;
-            border: solid #000 0.1vw;
-            background: #fff;
-            transition: .5s all;
+            color: #fff;
+            transition: 1s all;
         }
         
-        #update b {
+        #btn b {
             position: absolute;
             padding: 0;
             margin: 0;
@@ -79,7 +75,6 @@ fclose($fp);
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             font-weight: 500;
-            color: #000;
             letter-spacing: .1vw;
             font-family: "SimSong", "MS Mincho", serif;
             font-size: 2.5vw;
@@ -87,7 +82,7 @@ fclose($fp);
         
         #menu {
             position: fixed;
-            z-index: 1000;
+            z-index: 100;
             bottom: 0;
             left: 0;
             width: 95%;
@@ -141,9 +136,10 @@ fclose($fp);
         
         #background,
         #flash,
-        #sign {
+        #sign,
+        #submit {
             position: fixed;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             top: 0;
             left: 0;
@@ -153,20 +149,29 @@ fclose($fp);
             z-index: -1;
         }
         
-        #flash iframe {
+        #background iframe,
+        #submit iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
+        #submit,
+        .open #menu {
+            display: none;
+        }
+
+        .open #submit {
+            z-index: 99;
+            background-color: #fff;
+            display: block;
+        }
         
         @media screen and (max-width: 550px) {
-            #update {
-                z-index: 50;
-                border: solid #fff 1px;
+            #btn {
                 width: 2rem;
                 height: 2rem;
             }
-            #update b {
+            #btn b {
                 letter-spacing: .1rem;
                 font-size: 1.5rem;
             }
@@ -174,60 +179,71 @@ fclose($fp);
         
         @media print {
             #menu,
-            #update {
+            #btn,
+            #index {
                 display: none;
             }
         }
     </style>
 </head>
 
-<body>
-    <a id="update" href="submit.html" target="_parent">
-        <b>i</b>
-    </a>
+<body id="open">
+<a id="btn"><b>⎷</b></a>
 
-    <div id="menu" class="nlc">
-        <div>
-            <a class="tab" href="#sign">
-                <?php
-    date_default_timezone_set('Asia/Tokyo');
-    print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
-    ?>
-            </a>
-            <span class="check"><b>✔</b></span>
-        </div>
-        <div>
-            <a id="showTime" class="tab" href="#flash"></a><span class="check"><b>✔</b></span>
-        </div>
+<div id="menu" class="nlc">
+    <div>
+        <a class="tab" href="#sign">
+            <?php
+            date_default_timezone_set('Asia/Tokyo');
+            print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
+            ?>
+        </a>
+        <span class="check"><b>✔</b></span>
     </div>
+    <div>
+        <a id="showTime" class="tab" href="#flash"></a><span class="check"><b>✔</b></span>
+    </div>
+</div>
 
-    <div id="background"></div>
-    <div id="sign" class="change"></div>
-    <div id="flash" class="change"><iframe src="flash.php"></iframe></div>
+<div id="background"><iframe src="background.php"></iframe></div>
+<div id="sign" class="change"></div>
+<div id="flash" class="change"></div>
+<div id="submit"><iframe src="submit/"></iframe></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#background").load("background.php");
-            $("#sign").load("log.php");
-        })
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    let btn = document.querySelector('#btn');
+    let box = document.querySelector('#open');
 
-        $(function() {
-            $('.change').hide();
+    let btnToggleclass = function(el) {
+        el.classList.toggle('open');
+    }
 
-            $('.tab').on('click', function() {
-                $('.change').not($($(this).attr('href'))).hide();
-                $($(this).attr('href')).fadeToggle(1000);
-            });
+    btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+
+    $(function() {
+        $("#flash").load("flash.php");
+        $("#sign").load("log.php");
+    })
+
+    $(function() {
+        $('.change').hide();
+
+        $('.tab').on('click', function() {
+            $('.change').not($($(this).attr('href'))).hide();
+            $($(this).attr('href')).fadeToggle(1000);
         });
+    });
 
-        $('a[href^="#"]').click(function() {
-            var href = $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            return false;
-        });
-    </script>
+    $('a[href^="#"]').click(function() {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        return false;
+    });
+</script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
+$w = date("w");
+$week_name = array("日", "月", "火", "水", "木", "金", "土");
+
 $today = date("Ymd");
 $source_file =  $today . ".csv";
 
@@ -23,16 +26,19 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
+    <!DOCTYPE html>
+    <html lang="ja">
 
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>自分の気持ちを知る・表す</title>
-    <style type="text/css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>自分の気持ちを知る・表す</title>
+        <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
+        <style type="text/css">
             body {
                 padding: 0;
                 margin: 0;
@@ -44,7 +50,7 @@ fclose($fp);
                 width: 100%;
                 height: 100%;
                 font-family: 'Times New Roman', serif;
-                color:#fff;
+                color: #fff;
                 text-align: center;
                 margin: 0;
                 padding: 0;
@@ -56,7 +62,7 @@ fclose($fp);
                 transform: scale(1, 1.5);
             }
             
-            #mod p {
+            #mod #today {
                 position: absolute;
                 top: 0;
                 width: 97.5%;
@@ -74,6 +80,7 @@ fclose($fp);
                 flex-wrap: wrap;
             }
             
+            #mod #credit,
             #mod #ed {
                 display: none;
             }
@@ -160,7 +167,7 @@ fclose($fp);
                 #mod b {
                     font-size: 7.5vw;
                 }
-                #mod p {
+                #mod #today {
                     font-size: 4.5vw;
                 }
                 #log {
@@ -180,21 +187,33 @@ fclose($fp);
             
             @media print {
                 #mod {
+                    padding: 1vw 0;
                     position: relative;
                     height: auto;
-                    color:#000;
+                    color: #000;
                     background-color: #fff;
                 }
-                #mod p {
+                #mod #credit,
+                #mod #today {
                     position: absolute;
-                    top: 0;
+                    width: 15%;
+                    display: block;
+                }
+                #mod #today {
+                    top: 1vw;
+                    left: 0;
                     width: 15%;
                     margin: 0.5vw 1.25vw 2vw;
                     padding: 1vw 0;
                     border: solid 1px #000;
-                    display: block;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
+                }
+                #mod #credit {
+                    text-align: right;
+                    top: 0;
+                    right: 0;
+                    width: 10%;
+                    margin: 0vw;
+                    padding: 0;
                 }
                 #mod #ed {
                     display: inline-block;
@@ -208,7 +227,7 @@ fclose($fp);
                 #log {
                     position: relative;
                     top: 0;
-                    right: 0;
+                    left: 0;
                     font-size: 2.5vw;
                     width: 100%;
                     height: auto;
@@ -252,87 +271,89 @@ fclose($fp);
                     display: none;
                 }
             }
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <div id="mod">
-        <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
-        <p>
-            <sup id="no" style="text-transform: uppercase;">
-    #
-    <?php
-    $mod = filemtime($source_file);
-    date_default_timezone_set('Asia/Tokyo');
-    print "".date("jMyD",$mod);
-    ?>
-</sup>
-            <sup id="time" style="text-transform: uppercase;">
-            Last Modified 
-    <?php
-    $mod = filemtime($source_file);
-    date_default_timezone_set('Asia/Tokyo');
-    print "".date("g:i:s A T",$mod);
-    ?>
-</sup>
-            <sup id="post" style="text-transform: uppercase;">
-    <?php
-    echo sizeof(file($source_file));
-    ?>
-    Posts
-</sup>
-        </p>
-    </div>
+        <div id="mod">
+            <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
+            <p id="today">
+                <sup id="no" style="text-transform: uppercase;">
+                    #
+                    <?php
+                    $mod = filemtime($source_file);
+                    date_default_timezone_set('Asia/Tokyo');
+                    print "".date("jMyD",$mod);
+                    ?>
+            </sup>
+                <sup id="time" style="text-transform: uppercase;">
+                    Last Modified 
+                    <?php
+                    $mod = filemtime($source_file);
+                    date_default_timezone_set('Asia/Tokyo');
+                    print "".date("g:i:s A T",$mod);
+                    ?>
+            </sup>
+                <sup id="post" style="text-transform: uppercase;">
+                    <?php
+                    echo sizeof(file($source_file));
+                    ?>
+                    Posts
+        </sup>
+            </p>
+            <p id="credit"><img src="qr.png" width="100%"></p>
+        </div>
 
-    <div id="log">
-        <ul id="log_items">
-            <?php if (!empty($rows)): ?>
-            <?php foreach ($rows as $row): ?>
-            <li>
-                <p>
-                    <u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
-                    <b style="color:#<?=h($row[1])?>; user-select:none; pointer-events:none; filter: invert();"><?=h($row[3])?></b>
-                </p>
-                <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">
-                    <?=h($row[2])?>
-                </p>
-            </li>
-            <?php endforeach; ?>
-            <?php else: ?>
-            <li>
-                <p>
-                    <u style="background:#000;"><span style="color:#fff;">?</span></u>
-                    <b style="color:#000; user-select:none; pointer-events:none;">Under Construction</b>
-                </p>
-                <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i></p>
-            </li>
-            <?php endif; ?>
-        </ul>
-    </div>
+        <div id="log">
+            <ul id="log_items">
+                <?php if (!empty($rows)): ?>
+                <?php foreach ($rows as $row): ?>
+                <li>
+                    <p>
+                        <u style="background:#<?=h($row[1])?>;"><span><?=h($row[0])?></span></u>
+                        <b class="post" style="color:#<?=h($row[1])?>; user-select:none; pointer-events:none; filter: invert();"><?=h($row[3])?></b>
+                    </p>
+                    <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">
+                        <?=h($row[2])?>
+                    </p>
+                </li>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <li>
+                    <p>
+                        <u style="background:#000;"><span style="color:#fff;">?</span></u>
+                        <b class="post" style="color:#000; user-select:none; pointer-events:none;">Under Construction</b>
+                    </p>
+                    <p class="post" style="user-select:none; pointer-events:none; text-transform: uppercase;">IP <i><?php echo $_SERVER['REMOTE_ADDR']; ?></i></p>
+                </li>
+                <?php endif; ?>
+            </ul>
+        </div>
 
-    <script type="text/javascript">
-        function set2(num) {
-            let ret;
-            if (num < 10) {
-                ret = "0" + num;
-            } else {
-                ret = num;
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function set2(num) {
+                let ret;
+                if (num < 10) {
+                    ret = "0" + num;
+                } else {
+                    ret = num;
+                }
+                return ret;
             }
-            return ret;
-        }
 
-        function showClock() {
-            const nowTime = new Date();
-            const nowHour = set2(nowTime.getHours());
-            const nowMin = set2(nowTime.getMinutes());
-            const nowSec = set2(nowTime.getSeconds());
-            const msg = "" + nowHour + ":" + nowMin + ":" + nowSec + "";
-            document.getElementById("showTime").innerHTML = msg;
-        }
-        setInterval('showClock()', 1000);
-    </script>
+            function showClock() {
+                const nowTime = new Date();
+                const nowHour = set2(nowTime.getHours());
+                const nowMin = set2(nowTime.getMinutes());
+                const nowSec = set2(nowTime.getSeconds());
+                const msg = "" + nowHour + ":" + nowMin + ":" + nowSec + "";
+                document.getElementById("showTime").innerHTML = msg;
+            }
+            setInterval('showClock()', 1000);
+        </script>
 
-</body>
+    </body>
 
-</html>
+    </html>

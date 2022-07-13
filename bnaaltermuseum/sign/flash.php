@@ -32,6 +32,10 @@ fclose($fp);
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>自分の気持ちを知る・表す</title>
+        <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
+        <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
         <style type="text/css">
             body {
                 padding: 0;
@@ -93,7 +97,7 @@ fclose($fp);
                 transform: rotateY(180deg);
             }
             
-            #post {
+            #speed {
                 z-index: 1000;
                 position: fixed;
                 top: 0;
@@ -103,7 +107,7 @@ fclose($fp);
                 width: 100%;
             }
             
-            #post input[type="range"] {
+            #speed input[type="range"] {
                 width: 75%;
                 position: absolute;
                 top: 0;
@@ -144,33 +148,12 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ul>
-        <section id="post">
-            <input type="range" id="flash_speed" value="7500" min="5000" max="10000">
+        <section id="speed">
+            <input type="range" id="flash_speed" value="" min="0" max="5000">
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://creative-community.space/coding/js/random.js"></script>
-        <script>
-            window.addEventListener('load', function() {
-                viewSlide('.flash li');
-            });
-
-            function viewSlide(className, flashNo = -1) {
-                let imgArray = document.querySelectorAll(className);
-                if (flashNo >= 0) {
-                    imgArray[flashNo].style.opacity = 0;
-                }
-                flashNo++;
-                if (flashNo >= imgArray.length) {
-                    flashNo = 0;
-                }
-                imgArray[flashNo].style.opacity = 1;
-                let msec = document.getElementById('flash_speed').max - document.getElementById('flash_speed').value;
-                setTimeout(function() {
-                    viewSlide(className, flashNo);
-                }, msec);
-            }
-        </script>
+        <script src="/sign/flash.js"></script>
     </body>
 
     </html>
