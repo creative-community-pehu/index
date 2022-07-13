@@ -302,7 +302,7 @@ fclose($fp);
                     Posts
         </sup>
             </p>
-            <p id="credit"><img src="qr.png" width="100%"></p>
+            <p id="credit"><img src="/sign/qr.png" width="100%"></p>
         </div>
 
         <div id="log">
