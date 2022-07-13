@@ -141,12 +141,13 @@
         <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
         <p id="today">
             <sup style="text-transform: uppercase;">
-                #
-                <?php
-                date_default_timezone_set('Asia/Tokyo');
-                echo date("jMyD");
-                ?>
-                <br/>新しい生活を集める</sup>
+            <?php
+            date_default_timezone_set('Asia/Tokyo');
+            $w = date("w");
+            $week_name = array("日", "月", "火", "水", "木", "金", "土");
+            print(date('Y 年 n 月 j 日'). " ($week_name[$w])")
+            ?>
+            <br/>の色と記号</sup>
         </p>
 
         <div id="credit">
