@@ -125,7 +125,6 @@
             overflow: hidden;
             pointer-events: none;
             user-select: none;
-            background-color: cornsilk;
         }
         
         #sign iframe {
