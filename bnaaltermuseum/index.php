@@ -146,11 +146,11 @@
                 date_default_timezone_set('Asia/Tokyo');
                 echo date("jMyD");
                 ?>
-                <br/>自分の気持ちを知る・表す</sup>
+                <br/>New Life Collection</sup>
         </p>
 
         <div id="credit">
-            <b>宿泊者限定</b>
+            <b>自分の気持ちを知る・表す</b>
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
         <marquee id="weather"></marquee>
