@@ -66,7 +66,7 @@
         
         #mod sup {
             font-size: 0.75rem;
-            line-height:150%;
+            line-height:200%;
             width: 90%;
             position: absolute;
             top: 50%;
