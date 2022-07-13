@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <!--
     <meta http-equiv="refresh" content="60; URL=#">
+    -->
     <style>
         body,
         #sign {
@@ -14,16 +16,75 @@
             margin: 0;
         }
         
+        #mod {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 1vw 0;
+            margin: 0;
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
+        
+        #mod b {
+            padding: 0rem 1.25% 0.25rem;
+            font-size: 5.5vw;
+            transform: scale(1, 1.5);
+        }
+        
+        #mod #credit,
+        #mod #today {
+            position: absolute;
+            width: 15%;
+            display: block;
+        }
+        
+        #mod #credit {
+            text-align: right;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #mod #today {
+            top: 1vw;
+            left: 0;
+            width: 15%;
+            margin: 0.5vw 1.25vw 2vw;
+            padding: 1vw 0;
+            border: solid 1px #000;
+            font-size: 2vw;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            display: inline-block;
+            transform: scale(1, 1.1);
+            word-spacing: -.25ch;
+        }
+        
+        #mod #ed {
+            display: inline-block;
+        }
+        
+        #mod sup {
+            display: block;
+        }
+        
         #sign {
             position: fixed;
             top: 0;
             right: 0;
-            z-index: 0;
+            z-index: -1;
             width: 100%;
             height: 100vh;
             overflow: hidden;
             pointer-events: none;
             user-select: none;
+            background-color: cornsilk;
         }
         
         #sign iframe {
@@ -35,9 +96,70 @@
 </head>
 
 <body>
-    <div id="sign">
-        <iframe src="sign/background.php"></iframe>
+    <div id="mod">
+        <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
+        <p id="today">
+            <sup id="no" style="text-transform: uppercase;">
+                #
+                <?php
+                $mod = filemtime($source_file);
+                date_default_timezone_set('Asia/Tokyo');
+                print "".date("jMyD",$mod);
+                ?>
+            </sup>
+            <sup id="post">自分の気持ちを知る・表す</sup>
+        </p>
+        <p id="credit">
+        </p>
     </div>
+
+    <div id="sign">
+        <iframe src=""></iframe>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var messageList = $('#credit');
+
+        //openweathermap（天気予報API）に接続
+        var request = new XMLHttpRequest();
+        var targetCityName = "kyoto";
+        var appId = "557b466129cf7d7427b03e5b7886a4bb";
+        var owmURL = "https://api.openweathermap.org/data/2.5/weather?APPID=" + appId + "&lang=ja&units=metric&q=" + targetCityName + ",jp;";
+
+
+        request.open('GET', owmURL, true);
+        //結果をjson型で受け取る
+        request.responseType = 'json';
+
+        request.onload = function() {
+            var data = this.response;
+            console.log(data);
+            var messageElement = $(
+                "<span>" +
+                data["name"] +
+                " - " +
+                data["weather"][0]["description"] +
+                " | " +
+                data["weather"][0]["main"] +
+                " | 気温 " +
+                data["main"]["temp"] +
+                " ℃ | 最高気温 " +
+                data["main"]["temp_max"] +
+                "℃ | 最低気温 " +
+                data["main"]["temp_min"] +
+                "℃ | 風速 " +
+                data["wind"]["speed"] +
+                " ㎞ | 雲量 " +
+                data["clouds"]["all"] +
+                " % </span>"
+            );
+            //HTMLに取得したデータを追加する
+            messageList.append(messageElement);
+        };
+
+        request.send();
+    </script>
 </body>
 
 </html>
