@@ -141,14 +141,14 @@
         <b id="ed">𝕿𝖍𝖊 𝕭𝖓𝕬 𝕿𝖎𝖒𝖊𝖘</b>
         <p id="today">
             <sup style="text-transform: uppercase;">
-            New Life Collection
+                新しい生活を集める
                 <br/>
                 #
                 <?php
                 date_default_timezone_set('Asia/Tokyo');
                 echo date("jMyD");
                 ?>
-                New Life Collection</sup>
+                </sup>
         </p>
 
         <div id="credit">
