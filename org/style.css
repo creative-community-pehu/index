@@ -28,14 +28,14 @@ h2 {
     overflow: auto;
 }
 
-header a,
+._more,
 header label,
 footer a {
     text-decoration: none;
     transition: all 1000ms ease;
 }
 
-header a:hover,
+._more:hover,
 header label:hover,
 footer a:hover {
     text-decoration: wavy underline;
