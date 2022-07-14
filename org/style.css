@@ -52,6 +52,10 @@ header marquee {
     margin: 0;
 }
 
+header marquee:hover {
+    cursor: pointer;
+}
+
 header ._more {
     float: right;
     display: block;
