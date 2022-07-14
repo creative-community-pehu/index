@@ -50,11 +50,13 @@ footer {
 header marquee {
     padding: 0.25rem 0 0.125rem;
     margin: 0;
+    transition: all 1000ms ease;
 }
 
 header marquee:hover {
     cursor: pointer;
-    color: #aaa;
+    color: #fff;
+    background: #aaa;
     font-style: italic;
 }
 
