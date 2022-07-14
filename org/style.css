@@ -54,6 +54,8 @@ header marquee {
 
 header marquee:hover {
     cursor: pointer;
+    color: #aaa;
+    font-style: italic;
 }
 
 header ._more {
