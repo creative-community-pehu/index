@@ -1,4 +1,4 @@
-#catalog {
+#images {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
@@ -70,11 +70,11 @@
     transform: rotate3d(-1, 1, 1, 4deg);
 }
 
-.org .list_item img {
+#images .list_item img {
     width: 100%;
 }
 
-.org .list_item a {
+#images .list_item a {
     position: absolute;
     top: 0;
     left: 0;
