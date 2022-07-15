@@ -37,7 +37,7 @@ fclose($fp);
         #collection p {
             font-size: 0.75rem;
             margin: 0;
-            padding: 0 0.25rem;
+            padding: 0.25rem 0.5rem;
             font-weight: 500;
             display: block;
             font-family: "Arial Narrow", monospace;
@@ -46,7 +46,6 @@ fclose($fp);
         
         #collection p b {
             font-size: 150%;
-            margin-bottom: 0.5rem;
             padding: 0;
             display: inline-block;
         }
