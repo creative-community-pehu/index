@@ -413,6 +413,7 @@ fclose($fp);
             </div>
         <ul class="mousedragscrollable">
             <li id="printing" class="collection"></li>
+            <li id="listening" class="collection"></li>
         </ul>
     </main>
 
@@ -453,6 +454,7 @@ fclose($fp);
         
         $(function() {
             $("#printing").load("printing.php");
+            $("#listening").load("listening.php");
         })
 
         var volume;
