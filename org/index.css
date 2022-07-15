@@ -56,7 +56,7 @@ header marquee {
 header marquee:hover {
     cursor: pointer;
     color: #fff;
-    background: #aaa;
+    background: #ccc;
 }
 
 header ._more {
