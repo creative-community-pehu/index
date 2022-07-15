@@ -90,6 +90,7 @@ fclose($fp);
         .collection {
             width: 27.5rem;
             max-width: 55%;
+            font-family: "ipag";
         }
         
         ._more,
