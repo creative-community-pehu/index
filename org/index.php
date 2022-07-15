@@ -412,6 +412,10 @@ fclose($fp);
                     <?php endif; ?>
                 </ol>
             </div>
+        <ul class="mousedragscrollable">
+            <li id="printing" class="collection"></li>
+            <li id="listening" class="collection"></li>
+        </ul>
     </main>
 
     <footer id="footer">
