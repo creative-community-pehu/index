@@ -37,7 +37,7 @@ fclose($fp);
         #collection p {
             font-size: 0.75rem;
             margin: 0;
-            padding: 0;
+            padding: 0 0.25rem;
             font-weight: 500;
             display: block;
             font-family: "Arial Narrow", monospace;
