@@ -1,7 +1,0 @@
-php,index.php,,link,index.php
-csv,index.csv,,link,index.csv
-css,index.css,,link,index.css
-js,greeting.js,,link,greeting.js
-js,/www/scrollable.js,,link,/www/scrollable.js
-css,/org/css/searchBox.css,,link,/org/css/searchBox.css
-js,/org/js/searchBox.js,,link,/org/js/searchBox.js
