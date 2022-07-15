@@ -370,7 +370,7 @@ fclose($fp);
                         <label for="collaborations" class="label">collaborations</label>
                     </li>
                     <li>
-                        <input type="radio" name="members" value="members" id="members">
+                        <input type="radio" name="org" value="members" id="members">
                         <label for="members" class="label">members only</label>
                     </li>
                     <li>
