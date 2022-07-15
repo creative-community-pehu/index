@@ -68,7 +68,7 @@ fclose($fp);
 
 <body>
     <ol id="collection" class="org">
-            <h2>Printing</h2>
+            <h2>印刷 | 製本</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
