@@ -73,6 +73,7 @@ fclose($fp);
         #printing .update {
             position:fixed;
             bottom:0;
+            padding: 0.25rem 0.5rem;
             color:#eee;
         }
     </style>
