@@ -48,7 +48,6 @@ fclose($fp);
             padding: 0.25rem 0.5rem;
             font-weight: 500;
             display: block;
-            font-family: "Arial Narrow", monospace;
             transform: scale(1, 1.25);
         }
         
