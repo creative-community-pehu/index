@@ -34,11 +34,11 @@ fclose($fp);
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
-        #collection h2 {
+        #printing h2 {
             padding: 0.25rem 1rem;
         }
 
-        #collection p {
+        #printing p {
             font-size: 0.75rem;
             margin: 0;
             padding: 0.25rem 0.5rem;
@@ -48,12 +48,12 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        #collection p b {
+        #printing p b {
             font-size: 150%;
             display: inline-block;
         }
         
-        #collection p u {
+        #printing p u {
             float: right;
             font-size: 75%;
             margin: 0;
@@ -65,11 +65,17 @@ fclose($fp);
             border-radius: 0.25rem;
             display: block;
         }
+        
+        #printing .update {
+            position:fixed;
+            bottom:0;
+            color:#eee;
+        }
     </style>
 </head>
 
 <body>
-    <ol id="collection" class="org">
+    <ol id="printing" class="org">
             <h2>印刷 | 製本</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
@@ -84,6 +90,15 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
+        
+        <p class="update">
+        Last Modified : 
+            <?php
+            $mod = filemtime('printing.csv');
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("r",$mod);
+            ?>
+        </p>
 
     <script type="text/javascript ">
         var volume;
