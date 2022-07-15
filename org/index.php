@@ -60,6 +60,7 @@ fclose($fp);
     <script src="/www/scrollable.js"></script>
 
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="cover.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
         @font-face {
