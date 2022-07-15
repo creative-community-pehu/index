@@ -80,7 +80,7 @@ fclose($fp);
 
 <body>
     <ol id="listening" class="org">
-            <h2>印刷 | 製本</h2>
+            <h2>再生・録音</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
