@@ -35,7 +35,7 @@ fclose($fp);
     <link rel="stylesheet" href="searchBox.css" />
     <style>
         #collection h2 {
-            padding: 0.25rem 0.5rem;
+            padding: 0.25rem 1rem;
         }
 
         #collection p {
