@@ -24,29 +24,50 @@ fclose($fp);
 
 ?>
 
-    <!DOCTYPE html>
-    <html lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 
-    <head>
-        <title>Printing | Things that I (We) owned</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="template/index.css" />
-        <link rel="stylesheet" href="css/searchBox.css" />
-        <style>
+<head>
+    <title>Printing | Things that I (We) owned</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="searchBox.css" />
+    <style>
         #collection p {
-            font-size:1rem;
-            margin: 0.5rem 0.25rem;
+            font-size: 0.75rem;
+            margin: 0;
+            padding: 0;
             font-weight: 500;
-            display: inline-block;
-            font-family: "Arial Narrow",monospace;
+            display: block;
+            font-family: "Arial Narrow", monospace;
             transform: scale(1, 1.25);
         }
-        </style>
-    </head>
+        
+        #collection p b {
+            font-size: 150%;
+            margin-bottom: 0.5rem;
+            padding: 0;
+            display: inline-block;
+        }
+        
+        #collection p u {
+            float: right;
+            font-size: 75%;
+            margin: 0;
+            padding: 0 0.25rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            border: solid 1px #aaa;
+            border-radius: 0.25rem;
+            display: block;
+        }
+    </style>
+</head>
 
-    <body>
-        <ol id="collection" class="org">
+<body>
+    <ol id="collection" class="org">
             <h2>Printing</h2>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
@@ -83,6 +104,6 @@ fclose($fp);
             synth.triggerAttackRelease(notes[randNote], "6n");
         });
     </script>
-    </body>
+</body>
 
-    </html>
+</html>

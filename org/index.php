@@ -48,8 +48,18 @@ fclose($fp);
     <meta name="twitter:site" content="@NLC_update"/>
     <meta name="twitter:image" content="https://creative-community.space/org/card.png"/>
 
-    <link rel="stylesheet" href="popup.css" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
+    
+    <script src="index.js"></script>
+    <script src="searchBox.js"></script>
+    <script src="/www/scrollable.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
         @font-face {
@@ -155,7 +165,7 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        #images {
+        #cover {
             position: relative;
             width: 100%;
             height: 100%;
@@ -163,7 +173,7 @@ fclose($fp);
             overflow: hidden;
         }
 
-        #motto {
+        #printing {
             width: 27.5rem;
             max-width: 55%;
         }
@@ -266,7 +276,7 @@ fclose($fp);
 
         #footer,
         .mousedragscrollable,
-        .change #images,
+        .change #cover,
         #print,
         .print {
             display: none;
@@ -314,15 +324,6 @@ fclose($fp);
             }
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <script src="searchBox.js"></script>
-    <script src="/www/scrollable.js"></script>
-    <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
-    <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
-    <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
-    <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 </head>
 
 <body>
@@ -384,7 +385,7 @@ fclose($fp);
     </header>
 
     <main id="main">
-            <div id="images">
+            <div id="cover">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
