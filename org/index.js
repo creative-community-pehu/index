@@ -5,8 +5,6 @@ var Greeting = [
     "4"
 ]
 
-$('#greeting').html(Greeting);
-
 function more() {
     $("#header marquee").html(Greeting[Math.floor(Math.random() * Greeting.length)]);
 }
