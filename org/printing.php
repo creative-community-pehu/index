@@ -34,6 +34,10 @@ fclose($fp);
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
+        #collection h2 {
+            padding: 0.25rem 0.5rem;
+        }
+
         #collection p {
             font-size: 0.75rem;
             margin: 0;
@@ -46,7 +50,6 @@ fclose($fp);
         
         #collection p b {
             font-size: 150%;
-            padding: 0;
             display: inline-block;
         }
         
