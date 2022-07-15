@@ -34,6 +34,10 @@ fclose($fp);
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
+        #printing {
+            position: relative;
+        }
+
         #printing h2 {
             padding: 0.25rem 1rem;
         }

@@ -87,10 +87,9 @@ fclose($fp);
             min-height: 85vh;
         }
 
-        marquee a {
-            color:#111;
-            text-decoration:none;
-            transition: all 1000ms ease;
+        #printing {
+            width: 27.5rem;
+            max-width: 55%;
         }
         
         ._more,
@@ -134,6 +133,12 @@ fclose($fp);
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
         }
+
+        marquee a {
+            color:#111;
+            text-decoration:none;
+            transition: all 1000ms ease;
+        }
         
         .org .list_item img {
             position: absolute;
@@ -160,7 +165,7 @@ fclose($fp);
         #free:checked~label,
         #made:checked~label,
         #collaborations:checked~label,
-        #other:checked~label,
+        #members:checked~label,
         #sale:checked~label {
             text-decoration: double underline;
         }
@@ -172,13 +177,8 @@ fclose($fp);
             margin: 0;
             overflow: hidden;
         }
-
-        #printing {
-            width: 27.5rem;
-            max-width: 55%;
-        }
         
-        #catalog {
+        #images {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -188,13 +188,13 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
 
-        #catalog .list_item {
+        #images .list_item {
             position: relative;
             padding: 0;
             margin: 2.5vh 0;
         }
         
-        #catalog img {
+        #images img {
             animation: 100s linear infinite spot;
         }
         
@@ -283,10 +283,10 @@ fclose($fp);
         }
         
         @media screen and (max-width: 1000px) {
-            #catalog {
+            #images {
                 top: 50%;
             }
-            #catalog .list_item {
+            #images .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.5vh 0;
@@ -297,10 +297,10 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
-            #catalog {
+            #images {
                 top: 45%;
             }
-            #catalog .list_item {
+            #images .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.25vh 0;
@@ -319,7 +319,7 @@ fclose($fp);
             .print {
                 display: inline-block;
             }
-            #catalog {
+            #images {
                 top: 45%;
             }
         }
@@ -399,7 +399,7 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
-                <ol id="catalog" class="org">
+                <ol id="images" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
