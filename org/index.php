@@ -179,24 +179,96 @@ fclose($fp);
             overflow: hidden;
         }
         
-        #catalog {
+        body,
+        ol,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #collection {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        
+        #collection li p b {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+        }
+        
+        #infomation,
+        #collection li p {
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+        }
+        
+        #infomation {
+            font-size: 0.75rem;
+            line-height: 150%;
+            padding: 0 1rem;
+        }
+        
+        #collection {
+            padding: 1rem 0 2.5rem;
+        }
+        
+        #collection li {
+            color: #333;
+            text-shadow: 0.1rem 0.1rem 0.1rem #fff;
+            font-size: 0.55rem;
+            position: relative;
+            padding: 0;
+            margin: 1vw;
+            width: 10rem;
+            height: 10rem;
+            max-width: 95vw;
+            max-height: 95vw;
+            transition: all 1000ms ease;
+        }
+        
+        #collection li img {
+            width: 75%;
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 95%;
-            height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-        }
-
-        #catalog .list_item {
-            position: relative;
-            padding: 0;
-            margin: 2.5vh 0;
+            pointer-events: none;
+            user-select: none;
         }
         
-        #catalog img {
-            animation: 100s linear infinite spot;
+        #collection li p {
+            padding: 0.25rem;
+            margin: 0;
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        #collection li p b {
+            font-size: 150%;
+            display: inline-block;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+        
+        #collection li:hover p {
+            display: block;
         }
         
         @keyframes spot {
@@ -284,27 +356,11 @@ fclose($fp);
         }
         
         @media screen and (max-width: 1000px) {
-            #catalog {
-                top: 50%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.5vh 0;
-            }
         }
         
         @media screen and (max-width: 550px) {
             #address {
                 padding:0.5rem 0;
-            }
-            #catalog {
-                top: 45%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.25vh 0;
             }
         }
         
@@ -319,9 +375,6 @@ fclose($fp);
             }
             .print {
                 display: inline-block;
-            }
-            #catalog {
-                top: 45%;
             }
         }
     </style>
@@ -387,30 +440,33 @@ fclose($fp);
 
     <main id="main">
             <div id="cover">
-                <div id="greeting">
-                    <p class="nlc_style" id="text"></p>
-                </div>
-                <div id="server">
-                    <p class="cc_style">
-                        Last Modified : 
-                            <?php
-                            $mod = filemtime('index.php');
-                            date_default_timezone_set('Asia/Tokyo');
-                            print "".date("r",$mod);
-                            ?>
-                    </p>
-                </div>
-                <ol id="catalog" class="org">
+                <p id="infomation">
+                    <u>The Things I (We) Own, in 3D</u><br/>
+                    <sup>※ メインビジュアルに掲載した 私（わたしたち）が所有するもの 一覧</sup>
+                </p>
+                <ol id="collection" class="org">
                     <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                    <img src="<?=h($row[2])?>">
-                    </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <?php endif; ?>
+                        <?php foreach ($rows as $row): ?>
+                            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                            <img src="<?=h($row[2])?>">
+                
+                            <p>
+                                <b><?=h($row[3])?></b>
+                                <br/><?=h($row[4])?>
+                            </p>
+                        </li>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                            <li class="list_item list_toggle min" data-org="test">
+                                <img src="/logo.png">
+                            </li>
+                        <?php endif; ?>
                 </ol>
+                <p id="infomation">
+                    <sup>※ ポップアップ「The Things I (We) Own, in 3D」では、この一覧（メインビジュアル）に掲載したもの以外にも、たくさんのものを発表／展示／販売します。</sup>
+                </p>
             </div>
+
         <ul class="mousedragscrollable">
             <li id="printing" class="collection"></li>
         </ul>
