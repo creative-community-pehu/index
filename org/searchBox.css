@@ -65,50 +65,6 @@ nav li .reset-button:hover {
     transition: all 500ms ease;
 }
 
-.org .what,
-.org .date,
-.org .info {
-    pointer-events: none;
-    user-select: none;
-}
-
-.org .what {
-    position: relative;
-    z-index: 1;
-    margin: 0.5rem 0;
-}
-
-.org .date {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    z-index: 1;
-    text-decoration: double underline;
-}
-
-.org .info {
-    font-size: 75%;
-    margin: 0.5rem 0;
-}
-
-.org .info span {
-    white-space: pre-wrap;
-}
-
-.org .list_item .what,
-.org .list_item .date,
-.org .list_item .info {
-    color: #000;
-    transition: all 1000ms ease;
-}
-
-.org .list_item:hover .what,
-.org .list_item:hover .date,
-.org .list_item:hover .info {
-    color: #aaa;
-    transition: all 500ms ease;
-}
-
 .org .list_item a {
     position: absolute;
     top: 0;
