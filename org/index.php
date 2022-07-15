@@ -60,7 +60,6 @@ fclose($fp);
     <script src="/www/scrollable.js"></script>
 
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="cover.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
         @font-face {
@@ -88,10 +87,9 @@ fclose($fp);
             min-height: 85vh;
         }
 
-        .collection {
+        #printing {
             width: 27.5rem;
             max-width: 55%;
-            font-family: "ipag";
         }
         
         ._more,
@@ -180,7 +178,7 @@ fclose($fp);
             overflow: hidden;
         }
         
-        #images {
+        #catalog {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -190,13 +188,13 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
 
-        #images .list_item {
+        #catalog .list_item {
             position: relative;
             padding: 0;
             margin: 2.5vh 0;
         }
         
-        #images img {
+        #catalog img {
             animation: 100s linear infinite spot;
         }
         
@@ -285,10 +283,10 @@ fclose($fp);
         }
         
         @media screen and (max-width: 1000px) {
-            #images {
+            #catalog {
                 top: 50%;
             }
-            #images .list_item {
+            #catalog .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.5vh 0;
@@ -299,10 +297,10 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
-            #images {
+            #catalog {
                 top: 45%;
             }
-            #images .list_item {
+            #catalog .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.25vh 0;
@@ -321,7 +319,7 @@ fclose($fp);
             .print {
                 display: inline-block;
             }
-            #images {
+            #catalog {
                 top: 45%;
             }
         }
@@ -401,7 +399,7 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
-                <ol id="images" class="org">
+                <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
@@ -412,7 +410,9 @@ fclose($fp);
                     <?php endif; ?>
                 </ol>
             </div>
-
+        <ul class="mousedragscrollable">
+            <li id="printing" class="collection"></li>
+        </ul>
     </main>
 
     <footer id="footer">
@@ -452,7 +452,6 @@ fclose($fp);
         
         $(function() {
             $("#printing").load("printing.php");
-            $("#listening").load("listening.php");
         })
 
         var volume;
