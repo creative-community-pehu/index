@@ -60,7 +60,7 @@ fclose($fp);
             float: right;
             font-size: 75%;
             margin: 0;
-            padding: 0 0.25rem;
+            padding: 0.125rem 0.25rem;
             text-decoration: none;
             color: #000;
             background: #fff;
