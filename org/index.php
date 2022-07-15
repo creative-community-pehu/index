@@ -87,7 +87,7 @@ fclose($fp);
             min-height: 85vh;
         }
 
-        #printing {
+        .collection {
             width: 27.5rem;
             max-width: 55%;
         }
