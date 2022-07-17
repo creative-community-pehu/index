@@ -128,6 +128,43 @@ fclose($fp);
             font-family: Arial, sans-serif;
         }
         
+        .flash {
+            padding: 0;
+            margin: 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            -webkit-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+        
+        .flash li {
+            list-style: none;
+            position: relative;
+            padding: 0;
+            margin: 0 0.25rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: solid 1px #000;
+        }
+        
+        .flash li span {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .flash li b {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
         #collection {
             position: relative;
             font-size: 0.75rem;
@@ -135,13 +172,6 @@ fclose($fp);
             padding: 0.125rem 0;
             margin: 1rem 0 0;
             border-top: 1px solid #000;
-        }
-        
-        #collection span {
-            float: left;
-            display: block;
-            padding: 0 2rem;
-            left: 0;
         }
         
         #collection marquee {
@@ -200,20 +230,16 @@ fclose($fp);
         <div id="collection">
             <span>今日の天気</span>
             <marquee>
-        <ul id="random" class="flash">
+        <ul class="flash">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
-            <li>
-                <span class="color" style="background:#<?=h($row[1])?>;">
-                  <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
-                </span>
+            <li style="background:#<?=h($row[1])?>;">
+            <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
             </li>
             <?php endforeach; ?>
             <?php else: ?>
-            <li>
-                <span class="color" style="background:#fff;">
-                  <b class="symbol" style="color:#fff;">?</b>
-                </span>
+            <li style="background:#000;">
+            <b class="symbol" style="color:#fff;">?</b>
             </li>
             <?php endif; ?>
         </ul>
