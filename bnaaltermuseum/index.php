@@ -6,8 +6,8 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$today = date("sign/Ymd");
-$source_file =  $today . ".csv";
+$today = date("Ymd");
+$source_file =. "sign/" . $today . ".csv";
 
 $symbol = (string)filter_input(INPUT_POST, 'symbol');
 $color = (string)filter_input(INPUT_POST, 'color');
