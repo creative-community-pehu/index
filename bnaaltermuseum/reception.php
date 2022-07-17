@@ -174,6 +174,7 @@
     </div>
     
     <div id="weather">
+            <span>今日の天気</span>
         <marquee></marquee>
     </div>
 
