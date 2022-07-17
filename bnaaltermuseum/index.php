@@ -158,6 +158,7 @@ fclose($fp);
             position: relative;
             padding: 0;
             margin: 0 0.5rem;
+            font-size:1.5rem;
             width: 2rem;
             height: 2rem;
             border: solid 1px #000;
