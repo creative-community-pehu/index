@@ -135,6 +135,8 @@
         #weather {
             position: fixed;
             bottom: 0;
+            width:100%;
+            display: block;
             font-size: 0.75rem;
             letter-spacing: .5rem;
             padding: 0.125rem 0;
