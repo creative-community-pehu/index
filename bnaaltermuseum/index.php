@@ -165,10 +165,8 @@ fclose($fp);
         }
         
         #collection li b {
-            display: block;
             position: absolute;
-            padding: 0;
-            margin: 0;
+            display: block;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
