@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>自分の気持ちを知る・表す</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #about {
+            position: relative;
+            width: 90%;
+            max-width: 70rem;
+            margin: 10vh auto;
+        }
+        
+        .members {
+            width: 100%;
+            margin: 5rem 0;
+        }
+        
+        .members a,
+        .members u {
+            color: #000;
+            text-decoration: none;
+            background-color: #fff;
+            border: 2px solid;
+            padding: 0.5rem 2rem;
+            border-radius: 50%;
+        }
+        
+        #about h1,
+        #about b {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            word-spacing: -.125ch;
+        }
+        
+        #about h1 {
+            font-size: 1.5rem;
+            line-height: 200%;
+            text-align: center;
+        }
+        
+        #about p {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            font-family: "SimSong", "MS Mincho", serif;
+        }
+        
+        #about b {
+            display: inline-block;
+            font-size: 125%;
+            line-height: 150%;
+        }
+        
+        hr {
+            border: none;
+            margin: 1rem;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#submit").load("submit.html");
+        })
+    </script>
+</head>
+
+<body>
+
+    <div id="submit"></div>
+    <div id="about">
+        <!--
+        <h1>This is a Online Communication Tool that Using Colors and Symbols That Suits on Now Feelings.</h1>
+        <hr/>
+        -->
+        <p>これは、35 の <b>記号</b> と 18 の <b>色</b> を使って <b>自分の気持ちを知る・表す</b> コミュニケーションツール です。</p>
+        <hr/>
+        <br/>
+        <p><u>仕様</u></p>
+        <p>このページは、日毎に投稿された色と記号によって、毎日変化します。</p>
+        <p>ページ背景のグラデーションカラーは、投稿された色が上から下へと連なり生成される、みんなの気持ちを集めた色です。
+            <br/> ※ グラデーションが流れる速度は、投稿数に比例し加速します。</p>
+        <p>ページ下部の日付をクリックすると、投稿された全ての色と記号の記録が表示されます。
+            <br/> ※ 投稿記録は、日本時間24:00に、毎日リセットされます。</p>
+        <p>ページ下部の現在時刻をクリックすると、投稿された色と記号がフルディスプレイサイズで一つずつランダムに表示されます。
+            <br/> 記号の色は、投稿した色の反対色で表示され、自分の気持ちの反対を表します。
+            <br/> ※ ページ上部のメーターを操作すると、色と記号が入れ替わる速度が変化します。</p>
+    </div>
+</body>
+
+</html>
