@@ -1,3 +1,37 @@
+<?php
+
+date_default_timezone_set('Asia/Tokyo');
+
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+$today = date("Ymd");
+$source_file =  $today . ".csv";
+
+$symbol = (string)filter_input(INPUT_POST, 'symbol');
+$color = (string)filter_input(INPUT_POST, 'color');
+$timestamp = date("j.M.y.D g:i:s A");
+
+$forwardedFor = $_SERVER["REMOTE_ADDR"];
+$ips = explode(",", $forwardedFor);
+$ip = $ips[0];
+
+$fp = fopen($source_file, 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    flock($fp, LOCK_EX);
+    fputcsv($fp, [$symbol, $color, $timestamp, $ip,]);
+    rewind($fp);
+}
+flock($fp, LOCK_SH);
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+flock($fp, LOCK_UN);
+fclose($fp);
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
