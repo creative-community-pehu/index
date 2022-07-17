@@ -128,6 +128,19 @@ fclose($fp);
             font-family: Arial, sans-serif;
         }
         
+        #collection {
+            position: relative;
+            font-size: 0.75rem;
+            letter-spacing: .5rem;
+            padding: 0.125rem 0;
+            margin: 1rem 0 0;
+            border-top: 1px solid #000;
+        }
+        
+        #collection marquee {
+            display: block;
+        }
+        
         #collection ul {
             padding: 0;
             margin: 0;
@@ -140,17 +153,18 @@ fclose($fp);
         }
         
         #collection li {
+            display: block;
             list-style: none;
             position: relative;
             padding: 0;
-            margin: 0 0.25rem;
-            width: 1.5rem;
-            height: 1.5rem;
+            margin: 0 0.5rem;
+            width: 2rem;
+            height: 2rem;
             border: solid 1px #000;
         }
         
         #collection li b {
-            display: inline-block;
+            display: block;
             position: absolute;
             padding: 0;
             margin: 0;
@@ -158,19 +172,6 @@ fclose($fp);
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-        }
-        
-        #collection {
-            position: relative;
-            font-size: 0.75rem;
-            letter-spacing: .5rem;
-            padding: 0.125rem 0;
-            margin: 1rem 0 0;
-            border-top: 1px solid #000;
-        }
-        
-        #collection marquee {
-            display: block;
         }
         
         #sign {
