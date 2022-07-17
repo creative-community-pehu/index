@@ -233,7 +233,7 @@ fclose($fp);
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
         <div id="collection">
-            <marquee scrolldelay="10">
+            <marquee scrollamount="10">
                 <ul class="flash">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
