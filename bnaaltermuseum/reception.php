@@ -165,7 +165,25 @@
         </div>
         <div id="collection">
             <span>今日の天気</span>
-            <marquee>aaa</marquee>
+            <marquee>
+        <ul id="random" class="flash">
+            <?php if (!empty($rows)): ?>
+            <?php foreach ($rows as $row): ?>
+            <li>
+                <span class="color" style="background:#<?=h($row[1])?>;">
+                  <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
+                </span>
+            </li>
+            <?php endforeach; ?>
+            <?php else: ?>
+            <li>
+                <span class="color" style="background:#fff;">
+                  <b class="symbol" style="color:#fff;">?</b>
+                </span>
+            </li>
+            <?php endif; ?>
+        </ul>
+    </marquee>
         </div>
     </div>
 
