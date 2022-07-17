@@ -139,9 +139,8 @@
             display: block;
             font-size: 0.75rem;
             letter-spacing: .5rem;
-            padding: 0.125rem 0;
+            padding: 0.25rem 0;
             margin: 1rem 0 0;
-            border-top: 1px solid #000;
         }
     </style>
 </head>
