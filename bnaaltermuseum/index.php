@@ -7,7 +7,7 @@ function h($str) {
 }
 
 $today = date("Ymd");
-$source_file =. "sign/" . $today . ".csv";
+$source_file = "sign/" . $today . ".csv";
 
 $symbol = (string)filter_input(INPUT_POST, 'symbol');
 $color = (string)filter_input(INPUT_POST, 'color');
