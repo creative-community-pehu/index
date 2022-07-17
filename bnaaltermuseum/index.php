@@ -199,6 +199,9 @@ fclose($fp);
             letter-spacing: .5rem;
             padding: 0.25rem 0;
             margin: 1rem 0 0;
+        }
+        
+        #weather span {
             font-weight: 500;
             font-stretch: condensed;
             font-variant: common-ligatures tabular-nums;
@@ -206,7 +209,7 @@ fclose($fp);
             transform: scale(1, 1.1);
             word-spacing: -.25ch;
         }
-
+        
     </style>
 </head>
 
