@@ -162,7 +162,7 @@
         <iframe src="sign/background.php"></iframe>
     </div>
     
-    <div id="weather">
+    <div id="collection">
         <span>今日の天気</span>
         <marquee></marquee>
     </div>
