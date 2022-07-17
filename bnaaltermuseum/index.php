@@ -7,7 +7,7 @@ function h($str) {
 }
 
 $today = date("Ymd");
-$source_file = "sign/" . $today . ".csv";
+$source_file = $today . ".csv";
 
 $symbol = (string)filter_input(INPUT_POST, 'symbol');
 $color = (string)filter_input(INPUT_POST, 'color');
@@ -250,7 +250,7 @@ fclose($fp);
     </div>
 
     <div id="sign">
-        <iframe src="sign/background.php"></iframe>
+        <iframe src="background.php"></iframe>
     </div>
     
     <div id="weather">
