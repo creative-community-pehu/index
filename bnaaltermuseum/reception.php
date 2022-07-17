@@ -94,24 +94,23 @@
             font-family: Arial, sans-serif;
         }
         
-        #weather {
-            position: fixed;
+        #collection {
+            position: relative;
             font-size: 0.75rem;
             letter-spacing: .5rem;
             padding: 0.125rem 0;
             margin: 1rem 0 0;
             border-top: 1px solid #000;
-            bottom:0;
         }
         
-        #weather span {
+        #collection span {
             float: left;
             display: block;
             padding: 0 2rem;
             left: 0;
         }
         
-        #weather marquee {
+        #collection marquee {
             display: block;
         }
         
@@ -153,7 +152,7 @@
             <b>宿泊者限定</b>
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
-        <div id="weather">
+        <div id="collection">
             <span>今日の天気</span>
             <marquee></marquee>
         </div>
