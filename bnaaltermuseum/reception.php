@@ -161,6 +161,11 @@
     <div id="sign">
         <iframe src="sign/background.php"></iframe>
     </div>
+    
+    <div id="weather">
+        <span>今日の天気</span>
+        <marquee></marquee>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
