@@ -103,6 +103,7 @@
             border-top: 1px solid #000;
         }
         
+        #weather span,
         #collection span {
             float: left;
             display: block;
@@ -110,6 +111,7 @@
             left: 0;
         }
         
+        #weather marquee,
         #collection marquee {
             display: block;
         }
