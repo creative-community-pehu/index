@@ -114,10 +114,6 @@
             display: block;
         }
         
-        #weather marquee {
-            display: block;
-        }
-        
         #sign {
             position: fixed;
             top: 0;
