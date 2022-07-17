@@ -154,7 +154,7 @@
         </div>
         <div id="collection">
             <span>今日の天気</span>
-            <marquee></marquee>
+            <marquee>aaa</marquee>
         </div>
     </div>
 
@@ -162,7 +162,7 @@
         <iframe src="sign/background.php"></iframe>
     </div>
     
-    <div id="collection">
+    <div id="weather">
         <span>今日の天気</span>
         <marquee>aaa</marquee>
     </div>
