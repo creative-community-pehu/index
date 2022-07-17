@@ -164,7 +164,7 @@
     
     <div id="collection">
         <span>今日の天気</span>
-        <marquee></marquee>
+        <marquee>aaa</marquee>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
