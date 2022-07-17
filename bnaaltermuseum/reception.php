@@ -167,6 +167,7 @@
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
         <div id="collection">
+            <span>今日の天気</span>
             <marquee>aaa</marquee>
         </div>
     </div>
@@ -176,7 +177,6 @@
     </div>
     
     <div id="weather">
-        <span>今日の天気</span>
         <marquee></marquee>
     </div>
 
