@@ -229,7 +229,7 @@ fclose($fp);
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li style="background:#<?=h($row[1])?>;">
-                        <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
+                        <b class="symbol" style="color:#<?=h($row[1])?>; filter: invert();"><?=h($row[0])?></b>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
