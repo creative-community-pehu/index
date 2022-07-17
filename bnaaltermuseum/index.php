@@ -166,6 +166,7 @@ fclose($fp);
         #collection li b {
             position: absolute;
             display: block;
+            text-align: center;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
