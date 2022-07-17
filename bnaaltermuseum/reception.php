@@ -103,17 +103,21 @@
             border-top: 1px solid #000;
         }
         
-        #weather span,
-        #collection span {
+        #collection span,
+        #weather span {
             float: left;
             display: block;
             padding: 0 2rem;
             left: 0;
         }
         
-        #weather marquee,
         #collection marquee {
             display: block;
+        }
+        
+        #weather marquee {
+            display: block;
+            float: right;
         }
         
         #sign {
