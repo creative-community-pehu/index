@@ -128,7 +128,7 @@ fclose($fp);
             font-family: Arial, sans-serif;
         }
         
-        .flash {
+        #collection ul {
             padding: 0;
             margin: 0;
             display: -webkit-flex;
@@ -139,7 +139,7 @@ fclose($fp);
             flex-direction: row-reverse;
         }
         
-        .flash li {
+        #collection li {
             list-style: none;
             position: relative;
             padding: 0;
@@ -149,16 +149,11 @@ fclose($fp);
             border: solid 1px #000;
         }
         
-        .flash li span {
-            display: inline-block;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .flash li b {
+        #collection li b {
             display: inline-block;
             position: absolute;
+            padding: 0;
+            margin: 0;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -229,20 +224,20 @@ fclose($fp);
         </div>
         <div id="collection">
             <marquee>
-        <ul class="flash">
-            <?php if (!empty($rows)): ?>
-            <?php foreach ($rows as $row): ?>
-            <li style="background:#<?=h($row[1])?>;">
-            <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
-            </li>
-            <?php endforeach; ?>
-            <?php else: ?>
-            <li style="background:#000;">
-            <b class="symbol" style="color:#fff;">?</b>
-            </li>
-            <?php endif; ?>
-        </ul>
-    </marquee>
+                <ul class="flash">
+                    <?php if (!empty($rows)): ?>
+                    <?php foreach ($rows as $row): ?>
+                    <li style="background:#<?=h($row[1])?>;">
+                        <b class="symbol" style="color:#<?=h($row[1])?>;"><?=h($row[0])?></b>
+                    </li>
+                    <?php endforeach; ?>
+                    <?php else: ?>
+                    <li style="background:#000;">
+                    <b class="symbol" style="color:#fff;">?</b>
+                    </li>
+                    <?php endif; ?>
+                </ul>
+            </marquee>
         </div>
     </div>
 
