@@ -146,8 +146,8 @@ fclose($fp);
             margin: 0;
             display: -webkit-flex;
             display: flex;
-            -webkit-justify-content: flex-end;
-            justify-content: flex-end;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
             -webkit-flex-direction: row-reverse;
             flex-direction: row-reverse;
         }
@@ -233,7 +233,6 @@ fclose($fp);
             <span>35 の 記号 と 18 の 色 から 今の気持ちに合う色と記号を集め、みんなの気持ちを集めたオンライン作品を毎日制作しています。</span>
         </div>
         <div id="collection">
-            <marquee scrollamount="10">
                 <ul class="flash">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
@@ -247,7 +246,6 @@ fclose($fp);
                     </li>
                     <?php endif; ?>
                 </ul>
-            </marquee>
         </div>
     </div>
 
