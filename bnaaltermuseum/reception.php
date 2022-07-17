@@ -142,13 +142,6 @@
             padding: 0.25rem 0;
             margin: 1rem 0 0;
         }
-        
-        #weather span {
-            float: left;
-            display: block;
-            padding: 0 2rem;
-            left: 0;
-        }
     </style>
 </head>
 
@@ -181,7 +174,6 @@
     </div>
     
     <div id="weather">
-        <span>今日の天気</span>
         <marquee></marquee>
     </div>
 
