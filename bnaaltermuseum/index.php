@@ -161,7 +161,6 @@ fclose($fp);
             font-size:1.5rem;
             width: 2rem;
             height: 2rem;
-            border: solid 1px #000;
         }
         
         #collection li b {
@@ -200,7 +199,14 @@ fclose($fp);
             letter-spacing: .5rem;
             padding: 0.25rem 0;
             margin: 1rem 0 0;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            display: inline-block;
+            transform: scale(1, 1.1);
+            word-spacing: -.25ch;
         }
+
     </style>
 </head>
 
