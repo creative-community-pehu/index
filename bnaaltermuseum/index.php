@@ -157,7 +157,7 @@ fclose($fp);
             list-style: none;
             position: relative;
             padding: 0;
-            margin: 0.5rem;
+            margin: 0.25rem 0.5rem;
             font-size:1.5rem;
             width: 2rem;
             height: 2rem;
