@@ -167,6 +167,7 @@ fclose($fp);
             position: absolute;
             display: block;
             text-align: center;
+            width:100%;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
